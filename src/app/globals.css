@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer components {
+  .container {
+    @apply mx-auto px-5 max-w-[1280px];
+  }
+
+  /* Responsive container for smaller screens */
+  @media (min-width: 1536px) {
+    .container {
+      @apply max-w-[1286px];
+    }
+  }
+}
+
+/* Custom colors as utility classes */
+@layer utilities {
+  .text-primary {
+    color: #F69348;
+  }
+
+  .text-secondary {
+    color: #34353A;
+  }
+
+  .text-base {
+    color: #5C5C5C;
+  }
+
+  .text-content1 {
+    color: #070707;
+  }
+
+  .text-content2 {
+    color: #828282;
+  }
+
+  .text-content3 {
+    color: #525252;
+  }
+}
+
+path {
+  fill: #1A1A1A;
+} 
+
+.ant-dropdown .ant-dropdown-menu{
+  padding: 1px !important;
+}
