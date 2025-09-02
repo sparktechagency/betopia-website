@@ -1,9 +1,10 @@
+import HomeMain from '@/components/ui/web-pages/home/HomeMain';
 import React from 'react';
 
 const HomePage = () => {
     return (
         <div>
-            this is home page 
+            <HomeMain />
         </div>
     );
 };

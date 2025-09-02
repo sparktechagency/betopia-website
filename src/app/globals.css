@@ -15,34 +15,23 @@
 
 /* Custom colors as utility classes */
 @layer utilities {
-  .text-primary {
-    color: #F69348;
+  .text-primary { 
+    @apply text-[#F69348] ;
   }
-
-  .text-secondary {
-    color: #34353A;
-  }
-
-  .text-base {
-    color: #5C5C5C;
-  }
-
-  .text-content1 {
-    color: #070707;
-  }
-
-  .text-content2 {
-    color: #828282;
-  }
-
-  .text-content3 {
-    color: #525252;
+  .bg-primary {
+    @apply bg-[#F69348];
+  } 
+  .border-primary {
+    @apply border-[#F69348];
+  } 
+  .flex-center{
+    @apply flex justify-center items-center;
   }
 }
 
-path {
+/* path {
   fill: #1A1A1A;
-} 
+}  */
 
 .ant-dropdown .ant-dropdown-menu{
   padding: 1px !important;

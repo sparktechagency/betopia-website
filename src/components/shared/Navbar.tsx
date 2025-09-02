@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import { Button } from 'antd';
 import { pages } from '@/datas/sharedData/navbar';
 import NavItem from '../ui/shared-features/navbar/NavItem';
 import Image from 'next/image';
@@ -8,7 +7,8 @@ import OutlineButton from './OutlineButton';
 
 
 const Navbar: React.FC = () => {
-    const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
+    const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null); 
+    console.log(hoveredDropdown);
 
     return (
         <div className="container h-[70px] flex justify-between items-center py-4 bg-[#0f1419] text-[#FDFDFD] px-8">
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                         <NavItem
                             key={page.name}
                             page={page}
-                            setHoveredDropdown={setHoveredDropdown}
+                            setHoveredDropdown={setHoveredDropdown} 
                         />
                     ))}
                 </div>

@@ -1,4 +1,4 @@
-import { ArrowBigRight, MoveRight } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 import React from 'react';
 
 
