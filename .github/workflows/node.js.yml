@@ -17,26 +17,29 @@ jobs:
         working-directory: /home/betopia/betopia-runner/_work/betopia-website/betopia-website
 
     steps:
+      # 1. Checkout repo
       - uses: actions/checkout@v4
 
+      # 2. Setup Node.js with Yarn cache
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
 
+      # 3. Install Yarn (if not already installed on runner)
       - name: Install Yarn
         run: npm install -g yarn
 
-      - name: Install PM2 globally
-        run: npm install -g pm2
-
+      # 4. Install dependencies
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      # 5. Build Next.js project
       - name: Build Next.js project
         run: yarn build
 
+      # 6. Restart project with PM2
       - name: Restart project with PM2
         run: |
           if pm2 describe website > /dev/null; then
@@ -45,5 +48,6 @@ jobs:
             pm2 start "yarn start" --name website
           fi
 
+      # 7. Save PM2 process list (so it auto-starts on reboot)
       - name: Save PM2 process list
         run: pm2 save
