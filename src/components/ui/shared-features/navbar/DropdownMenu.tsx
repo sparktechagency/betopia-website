@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Menu } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
 import { DropdownItem } from '@/types'; 
 import { LuChevronRight } from "react-icons/lu";
 

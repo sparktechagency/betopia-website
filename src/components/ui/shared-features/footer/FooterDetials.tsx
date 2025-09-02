@@ -38,11 +38,11 @@ const reviews = [
 
 const FooterDetials = () => {
   return (
-    <footer className=" text-[#999999] text-lg py-12 px-6 md:px-16">
-      <div className=" mx-auto grid lg:grid-cols-8 justify-between gap-4">
+    <footer className=" text-[#999999] text-lg pt-[37px] pb-8 px-2 lg:px-0 border-b border-b-[#333333]">
+      <div className=" mx-auto grid lg:grid-cols-8 justify-between gap-8">
         {/* Left Section */}
-        <div className="flex flex-col items-center justify-center col-span-2">
-          <p className=" leading-relaxed ">
+        <div className="flex flex-col items-start justify-center col-span-2">
+          <p className=" leading-relaxed text-xl text-[#F8F8F8]">
             Empowering businesses with smart, scalable software solutions.
           </p>
           <button className="mt-6  rounded-lg bg-[#F69348] !text-[#181818] text-sm font-medium px-6 py-2 transition">
@@ -70,7 +70,7 @@ const FooterDetials = () => {
         </div>
 
         {/* Quick Links */}
-        <div className=" lg:col-span-1">
+        <div className=" lg:col-span-1 ">
           <h3 className="text-white font-semibold mb-4 ">QUICK LINK</h3>
           <ul className="space-y-2 ">
             {quickLinks.map((link, idx) => (
@@ -84,7 +84,7 @@ const FooterDetials = () => {
         </div>
 
         {/* Review */}
-        <div className=" lg:col-span-1">
+        <div className=" lg:col-span-1 ">
           <h3 className="text-white font-semibold mb-4">REVIEW</h3>
           <ul className="space-y-2 ">
             {reviews.map((review, idx) => (
