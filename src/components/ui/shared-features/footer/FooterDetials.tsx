@@ -1,40 +1,8 @@
 // components/Footer.tsx
 import React from "react";
 import Link from "next/link";
+import { anotherServices, quickLinks, reviews, services } from "@/datas/sharedData/footer";
 
-const services = [
-  "Enterprise Cloud Management",
-  "Hybrid/Multi-Cloud Platform Management",
-  "Cloud Security, Compliance & Governance",
-  "Cloud-Native Infrastructure Management",
-  "Cybersecurity Advisory & Consulting",
-  "Managed Security Operations",
-  "Enterprise Cyber Resilience & Governance",
-  "Cyber Risk Management",
-];
-const anotherServices = [
-  "AI Consulting & Implementation",
-  "Enterprise Generative AI Solutions",
-  "Intelligent Business Process Automation",
-  "Advanced Analytics & Data Intelligence",
-];
-
-const quickLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Career", href: "/career" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact us", href: "/contact" },
-];
-
-const reviews = [
-  { label: "Clutch", href: "#" },
-  { label: "Good Firms", href: "#" },
-  { label: "Design Rush", href: "#" },
-  { label: "Trust Pilot", href: "#" },
-  { label: "Partnerstack", href: "#" },
-];
 
 const FooterDetials = () => {
   return (

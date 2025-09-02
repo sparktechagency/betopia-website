@@ -24,8 +24,12 @@ export default function RootLayout({
       <body
         className={`${outfit.className} antialiased`}
       >
-        <Navbar />
-        {children}
+       
+        <div> 
+           <Navbar /> 
+          {children}
+        </div>
+        
         <Footer/>
       </body>
     </html>

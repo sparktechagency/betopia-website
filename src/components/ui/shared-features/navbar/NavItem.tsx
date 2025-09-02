@@ -1,6 +1,5 @@
 "use client"
 import React from 'react';
-import { DownOutlined } from '@ant-design/icons';
 import { Dropdown } from 'antd';
 import { NavPage } from '@/types';
 import DropdownMenu from './DropdownMenu';
@@ -33,7 +32,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
                     onMouseLeave={() => setHoveredDropdown(null)}
                 >
                     {page.name}
-                    <DownOutlined className="ml-1 text-[10px]" />
+                  
                 </Link>
             </Dropdown>
         );

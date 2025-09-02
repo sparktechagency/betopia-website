@@ -35,4 +35,29 @@
 
 .ant-dropdown .ant-dropdown-menu{
   padding: 1px !important;
+} 
+
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #6b5ecc34;  */
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f2535;
 }

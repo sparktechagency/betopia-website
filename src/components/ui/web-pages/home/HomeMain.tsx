@@ -1,13 +1,16 @@
 import React from 'react';
 import Services from './Services';
 import Products from './Products';
+import Banner from './Banner';
+import BannerDetails from './BannerDetails';
 
 const HomeMain = () => {
     return (
-        <div className="container">
-            <h1>Welcome to the Home Page</h1>
-            <Services />
+        <div className="">
+            <Banner />   
+            <BannerDetails />
             <Products />
+            <Services />
         </div>
     );
 };

@@ -11,10 +11,10 @@ const Navbar: React.FC = () => {
     console.log(hoveredDropdown);
 
     return (
-        <div className="container h-[70px] flex justify-between items-center py-4 bg-[#0f1419] text-[#FDFDFD] px-8">
+        <div className=" relative  top-0 container mt-10 h-[62px] flex justify-between items-center bg-transparent text-[#FDFDFD]  z-50  ">
             <div className="flex items-center">
-                <Image src="/logo.png" alt="Logo" height={60} width={140} className="" />
-            </div>
+                <Image src="/logo.png" alt="Logo" height={55} width={140} className="" />
+            </div> 
 
             <div className="flex items-center gap-9">
                 <div className="flex items-center gap-9">

@@ -12,3 +12,8 @@ export interface NavPage {
     dropdownItems?: DropdownItem[];
 } 
 
+export  interface SocialLink {
+  icon: React.ReactNode;
+  url: string;
+  bgColor?: string;
+}

@@ -3,22 +3,13 @@ import React from "react";
 import Image from "next/image";
 import FooterDetials from "../ui/shared-features/footer/FooterDetials";
 import WorldMap from "../ui/shared-features/footer/WorldMap";
-import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
+import { socialLinks } from "@/datas/sharedData/footer";
 
-interface SocialLink {
-  icon: React.ReactNode;
-  url: string;
-  bgColor?: string;
-}
+
+
 
 const Footer: React.FC = () => {
-  const socialLinks: SocialLink[] = [
-    { icon: <FaFacebookF color="#fff" size={20}  />, url: "https://facebook.com", bgColor: "#424242" },
-    { icon: <FaInstagram size={20}  />, url: "https://instagram.com", bgColor: "#424242" },
-    { icon: <FaGithub size={20}  />, url: "https://github.com", bgColor: "#424242" },
-    { icon: <FaLinkedinIn size={20}   />, url: "https://linkedin.com", bgColor: "#424242" },
-  ];
 
   return (
     <div className="bg-[#040404] my-10  flex items-center justify-center">
