@@ -2,6 +2,7 @@ import React from 'react';
 import CareerBanner from './CareerBanner';
 import JoinTeam from './JoinTeam';
 import BetopiaVision from './BetopiaVision';
+import Opennings from './Opennings';
 
 const CareerMain: React.FC = () => {
     return (
@@ -9,6 +10,7 @@ const CareerMain: React.FC = () => {
             <CareerBanner/>
             <JoinTeam/>
             <BetopiaVision/>
+            <Opennings/>
         </div>
     );
 };
