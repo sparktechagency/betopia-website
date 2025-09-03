@@ -37,19 +37,19 @@ export const pages: NavPage[] = [
                 key: 'cloud-services',
                 label: 'Cloud Services',
                 description: 'Betopia Limited\'s Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.',
-                link: '/services?cloud-services'
+                link: '/services?service=cloud-services'
             },
             {
                 key: 'cybersecurity-services',
                 label: 'Cybersecurity Services',
                 description: 'Advanced cybersecurity solutions to protect your digital assets and ensure compliance.',
-                link: '/services?cybersecurity-services'
+                link: '/services?service=cybersecurity-services'
             },
             {
                 key: 'ai-services',
                 label: 'AI Services',
                 description: 'Cutting-edge AI and machine learning services to transform your business operations.',
-                link: '/services?ai-services'
+                link: '/services?service=ai-services'
             }
         ]
     },

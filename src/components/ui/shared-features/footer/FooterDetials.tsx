@@ -10,7 +10,7 @@ const FooterDetials = () => {
       <div className=" mx-auto grid lg:grid-cols-8 justify-between gap-8">
         {/* Left Section */}
         <div className="flex flex-col items-start justify-center col-span-2">
-          <p className=" leading-relaxed text-xl text-[#F8F8F8]">
+          <p className=" leading-relaxed text-xl text-[#F8F8F8] pb-5">
             Empowering businesses with smart, scalable software solutions.
           </p>
           <button className="mt-6  rounded-lg bg-[#F69348] !text-[#181818] text-sm font-medium px-6 py-2 transition">

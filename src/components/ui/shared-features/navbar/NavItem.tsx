@@ -14,7 +14,6 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
     const pathname = usePathname();
     const activePage = pathname.split("/")[1] || "";
-    console.log(activePage); 
 
     if (page.hasDropdown && page.dropdownItems) {
         return (

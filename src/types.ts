@@ -23,7 +23,7 @@ export  interface SocialLink {
 export  interface PageBannerProps {
     videoSrc: string;
     title: React.ReactNode;
-    subtitle ?: string;
+    subtitle ?:string;
     description: string;
     buttonName: string;
     buttonLink: string;
