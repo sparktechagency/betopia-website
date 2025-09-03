@@ -3,7 +3,7 @@ import React from 'react';
 
 const OurStory = () => {
     return (
-        <div className='container relative text-white '>
+        <div className='container relative text-white pb-24  '>
             <ComponentTitle className=' !text-start pb-2'> <span className=' text-[#000000]'> Our </span> <span className='text-primary'>Story</span> </ComponentTitle>
             <div className=' grid lg:grid-cols-5 md:grid-cols-1 grid-cols-1 gap-20 pb-10  '> 
                
