@@ -4,6 +4,7 @@ import "antd/dist/reset.css";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 export const metadata: Metadata = {
   title: "Betopia Limited"
@@ -27,7 +28,7 @@ export default function RootLayout({
        
         <div> 
            <Navbar /> 
-          {children}
+         <AntdRegistry>{children}</AntdRegistry>
         </div>
         
         <Footer/>

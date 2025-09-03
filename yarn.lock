@@ -81,6 +81,11 @@
     "@rc-component/util" "^1.2.1"
     classnames "^2.2.6"
 
+"@ant-design/nextjs-registry@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/nextjs-registry/-/nextjs-registry-1.1.0.tgz#727ffdc357df663c5240b1e7c8a3a5c1eb44a292"
+  integrity sha512-zZ9SKyqTHonUK7l/z/ixpVx0LSnZTlIqYFOccSDI7jx7ojCMTGxzkl3ugGWPPh8xPYDsVxqzwJZBic84H7LgLw==
+
 "@ant-design/react-slick@~1.1.2":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@ant-design/react-slick/-/react-slick-1.1.2.tgz"
@@ -1010,10 +1015,10 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-antd@^5.27.1:
-  version "5.27.1"
-  resolved "https://registry.npmjs.org/antd/-/antd-5.27.1.tgz"
-  integrity sha512-jGMSdBN7hAMvPV27B4RhzZfL6n6yu8yDbo7oXrlJasaOqB7bSDPcjdEy1kXy3JPsny/Qazb1ykzRI4EfcByAPQ==
+antd@^5.27.2:
+  version "5.27.2"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-5.27.2.tgz#a3dd22db2ccc7fab56b179a026f35639e5450549"
+  integrity sha512-9pYRUTrumIEuulRwZijhcnL6ScBZ1X6Y3iJa67VyNhEZAiXtENA7AtggsnqdVclQIm0WL4ky76qUdWrVhDWF3g==
   dependencies:
     "@ant-design/colors" "^7.2.1"
     "@ant-design/cssinjs" "^1.23.0"

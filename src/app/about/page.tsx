@@ -1,14 +1,10 @@
-import Map from '@/components/ui/web-pages/about-us/Map';
-import Owner from '@/components/ui/web-pages/about-us/Owner';
+import AboutMain from '@/components/ui/web-pages/about-us/AboutMain';
 import React from 'react';
 
 const AboutPage = () => {
     return (
-        <div className=''>
-            <div className=''>
-                <Owner />
-                <Map />
-            </div>
+        <div>
+            <AboutMain />
         </div>
     );
 };

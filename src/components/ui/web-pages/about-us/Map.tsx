@@ -59,8 +59,8 @@ const Map: React.FC = () => {
                             <p className=''>Location Details</p>
                             <p className="text-sm mt-0 pt-0">547-A Caballeros Street, Binondo, Metro Manila</p>
                         </div>
-                        <div className="mt-6">
-                            <a href="#" className="text-blue-400 hover:text-blue-500 font-semibold">Visit Here</a>
+                        <div className="mt-6 text-white">
+                           <button className='bg-[#4A3AFF] w-[136.77px] h-[53.78px] rounded-[24px]'>Visit Here</button>
                         </div>
                     </div>
 
