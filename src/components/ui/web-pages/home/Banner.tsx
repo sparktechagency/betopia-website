@@ -25,7 +25,7 @@ const Banner = () => {
              <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">  
              <div className=" flex flex-col items-center justify-center   "> 
                 <h1 className="text-[#818181] text-[64px] font-medium"><span className="text-white">From </span> <span className="text-primary"> Bangladesh </span> to the World </h1> 
-                <p className=" text-[#7E7E7E] text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center  ">Delivering Secure, Cloud-Ready, AI-Powered Business Platforms </p> 
+                <p className=" text-[#7E7E7E] text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-12  ">Delivering Secure, Cloud-Ready, AI-Powered Business Platforms </p> 
                 <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">Betopia Limited is your enterprise transformation partner — helping organizations modernize, protect, and monetize their digital ecosystems.</p> 
                 <div className=" pt-8"> 
                     <OutlineButton className=" !py-4 !px-7">Explore Our Services</OutlineButton>
