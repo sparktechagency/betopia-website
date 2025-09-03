@@ -3,6 +3,10 @@ import Services from './Services';
 import Products from './Products';
 import Banner from './Banner';
 import BannerDetails from './BannerDetails';
+import BoostYourBusiness from './BoostYourBusiness';
+import Facilities from './Facilities';
+import TrustedBy from './TrustedBy';
+import Testimonial from './Testimonial';
 
 const HomeMain = () => {
     return (
@@ -10,7 +14,11 @@ const HomeMain = () => {
             <Banner />   
             <BannerDetails />
             <Products />
-            <Services />
+            <Services /> 
+            <BoostYourBusiness /> 
+            <Facilities /> 
+            <TrustedBy /> 
+            <Testimonial />
         </div>
     );
 };
