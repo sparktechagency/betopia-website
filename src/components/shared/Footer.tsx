@@ -12,7 +12,7 @@ import { socialLinks } from "@/datas/sharedData/footer";
 const Footer: React.FC = () => {
 
   return (
-    <div className="bg-[#040404] my-10  flex items-center justify-center">
+    <div className="bg-[#040404] pt-10  flex items-center justify-center">
       <div className="container">
         <FooterDetials />
 

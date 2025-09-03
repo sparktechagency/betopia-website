@@ -5,7 +5,7 @@ import { MapPin, EllipsisVertical, ChevronRight } from 'lucide-react';
 
 const Map: React.FC = () => {
     return (
-        <div className="bg-gradient-to-r from-black/95 to-[#3F31FF]/70 h-full w-full p-4 ">
+        <div className="bg-gradient-to-r from-[#020019] via-[#14113f] via-70% to-[#201c61] h-full w-full p-4 ">
             <div className='container h-[736px] relative '>
                 <ComposableMap projection="geoMercator" projectionConfig={{ scale: 107, center: [10, 10] }} height={650} width={1000} >
                     <Geographies geography="/features.json">

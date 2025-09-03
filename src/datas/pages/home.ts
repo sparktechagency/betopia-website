@@ -23,7 +23,7 @@ export const BoostYourBusinessItems = [
     description:
       "A scalable marketplace connecting multiple vendors with seamless shopping",
     imgUrl: "/BoostYourBusiness2.png",
-    gradientClass: "from-[#666666]/10 to-[#000000]/90", 
+    gradientClass: "from-[#666666]/50 to-[#000000]/80", 
     link:"#"
   },
   {

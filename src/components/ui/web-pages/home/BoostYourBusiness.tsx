@@ -40,7 +40,7 @@ const BoostYourBusiness = () => {
               />
 
               {/* Content overlay */}
-              <div className="absolute bottom-[6%] text-[#858585] z-20 text-center">
+              <div className="absolute bottom-[5%] text-[#858585] z-20 text-center">
                 <div className="w-full flex flex-col items-center gap-4 px-4">
                   <p className="text-lg font-normal text-[#A1A0A0] text-center mb-2 max-w-[80%]">
                     A sleek and modern design, perfectly embodying minimalist
@@ -73,9 +73,10 @@ const BoostYourBusiness = () => {
                 />
 
                 {/* Content overlay - same as left */}
-                <div className="absolute bottom-[6%] text-[#858585] z-20 text-center">
-                  <div className="w-full flex flex-col items-center gap-4 px-4">
-                    <p className="text-lg font-normal text-[#A1A0A0] text-center mb-2 max-w-[80%]">
+                <div className="absolute bottom-[7%] text-[#858585] z-20 text-center">
+                  <div className="w-full flex flex-col items-start  px-[50px]"> 
+                    <p className="text-2xl text-white pb-1">{item?.title}</p>
+                    <p className="text-lg font-normal text-[#555555] text-start mb-2 max-w-[80%] pb-7">
                       {item.description}
                     </p>
                     <button className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
@@ -87,7 +88,7 @@ const BoostYourBusiness = () => {
 
                 {/* Background decoration */}
                 <div
-                  className={`absolute -right-8 -bottom-8 w-24 h-24 bg-gradient-to-br ${item.gradientClass} rounded-full blur-xl`}
+                  className={`absolute inset-0 bg-gradient-to-b ${item.gradientClass} l`}
                 ></div>
               </div>
             ))}
