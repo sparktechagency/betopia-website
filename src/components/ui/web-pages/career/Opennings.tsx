@@ -141,7 +141,7 @@ const Opennings: React.FC = () => {
 
                         <div className='flex items-center justify-between'>
                             <p className='text-[#787878] text-[11px]'>{data.posted}</p>
-                            <Link href="/contact">
+                            <Link href="/career/1">
                                 <button className='bg-primary cursor-pointer rounded-[6px] mt-[15px] w-[123px] h-[37px]'> <span className='text-white'>Apply Now</span> </button>
                             </Link>
                         </div>
