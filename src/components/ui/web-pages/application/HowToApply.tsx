@@ -6,17 +6,17 @@ const datas = [
     {
         name: "Step #1",
         description: <div>Fill the information within the empty field with proper information.</div>,
-        img: "/vision/step1.png"
+        img: "/application/step1.png"
     },
     {
         name: "Step #2",
         description: <div>After filling all the information, make sure to upload your <span className='font-bold'>“Resume”</span>.</div>,
-        img: "/vision/step2.png"
+        img: "/application/step2.png"
     },
     {
         name: "Step #3",
         description: <div>Upload the resume, click the <span className='font-bold'>“Apply Button”</span> to apply for the post</div>,
-        img: "/vision/step3.png"
+        img: "/application/step3.png"
     }
 ]
 
@@ -32,7 +32,7 @@ const HowToApply: React.FC = () => {
                         <div key={index} className="bg-[#F693481A]/90 h-[239px] rounded-[12px]">
                             <div className="flex items-center justify-center h-full w-full px-[32px]">
                                 <div>
-                                    <div className="h-[48px] overflow-hidden flex-center w-[48px] mb-[15px] bg-white rounded-[8px] shadow-2xl">
+                                    <div className="h-[48px] overflow-hidden flex-center w-[48px] mb-[15px] bg-white rounded-[8px] drop-shadow-2xl">
                                         <Image style={{ borderRadius: "8px" }} src={data.img} alt="Dubai" width={60} height={60} />
                                     </div>
 
