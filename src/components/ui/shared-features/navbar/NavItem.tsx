@@ -21,7 +21,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
                 key={page.name}
                 overlay={<DropdownMenu items={page.dropdownItems}  />}
                 trigger={['hover']}
-                placement="topCenter"
+                placement= "top"
                 overlayStyle={{ marginTop: '22px'  }}          
             >
                 <Link
