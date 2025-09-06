@@ -1,5 +1,5 @@
 "use client"
-import { ConfigProvider, Form, Input, Select } from 'antd';
+import { ConfigProvider, Form, Select } from 'antd';
 import React, { useEffect } from 'react';
 
 interface IFormSelectProps {

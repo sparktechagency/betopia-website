@@ -51,4 +51,23 @@ export interface servicesType {
             };
         }[];
     };
+} 
+
+export interface productType{
+    productData: productsType
+}
+
+export interface productsType {
+    title: string;
+    description: string;
+    solutionForInnovative: {
+        title: string;
+        description: string;
+        imgUrl: string;
+    };
+    facilities: {
+        icon: string;
+        title: string;
+        description: string;
+    }[];
 }

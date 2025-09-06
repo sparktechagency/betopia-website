@@ -1,41 +1,62 @@
 import React from 'react';
-import { Card } from 'antd';
 import Image from 'next/image';
-const { Meta } = Card;
+import ComponentTitle from '@/components/shared/ComponentTitle';
+
+const featureData = [
+  {
+    imgUrl: "/featuredProducts/HRM.png",
+    title: " Human Resource  Management (HRM) "
+  },
+  {
+    imgUrl: "/featuredProducts/POS.png",
+    title: "Point of Sale Machine (POS) "
+  },
+  {
+    imgUrl: "/featuredProducts/ERP.png",
+    title: "Betopia  ERP "
+  },
+
+]
 
 const FeaturedProducts = () => {
   return (
-    <div className="text-center py-12 bg-gray-50">
-      <h2 className="text-3xl font-semibold mb-6">Our Featured Products</h2>
-      <p className="text-lg text-gray-600 mb-10">Smart, scalable and user-friendly solutions designed to transform your business.</p>
-      
-      <div className="flex justify-center gap-8">
-        {/* Human Resource Management (HRM) */}
-        <Card
-          hoverable
-          className="w-80 shadow-lg"
-          cover={<Image alt="HRM" src="your-image-link-1.jpg"  width={600} height={400}/>}
-        >
-          <Meta title="Human Resource Management (HRM)" />
-        </Card>
+    <div className="text-center mb-20 container"> 
+    <div className='w-full  mb-10'> 
+      <ComponentTitle className='flex-center'>Our Featured Products </ComponentTitle>
+      <p className="text-lg text-gray-600   ">Smart, scalable and user-friendly solutions designed to transform your business.</p>
+    </div>
 
-        {/* Point of Sale (POS) */}
-        <Card
-          hoverable
-          className="w-80 shadow-lg"
-          cover={<Image alt="POS" src="your-image-link-2.jpg"  width={600} height={400} />}
-        >
-          <Meta title="Point of Sale Machine (POS)" />
-        </Card>
+      <div className=' grid grid-cols-3 gap-4 w-full'>
+        {
+          featureData?.map((item, index) => (
+            <div
+              key={index}
+              className="relative group cursor-pointer rounded-2xl overflow-hidden flex-1"
+            >
+              {/* Background overlay */}
+              <div className="absolute inset-0 bg-gradient-to-b from-[#6666661A]/10 to-[#000000E5]/90"></div>
+              <Image
+                src={item.imgUrl}
+                alt={item.title}
+                height={320}
+                width={605}
+                className="h-[320px] w-full object-cover"
+              />
 
-        {/* Betopia ERP */}
-        <Card
-          hoverable
-          className="w-80 shadow-lg"
-          cover={<Image alt="ERP" src="your-image-link-3.jpg" />}
-        >
-          <Meta title="Betopia ERP" />
-        </Card>
+              {/* Content overlay - same as left */}
+              <div className="absolute bottom-[7%] text-[#858585] z-20 text-start w-full">
+                <div className="w-1/2 flex flex-col items-start ps-6">
+                  <p className="text-2xl text-normal text-white pb-1">{item?.title}</p>
+                </div>
+              </div>
+
+              {/* Background decoration */}
+              <div
+                className={`absolute inset-0 bg-gradient-to-b from-[#666666]/50 to-[#000000]/80`}
+              ></div>
+            </div>
+          ))
+        }
       </div>
     </div>
   );

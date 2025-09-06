@@ -47,13 +47,13 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ items }) => {
         <div className="w-1/2 ">
           {hoveredKey && (
             <> 
-            <p className='text-2xl font-semibold text-[#9B9B9B]'>
+            <p className='text-2xl font-semibold text-[#9B9B9B] pb-3'>
                 {hoveredKey.label}
             </p>
               <div className="text-[#B3B0B0] text-[16px]  font-normal pb-2">
                 {hoveredKey.description}
               </div>
-              <div className="text-[#858585] text-lg font-medium flex items-center gap-0.5 cursor-pointer underline underline-offset-4">
+              <div className="text-[#858585] text-lg font-normal flex items-center gap-0.5 cursor-pointer underline underline-offset-4"  onClick={() => (window.location.href = hoveredKey.link)}>
                 Learn more
                 {/* <LuChevronRight color='#F69348' size={18} className=" text-lg" /> */}
               </div>

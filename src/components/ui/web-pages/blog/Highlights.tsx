@@ -1,4 +1,4 @@
-import { MoveLeft, MoveRight } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 

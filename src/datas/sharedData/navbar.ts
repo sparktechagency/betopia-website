@@ -9,22 +9,22 @@ export const pages: NavPage[] = [
         hasDropdown: true,
         dropdownItems: [
             {
-                key: 'cloud-services',
-                label: 'Cloud Services',
-                description: 'Betopia Limited\'s Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.',
-                link: '#cloud-services'
+                key: 'HRM',
+                label: 'Human Resource Management (HRM)',
+                description: 'Betopia\'s HRM solution transforms human resource operations into a seamless, efficient process for modern businesses. It handles recruitment, onboarding, performance tracking, and payroll with intuitive automation. ',
+                link: '/products?product=HRM'
             },
             {
-                key: 'cybersecurity-services',
-                label: 'Cybersecurity Services',
-                description: 'Betopia Limited\'s Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.',
-                link: '#cybersecurity-services'
+                key: 'POS',
+                label: 'Point of Sale Machine (POS)',
+                description: 'Betopia\'s POS system delivers fast, reliable point-of-sale operations tailored for retail and hospitality environments. It supports seamless inventory syncing, payment processing, and customer loyalty programs in one unified platform.',
+                link: '/products?product=POS' 
             },
             {
-                key: 'ai-services',
-                label: 'AI Services',
-                description: ' Betopia Limited\'s Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.',
-                link: '#ai-services'
+                key: 'ERP',
+                label: 'Betopia ERP',
+                description: ' Betopia\'s ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system. It provides real-time visibility and automation to streamline workflows and reduce costs.',
+                link: '/products?product=ERP'
             }
         ]
     },

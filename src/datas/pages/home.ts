@@ -10,7 +10,7 @@ export  const HighlyEffectiveSolutionsServices = [
         image :  "/images/cyber.png"
     },
     {
-        name : "AI services",
+        name : "AI Services",
         content : "Betopia Limited's Data, AI & Analytics Engineering services empower businesses by transforming raw data into actionable insights",
         image :  "/images/ai.png"
     }
