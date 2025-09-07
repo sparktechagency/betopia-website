@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google"; 
+import { Outfit } from "next/font/google";
 import "antd/dist/reset.css";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
@@ -25,13 +25,12 @@ export default function RootLayout({
       <body
         className={`${outfit.className} antialiased`}
       >
-       
-        <div> 
-           <Navbar /> 
-         <AntdRegistry>{children}</AntdRegistry>
+        <div>
+          <Navbar />
+          <AntdRegistry>{children}</AntdRegistry>
         </div>
-        
-        <Footer/>
+
+        <Footer />
       </body>
     </html>
   );

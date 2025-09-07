@@ -7,21 +7,21 @@ export const cloudServicesData = {
     title: <p> <span className="text-white"> Cloud   </span> <span className="text-primary"> Services </span>  </p>,
     description: "Betopia Limited offers Cloud Modernization & Managed Services, empowering businesses with tailored cloud solutions",
     buttonName: "Partner With Us ",
-    buttonLink: "/schedule"
+    buttonLink: "/partner"
 }
 export const cybersecurityServicesData = {
     videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
     title: <p> <span className="text-white"> Cybersecurity  </span> <span className="text-primary">  Services </span>  </p>,
     description: "Betopia Limited offers Cybersecurity Advisory & Managed Security Services, empowering businesses with tailored protection solutions ",
     buttonName: "Partner With Us",
-    buttonLink: "/schedule"
+    buttonLink: "/partner"
 }
 export const aiServicesData = {
     videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
     title: <p> <span className="text-white"> AI  </span> <span className="text-primary"> Services </span>  </p>,
     description: "Betopia Limited offers AI-Powered Solutions & Managed Services, empowering businesses with tailored intelligent systems",
     buttonName: "Partner With Us",
-    buttonLink: "/schedule"
+    buttonLink: "/partner"
 }
 
 

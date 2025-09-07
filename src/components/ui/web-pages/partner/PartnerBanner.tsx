@@ -1,7 +1,7 @@
-import React from 'react';
 import OutlineButton from "@/components/shared/OutlineButton";
+import Link from "next/link";
 
-const CareerBanner: React.FC = () => {
+const PartnerBanner = () => {
     return (
         <div className=" z-10 flex-center text-center h-screen text-white  ">
             <div className=" ">
@@ -25,11 +25,17 @@ const CareerBanner: React.FC = () => {
             {/* Content can go here */}
             <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">
                 <div className=" flex flex-col items-center justify-center   ">
-                    <h1 className="text-[#818181] text-[64px] font-medium"><span className="text-white">Thrive </span> with Betopia’s </h1>
-                    <h1 className="text-[#818181] text-[64px] font-medium leading-[1px] pb-9"><span className='text-primary'>Talent</span> Community</h1>
-                    <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">Unleash Your Full Potential Within a Dynamic and Collaborative Environment That Drives Meaningful Global Impact Through Innovative Solutions.</p>
-                    <div className=" pt-[77px]">
-                        <OutlineButton className=" !py-4 !px-7">Find Your Opportunity</OutlineButton>
+                    <p className="text-[#818181] text-[64px] font-medium"><span className="text-white">Join </span> the Betopia <span className="text-primary"> Revolution </span> </p>
+                    <p className=" text-[#7E7E7E] text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9  ">And Become Our Partner Today </p>
+                    <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">Collaborate with Betopia Limited to unlock innovative IT services, expand your reach, and drive mutual growth in a limitless digital landscape. Let&apos;s empower success together.</p>
+                    <div className=" pt-[77px] flex  items-center gap-5">
+                        <Link href="/become-partner">
+                            <OutlineButton className=" !py-4 !px-7">Apply to Become a Partner</OutlineButton>
+                        </Link> 
+
+                        <Link href="/become-partner">
+                            <OutlineButton className=" !py-4 !px-7">Talk to Our Partnership Team</OutlineButton>
+                        </Link>
                     </div>
                 </div>
 
@@ -39,4 +45,4 @@ const CareerBanner: React.FC = () => {
     );
 };
 
-export default CareerBanner;
+export default PartnerBanner;

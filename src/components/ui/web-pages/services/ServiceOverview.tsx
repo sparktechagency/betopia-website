@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import { CategoryDetails } from './SubServices';
 import OutlineButton from '@/components/shared/OutlineButton';
+import Link from 'next/link';
 
 const ServiceOverview = ({ selectedCategory }: { selectedCategory: CategoryDetails|null }) => {
     if (!selectedCategory) {
@@ -17,9 +18,9 @@ const ServiceOverview = ({ selectedCategory }: { selectedCategory: CategoryDetai
                 <p className="text-2xl text-[#666666] pb-14">
                     {selectedCategory?.description}
                 </p>
-              <div className=' '> 
+              <Link href={"/partner"} className=' '> 
                 <OutlineButton className=' !px-4 !py-4'> Partner With Us</OutlineButton>
-              </div>
+              </Link>
             </div>
             <div className=" w-full flex  justify-end">
                 <Image

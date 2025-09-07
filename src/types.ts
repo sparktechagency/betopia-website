@@ -60,7 +60,7 @@ export interface productType{
 export interface productsType {
     title: string;
     description: string;
-    solutionForInnovative: {
+    solutionInnovative: {
         title: string;
         description: string;
         imgUrl: string;

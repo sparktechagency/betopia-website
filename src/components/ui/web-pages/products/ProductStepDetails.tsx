@@ -1,6 +1,7 @@
 import OutlineButton from '@/components/shared/OutlineButton';
 import { productType } from '@/types';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const ProductStepDetails = ({ productData }: productType) => {
@@ -12,8 +13,8 @@ const ProductStepDetails = ({ productData }: productType) => {
                 {/* Background overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-[#6666661A]/10 to-[#000000E5]/90"></div>
                 <Image
-                    src={productData.solutionForInnovative?.imgUrl}
-                    alt={productData.solutionForInnovative?.title}
+                    src={productData?.solutionInnovative?.imgUrl}
+                    alt={productData?.solutionInnovative?.title}
                     height={320}
                     width={605}
                     className="h-[373px] w-full object-fill"
@@ -22,7 +23,7 @@ const ProductStepDetails = ({ productData }: productType) => {
                 {/* Content overlay - same as left */}
                 <div className="absolute bottom-[7%] text-[#858585] z-20 text-start w-full">
                     <div className="w-1/2 flex flex-col items-start ps-6">
-                        <p className="text-2xl text-normal text-white pb-1">{productData.solutionForInnovative?.title}</p>
+                        <p className="text-2xl text-normal text-white pb-1">{productData?.solutionInnovative?.title}</p>
                     </div>
                 </div>
 
@@ -35,10 +36,10 @@ const ProductStepDetails = ({ productData }: productType) => {
             <div className='flex items-start gap-4.5 ps-5'>
                 <p className=' w-3 h-[80px] bg-primary'> </p>
                 <div className=' flex flex-col gap-5'>
-                    <p className='text-2xl text-[#666666]'> {productData?.solutionForInnovative?.description}</p>
-                    <div>
+                    <p className='text-2xl text-[#666666]'> {productData?.solutionInnovative?.description}</p>
+                    <Link href={"/partner"} >
                         <OutlineButton className=' px-6 py-4'> Partner With Us</OutlineButton>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
