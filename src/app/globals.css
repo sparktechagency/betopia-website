@@ -79,3 +79,13 @@ p{
 .swiper-pagination-bullet-active {
   background-color: #1c55e0 !important;
 }
+
+
+.custom-input .ant-input,
+.custom-input .ant-select-selector {
+  height: 40px !important;
+  border-radius: 0px 10px 10px 0px !important;
+  display: flex;
+  align-items: center;  
+  background-color: white ; 
+}
