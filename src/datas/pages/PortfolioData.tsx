@@ -1,7 +1,13 @@
+import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { GrFacebookOption } from "react-icons/gr";
+import { TiSocialLinkedin } from "react-icons/ti";
+
 export const portfolioData = {
 
-  banner: {
-    title: <p> <span className="text-white"> CHASE </span> THE CASH SA is Your  <span className="text-primary"> AI Assistant, </span> </p>,
+  banner: { 
+    videoSrc:"https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
+    title: <p className=" w-[75%] text-center mx-auto pb-3"> <span className="text-white"> CHASE </span> THE CASH SA is Your  <span className="text-primary"> AI Assistant, </span> </p>,
     subtitle: "Experience Real World Treasure Hunt Mobile App",
     description: "An innovative mobile app that transforms the thrill of treasure hunting into an engaging, gamified adventure with puzzles, QR scans, and real rewards.",
     buttonName: "Schedule Appointment",
@@ -10,18 +16,30 @@ export const portfolioData = {
   },
 
   projectOverview: {
-    title: <p> <span className="text-white"> Project </span> <span className="text-primary"> Overview </span> </p>,
+    title: <p> <span className="text-[#000000]"> Project </span> <span className="text-primary"> Overview </span> </p>,
     description: <p> <span className="font-medium"> Chase THE Cash SA </span> invites users to embark on real-time treasure hunt user experience, where they follow a series of cryptic clues leading to specific locations. Each clue brings participants closer to uncovering hidden treasures, with the ultimate goal claiming a reward. Along the way, users are the tasked with solving puzzles, scanning QR codes, uploading proof of their journey and tracking their progress on live map. </p>,
     image: "/portfolio/chaseTheCashSa/chaseTheCashSa.png",
     projectName: "Chase The Cash SA",
     category: "Mobile App ",
     serviceWeProvide: ["UX Research", "UI Design", "Development"],
-    socialLinks: {
-      facebook: "",
-      linkedIn: "",
-      twitter: "",
-      whatsapp: "",
-    },
+    socialLinks: [  
+      {
+        icon:  <GrFacebookOption size={16} color="white"  /> , 
+        link:"#facebook"
+      } ,
+      {
+        icon:  <TiSocialLinkedin size={18} color="white"  /> , 
+        link:"#linkedIn"
+      } ,
+      {
+        icon:  <FaXTwitter size={12} color="white"  /> , 
+        link:"#twitter"
+      } ,
+      {
+        icon:  <FaWhatsapp size={16} color="white"  /> , 
+        link:"#what'sApp"
+      } ,
+    ],
   },
 
   features: [
@@ -31,8 +49,8 @@ export const portfolioData = {
       imgUrl: "/portfolio/chaseTheCashSa/feature1.png"
     },
     {
-      title: <p> <span className="text-[#000000]"> Development & </span> <span className="text-primary"> implementation </span> </p>,
-      description: "This phase involves building core features, integrating AI-powered backend and frontend, and optimizing the user experience to ensure a seamless, ready to launch Umrah Guide app.",
+      title: <p> <span className="text-[#000000]"> Logo and App </span> <span className="text-primary"> Icon </span> </p>,
+      description: "The Logo and App Icon, designed to reflect the app’s bold, energetic, and competitive spirit. With a sleek, modern aesthetic, the logo conveys the thrill of the treasure hunt experience, while the localized “SA” highlights its regional identity, ensuring both brand recognition and cultural relevance.",
       imgUrl: "/portfolio/chaseTheCashSa/feature2.png"
     },
     {
