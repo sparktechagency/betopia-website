@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { RiArrowRightLine } from "react-icons/ri";
 import { BoostYourBusinessItems } from "@/datas/pages/home";
+import Link from "next/link";
 
 const BoostYourBusiness = () => {
   return (
@@ -46,10 +47,10 @@ const BoostYourBusiness = () => {
                     A sleek and modern design, perfectly embodying minimalist
                     elegance with an innovative spirit and the firm.
                   </p>
-                  <button className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
+                  <Link href={"/portfolio"} className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
                     <span>Learn More</span>
                     <RiArrowRightLine className="text-primary" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -79,10 +80,10 @@ const BoostYourBusiness = () => {
                     <p className="text-lg font-normal text-[#555555] text-start mb-2 max-w-[80%] pb-7">
                       {item.description}
                     </p>
-                    <button className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
+                    <Link href={"/portfolio"} className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
                       <span>Learn More</span>
                       <RiArrowRightLine className="text-primary" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
 
