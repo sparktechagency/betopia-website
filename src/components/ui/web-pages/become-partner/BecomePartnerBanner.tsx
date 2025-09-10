@@ -12,7 +12,7 @@ const BecomePartnerBanner = () => {
                 playsInline
             >
                 <source
-                    src="https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4"
+                    src="https://res.cloudinary.com/dreiyzj42/video/upload/v1757500905/partner_page_form_rgoqyk.mp4"
                     type="video/mp4"
                 />
                 Your browser does not support the video tag.

@@ -2,12 +2,12 @@
 import PageBanner from "@/components/shared/PageBanner"; 
 
 const aboutBannerData = {
-    videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4", 
+    videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1757499565/About_Us_Page_y7cpsp.mp4", 
     title: <p> <span className="text-white"> From </span> <span className="text-primary"> Bangladesh </span>  to the World </p> ,
     subtitle: "Shaping the Future of Enterprise Technology",
     description: "Betopia Limited is a global IT transformation company delivering cloud, AI, cybersecurity, and compliance-first solutions that help enterprises innovate and scale with confidence..",
     buttonName: "Schedule Appointment",
-    buttonLink: "/schedule"
+    buttonLink: "/become-partner"
 }
 
 const AboutBanner = () => {

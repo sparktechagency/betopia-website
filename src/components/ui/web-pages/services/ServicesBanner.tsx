@@ -7,7 +7,7 @@ import React from 'react';
 const bannerDataMap: Record<string, typeof cloudServicesData> = {
     "Cloud Services": cloudServicesData,
     "Cybersecurity Services": cybersecurityServicesData,
-    "Ai services": aiServicesData,
+    "AI Services": aiServicesData,
 };
 
 const ServicesBanner = () => {

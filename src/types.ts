@@ -47,7 +47,7 @@ export interface servicesType {
             details: {
                 name: string;
                 description: string;
-                imgUrl: string;
+                videoUrl: string;
             };
         }[];
     };

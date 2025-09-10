@@ -9,7 +9,7 @@ import SubServices from './SubServices';
 const Data: Record<string, typeof CloudService> = {
     "Cloud Services": CloudService,
     "Cybersecurity Services": CybersecurityServices,
-    "Ai services": AIServices,
+    "AI Services": AIServices,
 };
 const ServiceDetails = () => {
     const params = useSearchParams();

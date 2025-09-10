@@ -6,7 +6,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 export const portfolioData = {
 
   banner: { 
-    videoSrc:"https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
+    videoSrc:"https://res.cloudinary.com/dreiyzj42/video/upload/v1757501755/porfolio_page_klnh9o.mp4",
     title: <p className=" w-[75%] text-center mx-auto pb-3"> <span className="text-white"> CHASE </span> THE CASH SA is Your  <span className="text-primary"> AI Assistant, </span> </p>,
     subtitle: "Experience Real World Treasure Hunt Mobile App",
     description: "An innovative mobile app that transforms the thrill of treasure hunting into an engaging, gamified adventure with puzzles, QR scans, and real rewards.",

@@ -49,7 +49,7 @@ export const pages: NavPage[] = [
                 key: 'ai-services',
                 label: 'AI Services',
                 description: 'Cutting-edge AI and machine learning services to transform your business operations.',
-                link: '/services?service=Ai services'
+                link: '/services?service=AI Services'
             }
         ]
     },

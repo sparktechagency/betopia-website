@@ -1,4 +1,5 @@
 import { HighlyEffectiveSolutionsServices } from '@/datas/pages/home';
+import Link from 'next/link';
 import React from 'react';
 import { RiArrowRightLine } from 'react-icons/ri';
 
@@ -24,9 +25,9 @@ const Services: React.FC = () => {
                                 <div className="w-full h-full bg-black/60 flex flex-col justify-end p-4  px-6 text-white">
                                     <h4 className="text-2xl font-light">{item.name}</h4>
                                     <p className="text-sm font-light pb-3">{item.content}</p>
-                                    <p className="flex items-center gap-2 cursor-pointer text-[16px] hover:underline">
+                                    <Link href={`/services?service=${item?.name}`} className="flex items-center gap-2 cursor-pointer text-[16px] hover:underline">
                                         <span>  Learn More </span>  <span> <RiArrowRightLine className='text-primary' /> </span>
-                                    </p>
+                                    </Link>
                                 </div>
                             </div>
 
