@@ -16,16 +16,19 @@
 
 /* Custom colors as utility classes */
 @layer utilities {
-  .text-primary { 
-    @apply text-[#F69348] ;
+  .text-primary {
+    @apply text-[#F69348];
   }
+
   .bg-primary {
     @apply bg-[#F69348];
-  } 
+  }
+
   .border-primary {
     @apply border-[#F69348];
-  } 
-  .flex-center{
+  }
+
+  .flex-center {
     @apply flex justify-center items-center;
   }
 }
@@ -34,9 +37,9 @@
   fill: #1A1A1A;
 }  */
 
-.ant-dropdown .ant-dropdown-menu{
+.ant-dropdown .ant-dropdown-menu {
   padding: 1px !important;
-} 
+}
 
 
 
@@ -61,11 +64,11 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #0f2535;
-} 
+}
 
-p{
+p {
   margin-bottom: 0 !important;
-} 
+}
 
 .swiper-pagination-bullet {
   width: 10px !important;
@@ -73,7 +76,7 @@ p{
   background-color: rgba(0, 0, 0, 0.2) !important;
   opacity: 1;
   transition: all 0.3s;
-  margin-bottom: -30px !important ; 
+  margin-bottom: -30px !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -86,6 +89,6 @@ p{
   height: 40px !important;
   border-radius: 0px 10px 10px 0px !important;
   display: flex;
-  align-items: center;  
-  background-color: white ; 
+  align-items: center;
+  background-color: white;
 }

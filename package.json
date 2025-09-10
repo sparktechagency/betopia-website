@@ -13,6 +13,7 @@
     "@ant-design/nextjs-registry": "^1.1.0",
     "antd": "^5.27.2",
     "lucide-react": "^0.542.0",
+    "motion": "^12.23.12",
     "next": "15.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
