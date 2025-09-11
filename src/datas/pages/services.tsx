@@ -3,7 +3,7 @@
 import { servicesType } from "@/types"
 
 export const cloudServicesData = {
-    videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
+    videoSrc: "https://res.cloudinary.com/dreiyzj42/video/upload/v1757500265/Cloud_Page_fap845.mp4",
     title: <p> <span className="text-white"> Cloud   </span> <span className="text-primary"> Services </span>  </p>,
     description: "Betopia Limited offers Cloud Modernization & Managed Services, empowering businesses with tailored cloud solutions",
     buttonName: "Partner With Us ",

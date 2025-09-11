@@ -4,15 +4,13 @@ import Image from 'next/image';
 import React from 'react';
 
 const FeatureSecond = () => {
-    const FeatureDetails = portfolioData?.features
-
-    const FeatureFirst = FeatureDetails?.slice(2,5)
-    
+    const FeatureDetails = portfolioData?.secondFeature
+ 
     return (
         <div>
             <div className=' flex flex-col gap-y-[100px]'>
                 {
-                    FeatureFirst?.map((value, index) => (
+                    FeatureDetails?.map((value, index) => (
                         <div key={index} className=' bg-gradient-to-r from-[#E8761F]/40   to-[#FFA460]/0 '>
                             <div className={` w-full  flex container
                         ${(index + 1) % 2 === 0 ? ' flex-row-reverse items-center gap-4' : ' flex-row items-center gap-4'}

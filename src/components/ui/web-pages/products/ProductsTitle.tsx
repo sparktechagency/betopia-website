@@ -3,7 +3,7 @@ import { productType } from '@/types';
 import React from 'react';
 
 const ProductsTitle = ({productData}:productType) => { 
-    console.log(productData);
+
     return (
         <div> 
             <div className=' flex-center'> 

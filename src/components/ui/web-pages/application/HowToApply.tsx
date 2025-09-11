@@ -1,24 +1,6 @@
+import { HowToApplyData } from '@/datas/pages/Application';
 import Image from 'next/image';
 import React from 'react';
-
-
-const datas = [
-    {
-        name: "Step #1",
-        description: <div>Fill the information within the empty field with proper information.</div>,
-        img: "/application/step1.png"
-    },
-    {
-        name: "Step #2",
-        description: <div>After filling all the information, make sure to upload your <span className='font-bold'>“Resume”</span>.</div>,
-        img: "/application/step2.png"
-    },
-    {
-        name: "Step #3",
-        description: <div>Upload the resume, click the <span className='font-bold'>“Apply Button”</span> to apply for the post</div>,
-        img: "/application/step3.png"
-    }
-]
 
 const HowToApply: React.FC = () => {
     return (
@@ -28,7 +10,7 @@ const HowToApply: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] my-[52px]">
                 {
-                    datas.map((data, index) => (
+                    HowToApplyData.map((data, index) => (
                         <div key={index} className="bg-[#F693481A]/90 h-[239px] rounded-[12px]">
                             <div className="flex items-center justify-center h-full w-full px-[32px]">
                                 <div>

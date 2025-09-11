@@ -14,7 +14,6 @@ const Data: Record<string, typeof CloudService> = {
 const ServiceDetails = () => {
     const params = useSearchParams();
     const service = params.get('service')
-    console.log(service);
 
     const serviceData = Data[service ?? "Cloud Services"];
     return (

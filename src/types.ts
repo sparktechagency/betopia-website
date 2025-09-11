@@ -23,13 +23,13 @@ export interface SocialLink {
 export interface PageBannerProps {
     videoSrc: string;
     title: React.ReactNode;
-    subtitle?:React.ReactNode | string;
+    subtitle?: React.ReactNode | string;
     description: string;
     buttonName: string;
     buttonLink: string;
 }
 
-export interface serviceType{
+export interface serviceType {
     serviceData: servicesType
 }
 
@@ -51,9 +51,9 @@ export interface servicesType {
             };
         }[];
     };
-} 
+}
 
-export interface productType{
+export interface productType {
     productData: productsType
 }
 
@@ -70,4 +70,11 @@ export interface productsType {
         title: string;
         description: string;
     }[];
+}
+
+export interface TransformingType {
+    number: string;
+    heading: string;
+    accent: string;
+    numberOnRight?: boolean;
 }

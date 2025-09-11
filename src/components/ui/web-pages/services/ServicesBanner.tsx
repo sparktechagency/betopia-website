@@ -13,7 +13,6 @@ const bannerDataMap: Record<string, typeof cloudServicesData> = {
 const ServicesBanner = () => {
     const params = useSearchParams();
     const service = params.get('service')
-    console.log(service);
 
     const serviceBannerData = bannerDataMap[service ?? "Cloud Services"];
 

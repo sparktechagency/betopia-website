@@ -8,8 +8,11 @@ import FeatureSecond from './FeatureSecond';
 import ManagementDashboard from './ManagementDashboard';
 import FeatureThree from './FeatureThree';
 import OthersPortfolio from './OthersPortfolio';
+import { portfolioData } from '@/datas/pages/PortfolioData';
 
-const PortfolioMain = () => {
+const PortfolioMain = () => { 
+    const isManagementDashboard = !!portfolioData?.managementDashboard;
+
     return (
         <div>
             <PortfolioBanner />
@@ -18,8 +21,10 @@ const PortfolioMain = () => {
             <ChallengesWeFaced />
             <PortfolioImages />
             <FeatureSecond />
-            <ManagementDashboard /> 
-            <FeatureThree /> 
+            {
+                isManagementDashboard ? <ManagementDashboard /> : ""
+            }
+            <FeatureThree />
             <OthersPortfolio />
         </div>
     );

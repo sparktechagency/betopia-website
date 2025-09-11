@@ -6,14 +6,13 @@ import { RiArrowRightLine } from 'react-icons/ri';
 
 const OthersPortfolio = () => {
     const OthersPortfolio = portfolioData?.otherPortfolio
-    console.log(OthersPortfolio);
     return (
         <div className=' my-20 container'>
             <div>
                 <ComponentTitle className=' flex-center mb-10' > <span> Our Other’s </span> <span className=' text-primary'> Portfolio </span></ComponentTitle>
             </div>
 
-            <div className=' flex flex-row gap-[51px]'> 
+            <div className=' flex flex-row gap-[51px]'>
                 {
                     OthersPortfolio?.map((item) => (
                         <div

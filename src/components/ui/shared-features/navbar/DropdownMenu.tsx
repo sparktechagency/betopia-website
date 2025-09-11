@@ -9,7 +9,6 @@ interface DropdownMenuProps {
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ items }) => {
   const [hoveredKey, setHoveredKey] = useState<DropdownItem>(items[0]); 
-  console.log(items);
 
   return (
     <Menu

@@ -37,7 +37,7 @@ const OurStory = () => {
                     </video>
                 </div>
             </div>
-            <button className=' bg-primary text-white text-lg  font-bold py-2.5 px-[50px] '>Get Started </button>
+           
         </div>
     );
 };

@@ -4,7 +4,6 @@ import React from 'react';
 
 const PortfolioImages = () => { 
     const portfolioImages = portfolioData?.images 
-    console.log(portfolioImages);
     return (
         <div className=' container mb-20'> 
 

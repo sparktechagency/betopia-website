@@ -31,8 +31,6 @@ const PartnerSteps = () => {
     };
 
     const handleDone = () => {
-
-        console.log("Process completed");
     };
 
     return (
