@@ -1,10 +1,10 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import React from 'react';
 
-const ManagementDashboard = () => {
-    const managementDashboardDetails = portfolioData?.managementDashboard
+const ManagementDashboard = ({ portfolioDetails }: portfolioDetailsType) => {
+    const managementDashboardDetails = portfolioDetails?.managementDashboard
 
     return (
         <div className='my-20 w-full'>
@@ -15,7 +15,7 @@ const ManagementDashboard = () => {
                     <p className=' text-xl font-normal text-[#818181] text-center'>{managementDashboardDetails?.description}</p>
                 </div>
             </div> 
-            <Image src={managementDashboardDetails?.imgUrl} alt='' height={1000} width={1400} className=' h-[1000px] w-full -mt-3'/>
+            <Image src={managementDashboardDetails?.imgUrl ?? '/portfolio/chaseTheCashSa/managementDashboard.png'} alt='' height={1000} width={1400} className=' h-[1000px] w-full -mt-3'/>
 
         </div>
     );

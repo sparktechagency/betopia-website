@@ -1,14 +1,13 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import React from 'react';
 
-const FeatureThree = () => {
-    const FeatureDetails = portfolioData?.thirdFeatures
+const FeatureThree = ({ portfolioDetails }: portfolioDetailsType) => {
+    const FeatureDetails = portfolioDetails?.thirdFeatures
 
-    
     return (
-        <div>
+        <div className=' mt-20'>
             <div className=' flex flex-col gap-y-[100px]'>
                 {
                     FeatureDetails?.map((value, index) => (

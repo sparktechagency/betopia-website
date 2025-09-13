@@ -24,7 +24,7 @@ export const BoostYourBusinessItems = [
       "A scalable marketplace connecting multiple vendors with seamless shopping",
     imgUrl: "/BoostYourBusiness2.png",
     gradientClass: "from-[#666666]/50 to-[#000000]/80", 
-    link:"#"
+    link:"/portfolio?portfolio=Nutri AI"
   },
   {
     id: "04",
@@ -33,7 +33,7 @@ export const BoostYourBusinessItems = [
       "An AI-powered Mobile app designed to assist pilgrims during their Umrah and Hajj Journey",
     imgUrl: "/BoostYourBusiness3.png",
     gradientClass: "from-[#666666]/50 to-[#000000]/80", 
-    link:"#"
+    link:"/portfolio?portfolio=Umrah Guide"
   }, 
 ];  
 

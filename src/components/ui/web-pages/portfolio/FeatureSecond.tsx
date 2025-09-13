@@ -1,10 +1,10 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import React from 'react';
 
-const FeatureSecond = () => {
-    const FeatureDetails = portfolioData?.secondFeature
+const FeatureSecond = ({ portfolioDetails }: portfolioDetailsType) => {
+    const FeatureDetails = portfolioDetails?.secondFeature
  
     return (
         <div>

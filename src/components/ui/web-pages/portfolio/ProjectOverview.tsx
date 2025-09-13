@@ -1,11 +1,11 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const ProjectOverview = () => {
-    const projectOverviewDetails = portfolioData?.projectOverview
+const ProjectOverview = ({ portfolioDetails }: portfolioDetailsType) => {
+    const projectOverviewDetails = portfolioDetails?.projectOverview
     return (
         <div className=' container -mt-10 mb-20'>
             <div className=' w-full flex items-start gap-[120px] pb-10'>

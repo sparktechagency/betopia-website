@@ -1,11 +1,12 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { RiArrowRightLine } from 'react-icons/ri';
 
-const OthersPortfolio = () => {
-    const OthersPortfolio = portfolioData?.otherPortfolio
+const OthersPortfolio = ({ portfolioDetails }: portfolioDetailsType) => {
+    const OthersPortfolio = portfolioDetails?.otherPortfolio
     return (
         <div className=' my-20 container'>
             <div>
@@ -36,10 +37,10 @@ const OthersPortfolio = () => {
                                     <p className="text-lg font-normal text-[#555555] text-start mb-2 max-w-[80%] pb-7">
                                         {item.description}
                                     </p>
-                                    <button className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
+                                    <Link href={item?.link} className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
                                         <span>Learn More</span>
                                         <RiArrowRightLine className="text-primary" />
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 
