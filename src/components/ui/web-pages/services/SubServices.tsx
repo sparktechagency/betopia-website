@@ -7,7 +7,7 @@ import ServiceOverview from './ServiceOverview';
 export interface CategoryDetails {
     name: string;
     description: string;
-    imgUrl: string;
+    videoUrl: string;
 }
 
 const SubServices = ({ serviceData }: serviceType) => {

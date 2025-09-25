@@ -9,31 +9,9 @@ import "swiper/css/pagination"
 import "./slider.css"
 import Image from "next/image"
 import { Inter } from "next/font/google"
+import { testimonials } from "@/datas/pages/home"
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800', '900'] })
-
-
-const testimonials = [
-    {
-        name: "Ronald",
-        title: "Feed space",
-        imgUrl: "/testimonialUser.png",
-        video: "https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4",
-        quote:
-            "These guys are doing our digital websites, our AI conversions, our custom web designs, custom web app with AI and theyre just fantastic. The professionalism, the quality of work on time, great communication. I can only tell you this if you want the best tech partner use soft vents. They're out of Bangladesh and I cannot be even more proud to do this video and talk about them. ",
-        companyUrl: "/userCompany.png",
-    },
-    {
-        name: "John Ryan",
-        imgUrl: "/testimonialUser.png",
-        title: "Financial Analyst",
-        image: "/facilities-bg.jpg",
-        quote:
-            "These guys are doing our digital websites, our AI conversions, our custom web designs, custom web app with AI and theyre just fantastic. The professionalism, the quality of work on time, great communication. I can only tell you this if you want the best tech partner use soft vents. They're out of Bangladesh and I cannot be even more proud to do this video and talk about them. ",
-        companyUrl: "/userCompany.png",
-    },
-    // Add more testimonials as needed
-]
 
 const Testimonial = () => {
     return (

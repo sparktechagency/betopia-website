@@ -1,10 +1,10 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import React from 'react';
 
-const ChallengesWeFaced = () => {
-    const ResearchDetails = portfolioData?.research
+const ChallengesWeFaced = ({ portfolioDetails }: portfolioDetailsType) => {
+    const ResearchDetails = portfolioDetails?.research
     return (
         <div className='h-[517px] bg-gradient-to-r from-[#220300] to-[#880C00] my-20'> 
         <div className='container  py-[58] '> 

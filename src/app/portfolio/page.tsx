@@ -1,10 +1,12 @@
 import PortfolioMain from '@/components/ui/web-pages/portfolio/PortfolioMain';
-import React from 'react';
+import React, { Suspense } from 'react';
 
 const PortfolioPage = () => {
     return (
         <div>
-            <PortfolioMain />
+            <Suspense>
+                <PortfolioMain />
+            </Suspense>
         </div>
     );
 };

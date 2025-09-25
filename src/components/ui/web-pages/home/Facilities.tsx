@@ -2,42 +2,9 @@
 import React from 'react';
 import VideoPlayer from './VideoPlayer';
 import Image from 'next/image';
-
-// Array to store the content for each card.
-const cardsData = [
-  {
-    title: "Delivering Deeper, Building Smarter",
-    description: "We're transforming the emerging technologies, understanding their full potential.",
-    gradient: "from-blue-500 to-blue-600", 
-    imgUrl:"/faci1.png" ,
-    icon: "bg-white rounded-sm"
-  },
-  {
-    title: "Partner for Tomorrow's Edge",
-    description: "Join forces with our researchers to unlock possibilities with our expert guidance.",
-    gradient: "from-green-500 to-green-600", 
-        imgUrl:"/faci2.png" ,
-    icon: "bg-white rounded-full" 
-    
-  },
-  {
-    title: "Unveiling Open-Source Potential",
-    description: "Deep-dive into open-source technologies, understanding their flexibility.",
-    gradient: "from-purple-500 to-purple-600", 
-        imgUrl:"/faci3.png" ,
-    icon: "bg-white rounded"
-  },
-  {
-    title: "From Lab Bench to Real-World Impact",
-    description: "Our research isn't just theoretical. We translate insights into tangible prototypes.",
-    gradient: "from-yellow-500 to-orange-500", 
-        imgUrl:"/faci4.png" ,
-    icon: "bg-white rounded-full"
-  }
-];
+import { cardsData } from '@/datas/pages/home';
 
 const Facilities = () => {
-
 
   return (
     <div className=" relative h-[590px] flex items-center"

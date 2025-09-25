@@ -5,21 +5,11 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination"; 
 import Image from 'next/image';
+import { trustedByCompaniesImages } from '@/datas/pages/home';
  
-const images = [
-    "/trustedBy/company1.png",
-    "/trustedBy/company2.png", 
-    "/trustedBy/company3.png", 
-    "/trustedBy/company4.png", 
-    "/trustedBy/company5.png", 
-    "/trustedBy/company6.png", 
-    // "/trustedBy/company7.png", 
-    "/trustedBy/company8.png"
-]
 const TrustedBy = () => {
 
-    // Determine if we should center/loop or not
-    const shouldCenterAndLoop = images?.length > 8;
+    const shouldCenterAndLoop = trustedByCompaniesImages?.length > 8;
 
     return (
         <div className=' my-20 container'>
@@ -62,7 +52,7 @@ const TrustedBy = () => {
                     }}
                     className="w-full py-10  flex items-center justify-center "
                 >
-                    {images.map((image, index) => (
+                    {trustedByCompaniesImages.map((image, index) => (
                         <SwiperSlide key={index} className=" mx-auto ">
                             <Image
                                 src={image}

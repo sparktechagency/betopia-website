@@ -1,27 +1,9 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
 import OutlineButton from '@/components/shared/OutlineButton';
+import { HowToJoinData } from '@/datas/pages/partnerdata';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
-
-const datas = [
-    {
-        name: "Step #1",
-        description: <div>Click on the “<span className='font-medium'>Apply to become partner</span>” Button to take you to the form section.</div>,
-        img: "/application/step1.png"
-    },
-    {
-        name: "Step #2",
-        description: <div>Fill up all the information mentioned in the “<span className='font-medium'>form</span>” to become a partner.</div>,
-        img: "/application/step2.png"
-    },
-    {
-        name: "Step #3",
-        description: <div>After filling all the information on the form, click “<span className='font-medium'>Submit</span>” button.</div>,
-        img: "/application/step3.png"
-    }
-]
 
 const HowToJoin: React.FC = () => {
     return (
@@ -38,7 +20,7 @@ const HowToJoin: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] my-[52px]">
                 {
-                    datas.map((data, index) => (
+                    HowToJoinData.map((data, index) => (
                         <div key={index} className="bg-[#F693481A]/90 h-[239px] rounded-[12px]">
                             <div className="flex items-center justify-center h-full w-full px-[32px]">
                                 <div>

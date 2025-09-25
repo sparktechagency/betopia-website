@@ -34,3 +34,21 @@
     }    
 ]  
 
+
+export const HowToJoinData= [
+    {
+        name: "Step #1",
+        description: <div>Click on the “<span className='font-medium'>Apply to become partner</span>” Button to take you to the form section.</div>,
+        img: "/application/step1.png"
+    },
+    {
+        name: "Step #2",
+        description: <div>Fill up all the information mentioned in the “<span className='font-medium'>form</span>” to become a partner.</div>,
+        img: "/application/step2.png"
+    },
+    {
+        name: "Step #3",
+        description: <div>After filling all the information on the form, click “<span className='font-medium'>Submit</span>” button.</div>,
+        img: "/application/step3.png"
+    }
+]

@@ -5,9 +5,9 @@ const OurStory = () => {
     return (
         <div className='container relative text-white pb-24  '>
             <ComponentTitle className=' !text-start pb-2'> <span className=' text-[#000000]'> Our </span> <span className='text-primary'>Story</span> </ComponentTitle>
-            <div className=' grid lg:grid-cols-5 md:grid-cols-1 grid-cols-1 gap-20 pb-10  '> 
-               
-                <div className=' col-span-3 flex flex-col text-[#818181] text-lg tracking-wide '>
+            <div className=' grid lg:grid-cols-5 md:grid-cols-1 grid-cols-1 gap-20 pb-10  '>
+
+                <div className=' col-span-3 flex flex-col text-[#818181] text-lg tracking-wide  leading-9'>
                     <span>
                         Every great journey begins with a vision. For Betopia Limited, that vision started in 2014 with a simple goal: to build technology that truly empowers businesses. From our humble beginnings, we grew steadily in 2015, earning the trust of early clients who believed in our mission. By 2019, our expansion carried us beyond borders, connecting us with global partners and new opportunities.
                         The challenges of 2020 became a defining moment. While the world faced uncertainty, we scaled our operations and stood beside businesses as they transitioned into digital-first models. In 2022, we introduced new initiatives in AI, cloud, cybersecurity, and SaaS, creating solutions for tomorrow while solving today’s problems.
@@ -30,14 +30,14 @@ const OurStory = () => {
                         playsInline
                     >
                         <source
-                            src="https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4"
+                            src="https://res.cloudinary.com/dreiyzj42/video/upload/v1757500265/Cloud_Page_fap845.mp4"
                             type="video/mp4"
                         />
                         Your browser does not support the video tag.
                     </video>
                 </div>
-            </div> 
-            <button className=' bg-primary text-white text-lg  font-bold py-2.5 px-[50px] '>Get Started </button>
+            </div>
+           
         </div>
     );
 };

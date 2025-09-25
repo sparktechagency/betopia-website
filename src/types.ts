@@ -1,5 +1,6 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import React from "react";
-
+import { ReactNode } from "react";
 export interface DropdownItem {
     key: string;
     label: string;
@@ -23,13 +24,13 @@ export interface SocialLink {
 export interface PageBannerProps {
     videoSrc: string;
     title: React.ReactNode;
-    subtitle?:React.ReactNode | string;
+    subtitle?: React.ReactNode | string;
     description: string;
     buttonName: string;
     buttonLink: string;
 }
 
-export interface serviceType{
+export interface serviceType {
     serviceData: servicesType
 }
 
@@ -47,13 +48,13 @@ export interface servicesType {
             details: {
                 name: string;
                 description: string;
-                imgUrl: string;
+                videoUrl: string;
             };
         }[];
     };
-} 
+}
 
-export interface productType{
+export interface productType {
     productData: productsType
 }
 
@@ -70,4 +71,80 @@ export interface productsType {
         title: string;
         description: string;
     }[];
+}
+
+export interface TransformingType {
+    number: string;
+    heading: string;
+    accent: string;
+    numberOnRight?: boolean;
+} 
+
+
+
+export interface PortfolioSocialLink {
+  icon: ReactNode;
+  link: string;
+}
+
+export interface Banner {
+  videoSrc: string;
+  title: ReactNode;
+  subtitle: string;
+  description: string;
+  buttonName: string;
+  buttonLink: string;
+}
+
+export interface ProjectOverview {
+  title: ReactNode;
+  description: ReactNode;
+  image: string;
+  projectName: string;
+  category: string;
+  serviceWeProvide: string[];
+  socialLinks: PortfolioSocialLink[];
+}
+
+export interface Feature {
+  title: ReactNode;
+  description: string;
+  imgUrl: string;
+}
+
+export interface Research {
+  title: ReactNode;
+  description: string;
+  imgUrl: string;
+}
+
+export interface ManagementDashboard {
+  title: ReactNode;
+  description: string;
+  imgUrl : string | StaticImport  ;
+}
+
+export interface OtherPortfolio {
+  id: string;
+  title: string;
+  description: string;
+  imgUrl: string;
+  gradientClass: string;
+  link: string;
+}
+
+export interface PortfolioData {
+  banner: Banner;
+  projectOverview: ProjectOverview;
+  firstFeatures: Feature[];
+  secondFeature: Feature[];
+  thirdFeatures: Feature[];
+  research: Research;
+  images: string[];
+  managementDashboard?: ManagementDashboard; 
+  otherPortfolio: OtherPortfolio[];
+} 
+
+export interface portfolioDetailsType { 
+   portfolioDetails: PortfolioData; 
 }

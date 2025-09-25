@@ -1,10 +1,9 @@
-import { portfolioData } from '@/datas/pages/PortfolioData';
+import { portfolioDetailsType } from '@/types';
 import Image from 'next/image';
 import React from 'react';
 
-const PortfolioImages = () => { 
-    const portfolioImages = portfolioData?.images 
-    console.log(portfolioImages);
+const PortfolioImages = ({ portfolioDetails }: portfolioDetailsType) => { 
+    const portfolioImages = portfolioDetails?.images 
     return (
         <div className=' container mb-20'> 
 

@@ -4,12 +4,12 @@ import React from 'react';
 
 const JoinTeam: React.FC = () => {
     return (
-        <div className=' w-[896px] mx-auto'>
+        <div className=' w-[896px] mx-auto mb-20'>
             <div className='flex-center gap-[6.28px] bg-[#EDEDED] rounded-[11px] px-[17px] py-[7px] w-fit mx-auto mb-[44px]'>
                 <Image src='/images/join-team.png' alt='Join Team' width={22} height={22} />
-                <h2 className='text-lg leading-6 text-[#434343] !mb-0'>Join Our Growing Team</h2>
+                <p className='text-lg leading-6 text-[#434343] '>Join Our Growing Team</p>
             </div>
-            <h1 className='text-[25px] text-center leading-6 text-[#616161] mb-[38px]'>Build the Future with Us</h1>
+            <p className='text-[25px] text-center leading-6 text-[#616161] pb-[38px]'>Build the Future with Us</p>
             <p className='text-[27px] text-center leading-8 text-[#424242]'>Explore a Vast and Exciting World of Career Opportunities at Betopia and <br />
                 Take Your Time to Browse Our Diverse Range of Open Positions </p>
 
