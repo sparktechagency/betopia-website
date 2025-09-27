@@ -1,16 +1,14 @@
-import ComponentTitle from '@/components/shared/ComponentTitle';
-import { HighlightsData } from '@/datas/pages/blog';
-import { MoveRight } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { RiArrowRightLine } from 'react-icons/ri';
+import { HighlightsData } from '@/datas/pages/blog'
+import { MoveRight } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
+import { RiArrowRightLine } from 'react-icons/ri'
 
-const Highlights: React.FC = () => {
+const MoreHighlights = () => {
     return (
-        <div className='container mb-20'>
-            <ComponentTitle className=' text-[#646464] pb-9'>More <span className='text-primary'>Highlights</span> </ComponentTitle>
-            <div className='grid grid-cols-3 gap-4'>
+        <div>
+            <div className='grid grid-cols-1 gap-6'>
                 {
                     HighlightsData.map((data, index) => (
                         <div key={index} className='bg-[#ECE9E9] rounded-[20px] p-[30px]'>
@@ -32,9 +30,8 @@ const Highlights: React.FC = () => {
             <Link href={`/products`} className="flex items-end justify-end mt-3 gap-2 cursor-pointer text-[16px] hover:underline">
                 <span>Read More Updates</span>  <span> <RiArrowRightLine className='text-primary' /> </span>
             </Link>
-
         </div>
-    );
-};
+    )
+}
 
-export default Highlights;
+export default MoreHighlights

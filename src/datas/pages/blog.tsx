@@ -3,19 +3,22 @@ export const HighlightsData = [
     title: "Enhancing",
     subTitle: "Collaboration",
     img: "/highlights/step1.png",
-    content: "Bdcalling IT Ltd — a concern of Betopia Group — participated in the seminar “Enhance Collaboration Between Institute and Industry” to strengthen academia-industry ties. "
+    content: "Bdcalling IT Ltd — a concern of Betopia Group — participated in the seminar “Enhance Collaboration Between Institute and Industry” to strengthen academia-industry ties. ",
+    linkName: "enhancing-collaboration"
   },
   {
     title: "Joint",
     subTitle: "Workshop",
     img: "/highlights/step2.png",
-    content: " Betopia Group & CUET organized “Career Pathways in Web and Software Development” and hosted the farewell of the 2019 batch"
+    content: " Betopia Group & CUET organized “Career Pathways in Web and Software Development” and hosted the farewell of the 2019 batch",
+    linkName: "joint-workshop"
   },
   {
     title: "Sales ",
     subTitle: "Training",
     img: "/highlights/step3.png",
-    content: "Betopia Group organized a Next Level Sales Training program aimed at boosting the skills and capabilities of the sales team."
+    content: "Betopia Group organized a Next Level Sales Training program aimed at boosting the skills and capabilities of the sales team.",
+    linkName: "sales-training"
   }
 ]
 
@@ -49,9 +52,9 @@ export const TransformingData = [
 export const Blog1 = {
 
   banner: {
-    img: "/blog/step1.png",
-    title: <p className=" w-[75%] text-center mx-auto pb-3"> Enterprise Resource </p>,
-    subtitle: <p className=" w-[75%] text-center mx-auto pb-3"> Planning (ERP)  </p>,
+    img: "/blog/enterprice-resource.jpg",
+    title: <p className="bg-gradient-to-r from-[#FFFFFF] via-[#B8B8B8] to-[#818181] bg-clip-text text-transparent"> Enterprise Resource </p>,
+    subtitle: <p className="text-[#F69348]"> Planning (ERP)  </p>,
     description: "The Backbone of Modern Business Growth"
 
   },
