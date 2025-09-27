@@ -19,6 +19,22 @@ const FeatureFirst = ({ portfolioDetails }: portfolioDetailsType) => {
                                 <div className='w-full'> 
                                     <ComponentTitle className=' pb-8'> {value?.title}</ComponentTitle> 
                                     <p className='text-[#818181] text-xl tracking-wide'> {value?.description} </p>
+                                    {
+                                        value?.list && (
+                                            <ul className=' list-disc text-black pl-5 grid grid-cols-1 gap-1 my-3'>
+                                                {
+                                                    value?.list?.map((listValue, listIndex) => (
+                                                        <li key={listIndex} className='text-black  tracking-wide'> {listValue} </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        )
+                                    }
+                                    {
+                                        value?.description2 && (
+                                            <p className='text-[#818181] text-xl tracking-wide'> {value?.description2} </p>
+                                        )
+                                    }
                                 </div>
                             </div>
                         </div>

@@ -19,6 +19,29 @@ const FeatureSecond = ({ portfolioDetails }: portfolioDetailsType) => {
                                 <div className='w-full'> 
                                     <ComponentTitle className=' pb-8'> {value?.title}</ComponentTitle> 
                                     <p className='text-[#818181] text-xl tracking-wide'> {value?.description} </p>
+                                    {
+                                        value?.list && 
+                                        <ul className='list-disc pl-4 pt-2 grid grid-cols-1 gap-2'>
+                                            {
+                                                value?.list?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    }
+                                    {
+                                        value?.description2 &&   <p className='text-[#818181] text-xl tracking-wide'> {value?.description2} </p>
+                                    }
+                                    {
+                                        value?.list2 && 
+                                        <ul className='list-disc pl-4 pt-2 grid grid-cols-1 gap-2'>
+                                            {
+                                                value?.list2?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    }
                                 </div>
                             </div>
                         </div>

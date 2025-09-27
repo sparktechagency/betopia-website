@@ -3,10 +3,10 @@ import React, { Suspense } from 'react';
 
 const ServicesPage = () => {
     return (
-        <div> 
-            <Suspense> 
+        <div>
+            <Suspense>
 
-           <ServicesMain />
+                <ServicesMain />
             </Suspense>
         </div>
     );

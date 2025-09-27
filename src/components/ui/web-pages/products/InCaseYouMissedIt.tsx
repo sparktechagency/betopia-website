@@ -1,5 +1,5 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import { HighlyEffectiveSolutionsServices } from '@/datas/pages/home';
+import { IncaseYouMissed } from '@/datas/pages/home';
 import Link from 'next/link';
 import React from 'react';
 import { RiArrowRightLine } from 'react-icons/ri';
@@ -12,7 +12,7 @@ const InCaseYouMissedIt = () => {
                 <p className='text-xl text-[#757575] text-center '>Here’s a quick look at the services that make our products even more powerful.</p>
                 <div className='grid grid-cols-3 gap-20 mt-10'>
                     {
-                        HighlyEffectiveSolutionsServices?.map((item, index) => {
+                        IncaseYouMissed?.map((item, index) => {
                             return (
                                 <div
                                     key={index}

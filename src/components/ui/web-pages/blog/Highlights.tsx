@@ -2,7 +2,9 @@ import ComponentTitle from '@/components/shared/ComponentTitle';
 import { HighlightsData } from '@/datas/pages/blog';
 import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { RiArrowRightLine } from 'react-icons/ri';
 
 const Highlights: React.FC = () => {
     return (
@@ -21,12 +23,15 @@ const Highlights: React.FC = () => {
                             <p className='text-[#000000] text-[20px] leading-[130%]'>{data.content}</p>
                             <div className='flex items-center justify-end gap-2'>
                                 <p className='text-[#858585]'>Learn more</p>
-                                <MoveRight size={15} color='#F69348'/>
+                                <MoveRight size={15} color='#F69348' />
                             </div>
                         </div>
                     ))
                 }
             </div>
+            <Link href={`/products`} className="flex items-end justify-end mt-3 gap-2 cursor-pointer text-[16px] hover:underline">
+                <span>Read More Updates</span>  <span> <RiArrowRightLine className='text-primary' /> </span>
+            </Link>
 
         </div>
     );

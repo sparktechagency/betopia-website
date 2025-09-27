@@ -1,10 +1,10 @@
 
 export const HRM = {
     title: "HRM Solutions",
-    description: "A next generation HRM system designed to align human capital with organizational goals, ensuring peak performance, higher engagement, and greater efficiency.",
+    description: "Comprehensive Suite of Solutions for Smarter, Faster Business Management",
     solutionInnovative: {
         title: "Human Resource Management (HRM)",
-        description: "A comprehensive HRM solution designed to align human capital with organizational goals, boosting performance and engagement. It offers modules for employee management, attendance, scheduling, leave, payroll, and self-service all in one platform. ",
+        description: "Betopia HRM is a next-generation Human Resource Management (HRM) system built to align human capital with organizational goals, ensuring peak performance, higher engagement, and operational efficiency. ",
         imgUrl: "/featuredProducts/HRM.png"
     },
 
@@ -12,22 +12,29 @@ export const HRM = {
         {
             icon: "/featuredProducts/productIcon1.png",
             title: "Comprehensive HRM",
-            description: "An all-in-one suite covering employee management, attendance, leave, payroll, and self-service built for seamless operations."
+            subTitle: "All-in-one suite covering:",
+            list: [
+                "Employee management",
+                "Attendance & scheduling",
+                "Leave & payroll management",
+                "Employee self-service"
+            ],
+            description: "Built for seamless operations and end-to-end visibility."
         },
         {
             icon: "/featuredProducts/productIcon2.png",
             title: "Data-Driven Intelligence",
-            description: "Real-time oversight through MSS tools, reports, and analytics, enabling smarter workforce decisions"
+            description: "Leverage real-time MSS tools, reports, and analytics to make smarter workforce decisions and gain clear insights into productivity trends."
         },
         {
             icon: "/featuredProducts/productIcon3.png",
             title: "Automation & Compliance",
-            description: "Payroll, overtime, and other HR tasks run automatically ensuring speed, accuracy, and regulatory compliance."
+            description: "Automate payroll, overtime, and HR workflows to ensure speed, accuracy, and compliance with labor regulations."
         },
         {
             icon: "/featuredProducts/productIcon4.png",
             title: "Engagement & Growth",
-            description: "Streamlined HR processes that enhance employee satisfaction while driving measurable business results."
+            description: "Streamline HR processes to enhance employee satisfaction, increase retention, and drive measurable business outcomes."
         },
     ]
 }
@@ -35,10 +42,11 @@ export const HRM = {
 
 export const POS = {
     title: "POS Solutions",
-    description: "Innovative POS (Point of Sale) solutions that transform retail spaces into dynamic brand experiences. Designed not just to display, but to engage customers, spark instant purchases, and drive consistent sales growth.",
+    description: "Transforming Retail Spaces into Revenue-Generating Experiences.",
     solutionInnovative: {
         title: "Point of Sale Machine (POS)",
-        description: "We help brands stand out where it matters most, the point of purchase. Our POS materials are more than just displays; they’re strategic touchpoints designed to capture attention, spark impulse decisions, and elevate the shopping experience.",
+        description: "Betopia POS offers innovative point-of-sale solutions that turn every retail interaction into an opportunity to engage customers, spark purchases, and boost brand visibility.",
+        description2: "Our solutions go beyond simple transactions — they create strategic touchpoints designed to influence decisions and maximize ROI.",
         imgUrl: "/featuredProducts/POS.png"
     },
 
@@ -46,32 +54,32 @@ export const POS = {
         {
             icon: "/featuredProducts/productIcon1.png",
             title: "Strategic Placement",
-            description: "Carefully positioned at decision-making points to maximize visibility and brand impact."
+            description: "POS systems and materials are positioned at critical decision-making points to maximize visibility and influence buyer behavior."
         },
         {
             icon: "/featuredProducts/productIcon2.png",
             title: "Impulse Activation",
-            description: "Creative displays and signages crafted to trigger immediate customer action."
+            description: "Creative displays and signages are designed to trigger instant action and increase spontaneous purchases."
         },
         {
             icon: "/featuredProducts/productIcon3.png",
             title: "Engaging Visuals",
-            description: "Striking designs that elevate the shopping journey while strengthening brand recall."
+            description: "Visually striking designs and layouts create a memorable shopping experience that reinforces brand identity and loyalty."
         },
         {
             icon: "/featuredProducts/productIcon4.png",
             title: "Sales Impact",
-            description: "Turning every retail touchpoint into a powerful driver of conversions and long-term revenue growth."
+            description: "Every retail touchpoint is optimized to increase conversions, repeat purchases, and long-term revenue growth."
         },
     ]
 }
 
 export const ERP = {
     title: "Betopia ERP Solutions",
-    description: "ERP solutions built to simplify, connect, and optimize business operations.By unifying finance, human resources, supply chain, and more into a single streamlined system ",
+    description: "Simplify, Connect, and Optimize Your Business Operations",
     solutionInnovative: {
         title: "Betopia ERP",
-        description: "Betopia ERP unifies all core business functions for seamless operations. Collaborate with Discuss & To Do, manage procurement with Purchase & Requisition, streamline workflows via Calendar & Operation, and handle clients and sales through Contacts, CRM, and Sales.",
+        description: "Betopia ERP is designed to unify all core business functions — from finance and HR to supply chain and sales — into one streamlined, efficient platform. Our solution allows you to collaborate in real-time, automate repetitive tasks, and gain clear visibility into every aspect of your organization’s operations.",
         imgUrl: "/featuredProducts/ERP.png"
     },
 
@@ -79,22 +87,22 @@ export const ERP = {
         {
             icon: "/featuredProducts/productIcon1.png",
             title: "Unified Operations",
-            description: "Seamlessly integrates finance, HR, supply chain, and other core functions into one cohesive system"
+            description: "Integrate finance, HR, supply chain, and core processes into one cohesive system, reducing silos and improving collaboration."
         },
         {
             icon: "/featuredProducts/productIcon2.png",
             title: "Real-Time Insights",
-            description: "Provides actionable analytics and dashboards that empower faster, smarter decisions."
+            description: "Actionable analytics and customizable dashboards provide instant visibility, empowering teams to make faster, smarter decisions."
         },
         {
             icon: "/featuredProducts/productIcon3.png",
             title: "Enhanced Productivity",
-            description: "Automates daily workflows, reduces manual errors, and saves valuable time"
+            description: "Automate day-to-day workflows, minimize manual errors, and streamline operations to save time and resources."
         },
         {
             icon: "/featuredProducts/productIcon4.png",
             title: "Scalable Growth",
-            description: "Adapts to organizations of any size with flexible, future-ready capabilities."
+            description: "Designed to grow with your business, Betopia ERP adapts to organizations of any size with flexible, future-ready architecture."
         },
     ]
 }

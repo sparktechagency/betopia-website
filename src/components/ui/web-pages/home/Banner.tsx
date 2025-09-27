@@ -27,7 +27,7 @@ const Banner = () => {
              <div className=" flex flex-col items-center justify-center   "> 
                 <p className="text-[#818181] text-[64px] font-medium"><span className="text-white">From </span> <span className="text-primary"> Bangladesh </span> to the World </p> 
                 <p className=" text-[#7E7E7E] text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9  ">Delivering Secure, Cloud-Ready, AI-Powered Business Platforms </p> 
-                <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">Betopia Limited is your enterprise transformation partner — helping organizations modernize, protect, and monetize their digital ecosystems.</p> 
+                <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">Betopia Limited is your enterprise transformation partner, helping organizations modernize, protect, and monetize their digital ecosystems.</p> 
                 <Link href={"/services"} className=" pt-[77px]"> 
                     <OutlineButton className=" !py-4 !px-7">Explore Our Services</OutlineButton>
                 </Link>

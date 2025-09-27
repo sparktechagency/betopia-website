@@ -9,16 +9,41 @@ const OurStory = () => {
 
                 <div className=' col-span-3 flex flex-col text-[#818181] text-lg tracking-wide  leading-9'>
                     <span>
-                        Every great journey begins with a vision. For Betopia Limited, that vision started in 2014 with a simple goal: to build technology that truly empowers businesses. From our humble beginnings, we grew steadily in 2015, earning the trust of early clients who believed in our mission. By 2019, our expansion carried us beyond borders, connecting us with global partners and new opportunities.
-                        The challenges of 2020 became a defining moment. While the world faced uncertainty, we scaled our operations and stood beside businesses as they transitioned into digital-first models. In 2022, we introduced new initiatives in AI, cloud, cybersecurity, and SaaS, creating solutions for tomorrow while solving today’s problems.
+                        Every great journey begins with a vision. For Betopia Limited, that vision started in 2014 with a simple goal — to build technology that empowers businesses.
+                    </span>
+                    <br />
+                    <span className=' pb-4'>
+                        In <span className='font-bold'>2015</span>, we grew steadily, earning the trust of early clients who believed in our mission. By <span className='font-bold'>2019</span>, we expanded beyond borders, connecting with global partners and opening new opportunities.
                     </span>
 
                     <span className=' pb-4'>
-                        Today, our story is one of scale, innovation, and trust. With 40,000+ clients, 50,000+ projects delivered, a team of 750+ dedicated professionals, and operations in 47+ countries, Betopia stands as a global partner in transformation. Our footprint stretches far and wide, with 30,000+ clients across Europe, 600+ in the USA, and 400+ in Australia.
+                        The challenges of <span className='font-bold'>2020</span> became a defining moment. While the world faced uncertainty, we scaled operations and stood beside businesses transitioning into digital-first models.
                     </span>
-                    <span>
 
-                        But numbers only tell part of the story. At its heart, Betopia is about people—our clients, our partners, and our team. Together, we are writing a story of growth and possibilities, building solutions that turn challenges into opportunities, and shaping a future where technology serves humanity.
+                    <span className=' pb-4'>
+                        But numbers only tell part of the story. At its heart, Betopia is about people—our clients, our partners, and our team. Together, we are writing a story of growth and possibilities, building solutions that turn challenges into opportunities, and shaping a future where technology serves humanity.
+                    </span>
+
+                    <span className=' pb-4'>
+                        In <span className='font-bold'>2022</span>, we launched initiatives in AI, cloud, cybersecurity, and SaaS — shaping solutions for tomorrow while solving today’s problems.
+                    </span>
+
+                    <p>Today, Betopia is recognized as:
+                        <ul className='grid grid-cols-1 gap-2 list-disc pl-4'>
+                            <li>40,000+ clients served</li>
+                            <li>50,000+ projects delivered</li>
+                            <li>750+ professionals worldwide</li>
+                            <li>One of the leading IT transformation companies in Bangladesh</li>
+                            <li>47+ countries in operations</li>
+                        </ul>
+                    </p>
+
+                    <span>
+                        From 30,000+ clients across Europe to 600+ in the USA and 400+ in Australia, our story is one of <span className='font-bold'>scale, trust, and innovation</span>.
+                    </span>
+                    <br />
+                    <span>
+                        But numbers only tell part of the story — Betopia is about people: our clients, partners, and teams. Together, we turn challenges into opportunities, building solutions that shape a smarter, more connected world.
                     </span>
                 </div>
                 <div className=" col-span-2 w-full h-full rounded-lg overflow-hidden relative ">
@@ -37,7 +62,7 @@ const OurStory = () => {
                     </video>
                 </div>
             </div>
-           
+
         </div>
     );
 };

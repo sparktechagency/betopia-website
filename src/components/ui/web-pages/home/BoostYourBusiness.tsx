@@ -20,8 +20,7 @@ const BoostYourBusiness = () => {
             </p>
           </div>
           <p className="text-[#555555] mx-auto text-lg">
-            Level up your business with cutting-edge solutions, expert minds,
-            and flexible support. Let&#39;s make magic happen together.
+          Level up your AI journey with cutting-edge solutions, expert minds, and flexible support. Let&apos;s make magic!
           </p>
         </div>
 
@@ -43,6 +42,7 @@ const BoostYourBusiness = () => {
               {/* Content overlay */}
               <div className="absolute bottom-[5%] text-[#858585] z-20 text-center">
                 <div className="w-full flex flex-col items-center gap-4 px-4">
+                <p className="text-2xl text-white pb-1">AI Voice Recording Mobile App</p>
                   <p className="text-lg font-normal text-[#A1A0A0] text-center mb-2 max-w-[80%]">
                     A sleek and modern design, perfectly embodying minimalist
                     elegance with an innovative spirit and the firm.

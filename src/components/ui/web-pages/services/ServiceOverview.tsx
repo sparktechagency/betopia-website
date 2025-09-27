@@ -28,6 +28,15 @@ const ServiceOverview = ({
                 <p className="text-lg lg:text-2xl text-[#666666] leading-relaxed pb-6">
                     {selectedCategory?.description}
                 </p>
+                <ul className="grid grid-cols-1 gap-2 list-disc pl-4">
+                    {
+                        selectedCategory?.list?.map((item, index) => (
+                            <li key={index} className="text-[17px]">
+                                {item}
+                            </li>
+                        ))
+                    }
+                </ul>
 
                 <Link href="/partner">
                     <OutlineButton className="!px-6 !py-4 text-lg">

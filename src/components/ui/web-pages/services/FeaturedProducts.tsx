@@ -5,15 +5,15 @@ import ComponentTitle from '@/components/shared/ComponentTitle';
 const featureData = [
   {
     imgUrl: "/featuredProducts/HRM.png",
-    title: " Human Resource  Management (HRM) "
+    title: " Human Resource Management (HRM)"
   },
   {
     imgUrl: "/featuredProducts/POS.png",
-    title: "Point of Sale Machine (POS) "
+    title: "Point of Sale Machine (POS)"
   },
   {
     imgUrl: "/featuredProducts/ERP.png",
-    title: "Betopia  ERP "
+    title: "Betopia ERP"
   },
 
 ]
@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
     <div className="text-center mb-20 container"> 
     <div className='w-full  mb-10'> 
       <ComponentTitle className='flex-center'>Our Featured Products </ComponentTitle>
-      <p className="text-lg text-gray-600   ">Smart, scalable and user-friendly solutions designed to transform your business.</p>
+      <p className="text-lg text-gray-600   ">Smart, scalable, and user-friendly solutions designed to transform your business</p>
     </div>
 
       <div className=' grid grid-cols-3 gap-4 w-full'>

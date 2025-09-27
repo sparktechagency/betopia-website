@@ -13,6 +13,17 @@ const ProductFacilities = ({ productData }: productType) => {
                                     <Image src={item?.icon} alt="" height={30} width={30} className=' w-[30px] h-[30px]' />
                                 </div> 
                                 <p className='text-2xl text-[#1E1E1E] pb-3'>{item?.title}</p> 
+                                {
+                                    item?.subTitle && <p className='text-xl text-[#1E1E1E] pb-3'>{item?.subTitle}</p> 
+                                    
+                                }
+                                {
+                                    item?.list && <ul className='list-disc pl-3 grid grid-cols-1 gap-2'>
+                                        {
+                                            item?.list?.map((value, key) => ( <li key={key}>{value}</li> ))
+                                        }
+                                    </ul>
+                                }
                                 <p className='text-[#686868] font-normal text-lg'>{item?.description}</p>
                         </div>
                     ))

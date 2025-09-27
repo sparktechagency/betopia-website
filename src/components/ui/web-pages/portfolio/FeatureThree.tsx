@@ -15,10 +15,34 @@ const FeatureThree = ({ portfolioDetails }: portfolioDetailsType) => {
                             <div className={` w-full  flex container
                         ${(index + 1) % 2 === 0 ? ' flex-row-reverse items-center gap-4' : ' flex-row items-center gap-4'}
                         rounded-[12px]  items-center   gap-10 `}>
-                                <Image src={value?.imgUrl} alt='' height={405} width={770} className='w-full h-[405px]  object-fill  ' /> 
-                                <div className='w-full'> 
-                                    <ComponentTitle className=' pb-8'> {value?.title}</ComponentTitle> 
+                                <Image src={value?.imgUrl} alt='' height={405} width={770} className='w-full h-[405px]  object-fill  ' />
+                                <div className='w-full'>
+                                    <ComponentTitle className=' pb-5'> {value?.title}</ComponentTitle>
                                     <p className='text-[#818181] text-xl tracking-wide'> {value?.description} </p>
+                                    {
+                                        value?.list &&
+                                        <ul className='list-disc pl-4 pt-2 grid grid-cols-1 gap-2'>
+                                            {
+                                                value?.list?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    }
+                                    {
+                                        value?.description2 && <p className='text-[#818181] text-xl tracking-wide'> {value?.description2} </p>
+                                    }
+                                    {
+                                        value?.list2 &&
+                                        <ul className='list-disc pl-4 pt-2 grid grid-cols-1 gap-2'>
+                                            {
+                                                value?.list2?.map((item, index) => (
+                                                    <li key={index}>{item}</li>
+                                                ))
+                                            }
+                                        </ul>
+                                    }
+                                    <p className='text-[#818181] text-xl tracking-wide'> {value?.description3} </p>
                                 </div>
                             </div>
                         </div>

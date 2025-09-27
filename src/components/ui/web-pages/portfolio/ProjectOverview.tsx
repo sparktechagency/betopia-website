@@ -52,6 +52,18 @@ const ProjectOverview = ({ portfolioDetails }: portfolioDetailsType) => {
 
                 <div className=' w-[80%]  '>
                     <p className=' text-[#818181] text-xl tracking-wide leading-9 pb-8'>{projectOverviewDetails?.description}</p>
+
+                    {
+                        projectOverviewDetails?.list && (
+                            <ul className=' list-disc grid grid-cols-1 gap-1 pl-4'>
+                                {
+                                    projectOverviewDetails?.list?.map((value, index) => (
+                                        <li key={index} className=' text-[#818181] text-xl tracking-wide'>{value}</li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
                     <Image src={projectOverviewDetails?.image} alt='' height={1100} width={1200} className=' h-[1100px]' />
                 </div>
             </div>

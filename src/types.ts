@@ -47,6 +47,7 @@ export interface servicesType {
             categoryBgImg: string;
             details: {
                 name: string;
+                list?: string[];
                 description: string;
                 videoUrl: string;
             };
@@ -64,11 +65,15 @@ export interface productsType {
     solutionInnovative: {
         title: string;
         description: string;
+        subTitle?: string;
+        description2?: string;
         imgUrl: string;
     };
     facilities: {
         icon: string;
         title: string;
+        subTitle?:string;
+        list?: string[]
         description: string;
     }[];
 }
@@ -99,6 +104,7 @@ export interface Banner {
 export interface ProjectOverview {
   title: ReactNode;
   description: ReactNode;
+  list?: string[];
   image: string;
   projectName: string;
   category: string;
@@ -109,12 +115,19 @@ export interface ProjectOverview {
 export interface Feature {
   title: ReactNode;
   description: string;
+  description2?: string;
+  description3?: string;
+  list?: string[];
+  list2?: string[];
   imgUrl: string;
 }
 
 export interface Research {
   title: ReactNode;
   description: string;
+  description2?: string;
+  subTitle?: string;
+  list?: string[];
   imgUrl: string;
 }
 

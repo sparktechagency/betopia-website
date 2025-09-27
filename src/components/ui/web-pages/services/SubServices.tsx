@@ -7,6 +7,7 @@ import ServiceOverview from './ServiceOverview';
 export interface CategoryDetails {
     name: string;
     description: string;
+    list?: string[];
     videoUrl: string;
 }
 

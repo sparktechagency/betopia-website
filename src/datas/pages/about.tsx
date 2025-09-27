@@ -1,31 +1,31 @@
 export const owners = [
     {
         name: "Muhammad Monir Hossain",
-        role: "Chief Executed Officer",
+        role: "CEO",
         imageUrl: "/owners/ceo.png",
-        slogan: "Driving Global Business Growth Through Innovation and Partnerships",
-        bio: "At the heart of our journey is a simple belief that technology should empower, not complicate. Our mission is to bridge innovation with real world business needs, delivering solutions that help our partners grow faster and smarter. At Betopia, we’re committed to building products and services that create measurable value, foster trust, and inspire lasting partnerships. The future of business is digital, and together, we will shape it.",
+        slogan: "Driving Global Business Growth Through Innovation",
+        bio: "At the heart of our journey is a simple belief that technology should empower, not complicate. Our mission is to bridge innovation with real-world business needs, delivering solutions that help our partners grow faster and smarter. At Betopia, we build products and services that create measurable value, foster trust, and inspire lasting partnerships",
     },
     {
         name: "Sabina Akter",
         role: "Chairperson",
         imageUrl: "/owners/chairperson.png",
-        bio: "Our strength lies not only in what we build, but in why we build it. Softvence was founded on the principle that meaningful technology is created when vision, expertise, and ethics work together. As Chairperson, I’m proud to lead a team that believes in delivering excellence, fostering collaboration, and making an impact across industries. With every product we launch and every service we deliver, our aim is to redefine how businesses connect, operate, and grow.",
-        slogan: "True prosperity begins when we unlock potential and grow limitless, together.",
+        bio: "True prosperity begins when we unlock potential and grow limitless, together. Our strength lies not only in what we build, but in why we build it. I’m proud to lead a team that believes in delivering excellence, fostering collaboration, and making an impact across industries.",
+        slogan: "Leadership Voices",
     },
     {
         name: "Rakibul Islam Shiku",
-        role: "Chief Technology Officer",
+        role: " CTO",
         imageUrl: "/owners/cto.png",
-        bio: "At the heart of our journey is a simple belief that technology should empower, not complicate. Our mission is to bridge innovation with real world business needs, delivering solutions that help our partners grow faster and smarter. At Betopia, we’re committed to building products and services that create measurable value, foster trust, and inspire lasting partnerships. The future of business is digital, and together, we will shape it.",
-        slogan: "Creating Scalable, Secure, and Future-Ready Digital Ecosystems for B2B Success",
+        bio: "Creating scalable, secure, and future-ready digital ecosystems is key to B2B success. Together, we deliver solutions that meet today’s needs and prepare for tomorrow.",
+        slogan: "Leadership Voices",
     },
     {
-        name: "MD NAIMUL HASAN DURJAY",
+        name: "MD Naimul Hasan Durjay",
         role: "Head of Department",
         imageUrl: "/owners/head.png",
-        bio: "My vision is to scale businesses worldwide by leveraging the power of Artificial Intelligence, Cloud Solutions, and Cybersecurity. AI enables smarter decision-making, process automation, and innovation that drives competitive advantage. Cloud services empower organizations to modernize their operations, increase flexibility, and reduce costs while ensuring global scalability. Cybersecurity strengthens digital resilience and builds trust in an increasingly connected world. By combining these three pillars, I aim to help companies unlock new opportunities, protect their assets, and grow faster in the global market. This is not just about providing technology solutions, it is about shaping the future of business growth and digital transformation across industries.",
-        slogan: "Scaling Global Businesses with AI, Cloud, and Cybersecurity",
+        bio: "My vision is to scale businesses worldwide by leveraging AI, Cloud, and Cybersecurity. We enable smarter decision-making, global scalability, and digital resilience — helping companies grow faster in an increasingly connected world",
+        slogan: "Leadership Voices",
     },
 ]
 
@@ -33,7 +33,7 @@ export const aboutBannerData = {
     videoSrc: "https://res.cloudinary.com/dd0giqouc/video/upload/v1757499565/About_Us_Page_y7cpsp.mp4",
     title: <p><span className="text-white"> From </span> <span className="text-primary"> Bangladesh </span > to the World</ p >,
     subtitle: "Shaping the Future of Enterprise Technology",
-    description: "Betopia Limited is a global IT transformation company delivering cloud, AI, cybersecurity, and compliance-first solutions that help enterprises innovate and scale with confidence..",
+    description: "Betopia Limited is a global IT transformation company, delivering cloud, AI, cybersecurity, and compliance-first solutions that help enterprises innovate and scale with confidence.",
     buttonName: "Schedule Appointment",
     buttonLink: "/become-partner"
 }

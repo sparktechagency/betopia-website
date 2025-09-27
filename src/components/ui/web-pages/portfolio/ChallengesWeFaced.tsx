@@ -15,7 +15,23 @@ const ChallengesWeFaced = ({ portfolioDetails }: portfolioDetailsType) => {
 
                 <div className='w-full pb-9'> 
                     <ComponentTitle className=' pb-10'> {ResearchDetails?.title}</ComponentTitle> 
-                    <p className='text-xl font-normal text-[#A6A6A6] tracking-wide '>{ResearchDetails?.description}</p>
+                    <p className='text-xl font-normal text-[#A6A6A6] mb-3 tracking-wide '>{ResearchDetails?.description}</p>
+                    {
+                        ResearchDetails?.list && (
+                            <ul className=' list-disc text-white pl-5 grid grid-cols-1 gap-1 '>
+                                {
+                                    ResearchDetails?.list?.map((listValue, listIndex) => (
+                                        <li key={listIndex} className='text-white  tracking-wide'> {listValue} </li>
+                                    ))
+                                }
+                            </ul>
+                        )
+                    }
+                    {
+                        ResearchDetails?.subTitle && (
+                            <p className=' font-normal text-[#A6A6A6] tracking-wide '>{ResearchDetails?.subTitle}</p>
+                        )
+                    }
                 </div>
             </div>
         </div>

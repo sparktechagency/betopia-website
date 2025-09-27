@@ -11,7 +11,7 @@ const Map: React.FC = () => {
                     <Geographies geography="/features.json">
                         {({ geographies }) =>
                             geographies.map((geo) => {
-                                const isHighlighted = geo?.id === "ARE" || geo?.id === "PHL" || geo?.id === "BGD";
+                                const isHighlighted = geo?.id === "ARE" || geo?.id === "PHL";
                                 return (
                                     <Geography
                                         key={geo.rsmKey}
@@ -41,7 +41,7 @@ const Map: React.FC = () => {
                         <div className='flex justify-between items-center'>
                             <div className="flex items-center justify-start gap-2">
                                 <MapPin fill="red" size={40} />
-                                <h2 className="text-white text-[28px]">Philippines</h2>
+                                <h2 className="text-white text-[28px]">Philippines Office</h2>
                             </div>
                             <div className='flex items-center justify-center gap-6'>
                                 <div className='bg-[#333755] w-[38px] h-[38px] rounded-[7.76px] flex items-center justify-center'>
@@ -53,11 +53,11 @@ const Map: React.FC = () => {
 
                         <p className="text-sm text-gray-300 text-center -mt-10">Recently Visited</p>
                         <div className="mt-4 text-gray-200">
-                            <p>Our Philippines office represents Betopia Ltds commitment to expanding our global footprint and delivering world-class IT and SaaS solutions closer to clients in Southeast Asia.</p>
+                            <p>Our Philippines office strengthens our presence in Southeast Asia, delivering world-class IT and SaaS solutions closer to our clients.</p>
                         </div>
                         <div className="mt-4 text-gray-400">
                             <p className=''>Location Details</p>
-                            <p className="text-sm mt-0 pt-0">547-A Caballeros Street, Binondo, Metro Manila</p>
+                            <p className="text-sm mt-0 pt-0">📍 Address: 547-A Caballeros Street, Binondo, Metro Manila</p>
                         </div>
                         <div className="mt-6 text-white">
                            <button className='bg-[#4A3AFF] w-[136.77px] h-[53.78px] rounded-[24px]'>Visit Here</button>

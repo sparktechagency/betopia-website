@@ -20,9 +20,9 @@ const Testimonial = () => {
                 <div className="container mx-auto bg-white  flex flex-col justify-center  rounded-2xl  ">
                     <h2 className="text-center text-xl md:text-[32px] font-semibold pb-14  lg:flex lg:flex-col gap-y-4  items-center ">
                         <span className={`text-sm font-medium text-[#1C54E3] uppercase text-center ${inter.className}`}>Testimonial </span>
-                        <span className=" text-[32px] font-bold  "> Real Stories, Real Impact: Hear from Our Satisfied Clients </span>
+                        <span className=" text-[32px] font-bold  ">Real Stories, Real Impact: Hear from Our Satisfied Clients</span>
 
-                        <span className=" font-normal text-[16px]">Discover how video testimonial has transformed businesses through innovative solutions and dedicated support.</span>
+                        <span className=" font-normal text-[16px]"> Discover how our solutions have transformed businesses through innovation and dedicated support.</span>
                     </h2>
 
                     <div className="relative">
