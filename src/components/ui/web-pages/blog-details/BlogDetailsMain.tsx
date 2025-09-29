@@ -9,6 +9,7 @@ import Conclusion from './Conclusion';
 import MoreHighlights from './MoreHighlights';
 import Sumarry from './Sumarry';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const portfolioDataMap: any = {
     "enterprise-resource-planning": Blog1,
     "SG60IPS-SBF": Blog2,
