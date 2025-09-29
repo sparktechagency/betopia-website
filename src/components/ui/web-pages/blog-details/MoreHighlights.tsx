@@ -27,9 +27,6 @@ const MoreHighlights = () => {
                     ))
                 }
             </div>
-            <Link href={`/products`} className="flex items-end justify-end mt-3 gap-2 cursor-pointer text-[16px] hover:underline">
-                <span>Read More Updates</span>  <span> <RiArrowRightLine className='text-primary' /> </span>
-            </Link>
         </div>
     )
 }

@@ -8,6 +8,15 @@ export interface DropdownItem {
     link: string;
 }
 
+export interface BlogItem {
+    title: string;
+    description1: string;
+    description2?: string;
+    list: string[];
+    list2?: string[];
+    subFooter?: string;
+}
+
 export interface NavPage {
     name: string;
     link: string;
