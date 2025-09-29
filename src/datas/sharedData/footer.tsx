@@ -37,6 +37,7 @@ export const quickLinks = [
   { label: "Career", href: "/career" },
   { label: "Blog", href: "/blog" },
   { label: "Contact us", href: "/contact" },
+  { label: "Team Augmentation", href: "/team-augmentation" },
 ];
 
 export const reviews = [
