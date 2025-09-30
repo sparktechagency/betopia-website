@@ -13,19 +13,19 @@ const Sumarry: React.FC<ISumarryProps> = ( {publishingDate, category, readingTim
     return (
         <div className='grid grid-cols-2 gap-5'>
             <div className='flex items-center justify-center flex-col'>
-                <p>Publication Date</p>
+                <p className='text-[#555555] text-lg'>Publication Date</p>
                 <p>{publishingDate}</p>
             </div>
             <div className='flex items-center justify-center flex-col'>
-                <p>Category</p>
+                <p className='text-[#555555] text-lg'>Category</p>
                 <p>{category}</p>
             </div>
             <div className='flex items-center justify-center flex-col'>
-                <p>Reading Time</p>
+                <p className='text-[#555555] text-lg'>Reading Time</p>
                 <p>{readingTime}</p>
             </div>
             <div className='flex items-center justify-center flex-col'>
-                <p>Author Name</p>
+                <p className='text-[#555555] text-lg'>Author Name</p>
                 <p>{authorName}</p>
             </div>
         </div>

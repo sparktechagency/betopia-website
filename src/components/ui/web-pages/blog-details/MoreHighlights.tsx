@@ -1,13 +1,16 @@
+
 import { HighlightsData } from '@/datas/pages/blog'
 import { MoveRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { RiArrowRightLine } from 'react-icons/ri'
 
 const MoreHighlights = () => {
     return (
-        <div>
+        <div> 
+            <div> 
+                 <h2 className='text-[#666666] text-[28px] font-light leading-[100%] pb-4 text-center'>More <span className='text-primary'>Highlights</span> </h2> 
+            </div>
             <div className='grid grid-cols-1 gap-6'>
                 {
                     HighlightsData.map((data, index) => (
@@ -19,7 +22,7 @@ const MoreHighlights = () => {
                             <p className='pb-8 text-[#000000] text-[25px] leading-[130%]'>{data.subTitle}</p>
 
                             <p className='text-[#000000] text-[20px] leading-[130%]'>{data.content}</p>
-                            <Link href={`/blog-details?blog=${data.linkName}`} className='flex items-center justify-end gap-2'>
+                            <Link href={`/blog-details?blog=${data.linkName}`} className='flex items-center justify-end gap-2 mt-3'>
                                 <p className='text-[#858585]'>Learn more</p>
                                 <MoveRight size={15} color='#F69348' />
                             </Link>

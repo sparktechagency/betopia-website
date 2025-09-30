@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 interface IBlogDetailsBannerProps {
     img: string;
@@ -10,7 +11,7 @@ const BlogDetailsBanner = ({img , title , subtitle , description }:IBlogDetailsB
     return (
        <div className=" z-10 flex-center text-center h-screen text-white  ">
             <div className=" ">
-                <img src={img} alt="" className='absolute top-0 left-0 w-full h-full object-cover' />
+                <Image src={img} alt="" fill className='absolute top-0 left-0 w-full h-full object-cover' />
             </div>
 
             <div className="absolute top-0 left-0 w-full h-full bg-black/77 "></div>

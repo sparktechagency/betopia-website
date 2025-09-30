@@ -50,13 +50,11 @@ export const TransformingData = [
 ];
 
 export const Blog1 = {
-
   banner: {
     img: "/blog/enterprice-resource.jpg",
     title: <p className="bg-gradient-to-r from-[#FFFFFF] via-[#B8B8B8] to-[#818181] bg-clip-text text-transparent"> Enterprise Resource </p>,
     subtitle: <p className="text-[#F69348]"> Planning (ERP)  </p>,
     description: "The Backbone of Modern Business Growth"
-
   },
 
   publishDate: "July 18, 2025",
@@ -142,15 +140,15 @@ export const Blog1 = {
   introduction3: "At Betopia Ltd., we partner with global enterprises and Fortune 500 companies to implement ERP systems that manage day-to-day processes while building long-term competitive advantages.",
   conclusion1: "ERP is no longer optional — it’s the foundation of modern enterprise growth. By unifying operations, enabling smarter decisions, and supporting global scalability, ERP empowers organizations to stay competitive in a digital-first world.",
   conclusion2: "At Betopia Ltd., we combine technology, strategy, and execution to help businesses build truly connected enterprises.",
-  footer: "Good or bad, we’d love to hear your thoughts. Find us on Linkedin (@Linkedin)"
+
 }
 
 
 export const Blog2 = {
   banner: {
-    img: "/blog/step1.png",
+    img: "/images/conference.jpg",
     title: <p className="!text-[#F69348]">SG60 IPS-SBF  </p>,
-    subtitle: <p className="!text-[#B8B8B8]"> SG60 IPS-SBF Conference  </p>,
+    subtitle: <p className="!text-[#B8B8B8]"> Conference  </p>,
     description: "Showcasing Bangladesh on a Global Stage"
 
   },
@@ -213,5 +211,233 @@ export const Blog2 = {
   introduction3: "Among the distinguished participants was a delegation from AmCham Bangladesh, led by President Mr. Syed Ershad Ahmed. Representing Bangladesh’s growing influence on the global stage, Mr. Muhammad Monir Hossain, Founder & CEO of Bdcalling IT Ltd., a concern of Betopia Group, actively engaged in discussions showcasing Betopia’s commitment to global collaboration and innovation.",
   conclusion1: "Betopia Group’s participation in the SG60 IPS–SBF Conference reflects its commitment to shaping the future of global business.",
   conclusion2: "By representing Bangladesh’s talent, innovation, and economic potential, Betopia strengthens its reputation as a trusted technology partner for international enterprises — including Fortune 500 companies.",
-  footer: "Good or bad, we’d love to hear your thoughts. Find us on Linkedin (@Linkedin)"
+
+} 
+
+export const Blog3 = {
+  banner: {
+    img: "/blog/blog3.jpg",
+    title: <p className="bg-gradient-to-r from-[#FFFFFF] via-[#B8B8B8] to-[#818181] bg-clip-text text-transparent">Enhancing Collaboration Between </p>,
+    subtitle: <p className="text-[#F69348]"> Academia and Industry </p>,
+    description: "Bdcalling IT Ltd. at Dhaka Polytechnic Institute"
+
+  },
+  publishDate: "July 18, 2025",
+  category: "Education",
+  readingTime: "15 min",
+  authorName: "Betopia Ltd.",
+  contentTable: [
+    "Introduction",
+    "Building Bridges Between Education and Industry",
+    "Bdcalling IT Ltd.’s Contribution to Skill Development",
+    "Key Message from the Seminar",
+    "Looking Ahead",
+    "Conclusion"
+  ],
+  content: [
+    {
+      title: "Building Bridges Between Education and Industry",
+      description: "The seminar’s primary goal was to strengthen the bridge between academic institutions and professional industries. In today’s business environment, theoretical knowledge is no longer enough. Students need:",
+      list: [
+        "Practical skills",
+        "Real-world exposure",
+        "Industry-aligned training"
+      ],
+      subFooter: "This combination ensures they thrive in both local and global job markets."
+    },
+    {
+      title: "Bdcalling IT Ltd.’s Contribution to Skill Development",
+      description: "As part of Betopia Group’s mission to unlock human potential, Bdcalling IT Ltd. has been at the forefront of youth empowerment and digital skill-building initiatives. Key contributions include:",
+      list: [
+        "50+ Specialized Courses: Preparing students for freelancing, remote, and on-site jobs",
+        "Industry-Relevant Training: Courses aligned with global market needs",
+        "Career Growth Focus: Covering technical skills + personal development for employ ability.",
+        "Global Readiness: Equipping youth with tools to compete internationally"
+      ],
+      description2: "These initiatives reflect Betopia Group’s vision of empowering the next generation with relevant skills for the future of work.",
+
+    },
+    {
+      title: "Key Message from the Seminar",
+      description: "During the seminar, Bdcalling IT Ltd. shared its philosophy:“True success is achieved when skills, interests, and market demand align.” ",
+      description2: " This principle underscores Betopia’s commitment to helping young people unleash their potential, build meaningful careers, and contribute to economic growth.",
+    },
+    {
+      title: "Looking Ahead",
+      description: "The collaboration between Dhaka Polytechnic Institute and Bdcalling IT Ltd. is a major step toward transforming Bangladesh’s education-to-employment pipeline.By merging academic foundations with industry expertise, students will:",
+      list: [
+        "Transition seamlessly into professional roles",
+        "Contribute to personal, national, and economic growth",
+        "Strengthen Bangladesh’s position in the global job market"
+      ],
+      subFooter: "These interactions reinforced Bangladesh’s strategic role in global trade and investment dialogues, while creating new opportunities for collaboration."
+    }
+  ],
+
+  introduction1: "The future of work depends on how effectively academia and industry collaborate to prepare the next generation of professionals.",
+  introduction2: "On August 10, 2025, Bdcalling IT Ltd., a concern of Betopia Group, participated in the seminar “Enhance Collaboration Between Institute and Industry”, hosted at the Dhaka Polytechnic Institute (DPI) Auditorium.",
+  introduction3: "The event brought together educators, industry leaders, and innovators to explore ways to ensure that students are not only academically prepared but also industry-ready in a rapidly evolving job market.",
+
+
+  conclusion1: "At Betopia Ltd., we believe sustainable growth starts with investing in talent and education.",
+  conclusion2: "Bdcalling IT Ltd.’s active involvement in the DPI seminar highlights our commitment to preparing youth for the future of work, where innovation, skill, and collaboration drive long-term success.",
+
 }
+
+export const Blog4 = {
+  banner: {
+    img: "/blog/blog4.jpg",
+    title: <p className="bg-gradient-to-r from-[#FFFFFF] via-[#B8B8B8] to-[#818181] bg-clip-text text-transparent">Joint Workshop </p>,
+    subtitle: <p className="text-[#F69348]"> Betopia Group & CUET Empower Future Tech Leaders </p>,
+    description: "Betopia Group at CUET Campus"
+
+  },
+  publishDate: "July 18, 2025",
+  category: "Education",
+  readingTime: "15 min",
+  authorName: "Betopia Ltd.",
+  contentTable: [
+    "Introduction",
+    "Distinguished Guests & Speakers",
+    "Workshop Highlights",
+    "Talent Hunting & Interviews",
+    "Impact & Outcomes   ",
+    "Conclusion"
+  ],
+  content: [
+    {
+      title: "Distinguished Guests & Speakers",
+      description: "The workshop brought together CUET leadership and Betopia’s industry experts. From Betopia Group:",
+      list: [
+        "Rakibul Islam Shiku – CTO, Betopia Group",
+        "Roney Saha – AGM, BdCalling Academy",
+        "Farvez Hossen – GM, Sparktech Agency"
+      ], 
+      description2: "From CUET:",
+      list2: [
+        "Prof. Dr. Mahmud Abdul Matin Bhuiyan – Vice-Chancellor (Chief Guest)", 
+        "Prof. Dr. Quazi Delwar Hossain – Dean, Faculty of ECE (Special Guest)",
+        "Prof. Dr. Pranab Kumar Dhar – Head, Department of CSE (Chairman)"
+      ],
+      subFooter: "Their presence highlighted the importance of academia-industry collaboration for building a skilled and future-ready workforce."
+    },
+    {
+      title: "Workshop Highlights",
+      description: "The event featured two key segments:",
+      list: [
+        "Farewell to CUET’s 2019 Batch – Celebrating the academic achievements and journey of the graduating students.",
+        "Career Pathways in Web & Software Development – A forward-looking session",
+      ],
+      description2: "where Betopia experts shared insights into:",
+      list2: [
+        "Industry trends and challenges",
+        "Skills required for success in software development",
+        "Opportunities in web, mobile, and AI-driven technologies"
+      ],
+      subFooter:"Students gained practical knowledge on how to bridge the gap between academia and industry requirements."
+    },
+    {
+      title: "Talent Hunting & Interviews",
+      description: "A live talent hunt was conducted as part of the program, giving students the chance to demonstrate their skills.Key Highlights:", 
+      list: [ 
+        "High Participation: Large volume of CV submissions" ,
+        "Shortlisted Candidates: 50+ students selected for interviews",
+       ],
+      description2: "Areas of Assessment:",
+      list2: [
+        "MERN Stack Development",
+        "Flutter Development",
+        "UI/UX Design",
+        "PHP with Laravel",
+        "Software Quality Assurance (SQA)",
+        "Machine Learning with Python"
+      ],
+      subFooter: "This initiative provided direct exposure to recruitment processes, boosting student confidence and preparing them for real-world job scenarios."
+    },
+    {
+      title: "Impact & Outcomes",
+      list: [
+        "For Students: Clearer understanding of career pathways, industry expectations, and essential skills for tech roles.",
+        "For Betopia Group: Opportunity to identify fresh, promising talent aligned with Betopia’s growth vision.",
+        "For CUET: Strengthened its academia-industry ties, ensuring its graduates are not just academically prepared but industry-ready. "
+      ],
+    }
+  ],
+  introduction1: "On August 3, 2025, Betopia Group, in collaboration with the CSE Department of Chittagong University of Engineering and Technology (CUET), hosted a daylong workshop titled “Career Pathways in Web and Software Development & Farewell of the 2019 Batch.”",
+  introduction2: "Held at the CUET Auditorium, the event blended academic celebration with practical industry engagement, offering students valuable insights into career opportunities and the skills needed to thrive in the global tech ecosystem.",
+
+  conclusion1: "The Joint Workshop between Betopia Group and CUET demonstrated the transformative power of collaboration in shaping future tech leaders.",
+  conclusion2: "By combining academic excellence with industry expertise, the event paved the way for students to smoothly transition into professional careers  reinforcing Betopia Group’s mission to empower youth and drive global innovation.",
+
+}  
+
+export const Blog5  = {
+  banner: {
+    img: "/blog/blog5.jpg",
+    title: <p className="bg-gradient-to-r from-[#FFFFFF] via-[#B8B8B8] to-[#818181] bg-clip-text text-transparent">Next Level </p>,
+    subtitle: <p className="text-[#F69348]"> Sales Training </p>,
+    description: "Driving Excellence at Betopia Group"
+
+  },
+  publishDate: "July 18, 2025",
+  category: "Education",
+  readingTime: "15 min",
+  authorName: "Betopia Ltd.",
+  contentTable: [
+    "Introduction",
+    "Expert Led Sessions",
+    "Visionary Leadership",
+    "Betopia’s Commitment to Excellence", 
+    "Conclusion"
+  ],
+  content: [
+    {
+      title: "Expert-Led Sessions",
+      description: "The training was conducted by Betopia’s senior leadership team and sales experts with diverse industry experience. Key speakers included:", 
+      list: [
+        "Rakibul Islam Shiku – CTO, Betopia Group",
+        "Amirul Haque Shuhan – VP of Sales, Betopia Group",
+        "MD. Naimul Hasan Durjay – AGM, Softvence Omega",
+        "Abu Raihan Shimanto – Sales Leader, Softvence" ,
+        "MD. Ariful Islam – Senior Sales Executive, STA"
+      ],
+      description2: "Each speaker shared real-world insights on:",
+      list2: [
+        "Effective sales strategies",
+        "Client engagement techniques",
+        "Leveraging technology to improve the sales cycle",
+      ],
+      subFooter: "Building trust-based relationships"
+    },
+    {
+      title: "Visionary Leadership",
+      description: "A highlight of the program was the keynote address by Muhammad Monir Hossain, Founder & CEO of Betopia Group. His session focused on:",
+      list: [
+        "Value-Based Communication: Aligning solutions with client needs to build trust",
+        "Modern Sales Strategies: Navigating complex and competitive markets with agility",
+        "The Role of AI in Sales: Leveraging data, automation, and predictive analytics",
+        "Sustainable Relationships: Fostering long-term partnerships over one-off deals"
+      ],
+    },
+    {
+      title: "Betopia’s Commitment to Excellence",
+      description: "The Next Level Sales Training is a testament to Betopia’s philosophy of investing in people.By empowering its sales teams with the right tools, insights, and mindset, Betopia ensures its SBUs:",
+      list: [
+        "Stay at the forefront of innovation",
+        "Deliver exceptional client experiences",
+        "Drive consistent international growth"
+      ]
+    },
+  ],
+  introduction1: "Sales is the heartbeat of every successful business. Recognizing its importance, Betopia Group, the parent company of Bdcalling IT Ltd., organized a high-impact “Next Level Sales Training” program aimed at elevating the skills and performance of its sales professionals across multiple Strategic Business Units (SBUs).",
+  introduction2: "This comprehensive program combined insightful presentations, interactive discussions, and hands-on strategies — ensuring every participant walked away with practical, actionable knowledge to excel in today’s competitive market.",
+
+  conclusion1: "At Betopia Group, sales isn’t just about closing deals — it’s about creating value, building trust, and delivering measurable impact.",
+  conclusion2: "Through initiatives like Next Level Sales Training, Betopia reaffirms its mission to:", 
+  conclusionList:[
+    "Nurture talent",
+    "Embrace innovation",
+    "Shape the future of global business success"
+  ],
+
+} 
