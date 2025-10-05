@@ -10,6 +10,7 @@ import TrustedBy from '../home/TrustedBy';
 import WhyChooseUs from './WhyChooseUs';
 import FAQ from './FAQ';
 import Image from 'next/image';
+import AdvanceFeatures from './AdvanceFeatures';
 
 const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
     "HRM": HRM,
@@ -20,14 +21,20 @@ const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
 
 const ProductsMain = () => {
     const params = useSearchParams();
-    const product = params.get('product')
+    const product = params.get('product');
+    console.log(product);
     const productData = Data[product ?? "HRM"];
 
     return (
         <div>
             <ProductDetailsBanner banner={productData.header} />
             <ProductInfo info={productData.info} />
+            
             <ProductFeatures features={productData.features} />
+            {
+                product === "HRM" &&
+                <AdvanceFeatures/>
+            }
             <WhyChooseUs 
                 description={productData.whyChooseUs.description}
                 imgUrl={(productData.whyChooseUs as any)?.imgUrl}
