@@ -1,4 +1,4 @@
-import { ProductsArray } from '@/datas/pages/home'
+import { ProductArray } from '@/datas/pages/home'
 import Image from 'next/image'
 import React from 'react'
 
@@ -10,7 +10,7 @@ const Products: React.FC = () => {
 
             <div className='mt-[47px] grid grid-cols-3 gap-5 '>
                 {
-                    ProductsArray.map((product, index) => (
+                    ProductArray.map((product, index) => (
                         <div key={index} className=' rounded-[16px] bg-[#F795491F]/88 p-2'>
                             <div className='w-full h-[200px] relative  mb-4'>
                                 <Image src={product.imgUrl} alt="arrow" fill objectFit='cover' objectPosition='center' className='rounded-[12px]' />
