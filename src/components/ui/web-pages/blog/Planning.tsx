@@ -1,7 +1,6 @@
 import ComponentTitle from '@/components/shared/ComponentTitle';
 import Link from 'next/link';
 import React from 'react';
-import { RiArrowRightLine } from 'react-icons/ri';
 import SGConference from './SGConference';
 
 const Planning: React.FC = () => {
