@@ -1,7 +1,7 @@
 export const HighlyEffectiveSolutionsServices = [
   {
     name: "Cloud Services",
-    content: "Betopia Limited's Cloud Modernization & Managed Services empower businesses with tailored cloud solutions, optimizing performance, security",
+    content: "Betopia Limited's Cloud Modernization & Managed Services empower businesses with tailored cloud solutions, optimizing performance and security.",
     image: "/images/cloud.png"
   },
   {
@@ -11,7 +11,25 @@ export const HighlyEffectiveSolutionsServices = [
   },
   {
     name: "AI Services",
-    content: "Betopia Limited's Data, AI & Analytics Engineering services empower businesses by transforming raw data into actionable insights",
+    content: "Betopia Limited's Data, AI & Analytics Engineering services empower businesses by transforming raw data into actionable insights.",
+    image: "/images/ai.png"
+  }
+]
+
+export const IncaseYouMissed = [
+  {
+    name: "Cloud Services",
+    content: "Tailored cloud solutions for secure, scalable HR data storage and performance optimization.",
+    image: "/images/cloud.png"
+  },
+  {
+    name: "Cybersecurity Services",
+    content: "Ensure robust digital protection for sensitive employee and payroll data with compliance-first security.",
+    image: "/images/cyber.png"
+  },
+  {
+    name: "AI Services",
+    content: "Transform HR data into actionable insights with predictive analytics and intelligent reporting.",
     image: "/images/ai.png"
   }
 ]
@@ -21,7 +39,7 @@ export const BoostYourBusinessItems = [
     id: "03",
     title: "Multivendor e-commerce site",
     description:
-      "A scalable marketplace connecting multiple vendors with seamless shopping",
+      " A scalable marketplace connecting multiple vendors with seamless shopping experiences",
     imgUrl: "/BoostYourBusiness2.png",
     gradientClass: "from-[#666666]/50 to-[#000000]/80",
     link: "/portfolio?portfolio=Nutri AI"
@@ -30,7 +48,7 @@ export const BoostYourBusinessItems = [
     id: "04",
     title: "Umrah Guide",
     description:
-      "An AI-powered Mobile app designed to assist pilgrims during their Umrah and Hajj Journey",
+      "An AI-powered mobile app designed to assist pilgrims during their Umrah and Hajj journeys",
     imgUrl: "/BoostYourBusiness3.png",
     gradientClass: "from-[#666666]/50 to-[#000000]/80",
     link: "/portfolio?portfolio=Umrah Guide"
@@ -45,7 +63,7 @@ export const testimonials = [
     imgUrl: "/testimonialUser.png",
     video: "https://res.cloudinary.com/dreiyzj42/video/upload/v1757566925/WhatsApp_Video_2025-09-10_at_17.45.36_c00117e9_pj1jki.mp4",
     quote:
-      "These guys are doing our digital websites, our AI conversions, our custom web designs, custom web app with AI and theyre just fantastic. The professionalism, the quality of work on time, great communication. I can only tell you this if you want the best tech partner use soft vents. They're out of Bangladesh and I cannot be even more proud to do this video and talk about them. ",
+      "These guys are doing our digital websites, our AI conversions, our custom web designs, custom web apps with AI and they're just fantastic. The professionalism, the quality of work on time, great communication. If you want the best tech partner, use Betopia. They're out of Bangladesh and I couldn't be prouder to talk about them.",
     companyUrl: "/userCompany.png",
   },
   {
@@ -68,7 +86,7 @@ export const trustedByCompaniesImages = [
   "/trustedBy/company4.png",
   "/trustedBy/company5.png",
   "/trustedBy/company6.png",
-  // "/trustedBy/company7.png", 
+  // "/trustedBy/company7.png",
   "/trustedBy/company8.png"
 ]
 
@@ -77,14 +95,14 @@ export const trustedByCompaniesImages = [
 export const cardsData = [
   {
     title: "Delivering Deeper, Building Smarter",
-    description: "We're transforming the emerging technologies, understanding their full potential.",
+    description: " We explore emerging technologies, understanding their full potential.",
     gradient: "from-blue-500 to-blue-600",
     imgUrl: "/faci1.png",
     icon: "bg-white rounded-sm"
   },
   {
     title: "Partner for Tomorrow's Edge",
-    description: "Join forces with our researchers to unlock possibilities with our expert guidance.",
+    description: "Join forces with our research lab and gain access to cutting-edge insights and expert guidance.",
     gradient: "from-green-500 to-green-600",
     imgUrl: "/faci2.png",
     icon: "bg-white rounded-full"
@@ -92,14 +110,14 @@ export const cardsData = [
   },
   {
     title: "Unveiling Open-Source Potential",
-    description: "Deep-dive into open-source technologies, understanding their flexibility.",
+    description: "Leverage the flexibility and innovation of open-source technologies.",
     gradient: "from-purple-500 to-purple-600",
     imgUrl: "/faci3.png",
     icon: "bg-white rounded"
   },
   {
-    title: "From Lab Bench to Real-World Impact",
-    description: "Our research isn't just theoretical. We translate insights into tangible prototypes.",
+    title: "From Lab to Real-World Impact",
+    description: " Our research translates into tangible, real-world prototypes.",
     gradient: "from-yellow-500 to-orange-500",
     imgUrl: "/faci4.png",
     icon: "bg-white rounded-full"
@@ -107,7 +125,7 @@ export const cardsData = [
 ];
 
 
-export const ProductsArray = [
+export const ProductArray = [
   {
     title: "Staff Pulse  - HRM Software",
     description: "All-in-one HRM  : Attendance , Leave, Payroll & Compliance in one secure SAAS platform",
