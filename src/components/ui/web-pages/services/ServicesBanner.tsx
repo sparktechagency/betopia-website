@@ -1,24 +1,14 @@
 "use client"
 import PageBanner from '@/components/shared/PageBanner';
-import { aiServicesData, cloudServicesData, cybersecurityServicesData } from '@/datas/pages/services';
-import { useSearchParams } from 'next/navigation';
 import React from 'react';
 
-const bannerDataMap: Record<string, typeof cloudServicesData> = {
-    "Cloud Services": cloudServicesData,
-    "Cybersecurity Services": cybersecurityServicesData,
-    "AI Services": aiServicesData,
-};
 
-const ServicesBanner = () => {
-    const params = useSearchParams();
-    const service = params.get('service')
-
-    const serviceBannerData = bannerDataMap[service ?? "Cloud Services"];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ServicesBanner = ({serviceData}:{serviceData: any}) => {
 
     return (
         <div>
-            <PageBanner videoSrc={serviceBannerData?.videoSrc} title={serviceBannerData?.title} description={serviceBannerData?.description} buttonName={serviceBannerData?.buttonName} buttonLink={serviceBannerData?.buttonLink} />
+            <PageBanner videoSrc={serviceData?.videoSrc} title={serviceData?.title} description={serviceData?.description} buttonName={"Partner With Us"} buttonLink={"/partner"} />
         </div>
     );
 };

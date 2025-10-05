@@ -76,17 +76,17 @@ export const pages: NavPage[] = [
           {
             key: "endpoint-mgmt-security",
             label: "Endpoint Management & Security Solutions",
-            link: "/services?category=endpoint-management-security",
+            link: "/services?service=endpoint-management-security",
           },
           {
             key: "identity-mgmt-security",
             label: "Identity Management & Security Solutions",
-            link: "/services?category=identity-management-security",
+            link: "/services?service=identity-management-security",
           },
           {
             key: "secure-business-productivity",
             label: "Secure Business Productivity Solutions",
-            link: "/services?category=secure-business-productivity",
+            link: "/services?service=secure-business-productivity",
           },
         ],
       },
@@ -96,17 +96,17 @@ export const pages: NavPage[] = [
           {
             key: "enterprise-infrastructure",
             label: "Enterprise Infrastructure Solutions",
-            link: "/services?category=enterprise-infrastructure",
+            link: "/services?service=enterprise-infrastructure",
           },
           {
             key: "enterprise-networking",
             label: "Enterprise Networking Solutions",
-            link: "/services?category=enterprise-networking",
+            link: "/services?service=enterprise-networking",
           },
           {
             key: "cloud-infra-networking",
             label: "Cloud Infrastructure & Networking Solutions",
-            link: "/services?category=cloud-infrastructure-networking",
+            link: "/services?service=cloud-infrastructure-networking",
           },
         ],
       },
@@ -116,12 +116,12 @@ export const pages: NavPage[] = [
           {
             key: "cyber-security-solutions",
             label: "Cyber Security Solutions",
-            link: "/services?category=cyber-security-solutions",
+            link: "/services?service=cyber-security-solutions",
           },
           {
             key: "cyber-security-services",
             label: "Cyber Security Services",
-            link: "/services?category=cyber-security-services",
+            link: "/services?service=cyber-security-services",
           },
         ],
       },
@@ -131,17 +131,17 @@ export const pages: NavPage[] = [
           {
             key: "digital-app-innovation",
             label: "Digital & App Innovation Solutions",
-            link: "/services?category=digital-app-innovation",
+            link: "/services?service=digital-app-innovation",
           },
           {
             key: "data-solutions",
             label: "Data Solutions",
-            link: "/services?category=data-solutions",
+            link: "/services?service=data-solutions",
           },
           {
             key: "ai-solutions",
             label: "AI Solutions",
-            link: "/services?category=ai-solutions",
+            link: "/services?service=ai-solutions",
           },
         ],
       },
