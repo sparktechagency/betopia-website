@@ -30,6 +30,12 @@ export const pages: NavPage[] = [
           " Betopia's ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system. It provides real-time visibility and automation to streamline workflows and reduce costs.",
         link: "/products?product=ERP",
       },
+      {
+        key: "Partner Program",
+        label: "Partner Program",
+        description:"Betopia's ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system.",
+        link: "/partner",
+      },
     ],
   },
   {

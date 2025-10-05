@@ -5,7 +5,7 @@ const ProductsPage = () => {
     return (
         <div> 
             <Suspense> 
-            <ProductsMain />
+                <ProductsMain/>
             </Suspense>
         </div>
     );

@@ -8,7 +8,6 @@ import OutlineButton from './OutlineButton';
 
 const Navbar: React.FC = () => {
     const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null); 
-    console.log(hoveredDropdown);
 
     return (
         <div className=" relative  top-0 container mt-10 h-[62px] flex justify-between items-center bg-transparent text-[#FDFDFD]  z-50  ">

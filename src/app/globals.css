@@ -92,3 +92,7 @@ p {
   align-items: center;
   background-color: white;
 }
+
+#collapse-demo-collapsible .ant-space {
+  width: 100%;
+}

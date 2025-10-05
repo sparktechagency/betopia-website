@@ -34,10 +34,11 @@ const ProductSteps: React.FC<ProductStepsProps> = ({ product }) => {
                             </div>
                         </Link>
                     ))}
-                </div> 
+                    
+                </div>
 
-                
-                <div className=' flex flex-col items-start justify-center gap-y-[52px] p-2 py-3 '>
+
+                <div className=' flex flex-col items-start justify-center gap-y-[52px] p-2 py-3 border border-red-500'>
                     {steps.map((step, index) => (
                         <Link
                             key={index}
@@ -53,7 +54,7 @@ const ProductSteps: React.FC<ProductStepsProps> = ({ product }) => {
                             </div>
                         </Link>
                     ))}
-                </div> 
+                </div>
 
 
             </div>
