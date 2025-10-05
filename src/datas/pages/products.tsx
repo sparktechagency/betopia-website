@@ -1,4 +1,3 @@
-
 export const HRM = {
     title: "HRM Solutions",
     description: "A next generation HRM system designed to align human capital with organizational goals, ensuring peak performance, higher engagement, and greater efficiency.",

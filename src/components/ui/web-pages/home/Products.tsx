@@ -1,15 +1,29 @@
+import { ProductsArray } from '@/datas/pages/home'
+import Image from 'next/image'
 import React from 'react'
-import RotatingOrbit from './RotatingOrbit'
 
 const Products: React.FC = () => {
     return (
-        <div className='my-20 container  border-2 border-[#EAEAEA] rounded-[39px] px-[75px] py-[60px] '>
-            <h1 className='text-center text-[40px] leading-[52px]'>Betopia Products</h1>
-            <div className='flex items-center justify-between'>
-                <p className='text-[25px] w-[60%] leading-[43px] pt-7'> <span className='text-primary'>Betopia</span>  builds tools that grow with your business ERP connects finance, operations, and resources seamlessly.HRM makes people management simple, human, and productivity driven.Our POS turns sales into smart experiences, and together, these solutions accelerate growth with confidence.</p>
-                <div className='w-[40%] flex-center'>
-                    <RotatingOrbit />
-                </div>
+        <div className='my-20 container py-[60px] '>
+            <h1 className='text-center text-[#262626] text-[40px] leading-[52px]'>Betopia Products</h1>
+            <h3 className='text-center text-[#262626] text-[25px] leading-[13px]'>Betopia builds tools that grow with your business.</h3>
+
+            <div className='mt-[47px] grid grid-cols-3 gap-5 '>
+                {
+                    ProductsArray.map((product, index) => (
+                        <div key={index} className=' rounded-[16px] bg-[#F795491F]/88 p-2'>
+                            <div className='w-full h-[200px] relative  mb-4'>
+                                <Image src={product.imgUrl} alt="arrow" fill objectFit='cover' objectPosition='center' className='rounded-[12px]' />
+                            </div>
+                            <h2 className='text-[#414042] text-[24px] leading-[32px] font-medium mt-4'>{product.title}</h2>
+                            <p className='text-[#9B9B9B] text-[18px] leading-[24px] mt-2 mb-4'>{product.description}</p>
+
+                            <div className='mt-4'>
+                                <button className='bg-[#F69348] w-[145px] block h-[44px] rounded-[8px]'> <span className='text-white'>View Product</span> </button>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )
