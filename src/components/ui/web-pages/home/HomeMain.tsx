@@ -7,6 +7,7 @@ import BoostYourBusiness from './BoostYourBusiness';
 import Facilities from './Facilities';
 import TrustedBy from './TrustedBy';
 import Testimonial from './Testimonial';
+import TeamAgumentation from './TeamAgumentation';
 
 const HomeMain = () => {
     return (
@@ -15,9 +16,10 @@ const HomeMain = () => {
             <BannerDetails />
             <Products />
             <Services /> 
+            <TeamAgumentation/>
+            <TrustedBy /> 
             <BoostYourBusiness /> 
             <Facilities /> 
-            <TrustedBy /> 
             <Testimonial />
         </div>
     );

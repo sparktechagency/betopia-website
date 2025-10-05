@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700', '
 
 const Testimonial = () => {
     return (
-        <div className={` w-full mb-20 container`}>
+        <div className={` w-full mb-20 container mt-[80px]`}>
             <section className="  flex items-center ">
                 <div className="container mx-auto bg-white  flex flex-col justify-center  rounded-2xl  ">
                     <h2 className="text-center text-xl md:text-[32px] font-semibold pb-14  lg:flex lg:flex-col gap-y-4  items-center ">
