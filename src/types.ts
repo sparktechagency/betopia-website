@@ -2,97 +2,109 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import React from "react";
 import { ReactNode } from "react";
 export interface DropdownItem {
-    key: string;
-    label: string;
-    description: string;
-    link: string;
+  key: string;
+  label: string;
+  description: string;
+  link: string;
+}
+
+export interface MegaSectionItem {
+  key: string;
+  label: string;
+  link: string;
+}
+
+export interface MegaSection {
+  title: string;
+  items: MegaSectionItem[];
 }
 
 export interface BlogItem {
-    title: string;
-    description1: string;
-    description2?: string;
-    list: string[];
-    list2?: string[];
-    subFooter?: string;
+  title: string;
+  description1: string;
+  description2?: string;
+  list: string[];
+  list2?: string[];
+  subFooter?: string;
 }
 
 export interface NavPage {
-    name: string;
-    link: string;
-    hasDropdown?: boolean;
-    dropdownItems?: DropdownItem[];
+  name: string;
+  link: string;
+  hasDropdown?: boolean;
+  dropdownItems?: DropdownItem[];
+  megaSections?: MegaSection[];
 }
 
 export interface SocialLink {
-    icon: React.ReactNode;
-    url: string;
-    bgColor?: string;
+  icon: React.ReactNode;
+  url: string;
+  bgColor?: string;
 }
 
 export interface PageBannerProps {
-    videoSrc: string;
-    title: React.ReactNode;
-    subtitle?: React.ReactNode | string;
-    description: string;
-    buttonName: string;
-    buttonLink: string;
+  videoSrc: string;
+  title: React.ReactNode;
+  subtitle?: React.ReactNode | string;
+  description: string;
+  buttonName: string;
+  buttonLink: string;
 }
 
 export interface serviceType {
-    serviceData: servicesType
+  serviceData: servicesType
 }
 
 export interface servicesType {
+  title: string;
+  subtitle: string;
+  description: string;
+  services: {
     title: string;
     subtitle: string;
-    description: string;
-    services: {
-        title: string;
-        subtitle: string;
-        categories: {
-            categoryTitle: string;
-            categorySubtitle: React.ReactNode;
-            categoryBgImg: string;
-            details: {
-                name: string;
-                list?: string[];
-                description: string;
-                videoUrl: string;
-            };
-        }[];
-    };
+    categories: {
+      categoryTitle: string;
+      categorySubtitle: React.ReactNode;
+      categoryBgImg: string;
+      details: {
+        name: string;
+        list?: string[];
+        description: string;
+        videoUrl: string;
+      };
+    }[];
+  };
 }
 
 export interface productType {
-    productData: productsType
+  productData: productsType
 }
 
 export interface productsType {
+  title: string;
+  description: string;
+  solutionInnovative: {
     title: string;
     description: string;
-    solutionInnovative: {
-        title: string;
-        description: string;
-        subTitle?: string;
-        description2?: string;
-        imgUrl: string;
-    };
-    facilities: {
-        icon: string;
-        title: string;
-        subTitle?:string;
-        list?: string[]
-        description: string;
-    }[];
+    subTitle?: string;
+    description2?: string;
+    imgUrl: string;
+  };
+  facilities: {
+    icon: string;
+    title: string;
+    subTitle?: string;
+    list?: string[]
+    description: string;
+  }[];
 }
 
 export interface TransformingType {
-    number: string;
-    heading: string;
-    accent: string;
-    numberOnRight?: boolean;
-} 
+  number: string;
+  heading: string;
+  accent: string;
+  numberOnRight?: boolean;
+}
 
 
 
@@ -143,7 +155,7 @@ export interface Research {
 export interface ManagementDashboard {
   title: ReactNode;
   description: string;
-  imgUrl : string | StaticImport  ;
+  imgUrl: string | StaticImport;
 }
 
 export interface OtherPortfolio {
@@ -163,10 +175,10 @@ export interface PortfolioData {
   thirdFeatures: Feature[];
   research: Research;
   images: string[];
-  managementDashboard?: ManagementDashboard; 
+  managementDashboard?: ManagementDashboard;
   otherPortfolio: OtherPortfolio[];
-} 
+}
 
-export interface portfolioDetailsType { 
-   portfolioDetails: PortfolioData; 
+export interface portfolioDetailsType {
+  portfolioDetails: PortfolioData;
 }

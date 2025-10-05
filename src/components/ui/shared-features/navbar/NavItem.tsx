@@ -15,23 +15,32 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
     const pathname = usePathname();
     const activePage = pathname.split("/")[1] || "";
 
-    if (page.hasDropdown && page.dropdownItems) {
+
+    if (page.hasDropdown && (page.dropdownItems || page.megaSections)) {
+        const isServices = page.name.toLowerCase() === "services";
+
         return (
             <Dropdown
                 key={page.name}
-                overlay={<DropdownMenu items={page.dropdownItems}  />}
-                trigger={['hover']}
-                placement= "top"
-                overlayStyle={{ marginTop: '22px'  }}          
+                overlay={
+                    <DropdownMenu
+                        items={page.dropdownItems || []}
+                        variant={isServices ? "services" : "default"}
+                        megaSections={isServices ? page.megaSections || [] : undefined}
+                    />
+                }
+                trigger={["hover"]}
+                placement="top"
+                overlayStyle={{ marginTop: "22px" }}
             >
                 <Link
                     href={page.link}
-                    className={`text-white hover:border-b hover:border-[#F69348]  transition-colors duration-200 text-lg leading-[24px]  cursor-pointer ${activePage === page.link && 'border-b border-[#F69348]'}`}
+                    className={`text-white hover:border-b hover:border-[#F69348] transition-colors duration-200 text-lg leading-[24px] cursor-pointer ${activePage === page.link && "border-b border-[#F69348]"
+                        }`}
                     onMouseEnter={() => setHoveredDropdown(page.name)}
                     onMouseLeave={() => setHoveredDropdown(null)}
                 >
                     {page.name}
-                  
                 </Link>
             </Dropdown>
         );
