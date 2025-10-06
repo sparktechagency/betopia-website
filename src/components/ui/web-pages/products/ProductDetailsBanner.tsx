@@ -17,7 +17,10 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
 }) => {
   const { heading, subHeading, description, imgUrl } = banner;
   return (
-    <div id="banner" className=" z-10 flex-center text-center h-screen text-white  ">
+    <div
+      id="banner"
+      className=" z-10 flex-center text-center h-screen text-white  "
+    >
       <div className=" ">
         <Image
           src={imgUrl}
@@ -30,15 +33,15 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
       <div className="absolute top-0 left-0 w-full h-full bg-black/77 "></div>
 
       {/* Content can go here */}
-      <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">
+      <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden md:h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center  w-full  ">
-          <div className="text-[#818181] text-[64px] font-medium">
+          <div className="text-[#818181] text-[34px] lg:text-[64px] font-medium">
             {heading}{" "}
           </div>
-          <p className=" text-[#F79549] text-[57px] font-semibold lg:w-[60%] md:w-[70%] w-full text-center pb-9   ">
+          <p className=" text-[#F79549] text-[20px] lg:text-[57px] font-semibold lg:w-[60%] md:w-[70%] w-full text-center pb-9   ">
             {subHeading}{" "}
           </p>
-          <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[70%] tracking-wide ">
+          <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[70%] tracking-wide ">
             {description}
           </p>
           <Link href="#" className=" pt-[77px]">
