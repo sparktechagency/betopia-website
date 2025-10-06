@@ -6,11 +6,11 @@ import { useSearchParams } from "next/navigation";
 import ProductDetailsBanner from "./ProductDetailsBanner";
 import ProductInfo from "./ProductInfo";
 import ProductFeatures from "./ProductFeatures";
-import TrustedBy from "../home/TrustedBy";
 import WhyChooseUs from "./WhyChooseUs";
 import FAQ from "./FAQ";
 import Image from "next/image";
 import AdvanceFeatures from "./AdvanceFeatures";
+import TrustedBy from "../home/TrustedBy";
 
 const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
   HRM: HRM,
