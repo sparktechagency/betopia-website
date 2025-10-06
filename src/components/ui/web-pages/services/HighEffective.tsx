@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const HighEffective = ({ serviceData }: { serviceData: any }) => {
     return (
-        <div className='container pb-20'>
+        <div className='container '>
             <div className=' flex flex-col items-center justify-center gap-1 my-8  '>
                 <ComponentTitle className=' !text-center pb-2'> <span className=' text-[#000000]'> Highly Effective  </span> <span className='text-primary'>Solutions</span> </ComponentTitle>
                 <div className=' w-full flex-center flex-col gap-0.5'>

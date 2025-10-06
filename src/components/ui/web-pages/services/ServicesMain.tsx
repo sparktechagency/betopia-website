@@ -4,13 +4,16 @@ import ServicesBanner from './ServicesBanner';
 import ServiceDetails from './ServiceDetails';
 // import FeaturedProducts from './FeaturedProducts'; 
 import { useSearchParams } from 'next/navigation';
-import { AISolutionsData, CloudInfrastructureData, CyberSecuritySolutionsData, CyberServicesData, DataSolutionsData, DigitalInnovationData, EndpointManagementData, EnterpriseInfrastructureSolutionsData, EnterpriseNetworkingSolutionsData } from '@/datas/pages/services';
+import { AISolutionsData, CloudInfrastructureData, CyberSecuritySolutionsData, CyberServicesData, DataSolutionsData, DigitalInnovationData, EndpointManagementData, EnterpriseInfrastructureSolutionsData, EnterpriseNetworkingSolutionsData, IdentityManagementData, SecureBusinessData } from '@/datas/pages/services';
 import HighEffective from './HighEffective';
+import TrustedBy from '../home/TrustedBy';
+import FAQ from '../products/FAQ';
+import LetsWorkTogether from '@/components/shared/LetsWorkTogether';
 
 const Data: Record<string, typeof EndpointManagementData> = {
     "endpoint-management-security": EndpointManagementData,
-    "identity-management-security": EndpointManagementData,
-    "secure-business-productivity": EndpointManagementData,
+    "identity-management-security": IdentityManagementData,
+    "secure-business-productivity": SecureBusinessData,
     "enterprise-infrastructure": EnterpriseInfrastructureSolutionsData,
     "enterprise-networking": EnterpriseNetworkingSolutionsData,
     "cloud-infrastructure-networking": CloudInfrastructureData,
@@ -19,7 +22,7 @@ const Data: Record<string, typeof EndpointManagementData> = {
     "digital-app-innovation": DigitalInnovationData,
     "data-solutions": DataSolutionsData,
     "ai-solutions": AISolutionsData,
-}; 
+};
 
 const ServicesMain = () => {
     const params = useSearchParams();
@@ -30,8 +33,13 @@ const ServicesMain = () => {
         <div>
             <ServicesBanner serviceData={serviceData} />
             <ServiceDetails serviceData={serviceData} />
-            {/* <FeaturedProducts />  */} 
+            {/* <FeaturedProducts />  */}
             <HighEffective serviceData={serviceData} />
+            <TrustedBy />
+            <FAQ />
+            <div className='mt-20'>
+                <LetsWorkTogether />
+            </div>
         </div>
     );
 };

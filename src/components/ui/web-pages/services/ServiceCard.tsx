@@ -12,9 +12,7 @@ const ServiceCard = ({item}:{item:{imgUrl:string,title:string,subtitle:string,de
                     height={250}
                     className="h-[302px] rounded-lg"
                 />
-                <div className="absolute inset-0 flex justify-center items-center">
-                    <div className="bg-black opacity-50 rounded-lg w-full h-full"></div>
-                </div>
+
             </div>
             <div className="pt-3">
                 <h3 className="text-xl font-semibold text-primary ">{item?.title}</h3>

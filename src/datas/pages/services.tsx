@@ -906,98 +906,163 @@ const IdentityManagementData = {
     },
 
     highlyEffectiveData: [
-  {
-    title: "Central Authentication Solution",
-    subtitle: "Unify and secure user access",
-    description:
-      "Unify and secure user access with our Central Authentication Solution powered by Active Directory. Enable single sign-on across desktops, apps, and networks reducing password fatigue and boosting productivity. Simplify management, enforce policies, and ensure compliance across on-premises and hybrid environments.",
-    imgUrl: "/cloudService/cloudInfrastructure8.png",
-  },
-  {
-    title: "Hybrid Authentication Solution",
-    subtitle: "Secure, unified access across environments",
-    description:
-      "Secure your enterprise with our Hybrid Authentication Solution—bridging on-premises and cloud identities seamlessly. Integrate Active Directory with Microsoft Entra ID to enable unified Single Sign-On across legacy systems and cloud apps. With MFA, Kerberos, SAML, and OAuth support, strengthen security, simplify access, and move confidently toward Zero Trust.",
-    imgUrl: "/cloudService/cloudInfrastructure6.png",
-  },
-  {
-    title: "Password & Secret Management Solution",
-    subtitle: "Secure credentials & systems",
-    description:
-      "Keep your systems secure and your credentials protected with our Password & Secret Management Solution. Securely store, manage, and rotate passwords, API keys, tokens, and certificates across your infrastructure. With RBAC, audit logging, and automatic secret rotation, reduce risk, eliminate secret sprawl, and ensure compliance.",
-    imgUrl: "/cloudService/cloudInfrastructure3.png",
-  },
-  {
-    title: "Multifactor Authentication (MFA) Solution",
-    subtitle: "Enhance security with multiple layers",
-    description:
-      "Protect your users and data with our Multifactor Authentication (MFA) Solution—combining security passwords, devices, and biometrics to verify identities confidently across systems. With SAML, OAuth, and FIDO2 support, prevent unauthorized access, block threats, and streamline access enforcement.",
-    imgUrl: "/cloudService/cloudInfrastructure2.png",
-  },
-  {
-    title: "Access Management and Single Sign-On (SSO) Solution",
-    subtitle: "Seamless access across systems",
-    description:
-      "Empower users with seamless, secure access through our Access Management & Single Sign-On (SSO) Solution. Authenticate once and access multiple apps across cloud and on-prem environments with SAML, OAuth, and OpenID Connect. Gain centralized control, RBAC, MFA, and enhanced security, compliance, and user experience all in one platform.",
-    imgUrl: "/cloudService/cloudInfrastructure1.png",
-  },
-  {
-    title: "Privileged Access Management Solution",
-    subtitle: "Manage sensitive access with confidence",
-    description:
-      "Secure your most sensitive systems with our Privileged Access Management (PAM) Solution. Control and monitor elevated access to servers, databases, and admin consoles with just-in-time privileges and least-privilege enforcement. With centralized access logging, recording, and real-time alerts, gain visibility, meet compliance, and prevent insider threats.",
-    imgUrl: "/cloudService/cloudInfrastructure5.png",
-  },
-  {
-    title: "Identity Governance Solution",
-    subtitle: "Automate identity lifecycle management",
-    description:
-      "Ensure the right people have the right access at the right time with our Identity Governance Solution. Automate identity lifecycle management from onboarding to offboarding across cloud and on-prem systems. With access reviews, RBAC, and audit trails, gain full visibility, enforce compliance, and govern identities with confidence.",
-    imgUrl: "/cloudService/enterprise2.png",
-  },
-  {
-    title: "Active Directory Threat Detection & Response Solution",
-    subtitle: "Detect and respond to Active Directory threats",
-    description:
-      "Protect your critical identity infrastructure with our Active Directory Threat Detection & Response Solution. Continuously monitor on-prem, cloud, and hybrid AD for threats like DCShadow, Golden Ticket, and lateral movement. With real-time alerts, forensic insights, and automated rollback, detect faster, respond smarter, and stay resilient.",
-    imgUrl: "/cloudService/enterprise3.png",
-  },
-  {
-    title: "Identity Resilience Platform Solution",
-    subtitle: "Strengthen your identity ecosystem",
-    description:
-      "Strengthen your identity ecosystem with our Identity Resilience Platform Solution. Gain end-to-end protection, visibility, and recovery for Active Directory and Entra ID across on-prem, cloud, and hybrid environments. With automated remediation, secure backups, and rapid recovery, stay resilient and compliant, regardless of the challenge.",
-    imgUrl: "/cloudService/cloudInfrastructure7.png",
-  },
-  {
-    title: "Enterprise Public Key Infrastructure Solution",
-    subtitle: "Secure your enterprise with PKI",
-    description:
-      "Secure your enterprise with our Public Key Infrastructure (PKI) Solution to authenticate users, devices, and applications. Deploy a scalable, Certificate Authority (CA) for secure services, code signing, and device access. With automated lifecycle management, integration, and compliance at scale, ensure digital trust never expires.",
-    imgUrl: "/cloudService/cloudInfrastructure8.png",
-  },
-  {
-    title: "Certificate Lifecycle Management Solution",
-    subtitle: "Simplify certificate management",
-    description:
-      "Simplify and secure certificate operations with our Certificate Lifecycle Management Solution. Automatically discover, issue, renew, and revoke certificates across SSL/TLS, crypto signing, and device authentication. With centralized visibility, automation, and crypto agility, prevent outages, stay compliant, and ensure digital trust never expires.",
-    imgUrl: "/cloudService/cloudInfrastructure3.png",
-  },
-  {
-    title: "Identity Threat Detection & Response Solution",
-    subtitle: "Protect your targeted assets",
-    description:
-      "Protect your most targeted assets—user identities—with our Identity Threat Detection & Response (ITDR) Solution. Continuously monitor Active Directory, Entra ID, and cloud apps for anomalies, privilege misuse, and lateral movement. With AI-driven analytics, real-time alerts, and automated response, stop identity-based threats and keep your environment secure and compliant.",
-    imgUrl: "/cloudService/enterprise2.png",
-  },
-  {
-    title: "Active Directory Auditing & Reporting Solution",
-    subtitle: "Gain visibility into identity systems",
-    description:
-      "Gain complete visibility into your identity systems with our Active Directory Auditing & Reporting Solution. Track login changes, account modifications, and activity across AD and Entra ID with real-time alerts and detailed reports. Integrate with SIEM platforms to gain insights into what, when, where, and why—ensuring stronger security and compliance.",
-    imgUrl: "/cloudService/enterprise8.png",
-  },
-]
-}
+        {
+            title: "Central",
+            subtitle: "Authentication Solution",
+            description:
+                "Unify and secure user access with our Central Authentication Solution powered by Active Directory. Enable single sign-on across desktops, apps, and networks reducing password fatigue and boosting productivity. Simplify management, enforce policies, and ensure compliance across on-premises and hybrid environments.",
+            imgUrl: "/cloudService/cloudInfrastructure1.png",
+        },
+        {
+            title: "Hybrid",
+            subtitle: "Authentication Solution",
+            description:
+                "Secure your enterprise with our Hybrid Authentication Solution—bridging on-premises and cloud identities seamlessly. Integrate Active Directory with Microsoft Entra ID to enable unified Single Sign-On across legacy systems and cloud apps. With MFA, Kerberos, SAML, and OAuth support, strengthen security, simplify access, and move confidently toward Zero Trust.",
+            imgUrl: "/cloudService/cloudInfrastructure2.png",
+        },
+        {
+            title: "Password & Secret",
+            subtitle: "Management Solution",
+            description:
+                "Keep your systems secure and your credentials protected with our Password & Secret Management Solution. Securely store, rotate, and control passwords, API keys, tokens, and certificates across your infrastructure. With RBAC, audit logging, and automatic secret rotation, reduce risk, eliminate secret sprawl, and ensure compliance.",
+            imgUrl: "/cloudService/cloudInfrastructure3.png",
+        },
+        {
+            title: "Multifactor",
+            subtitle: "Authentication (MFA) Solution",
+            description:
+                "Protect your users and data with our Multifactor Authentication (MFA) Solution—adding security beyond passwords. Combine passcodes, devices, and biometrics to verify identities confidently across systems. With SAML, OAuth, and FIDO2 support, seamless integration, and adaptive policies, block threats while keeping access effortless.",
+            imgUrl: "/cloudService/cloudInfrastructure4.png",
+        },
+        {
+            title: "Access Management",
+            subtitle: "and Single Sign-On (SSO) Solution",
+            description:
+                "Empower users with seamless, secure access through our Access Management & Single Sign-On (SSO) Solution. Authenticate once to access multiple apps across cloud and on-prem environments with SAML, OAuth, and OpenID Connect. Gain centralized control, enforce RBAC and MFA, and enhance security, compliance, and user experience—all in one platform.",
+            imgUrl: "/cloudService/cloudInfrastructure5.png",
+        },
+        {
+            title: "Privileged Access",
+            subtitle: "Management Solution",
+            description:
+                "Secure your most sensitive systems with our Privileged Access Management (PAM) Solution. Control and monitor elevated access to servers, databases, and admin consoles with just-in-time privileges and least-privilege enforcement. With credential vaulting, session recording, and real-time alerts, gain visibility, meet compliance, and prevent insider threats.",
+            imgUrl: "/cloudService/cloudInfrastructure6.png",
+        },
+        {
+            title: "Identity",
+            subtitle: "Governance Solution",
+            description:
+                "Ensure the right people have the right access at the right time with our Identity Governance Solution. Automate identity lifecycle management from onboarding to offboarding across cloud and on-prem systems. With access reviews, RBAC, and audit trails, gain full visibility, enforce compliance, and govern identities with confidence.",
+            imgUrl: "/cloudService/cloudInfrastructure7.png",
+        },
+        {
+            title: "Active Directory Threat",
+            subtitle: "Detection & Response Solution",
+            description:
+                "Protect your critical identity infrastructure with our Active Directory Threat Detection & Response Solution. Continuously monitor on-prem, cloud, and hybrid AD for threats like DCShadow, Golden Ticket, and lateral movement. With real-time alerts, forensic insights, and automated rollback, detect faster, respond smarter, and stay resilient.",
+            imgUrl: "/cloudService/cloudInfrastructure8.png",
+        },
+        {
+            title: "Identity Threat",
+            subtitle: "Detection & Response Solution",
+            description:
+                "Protect your most targeted assets—user identities—with our Identity Threat Detection & Response (ITDR) Solution. Continuously monitor Active Directory, Entra ID, and cloud apps for anomalies, privilege misuse, and lateral movement. With AI-driven analytics, real-time alerts, and automated response, stop identity-based threats and keep your environment secure and compliant.",
+            imgUrl: "/cloudService/enterpriseNetwork1.png",
+        },
+        {
+            title: "Identity",
+            subtitle: "Resilience Platform Solution",
+            description:
+                "Strengthen your identity backbone with our Identity Resilience Platform Solution. Gain end-to-end protection, visibility, and recovery for Active Directory and Entra ID across on-prem, cloud, and hybrid environments. With automated remediation, secure backups, and rapid recovery, stay resilient, compliant, and operational no matter what.",
+            imgUrl: "/cloudService/enterpriseNetwork2.png",
+        },
+        {
+            title: "Active Directory",
+            subtitle: "Auditing & Reporting Solution",
+            description:
+                "Gain complete visibility into your identity systems with our Active Directory Auditing & Reporting Solution. Track logons, permission changes, and account activity across AD and Entra ID with real-time alerts and detailed reports. Integrate with SIEM platforms to get 5W audit insights—who did what, when, where, and why—for stronger security and compliance.",
+            imgUrl: "/cloudService/enterpriseNetwork6.png",
+        },
+        {
+            title: "Enterprise Public",
+            subtitle: "Key Infrastructure Solution",
+            description:
+                "Secure your enterprise with our Public Key Infrastructure (PKI) Solution built to authenticate users, devices, and applications. Deploy a scalable Certificate Authority (CA) for secure S/MIME, VPN, code signing, and device access. With centralized management, lifecycle automation, and compliance enforcement, ensure trust, integrity, and compliance at scale.",
+            imgUrl: "/cloudService/enterpriseNetwork5.png",
+        },
+        {
+            title: "Certificate Lifecycle",
+            subtitle: "Management Solution",
+            description:
+                "Simplify and secure certificate operations with our Certificate Lifecycle Management Solution. Automatically discover, issue, renew, and revoke certificates across SSL/TLS, code signing, and device authentication. With centralized visibility, automation, and crypto agility, prevent outages, stay compliant, and ensure digital trust never expires.",
+            imgUrl: "/cloudService/enterpriseNetwork3.png",
+        },
+    ]
+} 
 
-export { EnterpriseInfrastructureSolutionsData, EnterpriseNetworkingSolutionsData, CloudInfrastructureData, CyberSecuritySolutionsData, CyberServicesData, DigitalInnovationData, DataSolutionsData, AISolutionsData, EndpointManagementData ,IdentityManagementData  };       
+const SecureBusinessData = {
+    videoSrc: "https://res.cloudinary.com/dreiyzj42/video/upload/v1757504188/cybersecurity_AI_page_omnfi9.mp4",
+    title: <p> <span className="text-white"> Secure Business Productivity Solutions  </span>  </p>,
+    description: "Betopia Limited delivers customized Endpoint, Identity, and Productivity solutions, ensuring seamless security and operational efficiency.",
+    details: {
+        title: "Secure Business",
+        subtitle: "Productivity Solutions",
+        description: [
+            "Empower your workforce with tools that balance performance, collaboration, and protection. Enable seamless communication through secure email, messaging, and conferencing platforms. Collaborate in real time with document sharing, co-authoring, and version control—without compromising data integrity. Protect sensitive information with encryption, access controls, and compliance-ready policies. Monitor productivity ethically with insights into workflows, engagement, and resource usage. Archive communications securely for legal, regulatory, and operational continuity. Ensure business continuity across cloud, hybrid, and offline environments. Scalable, flexible, and built for modern teams—remote, hybrid, or on-site.",
+        ],
+        imgUrl: "/cloudService/enterprise.png"
+    },
+
+    highlyEffectiveData: [
+    {
+        "title": "Business",
+        "subtitle": "Productivity Apps Suite",
+        "description": "Empower your team with a comprehensive suite of productivity tools that enhance collaboration, communication, and efficiency. These applications integrate seamlessly to streamline workflows, manage tasks, and facilitate real-time collaboration. Whether it’s document editing, project management, or communication, this suite has you covered.",
+        "imgUrl": "/endpoint/endpoint1.png"
+    },
+    {
+        "title": "Enterprise",
+        "subtitle": "Email Solution",
+        "description": "Implement a robust email system designed for businesses, offering secure, scalable, and reliable communication. Features include custom domain support, advanced spam filtering, and seamless integration with other enterprise applications. This solution ensures efficient and professional communication across your organization.",
+        "imgUrl": "/endpoint/endpoint2.png"
+    },
+    {
+        "title": "Enterprise",
+        "subtitle": "Communication Solution",
+        "description": "Enhance internal and external communication with a unified platform that supports voice, video, and messaging. This solution promotes collaboration, reduces communication silos, and supports remote work environments. Integration with existing business tools ensures a cohesive communication experience.",
+        "imgUrl": "/endpoint/endpoint3.png"
+    },
+    {
+        "title": "Enterprise",
+        "subtitle": "Document Collaboration Solution",
+        "description": "Facilitate real-time collaboration on documents, spreadsheets, and presentations with a secure cloud-based platform. Features include version control, commenting, and simultaneous editing, ensuring teams can work together efficiently regardless of location. This solution enhances productivity and document accuracy.",
+        "imgUrl": "/endpoint/endpoint4.png"
+    },
+    {
+        "title": "Email",
+        "subtitle": "Security Solution",
+        "description": "Protect your organization from email-based threats such as phishing, malware, and spam with advanced security measures. This solution includes real-time threat detection, encryption, and secure email gateways to safeguard sensitive information. Regular updates ensure protection against evolving threats.",
+        "imgUrl": "/endpoint/endpoint5.png"
+    },
+    {
+        "title": "Email",
+        "subtitle": "Archiving Solution",
+        "description": "Implement a secure and compliant email archiving system that captures, stores, and retrieves emails. Features include unlimited retention, advanced search capabilities, and integration with existing email platforms. This solution supports regulatory compliance and data governance.",
+        "imgUrl": "/endpoint/endpoint6.png"
+    },
+    {
+        "title": "Information",
+        "subtitle": "Protection Solution",
+        "description": "Safeguard sensitive data across your organization with tools that classify, label, and encrypt information. This solution helps prevent data leaks, ensures compliance with regulations, and provides visibility into data usage. Integration with existing systems streamlines protection efforts.",
+        "imgUrl": "/endpoint/endpoint7.png"
+    },
+    {
+        "title": "User Productivity",
+        "subtitle": "Monitoring Solution",
+        "description": "Gain insights into employee productivity with tools that track application usage, website visits, and work patterns. This solution helps identify areas for improvement, supports performance management, and ensures efficient resource utilization. Data privacy considerations are integral to this solution.",
+        "imgUrl": "/endpoint/endpoint8.png"
+    }
+]
+}  
+
+export { EnterpriseInfrastructureSolutionsData, EnterpriseNetworkingSolutionsData, CloudInfrastructureData, CyberSecuritySolutionsData, CyberServicesData, DigitalInnovationData, DataSolutionsData, AISolutionsData, EndpointManagementData, IdentityManagementData , SecureBusinessData };       

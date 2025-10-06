@@ -36,7 +36,7 @@ const PartnerFAQs = () => {
 
     const handlePageChange = (page: number) => {
         setCurrentPage(page);
-        setOpenIndex(null); 
+        setOpenIndex(null);
     };
     return (
         <div className=" container mb-20">
@@ -51,7 +51,7 @@ const PartnerFAQs = () => {
                     <>
                         {faqs && faqs.length > 0 && (
                             <>
-                                {currentFaqs.map((faq: { question: string, answer: React.JSX.Element }, index: number) => (
+                                {currentFaqs.map((faq: { question: string, answer: string }, index: number) => (
                                     <div
                                         key={index}
                                         className="overflow-hidden transition-max-height duration-300 ease-in-out rounded-lg bg-white cursor-pointer relative lg:h-[56px] h-[65px] shadow"
