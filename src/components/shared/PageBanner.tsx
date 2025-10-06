@@ -12,7 +12,10 @@ const PageBanner = ({
   buttonLink,
 }: PageBannerProps) => {
   return (
-    <div className=" z-10 flex-center text-center h-screen text-white  ">
+    <div
+      id="banner"
+      className=" z-10 flex-center text-center h-screen text-white  "
+    >
       <div className=" ">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover "

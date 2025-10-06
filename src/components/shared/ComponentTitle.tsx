@@ -9,7 +9,7 @@ const ComponentTitle = ({
 }) => {
   return (
     <div
-      className={`text-3xl md:text-[40px] font-normal   ${className} flex items-center gap-2`}
+      className={`text-[28px] md:text-[40px] font-normal   ${className} flex items-center gap-2`}
     >
       {children}
     </div>
