@@ -33,7 +33,8 @@ export const pages: NavPage[] = [
       {
         key: "Partner Program",
         label: "Partner Program",
-        description:"Betopia's ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system.",
+        description:
+          "Betopia's ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system.",
         link: "/partner",
       },
     ],
