@@ -40,8 +40,11 @@ const ProductsMain = () => {
                 imgUrl={(productData.whyChooseUs as any)?.imgUrl}
                 features={productData.whyChooseUs.features} 
             />
-            <TrustedBy /> 
+            <TrustedBy />  
+
+            <div  className=' py-10'> 
             <FAQ/>
+            </div>
 
             <div className='container bg-[#F79549] rounded-[25px] p-10 flex items-center justify-between mb-[80px]'>
                 

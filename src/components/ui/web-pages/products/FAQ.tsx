@@ -1,107 +1,88 @@
-import React from "react";
-import { Collapse, ConfigProvider } from "antd";
-import type { CollapseProps } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import ComponentTitle from "@/components/shared/ComponentTitle";
+import { faqs } from "@/datas/pages/FAQData";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
+
+type ContentRef = HTMLDivElement | null;
 const FAQ: React.FC = () => {
-    const items: CollapseProps["items"] = [
-        {
-            key: "1",
-            label: "How is this ERP different from other software?",
-            children: (
-                <p>
-                    Our ERP is fully integrated, cloud-based, and modular. It lets you
-                    manage everything — CRM, sales, purchase, helpdesk, employees, and
-                    more — from one easy-to-use dashboard.
-                </p>
-            ),
-        },
-        {
-            key: "2",
-            label: "Can I use it for both small and large businesses?",
-            children: (
-                <p>
-                    Yes, our ERP is designed to scale with your business — from startups
-                    to enterprises.
-                </p>
-            ),
-        },
-        {
-            key: "3",
-            label: "Does it support multiple departments and users?",
-            children: (
-                <p>
-                    Absolutely. You can create multiple departments, assign roles, and
-                    manage permissions easily.
-                </p>
-            ),
-        },
-        {
-            key: "4",
-            label: "Can I customize the ERP for my business needs?",
-            children: (
-                <p>
-                    Yes, it’s modular and highly customizable to fit your unique workflow.
-                </p>
-            ),
-        },
-        {
-            key: "5",
-            label: "Does it integrate with my existing tools and hardware?",
-            children: (
-                <p>
-                    It integrates seamlessly with popular third-party tools and can work
-                    with existing hardware setups.
-                </p>
-            ),
-        },
-        {
-            key: "6",
-            label: "Do you provide training and support?",
-            children: (
-                <p>
-                    Yes, we provide onboarding assistance, documentation, and ongoing
-                    technical support.
-                </p>
-            ),
-        },
-    ];
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const contentRefs = useRef<ContentRef[]>([]);
+
+    const toggleAccordion = (index: number) => {
+        setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
+    };
+
+    useEffect(() => {
+        if (openIndex !== null && contentRefs.current[openIndex]) {
+            contentRefs.current[openIndex]!.style.maxHeight = `${contentRefs.current[openIndex]!.scrollHeight
+                }px`;
+        }
+        contentRefs.current.forEach((ref, index) => {
+            if (ref && index !== openIndex) {
+                ref.style.maxHeight = "0px";
+            }
+        });
+    }, [openIndex]);
 
     return (
-        <div className="max-w-3xl mx-auto py-10">
-            <h2 className="text-center text-3xl font-semibold mb-6">
-                Frequently Asked <span className="text-orange-500">Question</span>
-            </h2>
+        <div className="max-w-4xl mx-auto ">
 
-            <ConfigProvider
-                theme={{
-                    components: {
-                        Collapse: {
-                            headerBg: "#F79549"
-                        }
-                    },
-                    token: {
-                        colorTextHeading: "white"
-                    }
-                }}
-            >
-                <Collapse
-                    accordion
-                    items={items}
-                    defaultActiveKey={["1"]}
-                    size="large"
-                    className="faq-collapse"
-                     expandIconPosition="end" 
-                    expandIcon={({ isActive }) => (
-                        <div
-                            className={`icon-circle ${isActive ? "rotate" : ""} w-10 h-10 flex items-center justify-center border border-white rounded-full`}
-                        >
-                            <DownOutlined color="white" size={40} />
-                        </div>
+            <div className="flex flex-col items-center justify-center mb-10">
+                <ComponentTitle className=' !text-center pb-2'> <span className=' text-[#000000]'> Frequently Asked  </span> <span className='text-primary'>Question</span> </ComponentTitle>
+                <p className="w-[360px] h-0.5 bg-[#F7954983]  " />
+            </div>
+
+
+            <div className=" grid grid-cols-1 gap-4 ">
+                <>
+                    {faqs && faqs.length > 0 && (
+                        <>
+                            {faqs.map((faq: { question: string, answer: string }, index: number) => (
+                                <div
+                                    key={index}
+                                    className="overflow-hidden border border-gray-200/90 transition-max-height duration-300 ease-in-out rounded-lg bg-white cursor-pointer relative lg:h-[56px] h-[65px] "
+                                    onClick={() => toggleAccordion(index)}
+                                    style={{
+                                        minHeight:
+                                            openIndex === index
+                                                ? `${contentRefs.current[index]?.scrollHeight}px`
+                                                : "50px",
+                                    }}
+                                >
+                                    <div
+                                        ref={(el) => {
+                                            if (el) {
+                                                contentRefs.current[index] = el;
+                                            }
+                                        }}
+                                        className="accordion-content "
+                                    >
+                                        <div className={`flex items-center justify-between px-5  ${openIndex === index ? " bg-primary h-[56px] text-white " : " bg-transparent h-[56px]"}`}>
+                                            <p className={`lg:text-[18px] text-sm leading-6 font-medium   ${openIndex === index ? " text-white  " : " text-[#6D6C74]"}`}>
+                                                {faq?.question}
+                                            </p>
+                                            <p className={` rounded-full h-[40px] w-[40px] flex-center transition-all  ${openIndex === index ? " bg-transparent border border-white" : "bg-[#414042]"} `}>
+                                                <MdKeyboardArrowRight
+                                                    color="white"
+                                                    className={` text-2xl    ${openIndex === index ? "rotate-90 " : " rotate-0"}`}
+
+                                                />
+
+                                            </p>
+                                        </div>
+                                        <div className="lg:text-[16px] text-sm leading-6 font-normal text-[#5C5C5C] my-5 px-5 pb-3">
+                                            {faq?.answer}
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+
+                        </>
                     )}
-                />
-
-            </ConfigProvider>
+                </>
+            </div>
         </div>
     );
 };
