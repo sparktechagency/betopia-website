@@ -17,7 +17,7 @@ const Opennings: React.FC = () => {
         Divisions— <br /> Apply Now to Start Making an Impact.
       </p>
 
-      <div className="border border-[#4747474F]/31 rounded-[9px]  mt-[52px] px-[37px] py-[27px] flex-center gap-5 flex-wrap">
+      <div className="border border-[#4747474F]/31 rounded-[9px]  mt-[52px] px-[37px] py-[27px] flex-center gap-5 flex-wrap md:flex-nowrap">
         <Input
           prefix={<Search />}
           placeholder="Search Jobs"
