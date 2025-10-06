@@ -21,6 +21,9 @@ import HighEffective from "./HighEffective";
 import TrustedBy from "../home/TrustedBy";
 import FAQ from "../products/FAQ";
 import LetsWorkTogether from "@/components/shared/LetsWorkTogether";
+import EndpointManagement from "./ExtraComponents/endpoint-management/EndpointManagement";
+import IdentityManagement from "./ExtraComponents/identity-management/IdentityManagement";
+import SecureBusiness from "./ExtraComponents/secure-business/SecureBusiness";
 
 const Data: Record<string, typeof EndpointManagementData> = {
   "endpoint-management-security": EndpointManagementData,
@@ -46,6 +49,15 @@ const ServicesMain = () => {
       <ServicesBanner serviceData={serviceData} />
       <ServiceDetails serviceData={serviceData} />
       {/* <FeaturedProducts />  */}
+      <div>
+        {service === "endpoint-management-security" ? (
+          <EndpointManagement />
+        ) : service === "identity-management-security" ? (
+          <IdentityManagement />
+        ) : service === "secure-business-productivity" ? (
+          <SecureBusiness />
+        ) : null}
+      </div>
       <HighEffective serviceData={serviceData} />
       <TrustedBy />
       <FAQ />
