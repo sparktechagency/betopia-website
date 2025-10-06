@@ -6,7 +6,7 @@ import { aboutBannerData } from "@/datas/pages/about";
 
 const AboutBanner = () => {
     return (
-        <div>
+        <div id="banner">
             <PageBanner videoSrc={aboutBannerData?.videoSrc} title={aboutBannerData?.title} subtitle={aboutBannerData?.subtitle} description={aboutBannerData?.description} buttonName={aboutBannerData?.buttonName} buttonLink={aboutBannerData?.buttonLink} />
         </div>
 
