@@ -16,11 +16,9 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
   variant = "default",
   megaSections = [],
 }) => {
-
   const [hoveredKey, setHoveredKey] = useState<DropdownItem>(items[0]);
 
   if (variant === "services") {
-
     return (
       <Menu
         className="border-0 shadow-lg navMenu"
@@ -32,7 +30,9 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
           <div className="grid grid-cols-4 gap-6">
             {megaSections.map((section) => (
               <div key={section.title} className="space-y-3">
-                <div className="text-[#BEBEBE] text-[13px]">{section.title}</div>
+                <div className="text-[#BEBEBE] text-[13px]">
+                  {section.title}
+                </div>
 
                 <div className="space-y-3 ">
                   {section.items.map((it) => (
@@ -58,7 +58,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
     );
   }
 
-
   return (
     <Menu
       className="border-0 shadow-lg navMenu"
@@ -82,7 +81,10 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
               <div className="pb-2 border-b border-[#F69348] lg:pr-4  mb-4">
                 <div className="hover:text-[#F69348] text-[#9B9B9B] text-lg font-normal flex items-center justify-between">
                   {item.label}
-                  <LuChevronRight color="#fffff" className="text-[15px] text-white" />
+                  <LuChevronRight
+                    color="#fffff"
+                    className="text-[15px] text-white"
+                  />
                 </div>
               </div>
             </Menu.Item>

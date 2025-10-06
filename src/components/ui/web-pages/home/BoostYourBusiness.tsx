@@ -10,8 +10,8 @@ const BoostYourBusiness = () => {
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-[51px]">
-          <div className="text-[40px] font-normal text-[#262626] mb-5">
-            <p className="!mb-1.5">Boost Your Business with Betopia</p>
+          <div className="text-2xl md:text-[40px] font-normal text-[#262626] mb-5">
+            <p className="!md:mb-1.5">Boost Your Business with Betopia</p>
             <p className="flex items-center justify-center gap-x-2">
               <span className="bg-primary text-white px-7 py-1.5 rounded-xl">
                 Spotlight
@@ -20,7 +20,8 @@ const BoostYourBusiness = () => {
             </p>
           </div>
           <p className="text-[#555555] mx-auto text-lg">
-          Level up your AI journey with cutting-edge solutions, expert minds, and flexible support. Let&apos;s make magic!
+            Level up your AI journey with cutting-edge solutions, expert minds,
+            and flexible support. Let&apos;s make magic!
           </p>
         </div>
 
@@ -42,12 +43,17 @@ const BoostYourBusiness = () => {
               {/* Content overlay */}
               <div className="absolute bottom-[5%] text-[#858585] z-20 text-center">
                 <div className="w-full flex flex-col items-center gap-4 px-4">
-                <p className="text-2xl text-white pb-1">AI Voice Recording Mobile App</p>
-                  <p className="text-lg font-normal text-[#A1A0A0] text-center mb-2 max-w-[80%]">
+                  <p className="md:text-2xl text-white pb-1">
+                    AI Voice Recording Mobile App
+                  </p>
+                  <p className="text-xs md:text-lg font-normal text-[#A1A0A0] text-center mb-2 max-w-[80%]">
                     A sleek and modern design, perfectly embodying minimalist
                     elegance with an innovative spirit and the firm.
                   </p>
-                  <Link href={"/portfolio?portfolio=Chase The Cash SA"} className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
+                  <Link
+                    href={"/portfolio?portfolio=Chase The Cash SA"}
+                    className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline"
+                  >
                     <span>Learn More</span>
                     <RiArrowRightLine className="text-primary" />
                   </Link>
@@ -58,7 +64,7 @@ const BoostYourBusiness = () => {
 
           {/* Right Column - 2 Items */}
           <div className="flex flex-col gap-6 h-full">
-            {BoostYourBusinessItems.map((item) => (
+            {BoostYourBusinessItems?.map((item) => (
               <div
                 key={item.id}
                 className="relative group cursor-pointer rounded-2xl overflow-hidden flex-1"
@@ -74,13 +80,16 @@ const BoostYourBusiness = () => {
                 />
 
                 {/* Content overlay - same as left */}
-                <div className="absolute bottom-[7%] text-[#858585] z-20 text-center">
-                  <div className="w-full flex flex-col items-start  px-[50px]"> 
-                    <p className="text-2xl text-white pb-1">{item?.title}</p>
-                    <p className="text-lg font-normal text-[#555555] text-start mb-2 max-w-[80%] pb-7">
+                <div className="absolute bottom-4 md:bottom-[7%] text-[#858585] z-20 text-center">
+                  <div className="w-full flex flex-col items-start  px-[50px]">
+                    <p className="md:text-2xl text-white pb-1">{item?.title}</p>
+                    <p className="text-xs md:text-lg font-normal text-[#555555] text-start mb-2 max-w-[80%] pb-7">
                       {item.description}
                     </p>
-                    <Link href={item?.link} className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline">
+                    <Link
+                      href={item?.link}
+                      className="flex items-center gap-2 cursor-pointer text-[16px] font-medium hover:underline"
+                    >
                       <span>Learn More</span>
                       <RiArrowRightLine className="text-primary" />
                     </Link>
