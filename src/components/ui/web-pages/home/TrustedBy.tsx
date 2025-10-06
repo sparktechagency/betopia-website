@@ -10,14 +10,14 @@ import { trustedByCompaniesImages } from "@/datas/pages/home";
 const TrustedBy = () => {
   const shouldCenterAndLoop = trustedByCompaniesImages?.length > 8;
 
-    return (
-        <div className=' my-20 container'>
-            <p className="flex items-center justify-center gap-x-2 text-[40px] ">
-                <span className="bg-primary text-white px-7 py-1.5 rounded-xl ">
-                    Trusted
-                </span>
-                <span>by</span>
-            </p>
+  return (
+    <div className=" my-20 container">
+      <p className="flex items-center justify-center gap-x-2 text-[40px] ">
+        <span className="bg-primary text-white px-7 py-1.5 rounded-xl ">
+          Trusted
+        </span>
+        <span>by</span>
+      </p>
 
       <div className=" w-full pt-10 ">
         <Swiper
