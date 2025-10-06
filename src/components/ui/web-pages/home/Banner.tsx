@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div
       id="banner"
-      className=" z-10 flex-center text-center min-h-screen text-white  "
+      className=" z-10 flex-center text-center min-h-[calc(100vh-102px)] md:min-h-screen text-white  "
     >
       <div className=" ">
         <video
@@ -26,7 +26,7 @@ const Banner = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-black/77 "></div>
 
       {/* Content can go here */}
-      <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">
+      <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden md:h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center   ">
           <p className="text-[#818181] text-[34px] lg:text-[64px] font-medium">
             <span className="text-white">From </span>{" "}

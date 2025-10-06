@@ -28,15 +28,15 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <header className="sticky top-4  z-50">
+    <header className="sticky top-4  z-50  px-4 md:px-0  ">
       <div
         className={`relative top-0 container mt-10 h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 
-        lg:h-[74px] mx-4 md:mx-auto rounded-2xl  w-full
+        lg:h-[74px]  md:mx-auto rounded-2xl  
         transition-colors duration-300
         ${
           isScrolled
             ? "bg-black/70 backdrop-blur-[44px] "
-            : "bg-transparent lg:bg-transparent lg:rounded-none"
+            : "bg-transparent lg:bg-transparent lg:rounded-none backdrop-blur-[44px] lg:backdrop-blur-none"
         }`}
       >
         <div className="flex items-center">

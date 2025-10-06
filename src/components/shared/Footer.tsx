@@ -6,11 +6,7 @@ import WorldMap from "../ui/shared-features/footer/WorldMap";
 import Link from "next/link";
 import { socialLinks } from "@/datas/sharedData/footer";
 
-
-
-
 const Footer: React.FC = () => {
-
   return (
     <div className="bg-[#040404] pt-10  flex items-center justify-center">
       <div className="container">
@@ -25,12 +21,18 @@ const Footer: React.FC = () => {
           />
         </div>
 
-        <div className="bg-[#181818] p-8 grid grid-cols-12 rounded-[8px] gap-10">
-          <div className="col-span-8 h-[460px]">
+        <div className="bg-[#181818] p-8 grid grid-cols-1 lg:grid-cols-12 rounded-[8px] gap-10">
+          <div className="col-span-1 lg:col-span-8 lg:h-[460px]">
             <WorldMap />
           </div>
-          <div className="col-span-4 flex flex-col items-end">
-            <Image src="/dubai.png" alt="Dubai" width={500} height={400} />
+          <div className=" lg:col-span-4 flex flex-col items-end">
+            <Image
+              src="/dubai.png"
+              alt="Dubai"
+              width={500}
+              height={400}
+              className="w-full h-full lg:w-[500px] lg:h-[400px]"
+            />
             <div className="mt-[47px]">
               <ul className="grid text-right text-[18px] leading-[24px] grid-cols-1 gap-2 text-white list-none">
                 <li className="font-bold">Dubai</li>
@@ -47,26 +49,31 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Social Links */} 
-        <div className=" flex-center py-7 "> 
-        <div className="flex-center gap-x-10  text-white ">
-          <p className="text-[#F8F8F8] text-[18px] mb-0 ">
-            © 2025, Betopia Ltd. | All Rights Reserved.
-          </p>
-          <div className="flex items-center gap-x-4 ">
-            {socialLinks.map((link, index) => (
-              <p
-                key={index}
-                className={`w-9 h-9 flex-center rounded-full text-white`}
-                style={{ backgroundColor: link.bgColor , color:'#ffffff'}}
-              >
-                <Link href={link.url} target="_blank" rel="noopener noreferrer" className=" text-white">
-                  {link.icon}
-                </Link>
-              </p>
-            ))}
+        {/* Social Links */}
+        <div className=" md:flex-center py-7 ">
+          <div className="flex flex-col md:flex-row gap-5 justify-center items-center md:flex-center  gap-x-10  text-white ">
+            <p className="text-[#F8F8F8] text-[18px] mb-0 ">
+              © 2025, Betopia Ltd. | All Rights Reserved.
+            </p>
+            <div className="flex items-center gap-x-4 ">
+              {socialLinks.map((link, index) => (
+                <p
+                  key={index}
+                  className={`w-9 h-9 flex-center rounded-full text-white`}
+                  style={{ backgroundColor: link.bgColor, color: "#ffffff" }}
+                >
+                  <Link
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" text-white"
+                  >
+                    {link.icon}
+                  </Link>
+                </p>
+              ))}
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
