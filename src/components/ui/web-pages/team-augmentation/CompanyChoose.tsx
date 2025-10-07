@@ -8,7 +8,7 @@ const CompanyChoose = () => {
     <div className="container mx-auto mb-20">
       <div className=" w-full flex flex-col md:flex-row items-center justify-between mb-20">
         <div className="md:w-[50%]">
-          <p className=" pb-4 text-[#535353] text-[40px] font-normal leading-12 w-[85%]">
+          <p className=" pb-4 text-[#535353] text-3xl md:text-[40px] font-normal leading-12 md:w-[85%]">
             {" "}
             Why U.S. Companies Choose{" "}
             <span className=" text-primary">Betopia Limited</span>{" "}
