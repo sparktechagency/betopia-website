@@ -17,7 +17,7 @@ const BannerDetails = () => {
           />
         </div>
 
-        <div className="w-[50%] text-lg md:text-xl lg:text-[18px] 2xl:text-xl leading-10 tracking-wide text-[#B7B7B7]  md:text-gray-600 ">
+        <div className="w-full lg:w-[50%] text-lg md:text-xl lg:text-[18px] 2xl:text-xl leading-10 tracking-wide text-[#B7B7B7]  md:text-gray-600 ">
           <span className="text-primary text-[35px]"> Betopia </span> Limited
           began its journey in 2014 with a simple dream, to use technology to
           solve real business problems. In 2015, we saw early growth as more
