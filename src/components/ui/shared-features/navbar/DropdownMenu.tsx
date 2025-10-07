@@ -2,13 +2,13 @@
 "use client";
 import React, { useState } from "react";
 import { Menu } from "antd";
-import { DropdownItem, MegaSection } from "@/types";
+import { DropdownItem, megaSections } from "@/types";
 import { LuChevronRight } from "react-icons/lu";
 
 interface DropdownMenuProps {
   items: DropdownItem[];
   variant?: "default" | "services";
-  megaSections?: MegaSection[]; // only for services
+  megaSections?: megaSections[]; // only for services
 }
 
 const DropdownMenu: React.FC<DropdownMenuProps> = ({
