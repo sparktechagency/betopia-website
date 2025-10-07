@@ -14,7 +14,7 @@ export interface MegaSectionItem {
   link: string;
 }
 
-export interface MegaSection {
+export interface megaSections {
   title: string;
   items: MegaSectionItem[];
 }
@@ -33,7 +33,7 @@ export interface NavPage {
   link: string;
   hasDropdown?: boolean;
   dropdownItems?: DropdownItem[];
-  megaSections?: MegaSection[];
+  megaSections?: megaSections[];
 }
 
 export interface SocialLink {
@@ -52,7 +52,7 @@ export interface PageBannerProps {
 }
 
 export interface serviceType {
-  serviceData: servicesType
+  serviceData: servicesType;
 }
 
 export interface servicesType {
@@ -77,7 +77,7 @@ export interface servicesType {
 }
 
 export interface productType {
-  productData: productsType
+  productData: productsType;
 }
 
 export interface productsType {
@@ -94,7 +94,7 @@ export interface productsType {
     icon: string;
     title: string;
     subTitle?: string;
-    list?: string[]
+    list?: string[];
     description: string;
   }[];
 }
@@ -105,8 +105,6 @@ export interface TransformingType {
   accent: string;
   numberOnRight?: boolean;
 }
-
-
 
 export interface PortfolioSocialLink {
   icon: ReactNode;

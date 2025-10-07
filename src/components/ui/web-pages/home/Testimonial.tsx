@@ -24,11 +24,11 @@ const Testimonial = () => {
       <section className="  flex items-center ">
         <div className="container !px-0 md:px-4 mx-auto bg-white  flex flex-col justify-center  rounded-2xl  ">
           <h2 className="text-center text-2xl md:text-[32px] font-semibold pb-14  lg:flex lg:flex-col gap-y-4  items-center ">
-            <span
+            <p
               className={`text-sm font-medium text-[#1C54E3] uppercase text-center ${inter.className}`}
             >
               Testimonial{" "}
-            </span>
+            </p>
             <span className=" md:text-[32px] font-bold  ">
               Real Stories, Real Impact: Hear from Our Satisfied Clients
             </span>
