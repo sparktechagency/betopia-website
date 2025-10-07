@@ -13,9 +13,11 @@ const FooterDetials = () => {
           <p className=" leading-relaxed text-xl text-[#F8F8F8] pb-5">
             Empowering businesses with smart, scalable software solutions.
           </p>
-          <button className="mt-6  rounded-lg bg-[#F69348] !text-[#181818] text-sm font-medium px-6 py-2 transition">
-            Join as a Partner
-          </button>
+          <Link href={"/partner"}>
+            <button className="mt-6 cursor-pointer rounded-lg bg-[#F69348] !text-[#181818] text-sm font-medium px-6 py-2 transition">
+              Join as a Partner
+            </button>
+          </Link>
         </div>
 
         {/* Services */}
@@ -26,7 +28,7 @@ const FooterDetials = () => {
               <li key={idx}>{service}</li>
             ))}
           </ul>
-        </div> 
+        </div>
 
         <div className="lg:col-span-2">
           <h3 className="text-transparent font-semibold mb-4"> SERVICES </h3>

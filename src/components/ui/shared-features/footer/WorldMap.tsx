@@ -9,7 +9,7 @@ const WorldMap: React.FC = () => {
                 <Geographies geography="/features.json">
                     {({ geographies }) =>
                         geographies.map((geo) => {
-                            const isHighlighted = geo?.id === "BGD" || geo?.id === "GBR";
+                            const isHighlighted = geo?.id === "BGD"
                             return (
                                 <Geography
                                     key={geo.rsmKey}

@@ -40,8 +40,8 @@ const Banner = () => {
             organizations modernize, protect, and monetize their digital
             ecosystems.
           </p>
-          <Link href={"/services"} className="pt-8 lg:pt-[77px]">
-            <OutlineButton className=" !py-4 !px-7">
+          <Link href={"/services"} className="mt-8 lg:mt-[77px]">
+            <OutlineButton className=" cursor-pointer !py-4 !px-7">
               Explore Our Services
             </OutlineButton>
           </Link>
