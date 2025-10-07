@@ -19,14 +19,10 @@ const Planning: React.FC = () => {
       </div>
 
       <div className="mt-[43px] flex-center gap-2 md:gap-[30px] mb-[100px] ">
-        <button className="bg-[#F69348] !text-sm md:text-base rounded-[5px] w-full md:w-[296px] h-[50px]">
+        <Link href={"#more"}>
+        <button className="bg-[#F69348] cursor-pointer !text-sm md:text-base rounded-[5px] w-full md:w-[296px] h-[50px]">
           <span className="text-white">Deep Drive into the Spotlight</span>
         </button>
-        <Link
-          className="w-full md:w-[180px] h-[50px] text-sm md:text-base bg-white rounded-[5px] border border-black flex-center"
-          href={`/blog-details?blog=enterprise-resource-planning`}
-        >
-          <button className="">Learn More</button>
         </Link>
       </div>
 

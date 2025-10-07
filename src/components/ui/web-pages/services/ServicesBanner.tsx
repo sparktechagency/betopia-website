@@ -10,8 +10,8 @@ const ServicesBanner = ({ serviceData }: { serviceData: any }) => {
         videoSrc={serviceData?.videoSrc}
         title={serviceData?.title}
         description={serviceData?.description}
-        buttonName={"Partner With Us"}
-        buttonLink={"/partner"}
+        buttonName={"Book Our Service"}
+        buttonLink={"/contact"}
       />
     </div>
   );

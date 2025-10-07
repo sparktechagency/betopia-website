@@ -1,4 +1,5 @@
 import OutlineButton from "@/components/shared/OutlineButton";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -31,17 +32,23 @@ const TeamAugmentationBanner = () => {
             quality, security, or delivery speed.
           </p>
           <div className="pt-[77px] flex flex-col md:flex-row items-center gap-5">
-            <Link className="w-full md:w-auto" href="/become-partner">
+            <Link className="w-full md:w-auto" href="/contact">
               <OutlineButton className="!py-4 !px-7 !w-full">
                 Request a Free Consultation
               </OutlineButton>
             </Link>
 
-            <Link className="w-full md:w-auto" href="/become-partner">
-              <OutlineButton className="!py-4 !px-7 !w-full">
-                Get Talent Profiles
-              </OutlineButton>
-            </Link>
+            <button
+              className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
+              style={{ color: "white" }}
+            >
+              Get Talent Profiles <Image
+                src="/agumentation/lock.png"
+                alt="arrow"
+                width={24}
+                height={24}
+              />
+            </button>
           </div>
         </div>
       </div>

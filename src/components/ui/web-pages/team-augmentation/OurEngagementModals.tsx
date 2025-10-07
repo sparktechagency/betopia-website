@@ -100,9 +100,17 @@ const OurEngagementModals = () => {
         </div>
 
         <div className=" pt-[60px] flex items-center justify-center">
-          <OutlineButton className="mx-auto p-4 !text-[#656565] font-semibold">
-            Get Talent Profiles
-          </OutlineButton>
+          <button
+            className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
+            style={{ color: "white" }}
+          >
+            Get Talent Profiles <Image
+              src="/agumentation/lock.png"
+              alt="arrow"
+              width={24}
+              height={24}
+            />
+          </button>
         </div>
       </div>
     </div>

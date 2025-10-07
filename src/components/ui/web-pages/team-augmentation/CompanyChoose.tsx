@@ -1,6 +1,7 @@
 import OutlineButton from "@/components/shared/OutlineButton";
 import { ChooseBetopiaReasons } from "@/datas/pages/teamAugmentation";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CompanyChoose = () => {
@@ -23,9 +24,11 @@ const CompanyChoose = () => {
             scalable teams.{" "}
           </p>
           <div>
+            <Link href={"/contact"}>
             <OutlineButton className="mx-auto p-4 !text-[#656565] font-semibold">
               Request a Free Cost Analysis
             </OutlineButton>
+            </Link>
           </div>
         </div>
       </div>

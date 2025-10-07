@@ -9,7 +9,7 @@ const BlogBanner: React.FC = () => {
             subtitle="Betopia Limited"
             description="Uncover In-Depth Content and Strategies to Elevate Your Business"
             buttonName="Explore more about Betopia"
-            buttonLink=""
+            buttonLink="/services?service=endpoint-management-security"
         />
     );
 };

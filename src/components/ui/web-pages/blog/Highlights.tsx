@@ -8,7 +8,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 const Highlights: React.FC = () => {
   return (
-    <div className="container mb-20">
+    <div className="container mb-20" id="more">
       <ComponentTitle className=" text-[#646464] pb-9">
         More <span className="text-primary">Highlights</span>{" "}
       </ComponentTitle>

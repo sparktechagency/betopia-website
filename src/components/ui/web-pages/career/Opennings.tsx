@@ -7,7 +7,7 @@ import React from "react";
 
 const Opennings: React.FC = () => {
   return (
-    <div className="container mt-20">
+    <div className="container mt-20" id="application">
       <ComponentTitle className="  md:flex-center pb-6 ">
         Current <span className="text-primary">Openings</span>
         at Betopia
