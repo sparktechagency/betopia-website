@@ -15,8 +15,8 @@ const ProductInfo: React.FC<IProductInfoProps> = ({ info }) => {
   return (
     <div className="container flex flex-col md:flex-row items-center gap-10 mb-[80px]">
       <div>
-        <h1 className="text-[45px] leading-[50px]">{title}</h1>
-        <p className="text-[#666666] text-[24px] leading-[35px]">
+        <h1 className="text-[32px] lg:text-[45px] lg:leading-[50px]">{title}</h1>
+        <p className="text-[#666666] text-lg lg:text-[24px] leading-[35px]">
           {description}
         </p>
         <OutlineButton className=" !py-4 !px-7 !mt-6">
