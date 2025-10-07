@@ -45,29 +45,29 @@ export const pages: NavPage[] = [
     hasDropdown: true,
 
     // keep the simple list (unchanged) so existing code paths still work if needed
-    dropdownItems: [
-      {
-        key: "cloud-services",
-        label: "Cloud Services",
-        description:
-          "Betopia Limited's Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.",
-        link: "/services?service=Cloud Services",
-      },
-      {
-        key: "cybersecurity-services",
-        label: "Cybersecurity Services",
-        description:
-          "Advanced cybersecurity solutions to protect your digital assets and ensure compliance.",
-        link: "/services?service=Cybersecurity Services",
-      },
-      {
-        key: "ai-services",
-        label: "AI Services",
-        description:
-          "Cutting-edge AI and machine learning services to transform your business operations.",
-        link: "/services?service=AI Services",
-      },
-    ],
+    // dropdownItems: [
+    //   {
+    //     key: "cloud-services",
+    //     label: "Cloud Services",
+    //     description:
+    //       "Betopia Limited's Cloud Modernization & Managed Services streamline business operations by transforming legacy systems into scalable, cloud-native solutions. Their expert team ensures seamless migration and optimization management for enhanced performance and security.",
+    //     link: "/services?service=Cloud Services",
+    //   },
+    //   {
+    //     key: "cybersecurity-services",
+    //     label: "Cybersecurity Services",
+    //     description:
+    //       "Advanced cybersecurity solutions to protect your digital assets and ensure compliance.",
+    //     link: "/services?service=Cybersecurity Services",
+    //   },
+    //   {
+    //     key: "ai-services",
+    //     label: "AI Services",
+    //     description:
+    //       "Cutting-edge AI and machine learning services to transform your business operations.",
+    //     link: "/services?service=AI Services",
+    //   },
+    // ],
 
     // NEW: mega menu sections for Services (used only by the new condition)
     megaSections: [

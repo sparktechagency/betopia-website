@@ -3,7 +3,7 @@ import Image from "next/image";
 import { owners } from "@/datas/pages/about";
 const Owner: React.FC = () => {
   return (
-    <div className=" my-20 ">
+    <div className=" lg:my-20 ">
       <div className="flex flex-col gap-y-[140px]">
         {owners.map((owner, index) => (
           <div
@@ -45,7 +45,7 @@ const Owner: React.FC = () => {
                   {owner.slogan}{" "}
                   <span className=" text-[#763300]"> &quot; </span>
                 </h1>
-                <p className=" text-[22px] text-[#2A2A2A]  lg:w-[79%] text-justify pb-10">
+                <p className=" text-[22px] text-[#2A2A2A]  lg:w-[79%] md:text-justify pb-10">
                   {owner.bio}
                 </p>
                 <div className=" flex flex-col ">
