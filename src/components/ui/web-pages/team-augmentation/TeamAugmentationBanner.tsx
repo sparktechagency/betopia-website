@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import OutlineButton from "@/components/shared/OutlineButton";
 import Image from "next/image";
 import Link from "next/link";
