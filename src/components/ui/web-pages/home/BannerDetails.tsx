@@ -37,7 +37,7 @@ const BannerDetails = () => {
           <br />
           Today, our journey continues with pride,{" "}
           <span className="font-bold">
-            40,000+ clients served, 40,000+ projects delivered, 750+
+            40,000+ clients served, 40,000+ projects delivered, 3000+
             professionals
           </span>{" "}
           , and operations across 47+ countries. From 30,000+ clients in Europe
