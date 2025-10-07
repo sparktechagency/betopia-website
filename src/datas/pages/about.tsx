@@ -22,7 +22,7 @@ export const owners = [
     },
     {
         name: "MD Naimul Hasan Durjay",
-        role: "Head of Department",
+        role: "AGM",
         imageUrl: "/owners/head.png",
         bio: "My vision is to scale businesses worldwide by leveraging AI, Cloud, and Cybersecurity. We enable smarter decision-making, global scalability, and digital resilience — helping companies grow faster in an increasingly connected world",
         slogan: "Leadership Voices",
