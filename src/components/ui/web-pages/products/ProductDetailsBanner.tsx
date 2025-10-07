@@ -19,7 +19,7 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
   return (
     <div
       id="banner"
-      className=" z-10 flex-center text-center h-screen text-white  "
+      className=" z-10 flex-center text-center h-[calc(100vh-50px)] md:h-screen text-white  "
     >
       <div className=" ">
         <Image
@@ -35,7 +35,7 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
       {/* Content can go here */}
       <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden md:h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center  w-full  ">
-          <div className="text-[#818181] text-[34px] lg:text-[64px] font-medium">
+          <div className="text-[#818181] text-[34px] lg:text-[64px] font-medium mb-4">
             {heading}{" "}
           </div>
           <p className=" text-[#F79549] text-[20px] lg:text-[57px] font-semibold lg:w-[60%] md:w-[70%] w-full text-center pb-9   ">

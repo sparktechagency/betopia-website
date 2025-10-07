@@ -8,13 +8,14 @@ import React from "react";
 const Opennings: React.FC = () => {
   return (
     <div className="container mt-20" id="application">
-      <ComponentTitle className="  md:flex-center pb-6 ">
+      <ComponentTitle className="  flex-center pb-6 ">
         Current <span className="text-primary">Openings</span>
         at Betopia
       </ComponentTitle>
-      <p className="text-center text-[22px] leading-[140%] text-[#797979] font-light">
+      <p className="text-center text-base lg:text-[22px] lg:leading-[140%] text-[#797979] font-light">
         Discover a Range of Exciting Roles Across Our HRM, POS, and ERP
-        Divisions— <br /> Apply Now to Start Making an Impact.
+        Divisions— <br className="hidden md:block" /> Apply Now to Start Making
+        an Impact.
       </p>
 
       <div className="border border-[#4747474F]/31 rounded-[9px]  mt-[52px] px-[37px] py-[27px] flex-center gap-5 flex-wrap md:flex-nowrap">
@@ -162,7 +163,7 @@ const Opennings: React.FC = () => {
         ))}
       </div>
 
-      <div className="py-[100px] flex items-center justify-center">
+      <div className="pt-8 pb-12 lg:py-[50px] flex items-center justify-center">
         <button className="bg-[#F6934842]/78 cursor-pointer  w-[123px] h-[37px] rounded-[6px]">
           {" "}
           <span className="text-[#5B5959] text-[18px]">Explore More</span>{" "}

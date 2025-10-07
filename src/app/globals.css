@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @layer components {
   .container {
     @apply mx-auto px-5 max-w-[1280px];
@@ -33,6 +32,11 @@
   }
 }
 
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
 /* path {
   fill: #1A1A1A;
 }  */
@@ -40,8 +44,6 @@
 .ant-dropdown .ant-dropdown-menu {
   padding: 1px !important;
 }
-
-
 
 /* scroll bar */
 ::-webkit-scrollbar {
@@ -82,7 +84,6 @@ p {
 .swiper-pagination-bullet-active {
   background-color: #1c55e0 !important;
 }
-
 
 .custom-input .ant-input,
 .custom-input .ant-select-selector {

@@ -41,7 +41,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
     const isExpanded = expandedItems.includes(page.name);
     const isActive = activePage === page.link;
 
-    if (page.hasDropdown && page.dropdownItems) {
+    if (page.hasDropdown && (page.dropdownItems || page.megaSections)) {
       return (
         <div key={page.name}>
           <div
@@ -57,9 +57,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
               <ChevronDown className="w-4 h-4 text-gray-900" />
             )}
           </div>
+
           {isExpanded && (
             <div className="ml-4 space-y-0.5 mb-1">
-              {page.dropdownItems.map((item) => (
+              {/* Render dropdownItems  */}
+              {page.dropdownItems?.map((item) => (
                 <Link
                   key={item.key}
                   href={item.link}
@@ -68,6 +70,25 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
                 >
                   {item.label}
                 </Link>
+              ))}
+
+              {/* Render megaSections  */}
+              {page.megaSections?.map((section) => (
+                <div key={section.title} className="mt-2">
+                  <p className="text-[14px] font-medium  !mb-2">
+                    {section.title}
+                  </p>
+                  {section.items?.map((item) => (
+                    <Link
+                      key={item.key}
+                      href={item.link}
+                      onClick={onClose}
+                      className="block py-1 text-[12px] text-gray-700 hover:text-[#F69348]"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               ))}
             </div>
           )}

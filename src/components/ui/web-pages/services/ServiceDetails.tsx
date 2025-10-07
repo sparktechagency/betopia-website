@@ -13,17 +13,17 @@ const ServiceDetails = ({ serviceData }: { serviceData: any }) => {
 
       <div className="flex md:flex-row flex-col items-center justify-between  gap-[33px]  container mx-auto">
         <div className="w-full md:w-1/2">
-          <h2 className="text-[40px] font-medium text-[#414042] mb-1">
+          <h2 className="text-[28px] lg:text-[40px] font-medium text-[#414042] mb-1">
             {serviceData?.details?.title}
           </h2>
-          <h2 className="text-[40px] font-medium text-primary mb-1">
+          <h2 className="text-[28px] lg:text-[40px] font-medium text-primary mb-1">
             {serviceData?.details?.subtitle}
           </h2>
           <p className="w-[245px] h-[3px] bg-primary" />
           <div className=" flex flex-col gap-4 mt-4 ">
             {serviceData?.details?.description?.map(
               (point: string, index: number) => (
-                <p key={index} className="text-2xl  text-[#666666] ">
+                <p key={index} className="text-lg lg:text-2xl  text-[#666666] ">
                   {point}
                 </p>
               )

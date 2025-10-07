@@ -1,13 +1,13 @@
 import PageBanner from "@/components/shared/PageBanner";
 import React from "react";
 import ContactSection from "./contact-section/ContactSection";
-import LetsWorkTogether from "@/components/shared/LetsWorkTogether";
+import ContactFormSection from "./ContactFormSection";
 
 export default function ContactMain() {
   return (
     <section>
       <PageBanner
-        videoSrc="https://res.cloudinary.com/dreiyzj42/video/upload/v1757501387/blog_page_vtkluu.mp4"
+        videoSrc="https://res.cloudinary.com/ds1njqypu/video/upload/v1759826820/4480599-uhd_3840_2160_25fps_s3h7fk.mp4"
         title={
           <p>
             Get in Touch with
@@ -19,10 +19,9 @@ export default function ContactMain() {
         buttonName="Contact Us Today"
         buttonLink=""
       />
-      {/* <ContactSection /> */}
-      <div className="-mt-32">
-        <LetsWorkTogether />
-      </div>
+      <ContactSection />
+      <ContactFormSection />
+      {/* <LetsWorkTogether /> */}
     </section>
   );
 }

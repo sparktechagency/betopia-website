@@ -49,14 +49,14 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
           <div>
             <div className="space-y-6">
               {value?.strategyPoint.map((point, index) => (
-                <div key={index} className="flex items-start gap-4">
+                <div key={index} className="grid grid-cols-8 items-start gap-4">
                   {/* Number circle */}
-                  <div className="w-[70px] h-[70px] flex items-center justify-center bg-[#FF7F5C] text-white font-bold rounded-full text-[40px]">
+                  <div className="col-span-2 lg:col-span-1 w-[70px] h-[70px] flex items-center justify-center bg-[#FF7F5C] text-white font-bold rounded-full text-[40px]">
                     {index + 1}
                   </div>
 
                   {/* Text */}
-                  <div>
+                  <div className="col-span-6 lg:col-span-7">
                     <h4 className="text-lg font-semibold text-gray-900">
                       {point.title}
                     </h4>
