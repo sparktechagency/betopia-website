@@ -25,7 +25,10 @@ import EndpointManagement from "./ExtraComponents/endpoint-management/EndpointMa
 import IdentityManagement from "./ExtraComponents/identity-management/IdentityManagement";
 import SecureBusiness from "./ExtraComponents/secure-business/SecureBusiness";
 import OurStrategyWorkflow from "./ExtraComponents/endpoint-management/OurStrategyWorkflow";
-import { endpointStrategy, secureBusinessStrategy } from "@/datas/pages/ServiceExtraComponentsData";
+import {
+  endpointStrategy,
+  secureBusinessStrategy,
+} from "@/datas/pages/ServiceExtraComponentsData";
 import SolutionPortfolio from "./ExtraComponents/identity-management/SolutionPortfolio";
 
 const Data: Record<string, typeof EndpointManagementData> = {
