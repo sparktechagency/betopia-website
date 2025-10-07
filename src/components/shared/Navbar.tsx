@@ -8,6 +8,7 @@ import OutlineButton from "./OutlineButton";
 import { Menu } from "lucide-react";
 import NavItem from "../ui/shared-features/navbar/NavItem";
 import MobileMenu from "../ui/shared-features/navbar/mobile-menu/MobileMenu";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
@@ -28,7 +29,7 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <header className="sticky top-4  z-50  px-4 md:px-0  ">
+    <header className="sticky top-4  z-50  px-4   ">
       <div
         className={`relative top-0 container mt-10 h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 
         lg:h-[74px]  md:mx-auto rounded-2xl  
@@ -39,7 +40,7 @@ const Navbar: React.FC = () => {
             : "bg-transparent lg:bg-transparent lg:rounded-none backdrop-blur-[44px] lg:backdrop-blur-none"
         }`}
       >
-        <div className="flex items-center">
+        <Link href="/home" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Logo"
@@ -47,7 +48,7 @@ const Navbar: React.FC = () => {
             width={140}
             className="h-[40px] w-full lg:h-[55px] lg:w-[140px]  mt-1 "
           />
-        </div>
+        </Link>
 
         <div className="hidden lg:flex items-center gap-9">
           <div className="flex items-center gap-9">
