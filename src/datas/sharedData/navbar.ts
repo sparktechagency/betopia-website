@@ -151,5 +151,5 @@ export const pages: NavPage[] = [
   { name: "Career", link: "career" },
   { name: "Blog", link: "blog" },
   { name: "Team Augmentation", link: "team-augmentation" },
-  { name: "Contact", link: "contact" },
+  // { name: "Contact", link: "contact" }, 
 ];

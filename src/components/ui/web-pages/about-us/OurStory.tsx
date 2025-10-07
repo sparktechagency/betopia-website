@@ -3,14 +3,14 @@ import React from "react";
 
 const OurStory = () => {
   return (
-    <div className="container relative text-white pb-12 lg:pb-24  ">
+    <div className="container relative text-white pb-32 lg:pb-24  ">
       <ComponentTitle className=" !text-start pb-2">
         {" "}
         <span className=" text-[#000000]"> Our </span>{" "}
         <span className="text-primary">Story</span>{" "}
       </ComponentTitle>
-      <div className=" grid lg:grid-cols-5 md:grid-cols-1 grid-cols-1 gap-20 pb-10  ">
-        <div className=" col-span-3 flex flex-col text-[#818181] text-lg tracking-wide  leading-9">
+      <div className=" flex flex-col md:flex-row gap-10 mb-10 ">
+        <div className=" md:w-4/6 w-full flex flex-col text-[#818181] text-lg tracking-wide  leading-9">
           <span>
             Every great journey begins with a vision. For Betopia Limited, that
             vision started in 2014 with a simple goal — to build technology that
@@ -50,7 +50,7 @@ const OurStory = () => {
             <ul className="grid grid-cols-1 gap-2 list-disc pl-4">
               <li>40,000+ clients served</li>
               <li>50,000+ projects delivered</li>
-              <li>750+ professionals worldwide</li>
+              <li>3000+ professionals worldwide</li>
               <li>
                 One of the leading IT transformation companies in Bangladesh
               </li>
@@ -71,9 +71,9 @@ const OurStory = () => {
             connected world.
           </span>
         </div>
-        <div className=" col-span-2 w-full h-full rounded-lg overflow-hidden relative ">
+        <div className=" md:w-2/6 flex flex-col m-auto">
           <video
-            className="absolute  object-cover w-full h-full "
+            className=" md:object-cover md:h-lvh w-full rounded-2xl md:rounded-sm"
             autoPlay
             loop
             muted
