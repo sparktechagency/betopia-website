@@ -61,9 +61,9 @@ const Navbar: React.FC = () => {
             ))}
           </div>
 
-          <div>
+          <Link href={"/contact"}>
             <OutlineButton className="">Try Consultant</OutlineButton>
-          </div>
+          </Link>
         </div>
 
         <button
