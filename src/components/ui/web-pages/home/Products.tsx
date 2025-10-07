@@ -5,7 +5,7 @@ import React from "react";
 
 const Products: React.FC = () => {
   return (
-    <div className="my-12 md:my-20 container py-[60px] ">
+    <div className="my-10 md:my-20 container ">
       <h1 className="text-center text-[#262626] text-[40px] leading-[52px]">
         Betopia Products
       </h1>
@@ -15,7 +15,7 @@ const Products: React.FC = () => {
 
       <div className="mt-[47px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {ProductArray.map((product, index) => (
-          <div key={index} className=" rounded-[16px] bg-[#F795491F]/88 p-2">
+          <div key={index} className=" relative min-h-[452px] rounded-[16px] bg-[#F795491F]/88 lg:p-4 p-2">
             <div className="w-full h-[200px] relative  mb-4">
               <Image
                 src={product.imgUrl}
@@ -41,15 +41,15 @@ const Products: React.FC = () => {
               {product.description}
             </p>
 
-            <div className="mt-4">
+            <div className="absolute bottom-6 ">
               {
                 product?.title === "Cash Advance System"
                   ?
-                  <button disabled className="bg-gray-400 w-[145px] block h-[44px] rounded-[8px]">
+                  <button disabled className="bg-gray-400 w-[145px] block h-[44px] rounded-[8px] disabled:cursor-not-allowed">
                     <span className="text-white">View Product</span>
                   </button>
                   :
-                  <Link href={`${product.link === "/partner" ? "/partner" : `/products${product.link}`}`}>
+                  <Link href={`${product.link === "/partner" ? "/partner" : `/products${product.link}`}`} >
                     <button className="bg-[#F69348] cursor-pointer w-[145px] block h-[44px] rounded-[8px]">
                       <span className="text-white">View Product</span>
                     </button>

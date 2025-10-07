@@ -32,7 +32,7 @@ const OurStory = () => {
                         <ul className='grid grid-cols-1 gap-2 list-disc pl-4'>
                             <li>40,000+ clients served</li>
                             <li>50,000+ projects delivered</li>
-                            <li>750+ professionals worldwide</li>
+                            <li>3000+ professionals worldwide</li>
                             <li>One of the leading IT transformation companies in Bangladesh</li>
                             <li>47+ countries in operations</li>
                         </ul>
