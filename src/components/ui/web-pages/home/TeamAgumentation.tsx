@@ -70,9 +70,9 @@ const TeamAgumentation: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-4 mt-[60px] w-full">
+            <div className="flex flex-col lg:flex-row items-center gap-4 mt-[60px] w-full">
               <button
-                className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
+                className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-fit md:w-auto"
                 style={{ color: "white" }}
               >
                 Get Talent Profiles <Image
@@ -93,7 +93,7 @@ const TeamAgumentation: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative h-[500px] w-[740px] ">
+          <div className="relative h-[300px] md:h-[500px] w-full lg:w-[740px] ">
             <Image
               src="/agumentation/banner.jpg"
               alt="arrow"

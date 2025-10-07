@@ -7,8 +7,8 @@ const BannerDetails = () => {
   return (
     <div className="  w-full z-10 bg-[#000000E5]/90 md:bg-gradient-to-r from-[#f8fcfc]  to-[#e0dfdf] md:-mt-[25px] py-[40px] md:py-[100px]">
       {/* <div className=" w-full h-full bg-black/60 "></div>  */}
-      <div className=" container flex flex-col xl:flex-row items-center gap-36 lg:gap-6 md:gap-0 z-20  ">
-        <div className="md:h-[580px] w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
+      <div className=" container flex flex-col xl:flex-row items-center gap-6 md:gap-36 lg:gap-6 z-20  ">
+        <div className="h-[350] md:h-[580px] w-full md:w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
           <Image
             src={"/banner.png"}
             alt=""
