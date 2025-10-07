@@ -24,6 +24,12 @@ import LetsWorkTogether from "@/components/shared/LetsWorkTogether";
 import EndpointManagement from "./ExtraComponents/endpoint-management/EndpointManagement";
 import IdentityManagement from "./ExtraComponents/identity-management/IdentityManagement";
 import SecureBusiness from "./ExtraComponents/secure-business/SecureBusiness";
+import OurStrategyWorkflow from "./ExtraComponents/endpoint-management/OurStrategyWorkflow";
+import {
+  endpointStrategy,
+  secureBusinessStrategy,
+} from "@/datas/pages/ServiceExtraComponentsData";
+import SolutionPortfolio from "./ExtraComponents/identity-management/SolutionPortfolio";
 
 const Data: Record<string, typeof EndpointManagementData> = {
   "endpoint-management-security": EndpointManagementData,
@@ -59,6 +65,15 @@ const ServicesMain = () => {
         ) : null}
       </div>
       <HighEffective serviceData={serviceData} />
+      <div className="mt-20">
+        {service === "endpoint-management-security" ? (
+          <OurStrategyWorkflow value={endpointStrategy} />
+        ) : service === "identity-management-security" ? (
+          <SolutionPortfolio />
+        ) : service === "secure-business-productivity" ? (
+          <OurStrategyWorkflow value={secureBusinessStrategy} />
+        ) : null}
+      </div>
       <TrustedBy />
       <FAQ />
       <div className="mt-20">
