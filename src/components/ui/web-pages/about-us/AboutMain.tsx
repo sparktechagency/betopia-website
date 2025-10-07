@@ -10,7 +10,7 @@ const AboutMain: React.FC = () => {
       <AboutBanner />
       <OurStory />
       <Owner />
-      {/* <Map /> */}
+      <Map />
     </div>
   );
 };
