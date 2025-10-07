@@ -159,36 +159,130 @@ const whyCustomersData = {
 }
 
 const identityLifecycleData = [
-  {
-    phase: "1. Discover & Assess",
-    focus: "Map identity assets and risks",
-    keyCapabilities:
-      "Identity audits, AD health checks, threat exposure analysis",
-  },
-  {
-    phase: "2. Secure & Authenticate",
-    focus: "Strengthen access controls",
-    keyCapabilities:
-      "MFA, SSO, Hybrid Authentication, Password & Secret Management",
-  },
-  {
-    phase: "3. Govern & Control",
-    focus: "Enforce policies and roles",
-    keyCapabilities:
-      "Identity Governance, Role-Based Access Control (RBAC), Access Reviews",
-  },
-  {
-    phase: "4. Monitor & Detect",
-    focus: "Identify threats in real time",
-    keyCapabilities:
-      "ITDR, AD Threat Detection, Session Monitoring, Audit Logging",
-  },
-  {
-    phase: "5. Respond & Recover",
-    focus: "Minimize impact and restore trust",
-    keyCapabilities:
-      "Automated remediation, rollback workflows, Identity Resilience Platform",
-  },
+    {
+        phase: "1. Discover & Assess",
+        focus: "Map identity assets and risks",
+        keyCapabilities:
+            "Identity audits, AD health checks, threat exposure analysis",
+    },
+    {
+        phase: "2. Secure & Authenticate",
+        focus: "Strengthen access controls",
+        keyCapabilities:
+            "MFA, SSO, Hybrid Authentication, Password & Secret Management",
+    },
+    {
+        phase: "3. Govern & Control",
+        focus: "Enforce policies and roles",
+        keyCapabilities:
+            "Identity Governance, Role-Based Access Control (RBAC), Access Reviews",
+    },
+    {
+        phase: "4. Monitor & Detect",
+        focus: "Identify threats in real time",
+        keyCapabilities:
+            "ITDR, AD Threat Detection, Session Monitoring, Audit Logging",
+    },
+    {
+        phase: "5. Respond & Recover",
+        focus: "Minimize impact and restore trust",
+        keyCapabilities:
+            "Automated remediation, rollback workflows, Identity Resilience Platform",
+    },
 ];
 
-export { whatWeOfferData, uniqueValueData, whyCustomersData, uniqueStrengthData , identityLifecycleData };
+const endpointStrategy = {
+    description: "We follow a proven, customer-first approach to deliver reliable and secure endpoint solutions.",
+    strategyPoint: [
+        {
+            title: "Assessment & Planning",
+            list: [
+                "Understand your business and security objectives",
+                "Identify risks, compliance requirements, and user roles.",
+            ],
+        },
+        {
+            title: "Solution Design",
+            list: [
+                "Recommend the right mix of hardware, OS platforms, and security tools.",
+                "Customize policies for device management, access control, and patching.",
+            ],
+        },
+        {
+            title: "Deployment & Integration",
+            list: [
+                "Configure and deploy devices using zero-touch or automated provisioning.",
+                "Integrate with existing IT infrastructure and cloud platforms.",
+            ],
+        },
+        {
+            title: "Security & Monitoring",
+            list: [
+                "Activate endpoint protection, EDR, and application control.",
+                "Monitor device health, patch status, and threat activity in real time.",
+            ],
+        },
+        {
+            title: "Support & Optimization",
+            list: [
+                "Provide ongoing helpdesk support and performance tuning.",
+                "Review analytics and reports to continuously improve security posture.",
+            ],
+        },
+        {
+            title: "Lifecycle Management",
+            list: [
+                "Manage upgrades, replacements, and secure device retirement.",
+                "Ensure sustainability and data protection throughout the device lifecycle.",
+            ],
+        },
+
+    ],
+    footer: {
+        title: "Trusted by leading organizations to secure and streamline their digital workspace.",
+        description: <p> Let’s build a smarter, safer, and more connected workplace—<span className=" text-primary">together</span>. </p>
+    }
+}
+
+const secureBusinessStrategy = {
+
+    strategyPoint: [
+        {
+            title: "Discover",
+            description: "We begin with deep-dive consultations to understand your business goals, challenges, and technical landscape."
+        },
+        {
+            title: "Design",
+            description: "Our experts craft tailored solutions that align with your workflows, compliance needs, and growth plans.",
+        },
+        {
+            title: "Deliver",
+            description: "We deploy with precision—ensuring minimal disruption and maximum impact",
+        },
+        {
+            title: "Manage",
+            description: "We deploy with precision—ensuring minimal disruption and maximum impact",
+        },
+        {
+            title: "Partner",
+            description: "We don’t just implement—we collaborate, evolve, and grow with you.",
+        },
+    ],
+
+    footer: {
+        title: "Work smarter. Stay secure. Grow confidently—with a partner who delivers beyond expectations.",
+    }
+}
+
+const solutionHighlights = [
+    { title: "Central Authentication & SSO" },
+    { title: "Multifactor Authentication (MFA)" },
+    { title: "Certificate & Secret Management" },
+    { title: "Privileged Access Management (PAM)" },
+    { title: "Identity Resilience & Recovery" },
+    { title: "Identity Governance & Lifecycle Management" },
+    { title: "Active Directory Auditing & Threat Response" },
+];
+
+
+export { whatWeOfferData, uniqueValueData, whyCustomersData, uniqueStrengthData, identityLifecycleData, endpointStrategy, secureBusinessStrategy , solutionHighlights };
