@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const TeamAgumentation: React.FC = () => {
@@ -81,12 +82,14 @@ const TeamAgumentation: React.FC = () => {
                   height={24}
                 />
               </button>
+              <Link href={"/contact"}>
               <button
                 className="rounded-[12px] h-11 px-4 border border-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
                 style={{ color: "white" }}
               >
                 Book Free Consulataion
               </button>
+              </Link>
             </div>
           </div>
 

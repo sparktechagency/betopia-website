@@ -1,5 +1,6 @@
 import React from "react";
 import OutlineButton from "@/components/shared/OutlineButton";
+import Link from "next/link";
 
 const CareerBanner: React.FC = () => {
   return (
@@ -40,9 +41,11 @@ const CareerBanner: React.FC = () => {
             Solutions.
           </p>
           <div className=" pt-[77px]">
-            <OutlineButton className=" !py-4 !px-7">
-              Find Your Opportunity
-            </OutlineButton>
+            <Link href="#application" className="cursor-pointer">
+              <OutlineButton className=" !py-4 !px-7 cursor-pointer">
+                Find Your Opportunity
+              </OutlineButton>
+            </Link>
           </div>
         </div>
       </div>

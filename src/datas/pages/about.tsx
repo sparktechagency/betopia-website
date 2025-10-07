@@ -35,5 +35,5 @@ export const aboutBannerData = {
     subtitle: "Shaping the Future of Enterprise Technology",
     description: "Betopia Limited is a global IT transformation company, delivering cloud, AI, cybersecurity, and compliance-first solutions that help enterprises innovate and scale with confidence.",
     buttonName: "Schedule Appointment",
-    buttonLink: "/become-partner"
+    buttonLink: "/contact"
 }

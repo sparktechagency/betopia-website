@@ -44,9 +44,9 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
           <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[70%] tracking-wide ">
             {description}
           </p>
-          <Link href="#" className=" pt-[77px]">
-            <OutlineButton className=" !py-4 !px-7">
-              Find Your Opportunity
+          <Link href="/contact" className=" pt-[77px]">
+            <OutlineButton className="cursor-pointer !py-4 !px-7">
+              Need That Product ?
             </OutlineButton>
           </Link>
         </div>

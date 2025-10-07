@@ -43,8 +43,8 @@ const PageBanner = ({
           <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[70%] tracking-wide ">
             {description}
           </p>
-          <Link href={buttonLink} className=" pt-[77px]">
-            <OutlineButton className=" !py-4 !px-7">{buttonName}</OutlineButton>
+          <Link href={buttonLink} className="cursor-pointer pt-[77px]">
+            <OutlineButton className="cursor-pointer !py-4 !px-7">{buttonName}</OutlineButton>
           </Link>
         </div>
       </div>
