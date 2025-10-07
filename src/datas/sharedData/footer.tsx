@@ -4,12 +4,12 @@ import { GrReddit } from "react-icons/gr";
 import { FaXTwitter } from "react-icons/fa6";
 
 export const socialLinks: SocialLink[] = [
-  { icon: <FaFacebookF color="#fff" size={20} />, url: "https://facebook.com", bgColor: "#424242" },
-  { icon: <FaInstagram size={20} />, url: "https://instagram.com", bgColor: "#424242" },
-  { icon: <FaGithub size={20} />, url: "https://github.com", bgColor: "#424242" },
-  { icon: <FaLinkedinIn size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
-  { icon: <GrReddit size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
-  { icon: <FaXTwitter size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
+  { icon: <FaFacebookF color="#fff" size={20} />, url: "https://www.facebook.com/BetopiaLimited", bgColor: "#424242" },
+  // { icon: <FaInstagram size={20} />, url: "https://instagram.com", bgColor: "#424242" },
+  // { icon: <FaGithub size={20} />, url: "https://github.com", bgColor: "#424242" },
+  { icon: <FaLinkedinIn size={20} />, url: "https://www.linkedin.com/company/betopia-limited", bgColor: "#424242" },
+  // { icon: <GrReddit size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
+  // { icon: <FaXTwitter size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
 ];
 
 

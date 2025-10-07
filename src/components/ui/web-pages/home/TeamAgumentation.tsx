@@ -71,10 +71,15 @@ const TeamAgumentation: React.FC = () => {
 
             <div className="flex items-center gap-4 mt-[60px] w-full">
               <button
-                className="rounded-[12px] h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
+                className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
                 style={{ color: "white" }}
               >
-                Get Talent Profiles
+                Get Talent Profiles <Image
+                  src="/agumentation/lock.png"
+                  alt="arrow"
+                  width={24}
+                  height={24}
+                />
               </button>
               <button
                 className="rounded-[12px] h-11 px-4 border border-[#F79549] !text-xs md:!text-lg w-full md:w-auto"

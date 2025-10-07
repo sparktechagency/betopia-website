@@ -26,23 +26,46 @@ const Footer: React.FC = () => {
             <WorldMap />
           </div>
           <div className=" lg:col-span-4 flex flex-col items-end">
-            <Image
-              src="/dubai.png"
-              alt="Dubai"
-              width={500}
-              height={400}
-              className="w-full h-full lg:w-[500px] lg:h-[400px]"
-            />
-            <div className="mt-[47px]">
-              <ul className="grid text-right text-[18px] leading-[24px] grid-cols-1 gap-2 text-white list-none">
-                <li className="font-bold">Dubai</li>
-                <li>P.O. Box: 17916, JEBEL ALI</li>
-                <li>FREE ZONE, DUBAI UAE</li>
-                <li>+97148833789</li>
+            <div className="relative w-full h-[250px]">
+              <Image
+                src="/dhaka.jpg"
+                alt="Dhaka"
+                fill
+                className="w-full rounded-lg h-full lg:w-[500px] lg:h-[400px]"
+              />
+            </div>
+            <div className="mt-[20px]">
+              <div className="mb-2">
+                <p className="text-right text-white">Coporate Office</p>
+              </div>
+              <ul className="grid text-right  text-[18px] leading-[24px] grid-cols-1 gap-2 text-white list-none">
+                <li className="font-bold">Dhaka</li>
+                <li>Daisy Garden, House 14, Block A, Banasree</li>
+                <li>+8801321231828</li>
                 <li>
-                  <button className="bg-[#424242] h-[36px] mt-[10px] w-[116px] rounded-[6px]">
-                    Contact Us
-                  </button>
+                  <a href="tel:+8801321231828">
+                    <button className="bg-[#424242] text-white h-[36px] mt-[10px] w-[116px] rounded-[6px] hover:bg-[#333] transition">
+                      Contact Us
+                    </button>
+                  </a>
+
+                </li>
+              </ul>
+
+              <div className="mb-2">
+                <p className="text-right text-white">Coporate Office</p>
+              </div>
+              <ul className="grid text-right text-[18px] leading-[24px] grid-cols-1 gap-2 text-white list-none">
+                <li className="font-bold">Dhaka</li>
+                <li>Kaderia Tower, JA-28, Mohakhali Gulshan Road, Dhaka-1212 (Opposite BRAC Center)</li>
+                <li>+8801332-840871</li>
+                <li>
+                  <a href="tel:+8801332840871">
+                    <button className="bg-[#424242] text-white h-[36px] mt-[10px] w-[116px] rounded-[6px] hover:bg-[#333] transition">
+                      Contact Us
+                    </button>
+                  </a>
+
                 </li>
               </ul>
             </div>

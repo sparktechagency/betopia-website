@@ -1,5 +1,6 @@
 import { ProductArray } from "@/datas/pages/home";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Products: React.FC = () => {
@@ -24,6 +25,14 @@ const Products: React.FC = () => {
                 objectPosition="center"
                 className="rounded-[12px]"
               />
+              {
+
+                product?.title === "Cash Advance System"
+                &&
+                <div className="bg-black/70 w-full flex items-center justify-center h-full absolute top-0 left-0 rounded-[12px]">
+                  <p className="text-white text-2xl">Comming Soon..</p>
+                </div>
+              }
             </div>
             <h2 className="text-[#414042] text-[24px] leading-[32px] font-medium mt-4">
               {product.title}
@@ -33,10 +42,20 @@ const Products: React.FC = () => {
             </p>
 
             <div className="mt-4">
-              <button className="bg-[#F69348] w-[145px] block h-[44px] rounded-[8px]">
-                {" "}
-                <span className="text-white">View Product</span>{" "}
-              </button>
+              {
+                product?.title === "Cash Advance System"
+                  ?
+                  <button disabled className="bg-gray-400 w-[145px] block h-[44px] rounded-[8px]">
+                    <span className="text-white">View Product</span>
+                  </button>
+                  :
+                  <Link href={`${product.link === "/partner" ? "/partner" : `/products${product.link}`}`}>
+                    <button className="bg-[#F69348] cursor-pointer w-[145px] block h-[44px] rounded-[8px]">
+                      <span className="text-white">View Product</span>
+                    </button>
+                  </Link>
+              }
+
             </div>
           </div>
         ))}

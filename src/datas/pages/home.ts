@@ -129,21 +129,25 @@ export const ProductArray = [
   {
     title: "Staff Pulse  - HRM Software",
     description: "All-in-one HRM  : Attendance , Leave, Payroll & Compliance in one secure SAAS platform",
+    link: "?product=HRM",
     imgUrl: "/products/hrm.jpg"
   },
   {
     title: "POS System",
     description: "Manage sales, inventory, customers, and reports in one powerful system — online or offline.",
+    link: "?product=POS",
     imgUrl: "/products/pos.jpg"
   },
   {
     title: "Betopia ERP",
     description: "Betopia ERP unifies all core functions (Collaboration, Procurement, Workflow, Clients/Sales) for seamless operations.",
+    link: "?product=HRM",
     imgUrl: "/products/erp.jpg"
   },
   {
     title: "Partner Program",
     description: "Collaborate with Betopia Limited to unlock innovative IT services.",
+    link: "/partner",
     imgUrl: "/products/partner.jpg"
   },
   {
@@ -159,9 +163,18 @@ export const ServicesArray = [
     description: "Betopia Limited's Cloud Modernization & Managed Services empower businesses with tailored cloud solutions, optimizing performance, security",
     imgUrl: "/services/cloud.png",
     service: [
-      "Enterprise Infrastructure Solutions",
-      "Enterprise  Networking Solutions",
-      "Cloud Infrastructure & Networking Solution",
+      {
+        title: "Enterprise Infrastructure Solutions",
+        link: "/services?service=enterprise-infrastructure"
+      },
+      {
+        title: "Enterprise  Networking Solutions",
+        link: "/services?service=enterprise-networking"
+      },
+      {
+        title: "Cloud Infrastructure & Networking Solution",
+        link: "/services?service=cloud-infrastructure-networking"
+      }
     ]
   },
   {
@@ -169,8 +182,14 @@ export const ServicesArray = [
     description: "Betopia Limited's Cybersecurity & Compliance Solutions ensure robust digital protection and regulatory adherence for businesses.",
     imgUrl: "/services/cyber.jpg",
     service: [
-      "Cyber Security Solutions",
-      "Cyber Security Services"
+      {
+        title: "Cyber Security Solutions",
+        link: "/services?service=cyber-security-solutions",
+      },
+      {
+        title: "Cyber Security Services",
+        link: "/services?service=cyber-security-services",
+      }
     ]
   },
   {
@@ -178,9 +197,18 @@ export const ServicesArray = [
     description: "Betopia Limited's Data, AI & Analytics Engineering services empower businesses by transforming raw data into actionable insights",
     imgUrl: "/services/ai.jpg",
     service: [
-      "Digital & APP Innovation Solutions",
-      "Data Solutions",
-      "AI Solutions"
+      {
+        title: "Digital & APP Innovation Solutions",
+        link: "/services?service=digital-app-innovation",
+      },
+      {
+        title: "Data Solutions",
+        link: "/services?service=data-solutions",
+      },
+      {
+        title: "AI Solutions",
+        link: "/services?service=ai-solutions",
+      }
     ]
   },
   {
@@ -188,9 +216,18 @@ export const ServicesArray = [
     description: "Betopia Limited's Data, AI & Analytics Engineering services empower businesses by transforming raw data into actionable insights",
     imgUrl: "/services/endpoint.jpg",
     service: [
-      "Endpoint Management & Security Solutions",
-      "Identity Management and Security Solutions",
-      "Secure Business Productivity Solutions"
+      {
+        title: "Endpoint Management & Security Solutions",
+        link: "/services?service=endpoint-management-security",
+      },
+      {
+        title: "Identity Management and Security Solutions",
+        link: "/services?service=identity-management-security",
+      },
+      {
+        title: "Secure Business Productivity Solutions",
+        link: "/services?service=secure-business-productivity",
+      }
     ]
   }
 ]

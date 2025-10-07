@@ -19,11 +19,10 @@ const Services: React.FC = () => {
           return (
             <div key={index}>
               <div
-                className={` ${
-                  index % 2 === 0
+                className={` ${index % 2 === 0
                     ? "flex flex-col md:flex-row items-center gap-4 md:gap-10"
                     : "flex flex-col md:flex-row-reverse items-center gap-4 md:gap-10 "
-                }`}
+                  }`}
               >
                 <div
                   className="w-full h-[504px]  bg-black/60 rounded-xl"
@@ -48,10 +47,12 @@ const Services: React.FC = () => {
                         key={index}
                         className="flex items-center justify-between gap-4"
                       >
-                        <p>{service}</p>
-                        <div className="w-[48px] bg-[#F79549] h-[48px] rounded-full flex items-center justify-center">
-                          <ChevronRight size={24} color="white" />
-                        </div>
+                        <p>{service.title}</p>
+                        <Link href={`${service.link}`}>
+                          <div className="w-[48px] bg-[#F79549] h-[48px] rounded-full flex items-center justify-center">
+                            <ChevronRight size={24} color="white" />
+                          </div>
+                        </Link>
                       </Link>
                     ))}
                   </div>

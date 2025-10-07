@@ -34,7 +34,7 @@ export const pages: NavPage[] = [
         key: "Partner Program",
         label: "Partner Program",
         description:
-          "Betopia's ERP platform unifies core business functions like finance, supply chain, and operations into a single, intelligent system.",
+          "In our B2B Partner Program, anyone can become a partner. Additionally, partners have the option to purchase our Partner Management Portal, which is an essential tool for efficiently managing all partners from a single platform. It allows you to oversee communications, performance, and collaboration seamlessly in one place.",
         link: "/partner",
       },
     ],
