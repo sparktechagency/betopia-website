@@ -9,9 +9,9 @@ const SGConference = () => {
         SG60 IPS-SBF Conference{" "}
       </p>
       <p className="text-2xl text-[#696969] font-light pb-10 ">29 July, 2025</p>
-      <div className="grid grid-cols-12 gap-10 text-[#696969]">
+      <div className="grid lg:grid-cols-12 gap-6 lg:gap-10 text-[#696969]">
         <div
-          className="col-span-7  mb-[92px]  w-full h-[462px] rounded-[22px]"
+          className="lg:col-span-7  w-full h-[462px] rounded-[22px]"
           style={{
             backgroundImage: `url(/images/conference.jpg)`,
             backgroundSize: "cover",
@@ -21,8 +21,8 @@ const SGConference = () => {
         >
           <div className="w-full h-full bg-gradient-to-t from-[#000000E5] from-10%  to-[#6666661A] to-90% rounded-[22px] p-[74px] flex items-end"></div>
         </div>
-        <div className="col-span-5">
-          <p className="text-[23px] leading-[140%] tracking-wide leading-9">
+        <div className="lg:col-span-5">
+          <p className="text-lg lg:text-[23px] lg:leading-[140%] tracking-wide leading-9">
             A delegation of AmCham Bangladesh, led by its President 𝐌𝐫. 𝐒𝐲𝐞𝐝
             𝐄𝐫𝐬𝐡𝐚𝐝 𝐀𝐡𝐦𝐞𝐝, attended the 𝐒𝐆𝟔𝟎 𝐈𝐏𝐒-𝐒𝐁𝐅 𝐂𝐨𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞 on 29 July 2025
             at the Sands Grand Ballroom, Singapore, on an invitation from AmCham
