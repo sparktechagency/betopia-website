@@ -11,8 +11,8 @@ jobs:
     - name: Deploy to Server
       uses: appleboy/ssh-action@v1.0.3
       with:
-        host: "206.162.244.163"
+        host: "149.28.139.80"
         username: "root"
-        password: "DufiJAPpyz7xIyGgvDVx"
+        password: "3-kTb!c((a%ca5v9"
         port: "22"
-        script: "cd /var/www/betopia-website && ./.script/staging.sh"
+        script: "cd /var/www/betopia-website && ./.script/production.sh"
