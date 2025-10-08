@@ -35,12 +35,12 @@ const Banner = () => {
           <p className=" text-[#7E7E7E] text-[20px] lg:text-4xl 2xl:text-[57px] font-medium md:font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9 pt-4 md:pt-0  ">
             Delivering Secure, Cloud-Ready, AI-Powered Business Platforms{" "}
           </p>
-          <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">
+          <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  2xl:w-[45%] md:w-[50%] tracking-wide ">
             Betopia Limited is your enterprise transformation partner, helping
             organizations modernize, protect, and monetize their digital
             ecosystems.
           </p>
-          <Link href={"/services"} className="mt-8 lg:mt-[77px]">
+          <Link href={"/services"} className="mt-8 2xl:mt-[77px]">
             <OutlineButton className=" cursor-pointer !py-4 !px-7">
               Explore Our Services
             </OutlineButton>
