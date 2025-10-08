@@ -7,14 +7,14 @@ const BecomePartnerMain = () => {
   return (
     <div>
       <BecomePartnerBanner />
-      <div className=" container my-20">
-        <ComponentTitle className=" flex-center text-3xl lg:text-[40px] font-[500]  pb-7 ">
+      <div className=" container my-20 mt-32">
+        <ComponentTitle className=" flex-center  pb-7 ">
           <span>Why Partner with </span>{" "}
           <span className="text-primary">Betopia</span>
         </ComponentTitle>
 
         <div className="w-full flex-center  ">
-          <p className="lg:w-2/3 lg:text-center section-subtitle leading-9 tracking-wide">
+          <p className=" text-center section-subtitle leading-9 tracking-wide">
             {" "}
             Betopia helps businesses grow by turning challenges into
             opportunities. We provide smart Cloud, AI, and Cybersecurity

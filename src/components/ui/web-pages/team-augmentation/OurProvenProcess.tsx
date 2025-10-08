@@ -11,7 +11,7 @@ const OurProvenProcess = () => {
           Our Proven <span className="text-primary"> Process </span>{" "}
         </ComponentTitle>
         <div className="flex flex-col justify-center items-center ">
-          <p className=" md:w-[40%] text-[#757575] text-lg font-normal text-center  pb-10 ">
+          <p className=" md:w-[40%] section-subtitle text-center  pb-10 ">
             {" "}
             Timeline infographic design elements with circle shapes and
             marketing icons. Business concept with 4 options, steps or
@@ -22,7 +22,7 @@ const OurProvenProcess = () => {
         <div className="w-full  mx-auto ">
           {/* Dotted border container */}
           <div className="">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative">
               {provenProcessSteps.map((step, index) => (
                 <div
                   key={step.id}
@@ -38,13 +38,14 @@ const OurProvenProcess = () => {
                       alt={`Step ${step.id}`}
                       width={180}
                       height={205}
+                      className="w-[100px] lg:w-[180px] h-full"
                     />
                   </div>
 
                   {/* Content */}
                   <div className="text-center space-y-2">
                     <h3
-                      className={`font-bold text-2xl ${
+                      className={`font-bold text-base lg:text-2xl ${
                         index === 0
                           ? "text-emerald-400"
                           : index === 1
@@ -56,7 +57,7 @@ const OurProvenProcess = () => {
                     >
                       {step.title}
                     </h3>
-                    <p className="text-[#414042]/60 leading-relaxed">
+                    <p className="text-xs text-[#414042]/60 leading-relaxed">
                       {step.description}
                     </p>
                   </div>

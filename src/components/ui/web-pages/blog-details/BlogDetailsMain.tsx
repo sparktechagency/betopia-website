@@ -51,7 +51,7 @@ const BlogDetailsMain: React.FC = () => {
               introduction3={blogDetails.introduction3}
             />
           </div>
-          <div className=" lg:ps-10 pt-10">
+          <div className=" lg:pl-10 pt-10">
             <BlogDetailsContent contents={blogDetails.content} />
           </div>
           <div className=" lg:pl-10 pt-5">

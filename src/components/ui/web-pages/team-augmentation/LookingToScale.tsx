@@ -33,7 +33,7 @@ const LookingToScale = () => {
           </div>
         </div>
 
-        <div className=" h-full absolute -top-14 md:-top-13 right-11 md:right-28 flex justify-end ">
+        <div className=" h-full absolute -top-20 md:-top-13 right-0 md:right-28 flex justify-end ">
           <div className="  md:w-[520px]  md:h-[700px] ">
             <Image
               src="/augmentation/farzana-img.png"
