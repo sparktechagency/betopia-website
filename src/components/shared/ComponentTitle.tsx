@@ -9,7 +9,7 @@ const ComponentTitle = ({
 }) => {
   return (
     <div
-      className={`section-title font-normal ${className} flex lg:flex-row flex-wrap items-center gap-2`}
+      className={`section-title  font-normal ${className} lg:flex lg:flex-row flex-wrap items-center gap-2`}
     >
       {children}
     </div>

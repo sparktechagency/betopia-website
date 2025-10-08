@@ -51,7 +51,7 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
               {value?.strategyPoint.map((point, index) => (
                 <div key={index} className="grid grid-cols-8 items-start gap-4">
                   {/* Number circle */}
-                  <div className="col-span-2 lg:col-span-1 w-[70px] h-[70px] flex items-center justify-center bg-[#FF7F5C] text-white font-bold rounded-full text-[40px]">
+                  <div className="col-span-2 lg:col-span-1 h-[50px] w-[50px] lg:w-[70px] lg:h-[70px] flex items-center justify-center bg-[#FF7F5C] text-white font-bold rounded-full text-3xl lg:text-[40px]">
                     {index + 1}
                   </div>
 
@@ -85,7 +85,7 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
 
         {/* footer  */}
         <div className=" flex flex-col items-center justify-center gap-y-2 pt-8">
-          <p className=" text-2xl font-bold text-[#414042] ">
+          <p className=" text-lg lg:text-2xl lg:font-bold text-[#414042] ">
             {value?.footer?.title}
           </p>
           {value?.footer?.description && (

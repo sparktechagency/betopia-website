@@ -16,13 +16,12 @@ const JoinTeam: React.FC = () => {
           Join Our Growing Team
         </p>
       </div>
-      <p className="text-[25px] text-center leading-6 text-[#616161] pb-[38px]">
+      <p className="text-[25px] text-center leading-6 text-[#616161] pb-4 lg:pb-[38px]">
         Build the Future with Us
       </p>
-      <p className="text-[27px] md:text-center leading-8 text-[#424242] px-4">
-        Explore a Vast and Exciting World of Career Opportunities at Betopia and{" "}
-        <br />
-        Take Your Time to Browse Our Diverse Range of Open Positions{" "}
+      <p className="text-lg  lg:text-[27px] text-center leading-8 text-[#424242] px-4">
+        Explore a Vast and Exciting World of Career Opportunities at Betopia and
+        Take Your Time to Browse Our Diverse Range of Open Positions
       </p>
 
       <div className="mt-[42px] flex-center gap-3 px-4 w-full">
