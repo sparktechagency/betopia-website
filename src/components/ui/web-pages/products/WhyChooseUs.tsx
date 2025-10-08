@@ -21,10 +21,10 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
   return (
     <div className="container my-[80px]">
       <div className="mb-[50px]">
-        <h1 className="text-[45px] text-black text-center">
+        <h1 className="section-title text-black text-center">
           Why you <span className="text-[#FF9233]">choose us ?</span>{" "}
         </h1>
-        <p className="text-center">{description}</p>
+        <p className="text-center section-subtitle">{description}</p>
       </div>
 
       <div className="flex flex-col md:flex-row items-center gap-8">

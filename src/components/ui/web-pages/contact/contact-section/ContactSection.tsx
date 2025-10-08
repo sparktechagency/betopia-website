@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactCard from "./ContactCard";
 import LocationCard from "./LocationCard";
 
@@ -37,51 +38,58 @@ const contactData = [
 ];
 
 export default function ContactSection() {
+  const isMobile =
+    typeof globalThis !== "undefined" &&
+    globalThis.innerWidth &&
+    globalThis.innerWidth <= 768;
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Left Side - Contact Info */}
-          <div>
-            {/* Heading */}
-            <div className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-                Have Any Project on Mind?
-              </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-orange-500">
-                Work Together
-              </h3>
-            </div>
-
-            {/* Contact Cards Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
-              {contactData.map((card, index) => (
-                <ContactCard key={index} {...card} />
-              ))}
-            </div>
+    <section className="pb-16 px-4 container mx-auto ">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
+        {/* Left Side - Contact Info */}
+        <div>
+          {/* Heading */}
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
+              Have Any Project on Mind?
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-bold text-primary">
+              Work Together
+            </h3>
           </div>
 
-          {/* Right Side - Map with Location Card */}
-          <div className="relative">
-            {/* Decorative Border Container */}
-            <div className="relative rounded-3xl overflow-hidden">
-              {/* Orange Border */}
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-orange-400 rounded-3xl" />
+          {/* Contact Cards Grid */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {contactData.map((card, index) => (
+              <ContactCard key={index} {...card} />
+            ))}
+          </div>
+        </div>
 
-              {/* Blue Accent */}
-              <div className="absolute top-0 left-0 w-32 h-32 bg-blue-300 rounded-br-full opacity-50" />
+        {/* Right Side - Map with Location Card */}
+        <div
+          style={{
+            backgroundImage: "url(/contact/orange_bg.svg)",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right center",
+            backgroundSize: isMobile ? "90% 100%" : "",
+            borderRadius: isMobile ? "0px 30px 30px 0px" : "20px",
+          }}
+          className="relative"
+        >
+          {/* Decorative Border Container */}
+          <div className="relative rounded-3xl overflow-hidden">
+            {/* Map Image Container */}
+            <div className="relative mx-4 my-6  rounded-2xl overflow-hidden">
+              <Image
+                src="/contact/map.svg"
+                alt="Map Location"
+                className="w-full lg:h-[500px] h-[470px] object-cover rounded-[24px]"
+                width={500}
+                height={500}
+              />
 
-              {/* Map Image Container */}
-              <div className="relative m-3 rounded-2xl overflow-hidden">
-                <img
-                  src="/google-maps-street-view-dhaka-bangladesh.jpg"
-                  alt="Map Location"
-                  className="w-full h-[500px] object-cover"
-                />
-
-                {/* Location Card Overlay */}
-                <LocationCard />
-              </div>
+              {/* Location Card Overlay */}
+              <LocationCard />
             </div>
           </div>
         </div>

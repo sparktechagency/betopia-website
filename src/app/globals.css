@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @layer components {
   .container {
     @apply mx-auto px-5 max-w-[1280px];
@@ -31,8 +30,19 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .section-title {
+    @apply text-3xl lg:text-[40px] font-[500];
+  }
+  .section-subtitle {
+    @apply text-[16px] lg:text-[20px] text-[#6D758F] max-w-[800px] mx-auto;
+  }
 }
 
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
 /* path {
   fill: #1A1A1A;
 }  */
@@ -40,8 +50,6 @@
 .ant-dropdown .ant-dropdown-menu {
   padding: 1px !important;
 }
-
-
 
 /* scroll bar */
 ::-webkit-scrollbar {
@@ -82,7 +90,6 @@ p {
 .swiper-pagination-bullet-active {
   background-color: #1c55e0 !important;
 }
-
 
 .custom-input .ant-input,
 .custom-input .ant-select-selector {

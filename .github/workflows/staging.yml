@@ -1,4 +1,4 @@
-name: Betopia Staging Website CI/CD
+name: Betopia Production Website CI/CD
 on:
   push:
     branches: ["staging"]

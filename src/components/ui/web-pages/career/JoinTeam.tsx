@@ -4,8 +4,8 @@ import React from "react";
 
 const JoinTeam: React.FC = () => {
   return (
-    <div className="w-full md:w-[896px] mx-auto mb-20">
-      <div className="flex-center gap-[6.28px] bg-[#EDEDED] rounded-[11px] px-[17px] py-[7px] w-fit mx-auto mb-[44px]">
+    <div className="w-full md:w-[896px] mx-auto mb-12 lg:mb-20">
+      <div className="flex-center  gap-[6.28px] bg-[#EDEDED] rounded-[11px] px-[17px] py-[7px] w-fit mx-auto mb-[44px]">
         <Image
           src="/images/join-team.png"
           alt="Join Team"

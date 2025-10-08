@@ -10,7 +10,7 @@ const BoostYourBusiness = () => {
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-[51px]">
-          <div className="text-2xl md:text-[40px] font-normal text-[#262626] mb-5">
+          <div className="section-title font-normal text-[#262626] mb-5">
             <p className="!md:mb-1.5">Boost Your Business with Betopia</p>
             <p className="flex items-center justify-center gap-x-2">
               <span className="bg-primary text-white px-7 py-1.5 rounded-xl">
@@ -19,7 +19,7 @@ const BoostYourBusiness = () => {
               <span>our portfolio</span>
             </p>
           </div>
-          <p className="text-[#555555] mx-auto text-lg">
+          <p className="section-subtitle">
             Level up your AI journey with cutting-edge solutions, expert minds,
             and flexible support. Let&apos;s make magic!
           </p>
