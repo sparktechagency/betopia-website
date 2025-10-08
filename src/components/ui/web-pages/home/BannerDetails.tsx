@@ -7,8 +7,8 @@ const BannerDetails = () => {
   return (
     <div className="  w-full z-10 bg-[#000000E5]/90 md:bg-gradient-to-r from-[#f8fcfc]  to-[#e0dfdf] md:-mt-[25px] py-[40px] md:py-[100px]">
       {/* <div className=" w-full h-full bg-black/60 "></div>  */}
-      <div className=" container flex flex-col xl:flex-row items-center gap-36 lg:gap-6 md:gap-0 z-20  ">
-        <div className="md:h-[580px] w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
+      <div className=" container flex flex-col xl:flex-row items-center gap-6 md:gap-36 lg:gap-6 z-20  ">
+        <div className="h-[350] md:h-[580px] w-full md:w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
           <Image
             src={"/banner.png"}
             alt=""
@@ -17,7 +17,7 @@ const BannerDetails = () => {
           />
         </div>
 
-        <div className="w-[50%] text-lg md:text-xl lg:text-[18px] 2xl:text-xl leading-10 tracking-wide text-[#B7B7B7]  md:text-gray-600 ">
+        <div className="w-full lg:w-[50%] text-lg md:text-xl lg:text-[18px] 2xl:text-xl leading-10 tracking-wide text-[#B7B7B7]  md:text-gray-600 ">
           <span className="text-primary text-[35px]"> Betopia </span> Limited
           began its journey in 2014 with a simple dream, to use technology to
           solve real business problems. In 2015, we saw early growth as more

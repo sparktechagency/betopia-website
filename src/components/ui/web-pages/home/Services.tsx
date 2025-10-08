@@ -26,7 +26,7 @@ const Services: React.FC = () => {
                 }`}
               >
                 <div
-                  className="w-full h-[504px]  bg-black/60 rounded-xl"
+                  className="w-full h-[300px] md:h-[504px]  bg-black/60 rounded-xl"
                   style={{
                     backgroundImage: `url(${item.imgUrl})`,
                     backgroundSize: "cover",
