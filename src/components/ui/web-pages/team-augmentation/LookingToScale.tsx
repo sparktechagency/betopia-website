@@ -33,14 +33,14 @@ const LookingToScale = () => {
           </div>
         </div>
 
-        <div className=" h-full absolute -top-14 md:top-0 right-11 md:right-28 flex justify-end ">
-          <div className="  md:w-[400px]  md:h-[500px] ">
+        <div className=" h-full absolute -top-14 md:-top-13 right-11 md:right-28 flex justify-end ">
+          <div className="  md:w-[520px]  md:h-[700px] ">
             <Image
-              src="/augmentation/personImg.png"
+              src="/augmentation/farzana-img.png"
               alt="Professional businessman in suit with crossed arms"
               height={400}
               width={400}
-              className="w-[300px] h-[380px] md:h-[550px] object-cover lg:object-contain  object-top lg:object-right-bottom"
+              className="w-[520px] h-[380px] md:h-[600px] object-cover lg:object-contain  object-top lg:object-right-bottom"
               priority
             />
           </div>
