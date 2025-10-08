@@ -1,11 +1,12 @@
 "use client";
-import { Form, Input, Select } from "antd";
+import { Form, Grid, Input, Select } from "antd";
 import React, { useState } from "react";
 import countryData from "world-countries";
 
 const { Option } = Select;
 
 const BusinessDetailsComponent = () => {
+  const { lg } = Grid.useBreakpoint();
   const [countryCode, setCountryCode] = useState("+880");
 
   // Format country data for dropdown
@@ -27,7 +28,7 @@ const BusinessDetailsComponent = () => {
             </p>
           }
         >
-          <Input style={{ height: 56, borderRadius: "10px" }} />
+          <Input style={{ height: lg ? 56 : 40, borderRadius: "10px" }} />
         </Form.Item>
 
         <Form.Item
@@ -37,7 +38,7 @@ const BusinessDetailsComponent = () => {
             </p>
           }
         >
-          <Input style={{ height: 56, borderRadius: "10px" }} />
+          <Input style={{ height: lg ? 56 : 40, borderRadius: "10px" }} />
         </Form.Item>
 
         <Form.Item
@@ -69,7 +70,7 @@ const BusinessDetailsComponent = () => {
               </Select>
             }
             placeholder="(555) 000-0000"
-            style={{ height: 56, borderRadius: "0px" }}
+            style={{ height: lg ? 56 : 40, borderRadius: "0px" }}
             className="min-h-[40px]"
           />
         </Form.Item>
