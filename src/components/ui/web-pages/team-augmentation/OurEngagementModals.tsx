@@ -15,7 +15,7 @@ const OurEngagementModals = () => {
           {" "}
           Our Engagement <span className=" text-primary">Models</span>
         </ComponentTitle>
-        <p className="text-[#41404280] font-medium text-center">
+        <p className="text-[#41404280] section-subtitle font-medium text-center">
           We provide flexible IT team augmentation services:
         </p>
       </div>
@@ -104,7 +104,8 @@ const OurEngagementModals = () => {
             className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
             style={{ color: "white" }}
           >
-            Get Talent Profiles <Image
+            Get Talent Profiles{" "}
+            <Image
               src="/agumentation/lock.png"
               alt="arrow"
               width={24}

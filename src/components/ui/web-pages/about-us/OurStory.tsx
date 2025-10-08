@@ -4,7 +4,7 @@ import React from "react";
 const OurStory = () => {
   return (
     <div className="container relative text-white pb-32 lg:pb-24  ">
-      <ComponentTitle className=" !text-start pb-2">
+      <ComponentTitle className=" !text-start pb-2 ">
         {" "}
         <span className=" text-[#000000]"> Our </span>{" "}
         <span className="text-primary">Story</span>{" "}

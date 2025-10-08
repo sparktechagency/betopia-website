@@ -9,9 +9,9 @@ const BetopiaVision: React.FC = () => {
       <ComponentTitle className=" flex-center pb-6">
         Grow with <span className="text-primary">Betopia’s Vision</span>
       </ComponentTitle>
-      <p className="text-center text-[22px] leading-[140%] text-[#2D4E75] font-light">
+      <p className="text-center section-subtitle leading-[140%] text-[#2D4E75] font-light">
         Principles guide everything we do and help us build a culture where
-        everyone can <br /> thrive and excel professionally.
+        everyone can thrive and excel professionally.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] mt-[52px]">

@@ -29,10 +29,10 @@ const CareerBanner: React.FC = () => {
       {/* Content can go here */}
       <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center   ">
-          <h1 className="text-[#818181] text-[34px] lg:text-[64px] font-medium">
+          <h1 className="text-[#818181] text-[34px] lg:text-5xl 2xl:text-[64px] font-medium">
             <span className="text-white">Thrive </span> with Betopia’s{" "}
           </h1>
-          <h1 className="text-[#818181]  text-[34px] lg:text-[64px] font-medium leading-[1px] pb-9">
+          <h1 className="text-[#818181]  text-[34px] lg:text-5xl 2xl:text-[64px] font-medium leading-[1px] pb-9">
             <span className="text-primary">Talent</span> Community
           </h1>
           <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">

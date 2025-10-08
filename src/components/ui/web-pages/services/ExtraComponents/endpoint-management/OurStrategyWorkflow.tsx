@@ -30,8 +30,8 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
               </ComponentTitle>
 
               {value?.description && (
-                <div className=" w-full gap-0.5">
-                  <p className="text-[20px] text-[#757575]   md:w-[60%] leading-8">
+                <div className=" w-full gap-0.5 ">
+                  <p className="section-subtitle lg:!max-w-[500px] text-center lg:text-start !mx-0  leading-8">
                     {value?.description}
                   </p>
                 </div>

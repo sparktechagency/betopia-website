@@ -5,7 +5,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 const SGConference = () => {
   return (
     <div>
-      <p className=" text-[40px] text-[#696969] font-normal pb-4">
+      <p className=" section-title text-[#696969] font-normal pb-4">
         SG60 IPS-SBF Conference{" "}
       </p>
       <p className="text-2xl text-[#696969] font-light pb-10 ">29 July, 2025</p>

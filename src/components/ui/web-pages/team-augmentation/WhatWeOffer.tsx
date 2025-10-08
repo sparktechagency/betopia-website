@@ -28,7 +28,7 @@ const WhatWeOffer = () => {
             What We Offer{" "}
           </ComponentTitle>
           <div className=" flex-center w-full mb-10">
-            <p className="text-center text-[22px] leading-[140%] tracking-wide text-[#7B7B7B] md:w-[35%]">
+            <p className="text-center leading-[140%] tracking-wide section-subtitle !max-w-[600px]">
               Betopia Limited helps U.S. tech companies access{" "}
               <span className=" font-bold">
                 pre vetted global IT professionals to{" "}
