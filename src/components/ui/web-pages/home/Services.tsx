@@ -6,10 +6,10 @@ import React from "react";
 const Services: React.FC = () => {
   return (
     <div className="mb-10 container">
-      <h1 className="text-center text-[36px] font-light ">
+      <h1 className="text-center section-title  font-light ">
         Highly Effective <span className="text-primary">Solutions</span>
       </h1>
-      <p className="text-center md:w-[418px] mx-auto text-[16px] leading-[24px] text-[#6D758F] tracking-wide">
+      <p className="text-center max-w-[800px] mx-auto section-subtitle  tracking-wide">
         Betopia Limited offers innovative cloud modernization and managed
         services to enhance business efficiency.
       </p>
@@ -19,13 +19,14 @@ const Services: React.FC = () => {
           return (
             <div key={index}>
               <div
-                className={` ${index % 2 === 0
+                className={` ${
+                  index % 2 === 0
                     ? "flex flex-col md:flex-row items-center gap-4 md:gap-10"
                     : "flex flex-col md:flex-row-reverse items-center gap-4 md:gap-10 "
-                  }`}
+                }`}
               >
                 <div
-                  className="w-full h-[504px]  bg-black/60 rounded-xl"
+                  className="w-full h-[300px] md:h-[504px]  bg-black/60 rounded-xl"
                   style={{
                     backgroundImage: `url(${item.imgUrl})`,
                     backgroundSize: "cover",

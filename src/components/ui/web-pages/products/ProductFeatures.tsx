@@ -16,10 +16,10 @@ const ProductFeatures: React.FC<IProductFeaturesProps> = ({ features }) => {
   return (
     <div className="bg-[#F693480D]/95 py-[40px] md:py-[100px]">
       <div className="container">
-        <h1 className="text-[#414042] text-4xl md:text-[45px]  md:leading-[40px] text-center">
+        <h1 className="text-[#414042] section-title md:leading-[40px] text-center">
           Our Comprehensive <span className="text-[#FF9233]">features</span>
         </h1>
-        <p className="text-[#757575]  md:text-[18px] leading-[24px] text-center">
+        <p className="text-[#757575]  section-subtitle leading-[24px] text-center">
           All-in-One HR Solution Built for Modern Team
         </p>
 

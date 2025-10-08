@@ -13,10 +13,10 @@ const ServiceDetails = ({ serviceData }: { serviceData: any }) => {
 
       <div className="flex md:flex-row flex-col items-center justify-between  gap-[33px]  container mx-auto">
         <div className="w-full md:w-1/2">
-          <h2 className="text-[28px] lg:text-[40px] font-medium text-[#414042] mb-1">
+          <h2 className="section-title font-medium text-[#414042] mb-1">
             {serviceData?.details?.title}
           </h2>
-          <h2 className="text-[28px] lg:text-[40px] font-medium text-primary mb-1">
+          <h2 className="section-subtitle font-medium text-primary mb-1">
             {serviceData?.details?.subtitle}
           </h2>
           <p className="w-[245px] h-[3px] bg-primary" />

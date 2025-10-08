@@ -28,11 +28,11 @@ const Banner = () => {
       {/* Content can go here */}
       <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden md:h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center   ">
-          <p className="text-[#818181] text-[34px] 2xl:text-[64px] font-medium">
+          <p className="text-[#818181] text-[34px] lg:text-5xl 2xl:text-[64px] font-medium">
             <span className="text-white">From </span>{" "}
             <span className="text-primary"> Bangladesh </span> to the World{" "}
           </p>
-          <p className=" text-[#7E7E7E] text-[20px] 2xl:text-[57px] font-medium md:font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9 pt-4 md:pt-0  ">
+          <p className=" text-[#7E7E7E] text-[20px] lg:text-4xl 2xl:text-[57px] font-medium md:font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9 pt-4 md:pt-0  ">
             Delivering Secure, Cloud-Ready, AI-Powered Business Platforms{" "}
           </p>
           <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  2xl:w-[45%] md:w-[50%] tracking-wide ">

@@ -15,7 +15,7 @@ const LetsWorkTogether = () => {
               <span className=" text-[#000000]"> Lets Work </span>{" "}
               <span className="text-primary">Together</span>{" "}
             </ComponentTitle>
-            <p className=" text-[#757575] text-lg ">
+            <p className=" section-subtitle ">
               Your infrastructure powers your business. From modernizing data
               centers to scaling cloud environments, we’ll help design and
               manage the right solution for your growth.{" "}

@@ -30,6 +30,12 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .section-title {
+    @apply text-3xl lg:text-[40px] font-[500];
+  }
+  .section-subtitle {
+    @apply text-[16px] lg:text-[20px] text-[#6D758F] max-w-[800px] mx-auto;
+  }
 }
 
 @layer base {

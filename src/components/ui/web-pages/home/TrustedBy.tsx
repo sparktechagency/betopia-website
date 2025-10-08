@@ -12,7 +12,7 @@ const TrustedBy = () => {
 
   return (
     <div className=" my-20 container">
-      <p className="flex items-center justify-center gap-x-2 text-[40px] ">
+      <p className="flex items-center justify-center gap-x-2 section-title ">
         <span className="bg-primary text-white px-7 py-1.5 rounded-xl ">
           Trusted
         </span>

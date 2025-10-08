@@ -12,7 +12,7 @@ const Opennings: React.FC = () => {
         Current <span className="text-primary">Openings</span>
         at Betopia
       </ComponentTitle>
-      <p className="text-center text-base lg:text-[22px] lg:leading-[140%] text-[#797979] font-light">
+      <p className="text-center section-subtitle  lg:leading-[140%]  font-light">
         Discover a Range of Exciting Roles Across Our HRM, POS, and ERP
         Divisions— <br className="hidden md:block" /> Apply Now to Start Making
         an Impact.

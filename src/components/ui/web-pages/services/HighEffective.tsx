@@ -13,7 +13,7 @@ const HighEffective = ({ serviceData }: { serviceData: any }) => {
           <span className="text-primary">Solutions</span>{" "}
         </ComponentTitle>
         <div className=" w-full flex-center flex-col gap-0.5">
-          <p className="text-sm lg:text-[20px] text-[#757575] text-center  md:w-[40%] md:leading-8">
+          <p className="section-subtitle text-center   md:leading-8">
             tailored cloud solutions, seamless migrations, and optimized
             infrastructure for enhanced performance and scalability.
           </p>
