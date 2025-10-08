@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { RiArrowRightLine } from "react-icons/ri";
-
+import { RiArrowRightLine } from "react-icons/ri"; 
 const BannerDetails = () => {
   return (
     <div className="  w-full z-10 bg-[#000000E5]/90 md:bg-gradient-to-r from-[#f8fcfc]  to-[#e0dfdf] md:-mt-[25px] py-[40px] md:py-[100px]">

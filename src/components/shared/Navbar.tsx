@@ -1,10 +1,8 @@
 "use client";
-import type React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { pages } from "@/datas/sharedData/navbar";
 import Image from "next/image";
 import OutlineButton from "./OutlineButton";
-
 import { Menu } from "lucide-react";
 import NavItem from "../ui/shared-features/navbar/NavItem";
 import MobileMenu from "../ui/shared-features/navbar/mobile-menu/MobileMenu";
@@ -14,31 +12,42 @@ const Navbar: React.FC = () => {
   const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollTop = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const bannerHeight = document.getElementById("banner")?.offsetHeight || 0;
-      if (window.scrollY > bannerHeight - 80) {
-        setIsScrolled(true);
+      const scrollY = window.scrollY;
+
+      // Change navbar background after banner
+      setIsScrolled(scrollY > bannerHeight - 80);
+
+      // Hide/show logic
+      if (scrollY > lastScrollTop.current && scrollY > 100) {
+        // scrolling down
+        setShowNavbar(false);
       } else {
-        setIsScrolled(false);
+        // scrolling up
+        setShowNavbar(true);
       }
+
+      lastScrollTop.current = scrollY <= 0 ? 0 : scrollY; // avoid negative scroll
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <header className="sticky top-4  z-50  px-4   ">
+    <header
+      className={`fixed top-0  z-50 w-full transition-all duration-500 navbar-container 
+        ${isScrolled ? "bg-black mt-0" : "bg-transparent lg:bg-transparent backdrop-blur-[44px] lg:backdrop-blur-none lg:mt-10 mt-2"}
+        ${showNavbar ? "translate-y-0" : "-translate-y-full"}
+      `}
+    >
       <div
-        className={`relative top-0 container mt-10 h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 
-        lg:h-[74px]  md:mx-auto rounded-2xl  
-        transition-colors duration-300
-        ${
-          isScrolled
-            ? "bg-black/70 backdrop-blur-[44px] "
-            : "bg-transparent lg:bg-transparent lg:rounded-none backdrop-blur-[44px] lg:backdrop-blur-none"
-        }`}
+        className={`relative top-0 container h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 lg:h-[80px]  transition-colors duration-300`}
       >
         <Link href="/home" className="flex items-center">
           <Image
@@ -46,7 +55,7 @@ const Navbar: React.FC = () => {
             alt="Logo"
             height={55}
             width={140}
-            className="h-[40px] w-full lg:h-[55px] lg:w-[140px]  mt-1 "
+            className="h-[40px] w-full lg:h-[50px] lg:w-[140px] mt-1"
           />
         </Link>
 
@@ -75,10 +84,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      <MobileMenu
-        open={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
-      />
+      <MobileMenu open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
     </header>
   );
 };

@@ -29,8 +29,8 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
           />
         }
         trigger={["hover"]}
-        placement="top"
-        overlayStyle={{ marginTop: "22px" }}
+        placement="bottom" arrow
+        overlayStyle={{ marginTop: "22px" }} 
       >
         <Link
           href={page.link}

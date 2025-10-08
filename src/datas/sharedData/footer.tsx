@@ -46,4 +46,19 @@ export const reviews = [
   { label: "Design Rush", href: "#" },
   { label: "Trust Pilot", href: "#" },
   { label: "Partnerstack", href: "#" },
+]; 
+
+export const officeData = [
+  {
+    title: "Corporate Office",
+    city: "Dhaka",
+    address: "Daisy Garden, House 14, Block A, Banasree",
+    phone: "+8801321231828",
+  },
+  {
+    title: "Branch Office",
+    city: "Dhaka",
+    address: "Daisy Garden, House 14, Block A, Banasree",
+    phone: "+8801321231828",
+  },
 ];
