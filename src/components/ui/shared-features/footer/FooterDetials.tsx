@@ -6,7 +6,7 @@ import { anotherServices, quickLinks, reviews, services } from "@/datas/sharedDa
 
 const FooterDetials = () => {
   return (
-    <footer className=" text-[#999999] text-lg pt-[37px] pb-8 px-2 lg:px-0 border-b border-b-[#333333]">
+    <footer className=" text-[#999999] text-lg pt-[37px] px-2 lg:px-0 pb-20">
       <div className=" mx-auto grid lg:grid-cols-8 justify-between gap-8">
         {/* Left Section */}
         <div className="flex flex-col items-start justify-center col-span-2">
