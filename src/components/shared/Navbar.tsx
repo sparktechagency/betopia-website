@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { pages } from "@/datas/sharedData/navbar";
 import Image from "next/image";
 import OutlineButton from "./OutlineButton";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import NavItem from "../ui/shared-features/navbar/NavItem";
 import MobileMenu from "../ui/shared-features/navbar/mobile-menu/MobileMenu";
 import Link from "next/link";
@@ -76,11 +76,15 @@ const Navbar: React.FC = () => {
         </div>
 
         <button
-          onClick={() => setMobileMenuOpen(true)}
-          className="lg:hidden w-10 h-10 flex items-center justify-center rounded-md bg-[#F69348] text-white hover:bg-[#e5823d] transition-colors"
-          aria-label="Open menu"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="lg:hidden w-10 h-10 flex items-center justify-center rounded-md bg-[#F69348] text-white hover:bg-[#e5823d] transition-all duration-300"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
         >
-          <Menu className="w-6 h-6" />
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6 transition-transform duration-300 rotate-180" />
+          ) : (
+            <Menu className="w-6 h-6 transition-transform duration-300" />
+          )}
         </button>
       </div>
 
