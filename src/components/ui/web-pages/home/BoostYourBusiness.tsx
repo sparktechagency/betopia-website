@@ -9,14 +9,16 @@ const BoostYourBusiness = () => {
     <section className="container my-20">
       <div className="mx-auto">
         {/* Header */}
-        <div className="text-center mb-[51px]">
-          <div className="section-title font-normal text-[#262626] mb-5">
-            <p className="!md:mb-1.5">Boost Your Business with Betopia</p>
-            <p className="flex items-center justify-center gap-x-2">
-              <span className="bg-primary text-white px-7 py-1.5 rounded-xl">
-                Spotlight
-              </span>
-              <span>our portfolio</span>
+        <div className="text-center mb-[51px] ">
+          <div className=" font-normal  mb-5 ">
+            <p className="text-3xl lg:text-[40px] font-[500] text-[#262626]">
+              <p className="!md:mb-1.5 max-w-[812px] mx-auto leading-[45px] lg:leading-[60px]">
+                Boost Your Business with Betopia
+                <span className="bg-primary text-white px-7 py-1.5 rounded-xl mx-2 ">
+                  Spotlight
+                </span>
+                <span> our portfolio</span>
+              </p>
             </p>
           </div>
           <p className="section-subtitle">
