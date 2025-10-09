@@ -5,7 +5,7 @@ const PartnerBanner = () => {
   return (
     <div
       id="banner"
-      className=" z-10 flex-center text-center h-screen text-white  "
+      className=" z-10 flex-center text-center min-h-[calc(100vh-102px)] md:min-h-screen text-white  "
     >
       <div className=" ">
         <video
@@ -28,11 +28,11 @@ const PartnerBanner = () => {
       {/* Content can go here */}
       <div className=" container z-20 absolute w-full  flex-center  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-hidden h-[calc(100vh-105px)] ">
         <div className=" flex flex-col items-center justify-center   ">
-          <p className="text-[#818181] text-[34px] lg:text-[64px] font-medium">
+          <p className="text-[#818181] text-[34px] lg:text-5xl 2xl:text-[64px] font-medium">
             <span className="text-white">Join </span> the Betopia{" "}
             <span className="text-primary"> Revolution </span>{" "}
           </p>
-          <p className=" text-[#7E7E7E] text-[20px] lg:text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9  ">
+          <p className=" text-[#7E7E7E] text-[20px] lg:text-4xl 2xl:text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9  ">
             And Become Our Partner Today{" "}
           </p>
           <p className=" text-sm lg:text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">
@@ -40,14 +40,14 @@ const PartnerBanner = () => {
             expand your reach, and drive mutual growth in a limitless digital
             landscape. Let&apos;s empower success together.
           </p>
-          <div className=" pt-[77px] flex flex-col md:flex-row  items-center gap-5">
-            <Link href="/become-partner">
+          <div className="mt-8 2xl:mt-[77px] flex flex-col md:flex-row  items-center gap-5 w-full md:w-auto">
+            <Link className="w-full md:w-auto" href="/become-partner">
               <OutlineButton className=" !py-4 !px-7">
                 Apply to Become a Partner
               </OutlineButton>
             </Link>
 
-            <Link href="/become-partner">
+            <Link className="w-full md:w-auto" href="/become-partner">
               <OutlineButton className=" !py-4 !px-7">
                 Talk to Our Partnership Team
               </OutlineButton>
