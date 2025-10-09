@@ -59,19 +59,19 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black !important;
+  background: #f1f1f1 !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   /* background: #6b5ecc34;  */
-  background: black;
+  background: #f1f1f1 !important;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f2535;
+  background: #c5c4c4;
 }
 
 p {

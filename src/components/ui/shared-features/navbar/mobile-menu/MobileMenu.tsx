@@ -42,9 +42,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
         <div key={page.name} className="overflow-y-auto">
           <div
             onClick={() => toggleExpand(page.name)}
-            className={`flex items-center justify-between py-2.5 cursor-pointer ${
-              isActive ? "text-[#F69348]" : "text-gray-900"
-            }`}
+            className={`flex items-center justify-between py-2.5 cursor-pointer  ${isActive ? "text-[#F69348]" : "text-gray-900"
+              }`}
           >
             <span className="text-xl font-normal">{page.name}</span>
             {isExpanded ? (
@@ -55,30 +54,38 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           </div>
 
           {isExpanded && (
-            <div className="ml-4 space-y-0.5 mb-1 transition-all duration-300 ease-in-out">
+            <div className="p-4 space-y-4 mb-1 transition-all duration-300 ease-in-out bg-white py-6">
               {page.dropdownItems?.map((item) => (
                 <Link
                   key={item.key}
                   href={item.link}
                   onClick={onClose}
-                  className="block py-2 text-[16px] text-gray-700 hover:text-[#F69348]"
+                  className="block  text-[16px] text-gray-700 hover:text-[#F69348] px-2 bg-[#BEBEBE]/30 rounded-md py-3.5 w-full"
                 >
                   {item.label}
                 </Link>
               ))}
               {page.megaSections?.map((section) => (
-                <div key={section.title} className="mt-2">
-                  <p className="text-[16px] font-medium !mb-2">{section.title}</p>
-                  {section.items?.map((item) => (
-                    <Link
-                      key={item.key}
-                      href={item.link}
-                      onClick={onClose}
-                      className="block py-1 text-sm text-gray-700 hover:text-[#F69348]"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                <div key={section.title} className="flex gap-2 items-start group">
+                  <div className="text-[#BEBEBE] group-hover:text-[#F79549] text-xl pt-2">
+                    <p>{section.icons}</p>
+                  </div>
+                  <div key={section.title} className="mt-2 ">
+                    <p className="text-[16px] font-medium !mb-2 group-hover:text-[#F79549] pb-3">{section.title}</p> 
+
+                    <div className=" flex flex-col gap-y-2 w-full"> 
+                    {section.items?.map((item) => (
+                      <Link
+                        key={item.key}
+                        href={item.link}
+                        onClick={onClose}
+                        className="block py-2.5 w-full text-sm text-gray-700 hover:text-[#F69348] px-2 bg-[#BEBEBE]/30 rounded-md"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -92,9 +99,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
         key={page.name}
         href={page.link}
         onClick={onClose}
-        className={`block py-2.5 ${
-          isActive ? "text-[#F69348]" : "text-gray-900"
-        }`}
+        className={`block py-2.5 ${isActive ? "text-[#F69348]" : "text-gray-900"
+          }`}
       >
         <span className="text-xl font-normal">{page.name}</span>
       </Link>
@@ -103,9 +109,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
 
   return (
     <div
-      className={`absolute left-0 right-0 w-full bg-[#F5F5F5] z-40 shadow-2xl rounded-b-2xl  transform transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] overflow-y-auto ${
-        open ? "translate-y-0 opacity-100  max-h-[calc(100vh-64px)]  overflow-y-auto" : "-translate-y-3 opacity-0 max-h-0"
-      }`}
+      className={`absolute left-0 right-0 w-full bg-[#ebeef0] z-40 shadow-2xl  transform transition-all duration-500  ease-[cubic-bezier(0.25,0.1,0.25,1)] overflow-y-auto h-[calc(100vh-64px)] ${open ? "translate-y-0 opacity-100 " : "-translate-y-3 opacity-0  pointer-events-none"
+        }`}
     >
       <div className="flex flex-col h-full p-6 ">
         <nav className="flex-1 overflow-y-auto">
@@ -113,7 +118,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
         </nav>
 
         <div className="pt-6 ">
-          <OutlineButton className="w-full py-3 ">Try Consultant</OutlineButton>
+          <OutlineButton className="w-full py-3 font-medium !text-gray-700 ">Try Consultant</OutlineButton>
         </div>
       </div>
     </div>

@@ -15,7 +15,9 @@ export interface MegaSectionItem {
 }
 
 export interface megaSections {
-  title: string;
+  title: string; 
+  subtitle: string;
+  icons: React.ReactNode;
   items: MegaSectionItem[];
 }
 

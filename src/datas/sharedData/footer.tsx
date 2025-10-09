@@ -1,7 +1,7 @@
 import { SocialLink } from "@/types"
-import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { GrReddit } from "react-icons/gr";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { LuLandmark } from "react-icons/lu";
+
 
 export const socialLinks: SocialLink[] = [
   { icon: <FaFacebookF color="#fff" size={20} />, url: "https://www.facebook.com/BetopiaLimited", bgColor: "#424242" },
@@ -46,17 +46,37 @@ export const reviews = [
   { label: "Design Rush", href: "#" },
   { label: "Trust Pilot", href: "#" },
   { label: "Partnerstack", href: "#" },
-]; 
+];
 
 export const officeData = [
   {
+    imgUrl: "/dhaka2.jpg",
+    icon: <LuLandmark size={130} className="text-[#424242]/30" /> ,
     title: "Corporate Office",
     city: "Dhaka",
     address: "Daisy Garden, House 14, Block A, Banasree",
     phone: "+8801321231828",
   },
   {
-    title: "Branch Office",
+    imgUrl: "/philipines.jpg",
+     icon: <LuLandmark size={130} className="text-[#424242]/30" /> ,
+    title: "Philippines Office",
+    city: "Philippines",
+    address: "Daisy Garden, House 14, Block A, Banasree",
+    phone: "+8801321231828",
+  },
+  {
+    imgUrl: "/usa.jpg", 
+     icon: <LuLandmark size={130} className="text-[#424242]/30" /> ,
+    title: "USA Office",
+    city: "USA",
+    address: "Daisy Garden, House 14, Block A, Banasree",
+    phone: "+8801321231828",
+  },
+  {
+    imgUrl: "/dhaka1.jpg",
+     icon: <LuLandmark size={130} className="text-[#424242]/30" /> ,
+    title: " Branch Office",
     city: "Dhaka",
     address: "Daisy Garden, House 14, Block A, Banasree",
     phone: "+8801321231828",
