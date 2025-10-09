@@ -44,7 +44,7 @@ const PartnerFAQs = () => {
         Partner FAQs{" "}
       </ComponentTitle>
       <div className=" flex-center w-full mb-9">
-        <p className="text-center text-[22px] md:leading-[140%] tracking-wide text-[#7B7B7B] md:w-[45%]">
+        <p className="text-center  md:leading-[140%] tracking-wide section-subtitle md:w-[45%]">
           Ask us, that is in your mind for better understanding of our vision
           and services that we offer for you.
         </p>
