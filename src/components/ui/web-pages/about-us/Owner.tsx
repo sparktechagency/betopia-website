@@ -21,7 +21,7 @@ const Owner: React.FC = () => {
                             ? "flex-col md:flex-row justify-end"
                             : "flex-col md:flex-row-reverse justify-end"
                         }
-                        rounded-[12px] mb-10 items-center gap-10
+                        rounded-[12px] mb-10 items-center gap-4 lg:gap-10
                         `}
             >
               <div className={` lg:w-1/2 `}>
@@ -39,16 +39,16 @@ const Owner: React.FC = () => {
                   (index + 1) % 2 === 0 ? " justify-end " : " justify-start "
                 }  flex flex-col  `}
               >
-                <h1 className="text-[34px] md:text-[40px] font-normal text-[#555555] tracking-wide pb-5">
+                <h1 className="text-3xl md:text-[40px] font-normal text-[#555555] tracking-wide pb-5">
                   {" "}
                   <span className=" text-[#763300]"> &quot; </span>{" "}
                   {owner.slogan}{" "}
                   <span className=" text-[#763300]"> &quot; </span>
                 </h1>
-                <p className=" text-[22px] text-[#2A2A2A]  lg:w-[79%] md:text-justify pb-10">
+                <p className="text-lg lg:text-[22px] text-[#2A2A2A]  lg:w-[79%] md:text-justify  pb-4 lg:pb-10">
                   {owner.bio}
                 </p>
-                <div className=" flex flex-col ">
+                <div className=" flex flex-col gap-y-0.5">
                   <p className="text-2xl  text-[#2A2A2A] font-medium ">
                     {owner.name}
                   </p>

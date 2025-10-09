@@ -16,7 +16,7 @@ const CaseStudies = () => {
     <div className="container mx-auto mb-20">
       <div className="w-full flex flex-col md:flex-row gap-4 items-center justify-between mb-10">
         <div>
-          <div className="text-[#535353] text-[40px] font-normal leading-12 flex flex-col gap-2">
+          <div className="text-[#535353] section-title leading-12 flex flex-col justify-center items-center lg:justify-start lg:items-start  gap-2">
             <p>
               Case <span className="text-primary">Studies</span>
             </p>

@@ -14,7 +14,7 @@ const BlogDetailsBanner = ({
   description,
 }: IBlogDetailsBannerProps) => {
   return (
-    <div className=" z-10 flex-center text-center h-screen text-white  ">
+    <div id="banner" className=" z-10 flex-center text-center h-screen text-white  ">
       <div className=" ">
         <Image
           src={img}

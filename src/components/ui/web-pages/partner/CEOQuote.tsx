@@ -21,7 +21,7 @@ const CEOQuote = () => {
                                         ? " flex-col md:flex-row justify-end"
                                         : " flex-col md:flex-row-reverse justify-end"
                                     }
-                                    rounded-[12px]  items-center    gap-10
+                                    rounded-[12px]  items-center   gap-4 lg:gap-10
                                     `}
             >
               <div className={` lg:w-1/2 `}>
@@ -34,14 +34,16 @@ const CEOQuote = () => {
                 />
               </div>
 
-              <div className={` w-full py-14 justify-center  flex flex-col  `}>
-                <h1 className=" text-[48px] font-normal text-white tracking-wide pb-5 flex items-center gap-4">
+              <div
+                className={` w-full pb-14 lg:py-14 justify-center  flex flex-col  `}
+              >
+                <h1 className=" text-3xl lg:text-[48px] font-normal text-white tracking-wide pb-5 flex items-center gap-4">
                   {" "}
                   <span className=" text-[#763300]"> &quot; </span>{" "}
                   {owner.slogan}{" "}
                   <span className=" text-[#763300]"> &quot; </span>
                 </h1>
-                <p className=" text-[22px] text-[#424242]  md:w-[79%] text-justify pb-10 tracking-wider leading-8">
+                <p className="text-lg lg:text-[22px] text-[#424242]  md:w-[79%] lg:text-justify pb-4 lg:pb-10 tracking-wider leading-8">
                   {owner.bio}
                 </p>
                 <div className=" flex flex-col gap-y-0.5 ">

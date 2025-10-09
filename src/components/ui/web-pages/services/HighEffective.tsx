@@ -6,8 +6,8 @@ import ServiceCard from "./ServiceCard";
 const HighEffective = ({ serviceData }: { serviceData: any }) => {
   return (
     <div className="container ">
-      <div className=" flex flex-col items-center justify-center gap-1 my-8  ">
-        <ComponentTitle className=" !text-center pb-2">
+      <div className=" flex flex-col items-center justify-center gap-1 my-8 ">
+        <ComponentTitle className=" text-center pb-2">
           {" "}
           <span className=" text-[#000000]"> Highly Effective </span>{" "}
           <span className="text-primary">Solutions</span>{" "}

@@ -42,7 +42,11 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={`fixed top-0  z-50 w-full transition-all duration-500 navbar-container 
-        ${isScrolled ? "bg-black mt-0" : "bg-transparent lg:bg-transparent backdrop-blur-[44px] lg:backdrop-blur-none lg:mt-10 mt-2"}
+        ${
+          isScrolled
+            ? "bg-black mt-0"
+            : "bg-transparent lg:bg-transparent backdrop-blur-[44px] lg:backdrop-blur-none lg:mt-10 mt-2"
+        }
         ${showNavbar ? "translate-y-0" : "-translate-y-full"}
       `}
     >
@@ -88,7 +92,10 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      <MobileMenu open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
+      <MobileMenu
+        open={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+      />
     </header>
   );
 };
