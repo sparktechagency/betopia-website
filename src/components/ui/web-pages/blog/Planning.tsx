@@ -27,7 +27,7 @@ const Planning: React.FC = () => {
       </div>
 
       <div
-        className=" mb-[92px]  w-auto h-[770px] rounded-[22px]"
+        className=" mb-[92px]  w-auto h-[450px] lg:h-[770px] rounded-[22px]"
         style={{
           backgroundImage: `url(/images/planning.jpg)`,
           backgroundSize: "cover",
