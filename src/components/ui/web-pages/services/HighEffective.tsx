@@ -20,7 +20,7 @@ const HighEffective = ({ serviceData }: { serviceData: any }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           serviceData?.highlyEffectiveData?.map((item: any, index: number) => (
