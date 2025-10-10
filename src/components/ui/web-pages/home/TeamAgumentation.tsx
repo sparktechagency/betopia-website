@@ -14,7 +14,7 @@ const TeamAugmentation: React.FC = () => {
         className="absolute top-0 left-0"
       />
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-full py-16 md:py-0 px-6 gap-10">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-full py-16 md:py-0 px-6 gap-10">
         {/* LEFT CONTENT */}
         <div>
           <h1 className="text-3xl md:text-4xl text-white md:leading-[44px] font-semibold">

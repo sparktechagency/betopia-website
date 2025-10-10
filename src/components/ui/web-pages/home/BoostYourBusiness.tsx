@@ -12,7 +12,7 @@ const BoostYourBusiness = () => {
         <div className="text-center mb-[51px] ">
           <div className=" font-normal  mb-5 ">
             <p className="text-3xl lg:text-[40px] font-[500] text-[#262626]">
-              <p className="!md:mb-1.5 max-w-[812px] mx-auto leading-[45px] lg:leading-[60px]">
+              <p className="!md:mb-1.5 md:max-w-[500px] lg:max-w-[812px] mx-auto leading-[45px] lg:leading-[60px]">
                 Boost Your Business with Betopia
                 <span className="bg-primary text-white px-7 py-1.5 rounded-xl mx-2 ">
                   Spotlight

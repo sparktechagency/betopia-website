@@ -35,7 +35,7 @@ const CEOQuote = () => {
               </div>
 
               <div
-                className={` w-full pb-14 lg:py-14 justify-center  flex flex-col  `}
+                className={` w-full pb-14 md:py-14 justify-center  flex flex-col  `}
               >
                 <h1 className=" text-3xl lg:text-[48px] font-normal text-white tracking-wide pb-5 flex items-center gap-4">
                   {" "}

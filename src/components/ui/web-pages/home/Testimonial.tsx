@@ -129,14 +129,14 @@ const Testimonial = () => {
         {/* Navigation Buttons */}
         <button
           ref={prevRef}
-          className="hidden md:flex absolute top-1/2 -left-16 -translate-y-1/2 z-10 bg-[#1C55E0] hover:bg-[#1744b4] w-12 h-12 rounded-full items-center justify-center shadow-lg"
+          className="hidden lg:flex absolute top-1/2 -left-16 -translate-y-1/2 z-10 bg-[#1C55E0] hover:bg-[#1744b4] w-12 h-12 rounded-full items-center justify-center shadow-lg"
         >
           <ChevronLeft color="white" size={24} />
         </button>
 
         <button
           ref={nextRef}
-          className="hidden md:flex absolute top-1/2 -right-16 -translate-y-1/2 z-10 bg-[#1C55E0] hover:bg-[#1744b4] w-12 h-12 rounded-full items-center justify-center shadow-lg"
+          className="hidden lg:flex absolute top-1/2 -right-16 -translate-y-1/2 z-10 bg-[#1C55E0] hover:bg-[#1744b4] w-12 h-12 rounded-full items-center justify-center shadow-lg"
         >
           <ChevronRight color="white" size={24} />
         </button>

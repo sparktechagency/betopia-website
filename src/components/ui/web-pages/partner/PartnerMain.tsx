@@ -10,7 +10,7 @@ const PartnerMain = () => {
   return (
     <div>
       <PartnerBanner />
-      <div className="container w-full flex flex-col md:flex-row items-start gap-10 md:gap-[110px] ">
+      <div className="container w-full flex flex-col lg:flex-row items-start gap-10 lg:gap-[80px] ">
         <div className=" lg:w-[45%]">
           <WhyPartner />
         </div>
