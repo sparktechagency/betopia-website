@@ -13,7 +13,7 @@ interface IProductInfoProps {
 const ProductInfo: React.FC<IProductInfoProps> = ({ info }) => {
   const { title, description, imgUrl } = info;
   return (
-    <div className="container flex flex-col md:flex-row items-center gap-10 mb-[80px]">
+    <div className="container grid grid-cols-1 md:grid-cols-2 gap-6 items-center mb-20">
       <div>
         <h1 className="section-title lg:leading-[50px]">{title}</h1>
         <p className=" section-subtitle leading-[35px]">{description}</p>
@@ -21,14 +21,14 @@ const ProductInfo: React.FC<IProductInfoProps> = ({ info }) => {
           Pre-Book Now
         </OutlineButton>
       </div>
-      <div className="w-full h-[420px] relative">
+      <div className="w-full h-full">
         <Image
           src={imgUrl}
           alt="arrow"
-          fill
-          objectFit="cover"
-          objectPosition="center"
-          className="rounded-[12px]"
+          width={100}
+          height={100}
+          className="h-full w-full object-cover rounded-xl"
+          unoptimized
         />
       </div>
     </div>

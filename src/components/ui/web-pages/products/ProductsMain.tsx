@@ -25,7 +25,7 @@ const ProductsMain = () => {
   const productData = Data[product ?? "HRM"];
 
   return (
-    <div className="px-4">
+    <div className="">
       <ProductDetailsBanner banner={productData.header} />
       <ProductInfo info={productData.info} />
 
@@ -42,7 +42,7 @@ const ProductsMain = () => {
         <FAQ />
       </div>
 
-      <div className="container bg-[#F79549] rounded-[25px] p-10 flex flex-col md:flex-row items-center gap-5 justify-between mb-[80px]">
+      <div className="container bg-[#F79549] lg:rounded-[25px] p-10 flex flex-col md:flex-row items-center gap-5 justify-between mb-[80px] ">
         <div>
           <p className="text-white font-semibold text-3xl md:text-[50px]">
             Looking For a complete
