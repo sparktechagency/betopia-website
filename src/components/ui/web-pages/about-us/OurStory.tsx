@@ -3,14 +3,14 @@ import React from "react";
 
 const OurStory = () => {
   return (
-    <div className="container relative text-white pb-32 lg:pb-24  ">
-      <ComponentTitle className=" !text-start pb-2 ">
+    <div className="container relative text-white pb-32 md:pb-10 lg:pb-24  ">
+      <ComponentTitle className=" !text-start pb-6 ">
         {" "}
         <span className=" text-[#000000]"> Our </span>{" "}
         <span className="text-primary">Story</span>{" "}
       </ComponentTitle>
-      <div className=" flex flex-col md:flex-row gap-10 mb-10 ">
-        <div className=" md:w-4/6 w-full flex flex-col text-[#818181] text-lg tracking-wide  leading-9">
+      <div className=" flex flex-col-reverse lg:flex-row gap-4 md:gap-10 mb-10 ">
+        <div className=" lg:w-4/6 w-full flex flex-col text-[#818181] text-lg tracking-wide  leading-9">
           <span>
             Every great journey begins with a vision. For Betopia Limited, that
             vision started in 2014 with a simple goal — to build technology that
@@ -71,9 +71,9 @@ const OurStory = () => {
             connected world.
           </span>
         </div>
-        <div className=" md:w-2/6 flex flex-col m-auto">
+        <div className=" lg:w-2/6 flex flex-col m-auto">
           <video
-            className=" md:object-cover md:h-lvh w-full rounded-2xl md:rounded-sm"
+            className=" md:object-cover lg:h-lvh w-full rounded-2xl lg:rounded-sm"
             autoPlay
             loop
             muted
