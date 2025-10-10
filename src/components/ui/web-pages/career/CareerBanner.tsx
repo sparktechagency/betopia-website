@@ -35,7 +35,7 @@ const CareerBanner: React.FC = () => {
           <h1 className="text-[#818181]  text-[34px] lg:text-5xl 2xl:text-[64px] font-medium leading-[1px] pb-9">
             <span className="text-primary">Talent</span> Community
           </h1>
-          <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[50%] tracking-wide ">
+          <p className=" text-lg font-normal text-[#9B9B9B]  lg:w-[45%]  tracking-wide ">
             Unleash Your Full Potential Within a Dynamic and Collaborative
             Environment That Drives Meaningful Global Impact Through Innovative
             Solutions.

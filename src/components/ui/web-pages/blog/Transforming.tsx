@@ -17,7 +17,7 @@ const Transforming: React.FC = () => {
       </ComponentTitle>
 
       <div className="mx-auto pt-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {TransformingData?.map((item) => (
             <div key={item.number}>
               <TransformingCard items={item} />
