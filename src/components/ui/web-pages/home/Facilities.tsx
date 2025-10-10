@@ -6,7 +6,7 @@ import { cardsData } from "@/datas/pages/home";
 const Facilities = () => {
   return (
     <div
-      className=" relative py-12 md:p-0 md:h-[590px] flex items-center"
+      className=" relative py-12 lg:p-0 lg:h-[590px] flex items-center"
       style={{
         backgroundImage: "url(/facilities-bg.jpg)",
         backgroundSize: "cover",
