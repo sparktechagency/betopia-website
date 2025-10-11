@@ -36,9 +36,11 @@ const BecomePartnerBanner = () => {
           </p>
           <div className=" pt-[77px]">
             <OutlineButton className=" !py-4 !px-7">
-              Explore Our Services
+              Talk to Our Partnership Team
             </OutlineButton>
-          </div>
+          </div> 
+
+          <p className="text-[#9B9B9B] lg:text-lg text-[16px] font-light pt-6 "> <span> Already in Collaboration?   </span> <span className="text-primary cursor-pointer underline underline-offset-2 ms-1"> Log in </span></p>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ const BecomePartnerMain = () => {
   return (
     <div>
       <BecomePartnerBanner />
-      <div className=" container my-20 mt-32">
+      <div className=" container my-20 mt-40">
         <ComponentTitle className=" flex-center  pb-7 ">
           <span>Why Partner with </span>{" "}
           <span className="text-primary">Betopia</span>
