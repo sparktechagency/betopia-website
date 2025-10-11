@@ -27,10 +27,10 @@ const TeamAugmentationBanner = () => {
             <span className="text-white">Why Pay </span>
             <span className="text-primary"> $100k+ </span> for one Engineer?
           </p>
-          <p className="text-[#7E7E7E] text-[20px] lg:text-4xl 2xl:text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9">
+          <p className="text-[#7E7E7E] text-[20px] lg:text-4xl 2xl:text-[57px] font-light lg:w-[60%] md:w-[50%] w-full text-center pb-9 pt-3 md:pt-6 lg:pt-2">
             Scale Your Tech Team Smarter with Betopia
           </p>
-          <p className="text-sm md:text-lg font-normal text-[#9B9B9B] lg:w-[45%] md:w-[50%] tracking-wide">
+          <p className="text-sm md:text-lg font-normal text-[#9B9B9B] lg:w-[45%]  tracking-wide">
             Stop overspending on H-1B hires. Build high-performing global IT
             teams with Betopia Limited at 50–60% less cost without compromising
             quality, security, or delivery speed.
@@ -43,7 +43,7 @@ const TeamAugmentationBanner = () => {
             </Link>
 
             <button
-              className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
+              className="rounded-[12px] flex items-center justify-center gap-2 h-[55px] py-4 px-7 bg-[#F79549] text-sm  md:!text-lg w-full md:w-auto"
               style={{ color: "white" }}
             >
               Get Talent Profiles{" "}

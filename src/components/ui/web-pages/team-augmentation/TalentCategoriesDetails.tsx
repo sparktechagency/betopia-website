@@ -9,9 +9,9 @@ const TalentCategoriesDetails = ({
   selectedCategory: CategoryDetails;
 }) => {
   return (
-    <div className="  flex flex-col md:flex-row mt-16 w-full ">
+    <div className="  flex flex-col lg:flex-row mt-16 w-full ">
       {/* Left Content */}
-      <div className="flex-1  md:w-4/5">
+      <div className="flex-1  lg:w-4/5">
         {/* Header */}
         <div className="flex  items-center gap-4 mb-8 bg-[#F7954922] p-6">
           <div className="flex flex-col md:flex-row items-center justify-between w-full">
@@ -94,13 +94,14 @@ const TalentCategoriesDetails = ({
       </div>
 
       {/* Right Image */}
-      <div className="md:w-1/5 h-full rounded-xl mt-8 md:mt-0">
+      <div className="lg:w-1/5 h-full rounded-xl mt-8 lg:mt-0">
         <Image
           src="/augmentation/talentCategory.png"
           alt="Developers working at computers in an office environment"
           width={420}
           height={500}
-          className="w-full h-full lg:w-[420px] lg:h-[500px]"
+          className="w-full h-full  lg:w-[420px] lg:h-[500px] md:h-[600px] md:object-cover   "
+          unoptimized
         />
       </div>
     </div>

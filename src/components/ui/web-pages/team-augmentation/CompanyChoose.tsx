@@ -7,27 +7,27 @@ import React from "react";
 const CompanyChoose = () => {
   return (
     <div className="container mx-auto mb-20">
-      <div className=" w-full flex flex-col md:flex-row items-center justify-between mb-20">
-        <div className="md:w-[50%]">
-          <p className=" pb-4 text-[#535353] text-3xl md:text-[40px] font-normal leading-12 md:w-[85%]">
+      <div className=" w-full flex flex-col lg:flex-row items-center justify-between mb-20">
+        <div className="lg:w-[50%]">
+          <p className=" pb-4 text-[#535353] text-3xl md:text-[40px] font-normal text-center lg:text-start leading-12 lg:w-[85%] md:max-w-[500px]">
             {" "}
             Why U.S. Companies Choose{" "}
             <span className=" text-primary">Betopia Limited</span>{" "}
           </p>
         </div>
 
-        <div className=" flex flex-col gap-8 md:w-[50%]">
-          <p className="text-[#41404280] text-lg  ">
+        <div className=" flex flex-col gap-8 lg:w-[50%]">
+          <p className="section-subtitle leading-6 text-center lg:text-start ">
             {" "}
             U.S. companies trust Betopia Limited for faster hiring, global
             talent access, enterprise grade security, and cost effective
             scalable teams.{" "}
           </p>
-          <div>
+          <div className="flex justify-center items-center lg:justify-start lg:items-start">
             <Link href={"/contact"}>
-            <OutlineButton className="mx-auto p-4 !text-[#656565] font-semibold">
-              Request a Free Cost Analysis
-            </OutlineButton>
+              <OutlineButton className="mx-auto p-4 !text-[#656565] font-semibold">
+                Request a Free Cost Analysis
+              </OutlineButton>
             </Link>
           </div>
         </div>

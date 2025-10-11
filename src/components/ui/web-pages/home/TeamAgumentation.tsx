@@ -4,7 +4,7 @@ import React from "react";
 
 const TeamAugmentation: React.FC = () => {
   return (
-    <div className="bg-[#414042] my-12 md:h-[700px] min-h-screen relative overflow-hidden">
+    <div className="bg-[#414042] my-12 md:h-[700px] min-h-screen relative overflow-hidden py-12">
       {/* Decorative top-left star */}
       <Image
         src="/agumentation/star.png"
