@@ -4,7 +4,7 @@ import { owners } from "@/datas/pages/about";
 const Owner: React.FC = () => {
   return (
     <div className=" lg:my-20 ">
-      <div className="flex flex-col gap-y-[140px]">
+      <div className="flex flex-col gap-36 md:gap-24 lg:gap-y-[140px]">
         {owners.map((owner, index) => (
           <div
             key={index}
@@ -35,7 +35,7 @@ const Owner: React.FC = () => {
               </div>
 
               <div
-                className={` w-full lg:py-14 justify-center   ${
+                className={` w-full md:py-10 lg:py-14 justify-center   ${
                   (index + 1) % 2 === 0 ? " justify-end " : " justify-start "
                 }  flex flex-col  `}
               >
