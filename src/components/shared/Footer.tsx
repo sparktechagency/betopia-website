@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           />
         </div>
 
-        <div className="  bg-[#040404]/20  backdrop-blur drop-shadow-2xl p-6 pt-8 -mt-6 rounded-xl  z-10 ">
+        <div className="  bg-[#040404] p-6 pt-8 -mt-6 rounded-xl  z-10 ">
           <div className=" grid grid-cols-1 lg:grid-cols-4 rounded-[8px] gap-5  z-10  ">
             {officeData.map((office, index) => (
               <div
@@ -53,15 +53,15 @@ const Footer: React.FC = () => {
 
                   </div>
 
-                  <div className="absolute -bottom-4 -right-5"> 
-                    {/* <Image
+                  <div className="absolute -bottom-2 -right-2">
+                    <Image
                       src={office.imgUrl}
                       alt={office.title}
-                      width={140}
-                      height={140}
-                      className=" "
-                    /> */}
-                   { office.icon}
+                      width={office.imgWidth}
+                      height={office.imgHeight}
+                      className="object-contain opacity-90"
+                    />
+                    {/* { office.icon}  */}
 
                   </div>
                 </div>
