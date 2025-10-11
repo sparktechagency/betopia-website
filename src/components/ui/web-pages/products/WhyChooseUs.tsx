@@ -28,7 +28,7 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
       </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           {features.map((feature, index) => (
             <div key={index}>
               <div className="flex items-center gap-3 !mb-2">
