@@ -5,7 +5,7 @@ import React from "react";
 const OurStrategy = () => {
   return (
     <div className=" container py-20 flex-center">
-      <div className=" md:w-[70%]">
+      <div className=" lg:w-[70%]">
         <div className=" flex flex-col items-center justify-center gap-1 my-8  ">
           <ComponentTitle className=" !text-center pb-2">
             {" "}
@@ -13,7 +13,7 @@ const OurStrategy = () => {
             <span className="text-primary">Method</span>{" "}
           </ComponentTitle>
           <div className=" w-full flex-center flex-col gap-0.5">
-            <p className="text-[20px] text-[#757575] text-center  md:w-[40%] leading-8">
+            <p className="section-subtitle  leading-8">
               We deliver identity security through a modular, scalable approach
             </p>
           </div>

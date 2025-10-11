@@ -27,8 +27,8 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
         <p className="text-center section-subtitle">{description}</p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="grid grid-cols-1 gap-4">
+      <div className="flex flex-col lg:flex-row items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
           {features.map((feature, index) => (
             <div key={index}>
               <div className="flex items-center gap-3 !mb-2">
@@ -57,6 +57,7 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
             src={imgUrl}
             alt="arrow"
             className="rounded-[12px] object-cover h-full w-full"
+            unoptimized
           />
         </div>
       </div>

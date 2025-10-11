@@ -1,19 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { RiArrowRightLine } from "react-icons/ri"; 
+import { RiArrowRightLine } from "react-icons/ri";
 const BannerDetails = () => {
   return (
     <div className="  w-full z-10 bg-[#000000E5]/90 md:bg-gradient-to-r from-[#f8fcfc]  to-[#e0dfdf] md:-mt-[25px] py-[40px] md:py-[100px]">
       {/* <div className=" w-full h-full bg-black/60 "></div>  */}
       <div className=" container flex flex-col xl:flex-row items-center gap-6 md:gap-36 lg:gap-6 z-20  ">
-        <div className="h-[350] md:h-[580px] w-full md:w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
-          <Image
-            src={"/banner.png"}
-            alt=""
-            fill
-            objectFit="cover"
-          />
+        <div className="h-[350] md:h-[580px] w-full lg:w-[50%] 2xl:w-[650px] relative mx-auto xl:mx-0">
+          <Image src={"/banner.png"} alt="" fill objectFit="cover" />
         </div>
 
         <div className="w-full lg:w-[50%] text-lg md:text-xl lg:text-[18px] 2xl:text-xl leading-10 tracking-wide text-[#B7B7B7]  md:text-gray-600 ">

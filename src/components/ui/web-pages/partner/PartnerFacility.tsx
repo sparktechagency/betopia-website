@@ -11,7 +11,7 @@ const PartnerFacility = () => {
               {" "}
               {items?.id}
             </p>
-            <p className="text-[26px] font-medium pt-[33px] pb-3 ">
+            <p className="text-xl md:text-[26px] font-medium pt-6 lg:pt-[33px] pb-3 ">
               {items?.title}
             </p>
             <p className="text-[#8A8A8A] font-normal text-lg">

@@ -44,14 +44,14 @@ const PartnerFAQs = () => {
         Partner FAQs{" "}
       </ComponentTitle>
       <div className=" flex-center w-full mb-9">
-        <p className="text-center  md:leading-[140%] tracking-wide section-subtitle md:w-[45%]">
+        <p className="text-center  md:leading-[140%] tracking-wide section-subtitle md:w-[80%] lg:w-[45%]">
           Ask us, that is in your mind for better understanding of our vision
           and services that we offer for you.
         </p>
       </div>
 
       <div className=" w-full flex-center">
-        <div className=" grid grid-cols-1 gap-6 md:w-[60%]">
+        <div className=" grid grid-cols-1 gap-6 lg:w-[60%]">
           <>
             {faqs && faqs.length > 0 && (
               <>

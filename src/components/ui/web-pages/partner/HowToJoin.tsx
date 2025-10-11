@@ -13,7 +13,7 @@ const HowToJoin: React.FC = () => {
         How to <span className="text-primary">join</span>{" "}
       </ComponentTitle>
       <div className=" w-full flex-center flex-col gap-7">
-        <p className="text-center text-[22px] md:leading-[140%] text-[#2D4E75] md:w-1/2">
+        <p className="text-center section-subtitle ">
           Learn about the straightforward steps to become a partner and start
           the collaboration process.
         </p>
@@ -25,29 +25,29 @@ const HowToJoin: React.FC = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[50px] my-[52px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-[50px] my-[52px]">
         {HowToJoinData.map((data, index) => (
           <div
             key={index}
-            className="bg-[#F693481A]/90 h-[239px] rounded-[12px]"
+            className="bg-[#F693481A]/90 rounded-[12px] flex flex-col justify-center items-center px-[32px] py-6 h-full "
           >
-            <div className="flex items-center justify-center h-full w-full px-[32px]">
-              <div>
-                <div className="h-[48px] overflow-hidden flex-center w-[48px] mb-[32px] bg-white rounded-[8px] drop-shadow-2xl">
-                  <Image
-                    style={{ borderRadius: "8px" }}
-                    src={data.img}
-                    alt="Dubai"
-                    width={60}
-                    height={60}
-                  />
-                </div>
-
-                <h2 className="text-[21px] font-bold mb-5">{data.name}</h2>
-                <p className="text-[18px] text-[#737373] leading-[160%]">
-                  {data.description}
-                </p>
+            <div className="flex flex-col flex-grow">
+              <div className="h-[48px] w-[48px] flex-center mb-[32px] bg-white rounded-[8px] drop-shadow-2xl overflow-hidden">
+                <Image
+                  style={{ borderRadius: "8px" }}
+                  src={data.img}
+                  alt={data.name}
+                  width={60}
+                  height={60}
+                />
               </div>
+
+              <h2 className="text-[20px] md:text-[21px] font-bold mb-4">
+                {data.name}
+              </h2>
+              <p className="text-[16px] md:text-[18px] text-[#737373] leading-[160%] flex-grow">
+                {data.description}
+              </p>
             </div>
           </div>
         ))}

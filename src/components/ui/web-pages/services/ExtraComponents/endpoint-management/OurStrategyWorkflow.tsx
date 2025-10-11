@@ -20,7 +20,7 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
     <div className="bg-[#F79549]/8  py-10">
       <div className="container ">
         {/* content  */}
-        <div className=" grid md:grid-cols-2 gap-14 items-center">
+        <div className=" grid lg:grid-cols-2 gap-14 items-center">
           <div>
             <div className=" pb-6">
               <ComponentTitle className=" !text-center pb-2 !font-semibold">
@@ -47,11 +47,11 @@ const OurStrategyWorkflow = ({ value }: { value: OurStrategyWorkflowType }) => {
           </div>
 
           <div>
-            <div className="space-y-6">
+            <div className="space-y-6 grid md:grid-cols-2 md:gap-6 lg:gap-0 lg:grid-cols-1">
               {value?.strategyPoint.map((point, index) => (
-                <div key={index} className="grid grid-cols-8 items-start gap-4">
+                <div key={index} className="grid grid-cols-8 items-start  gap-4">
                   {/* Number circle */}
-                  <div className="col-span-2 lg:col-span-1 h-[50px] w-[50px] lg:w-[70px] lg:h-[70px] flex items-center justify-center bg-[#FF7F5C] text-white font-bold rounded-full text-3xl lg:text-[40px]">
+                  <div className="col-span-2 lg:col-span-1 h-[50px] w-[50px] lg:w-[70px] lg:h-[70px] flex items-center justify-center  bg-[#FF7F5C] text-white font-bold rounded-full text-3xl lg:text-[40px] ">
                     {index + 1}
                   </div>
 
