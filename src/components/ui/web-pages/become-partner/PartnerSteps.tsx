@@ -57,13 +57,13 @@ const PartnerSteps = () => {
   const isLastStep = currentStep === steps.length - 1;
 
   return (
-    <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-12 xl:gap-20 w-full  p-4 md:p-6">
+    <div className="flex flex-col md:flex-row items-start gap-6 lg:gap-12 xl:gap-20 w-full  p-4 md:p-6">
       {/* Stepper Navigation */}
       <div className="w-full lg:w-auto lg:min-w-[280px] xl:min-w-[320px]">
         <div className="flex lg:flex-row gap-4 lg:gap-8">
           {/* Step indicators */}
-          <div className="flex flex-row lg:flex-col justify-center lg:justify-start  items-center lg:items-start w-full lg:w-auto">
-            <div className="flex flex-row lg:flex-col items-center gap-4 lg:gap-8 p-3 lg:p-4 bg-gray-200/40 rounded-full">
+          <div className="flex flex-row md:flex-col justify-center lg:justify-start  items-center lg:items-start w-full lg:w-auto">
+            <div className="flex flex-row md:flex-col items-center gap-4 lg:gap-8 p-3 lg:p-4 bg-gray-200/40 rounded-full">
               {steps.map((step, index) => {
                 const isCompleted = isStepCompleted(index);
                 const isCurrent = isStepCurrent(index);

@@ -9,7 +9,7 @@ import { PiNetwork } from "react-icons/pi";
 
 const OurEngagementModals = () => {
   return (
-    <div className="container mx-auto mb-20">
+    <div className="container mx-auto mb-10 md:mb-12 lg:mb-20">
       <div className=" pb-14">
         <ComponentTitle className="flex-center pb-4 text-[#535353]">
           {" "}
@@ -99,7 +99,7 @@ const OurEngagementModals = () => {
           </div>
         </div>
 
-        <div className=" pt-[60px] flex items-center justify-center">
+        <div className=" pt-10 md:pt-[60px] flex items-center justify-center">
           <button
             className="rounded-[12px] flex items-center gap-2 h-11 px-4 bg-[#F79549] !text-xs md:!text-lg w-full md:w-auto"
             style={{ color: "white" }}

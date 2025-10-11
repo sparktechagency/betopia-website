@@ -12,7 +12,7 @@ const Planning: React.FC = () => {
         <span className=" text-primary">Planning (ERP)</span>
       </ComponentTitle>
       <div className=" w-full flex-center flex-col gap-0.5">
-        <p className="section-subtitle text-center  md:w-1/2 leading-8">
+        <p className="section-subtitle text-center  lg:w-1/2 leading-8">
           In today&apos;s fast-paced business landscape, ERP systems integrate
           core processes to streamline operations and drive growth.
         </p>

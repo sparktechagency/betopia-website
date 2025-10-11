@@ -129,11 +129,11 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           </div>
         </nav>
 
-        <div className="pt-6 ">
+        <Link href="/contact" onClick={onClose} className="pt-6 ">
           <OutlineButton className="w-full py-3 font-medium !text-gray-700 ">
             Try Consultant
           </OutlineButton>
-        </div>
+        </Link>
       </div>
     </div>
   );
