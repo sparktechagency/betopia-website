@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React from "react";
-import { ERP, HRM, POS } from "@/datas/pages/newProducts";
+import { ERP, HRM, PartnerProgram, POS } from "@/datas/pages/newProducts";
 import { useSearchParams } from "next/navigation";
 import ProductDetailsBanner from "./ProductDetailsBanner";
 import ProductInfo from "./ProductInfo";
@@ -16,6 +16,7 @@ const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
   HRM: HRM,
   POS: POS,
   ERP: ERP,
+  partnerProgram: PartnerProgram
 };
 
 const ProductsMain = () => {
@@ -29,12 +30,11 @@ const ProductsMain = () => {
       <ProductDetailsBanner banner={productData.header} />
       <ProductInfo info={productData.info} />
 
-      <ProductFeatures features={productData.features} />
+      <ProductFeatures features={productData.features} product={product} />
       {product === "HRM" && <AdvanceFeatures />}
       <WhyChooseUs
-        description={productData.whyChooseUs.description}
-        imgUrl={(productData.whyChooseUs as any)?.imgUrl}
-        features={productData.whyChooseUs.features}
+        whyChooseUs={productData.whyChooseUs}
+        product={product}
       />
       <TrustedBy />
 

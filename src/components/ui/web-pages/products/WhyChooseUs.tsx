@@ -7,23 +7,42 @@ interface IFeatureProps {
   icon: string;
 }
 
-interface IWhyChooseUsProps {
+interface IWhyChooseUs {
   description: string;
   imgUrl: string;
   features: IFeatureProps[];
+
+}
+
+interface IWhyChooseUsProps {
+  whyChooseUs: IWhyChooseUs
+  product: string | null
 }
 
 const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
-  description,
-  imgUrl,
-  features,
-}) => {
+  whyChooseUs,
+  product
+}) => { 
+
+  const { description, imgUrl, features } = whyChooseUs 
+
   return (
     <div className="container my-[80px]">
+
       <div className="mb-[50px]">
-        <h1 className="section-title text-black text-center">
-          Why you <span className="text-[#FF9233]">choose us ?</span>{" "}
-        </h1>
+        {
+          product === "partnerProgram" && whyChooseUs ? (
+            <div className="flex flex-col section-title  text-center gap-0.5 pb-2">
+              <p className="text-black">Why you choose</p>
+              <p className="text-primary">Betopia partner Program ?</p>
+            </div>
+          ) : (
+            <h1 className="section-title text-black text-center">
+              Why you <span className="text-[#FF9233]">choose us ?</span>
+            </h1>
+
+          )
+        }
         <p className="text-center section-subtitle">{description}</p>
       </div>
 

@@ -299,3 +299,135 @@ export const ERP = {
 
     }
 }
+
+export const PartnerProgram = {
+    header: {
+        heading: "Betopia Partner Program",
+        subHeading: "Smarter Collaboration, Stronger Growth",
+        description: "Connect, manage, and scale your partner ecosystem through one transparent, growth-driven platform.",
+        imgUrl: "/productDetails/partnerProgram.png"
+    },
+    info: {
+        title: <p>All-in-One </p>,
+        subTitle: "Partner Management System",
+        description: "PartnerSync helps vendors, resellers, and service providers manage their entire partner ecosystem  from onboarding to performance tracking  with transparency, automation, and collaboration tools that drive mutual success. ",
+        imgUrl: "/productDetails/partner-info.png"
+    },
+    features: [
+        {
+            icon: "/productDetails/erp-features/sales.png",
+            title: <p>Partner Onboarding <br /> & Agreements</p>,
+            list: [
+                "Digital partner registration & verification",
+                "NDA, reseller & service-level agreements ",
+                "Tier-based partner Levels",
+                "Automated approval workflows",
+            ],
+        },
+        {
+            icon: "/productDetails/hrm-features/employee.png",
+            title: <p>Partner Dashboard & Insights</p>,
+            list: [
+                "Personalized dashboard for each partner",
+                "KPI tracking",
+                "AI-based performance insights",
+                "Partner leaderboard & rewards",
+            ],
+        },
+        {
+            icon: "/productDetails/hrm-features/attandance.png",
+            title: <p>Training & Certification Hub</p>,
+            list: [
+                "Centralized training materials",
+                "Track partner progress & certification levels",
+                "AI-based learning recommendations",
+                "Automated certificate issuance",
+            ],
+        },
+        {
+            icon: "/productDetails/hrm-features/leave.png",
+            title: <p>Asset & Resource Library</p>,
+            list: [
+                "Central repository for marketing kits, pitch decks, product docs",
+                "Permission-based downloads",
+                "Auto-version updates for new releases"
+            ],
+        },
+        {
+            icon: "/productDetails/hrm-features/overtime.png",
+            title: <p>Lead Sharing & Deal <br /> Registration  </p>,
+            list: [
+                "Secure lead exchange between vendor and partner",
+                "Deal registration system with approval tracking",
+                "Revenue sharing and commission visibility",
+            ],
+        },
+        {
+            icon: "/productDetails/hrm-features/payroll.png",
+            title: <p>Support & Communication <br /> Center</p>,
+            list: [
+                "Ticketing and chat support for partner requests",
+                "Announcements, newsletters & broadcast updates",
+                "Event & campaign management tools",
+            ],
+        },
+
+    ],
+    whyChooseUs: {
+        description: "Smart, scalable, and secure  everything modern partner programs demand.",
+        imgUrl: "/productDetails/why-choose-partner.png",
+        features: [
+            {
+                icon: "/productDetails/erp-why/partner.png",
+                title: "Effortless Partner Management",
+                description: "Simplify onboarding, training, engagement, and performance tracking in one unified platform."
+            },
+            {
+                icon: "/productDetails/erp-why/insight.png",
+                title: "Insight-Driven Decisions",
+                description: "Leverage AI-powered analytics to monitor partner success and uncover growth opportunities."
+            },
+            {
+                icon: "/productDetails/erp-why/seamless.png",
+                title: "Seamless Automation",
+                description: "Streamline agreements, approvals, and communications with full compliance and audit trails."
+            },
+            {
+                icon: "/productDetails/erp-why/growth.png",
+                title: "Partner Growth & Empowerment",
+                description: "Strengthen relationships with clear enablement paths, rewards, and transparent collaboration."
+            },
+
+        ]
+
+    },
+    ourExpectation: {
+        description: "We seek long-term, value-driven partnerships. Clients using Betopia Partner Profile can expect",
+        imgUrl: "/productDetails/our-expectation.png",
+        features: [
+            {
+                icon: "/productDetails/erp-why/partner.png",
+                title: "Transparent communication",
+                description: "We maintain clear, honest, and open interactions at every stage of the partnership."
+            },
+            {
+                icon: "/productDetails/erp-why/integrated.png",
+                title: "Timely Onboarding Support",
+                description: "Our team ensures a smooth and efficient onboarding experience, so clients get started without delays."
+            },
+            {
+                icon: "/productDetails/erp-why/real.png",
+                title: "Compliance with Partnership Guidelines",
+                description: "We strictly follow all rules and standards to maintain trust and accountability."
+            },
+            {
+                icon: "/productDetails/erp-why/scalable.png",
+                title: "Mutual Goal Alignment",
+                description: "We work together with clients to achieve shared objectives and drive sustainable growth. "
+            },
+
+        ]
+
+    }
+}
+
