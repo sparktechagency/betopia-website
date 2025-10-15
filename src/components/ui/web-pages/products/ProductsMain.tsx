@@ -61,7 +61,7 @@ const ProductsMain = () => {
           </div>
         </div>
         <button
-          className="py-3 bg-[#040404] w-[265px] rounded-[11px]"
+          className="py-3 bg-[#040404] w-full lg:w-[265px] rounded-[11px]"
           style={{ color: "white" }}
         >
           Book Now
