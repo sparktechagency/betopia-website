@@ -35,7 +35,8 @@ export const HRM = {
             title: "Engagement & Growth",
             description: "Streamline HR processes to enhance employee satisfaction, increase retention, and drive measurable business outcomes."
         },
-    ]
+    ], 
+
 }
 
 

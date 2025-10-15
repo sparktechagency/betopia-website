@@ -82,7 +82,7 @@ export const officeData = [
     imgHeight: 100,
     title: "Branch Office",
     city: "Dhaka",
-    address: "Daisy Garden, House 14, Block A, Banasree",
+    address: "C/A, Ak Khandaker Road Kaderia Tower J-28/8-B, Mohakhali, Dhaka 1213",
     phone: "+8801321231828",
   },
 ];

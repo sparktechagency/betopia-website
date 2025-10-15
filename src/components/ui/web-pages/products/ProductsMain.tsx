@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React from "react";
-import { ERP, HRM, POS } from "@/datas/pages/newProducts";
+import { ERP, HRM, PartnerProgram, POS } from "@/datas/pages/newProducts";
 import { useSearchParams } from "next/navigation";
 import ProductDetailsBanner from "./ProductDetailsBanner";
 import ProductInfo from "./ProductInfo";
@@ -11,11 +11,14 @@ import WhyChooseUs from "./WhyChooseUs";
 import FAQ from "./FAQ";
 import Image from "next/image";
 import AdvanceFeatures from "./AdvanceFeatures";
+import PartnershipFramework from "./PartnershipFramework";
+import ProductPreview from "./ProductPreview";
 
-const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
+const Data: Record<string, typeof HRM | typeof POS | typeof ERP | typeof PartnerProgram> = {
   HRM: HRM,
   POS: POS,
   ERP: ERP,
+  partnerProgram: PartnerProgram
 };
 
 const ProductsMain = () => {
@@ -23,19 +26,32 @@ const ProductsMain = () => {
   const product = params.get("product");
   // console.log(product);
   const productData = Data[product ?? "HRM"];
+  console.log(productData);
 
   return (
     <div className="">
       <ProductDetailsBanner banner={productData.header} />
       <ProductInfo info={productData.info} />
 
-      <ProductFeatures features={productData.features} />
-      {product === "HRM" && <AdvanceFeatures />}
+      <ProductFeatures features={productData.features} product={product} />
+      {product === "HRM" && (
+        <AdvanceFeatures advanceFeature={(productData as any).advanceFeatures} />
+      )}
       <WhyChooseUs
-        description={productData.whyChooseUs.description}
-        imgUrl={(productData.whyChooseUs as any)?.imgUrl}
-        features={productData.whyChooseUs.features}
+        whyChooseUs={productData.whyChooseUs}
+        product={product}
       />
+      {product === "partnerProgram" && (
+        <PartnershipFramework partnershipFramework={(productData as any).partnershipFramework} />
+      )}  
+
+      {product === "partnerProgram" && (
+        <ProductPreview  />
+      )} 
+
+      {product === "partnerProgram" && (
+        <WhyChooseUs whyChooseUs={(productData as any).ourExpectation}   product={product} ourExpectation={true} />
+      )}
       <TrustedBy />
 
       <div className=" py-10">

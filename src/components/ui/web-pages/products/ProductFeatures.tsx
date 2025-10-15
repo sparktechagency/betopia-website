@@ -10,9 +10,10 @@ interface IFeatureProps {
 
 interface IProductFeaturesProps {
   features: IFeatureProps[];
+  product: string | null
 }
 
-const ProductFeatures: React.FC<IProductFeaturesProps> = ({ features }) => {
+const ProductFeatures: React.FC<IProductFeaturesProps> = ({ features, product }) => {
   return (
     <div className="bg-[#F693480D]/95 py-[40px] md:py-[100px]">
       <div className="container">
@@ -23,7 +24,7 @@ const ProductFeatures: React.FC<IProductFeaturesProps> = ({ features }) => {
           All-in-One HR Solution Built for Modern Team
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+        <div className={`grid grid-cols-1 md:grid-cols-2 ${product === "partnerProgram" ? "lg:grid-cols-3" : "lg:grid-cols-4"}  gap-5 mt-10`}>
           {features?.map((feature, index) => (
             <div
               key={index}
@@ -37,7 +38,7 @@ const ProductFeatures: React.FC<IProductFeaturesProps> = ({ features }) => {
                   alt="arrow"
                   className="rounded-[12px]"
                 />
-                <p className="text-[#FF7700] font-medium">{feature.title}</p>
+                <p className={`text-primary font-medium ${product === "partnerProgram" ? "text-[20px]" : "!text-2xl"} `}>{feature.title}</p>
               </div>
 
               {feature.list && (

@@ -4,12 +4,13 @@ import Image from "next/image";
 import { HiMiniCheckBadge } from "react-icons/hi2";
 
 const TalentCategoriesDetails = ({
-  selectedCategory,
+  selectedCategory, serialNumber
 }: {
   selectedCategory: CategoryDetails;
+  serialNumber: number
 }) => {
   return (
-    <div className="  flex flex-col lg:flex-row mt-16 w-full ">
+    <div className={`flex flex-col mt-16 w-full ${serialNumber % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
       {/* Left Content */}
       <div className="flex-1  lg:w-4/5">
         {/* Header */}
@@ -41,8 +42,10 @@ const TalentCategoriesDetails = ({
           </div>
         </div>
 
+<div className={`  ${serialNumber % 2 === 0 ? "ps-6" : "ps-0"} `}> 
+
         {/* Key Roles */}
-        <div className="mb-8">
+        <div className={`mb-8 `}>
           <h2 className="text-2xl font-semibold text-[#414042] mb-3">
             Key Roles
           </h2>
@@ -90,19 +93,22 @@ const TalentCategoriesDetails = ({
               </div>
             ))}
           </div>
-        </div>
+        </div> 
+
+</div>
       </div>
 
       {/* Right Image */}
-      <div className="lg:w-1/5 h-full rounded-xl mt-8 lg:mt-0">
+      <div className="lg:w-1/5 h-full rounded-xl mt-8 lg:mt-0 relative">
         <Image
-          src="/augmentation/talentCategory.png"
+          src={selectedCategory?.jobImg}
           alt="Developers working at computers in an office environment"
           width={420}
           height={500}
-          className="w-full h-full  lg:w-[420px] lg:h-[500px] md:h-[600px] md:object-cover   "
+          className="w-full h-full  lg:w-[550px] lg:h-[500px] md:h-[600px] md:object-cover   "
           unoptimized
         />
+        <div className="absolute top-0 left-0 w-full h-full bg-black/27 "></div>
       </div>
     </div>
   );
