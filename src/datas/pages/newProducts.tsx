@@ -1,3 +1,4 @@
+
 export const HRM = {
     header: {
         heading: "Staff Pulse",
@@ -90,6 +91,29 @@ export const HRM = {
                 "Performance Review",
                 "Attendance Monitoring",
             ],
+        },
+    ],
+    advanceFeatures: [
+        {
+            icon: "/productDetails/hrm-features/ai-report.png",
+            title: "AI Reporting & Analytics",
+            description:
+                "Transform raw HR data into meaningful insights with AI-driven analytics. Instantly generate smart reports, spot trends, and forecast workforce needs — no manual analysis required.",
+            bgColor: "bg-orange-50",
+        },
+        {
+            icon: "/productDetails/hrm-features/talent-maching.png",
+            title: "Talent Matching with Resume Parser",
+            description:
+                "Transform raw HR data into meaningful insights with AI-driven analytics. Instantly generate smart reports, spot trends, and forecast workforce needs — no manual analysis required.",
+            bgColor: "bg-blue-50",
+        },
+        {
+            icon: "/productDetails/hrm-features/ai-helpdesk.png",
+            title: "AI HR Help Desk",
+            description:
+                "Provide instant employee support through an AI-powered virtual assistant. Handle HR queries, leave requests, and policy information efficiently anytime, anywhere.",
+            bgColor: "bg-purple-50",
         },
     ],
     whyChooseUs: {
@@ -372,6 +396,40 @@ export const PartnerProgram = {
             ],
         },
 
+    ],
+    partnershipFramework: [
+        {
+            icon: "/productDetails/hrm-features/ai-report.png",
+            title: "For Vendors",
+            list: [
+                "Full visibility into partner activities",
+                "Automated compliance & agreement tracking",
+                "AI-driven insights on partner contribution",
+                "Centralized content distribution",
+            ],
+            bgColor: "bg-[#FFF4E6]",
+        },
+        {
+            icon: "/productDetails/hrm-features/talent-maching.png",
+            title: "For Partners",
+            list: [
+                "Simplified onboarding & certification",
+                "Access to marketing & sales assets",
+                "Real-time performance dashboards",
+                "Priority support & revenue tracking",
+            ],
+            bgColor: "bg-[#E6F4FF99]",
+        },
+        {
+            icon: "/productDetails/hrm-features/ai-helpdesk.png",
+            title: "For Clients",
+            list: [
+                "Verified & trained partners",
+                "Consistent service quality",
+                "Secure collaboration & clear accountability",
+            ],
+            bgColor: "bg-[#F7EBFF]",
+        },
     ],
     whyChooseUs: {
         description: "Smart, scalable, and secure  everything modern partner programs demand.",

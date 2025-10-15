@@ -17,33 +17,41 @@ interface IWhyChooseUs {
 interface IWhyChooseUsProps {
   whyChooseUs: IWhyChooseUs
   product: string | null
+  ourExpectation?: boolean
 }
 
 const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
   whyChooseUs,
-  product
-}) => { 
+  product,
+  ourExpectation
+}) => {
 
-  const { description, imgUrl, features } = whyChooseUs 
+  const { description, imgUrl, features } = whyChooseUs
 
   return (
     <div className="container my-[80px]">
 
       <div className="mb-[50px]">
         {
-          product === "partnerProgram" && whyChooseUs ? (
+          product === "partnerProgram" && whyChooseUs && !ourExpectation ? (
             <div className="flex flex-col section-title  text-center gap-0.5 pb-2">
               <p className="text-black">Why you choose</p>
               <p className="text-primary">Betopia partner Program ?</p>
             </div>
-          ) : (
-            <h1 className="section-title text-black text-center">
-              Why you <span className="text-[#FF9233]">choose us ?</span>
-            </h1>
+          ) :
+            product === "partnerProgram" && ourExpectation ? (
+              <p className="section-title text-black text-center mb-2">
+               Our Expectation from <span className="text-primary">Clients</span>
+              </p>
+            ) :
+              (
+                <p className="section-title text-black text-center mb-2">
+                  Why you <span className="text-primary">choose us ?</span>
+                </p>
 
-          )
+              )
         }
-        <p className="text-center section-subtitle">{description}</p>
+        <p className="text-center section-subtitle !text-lg">{description}</p>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
@@ -56,7 +64,7 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
                   height={56}
                   src={feature.icon}
                   alt="arrow"
-                  className="rounded-[12px]"
+                  className="rounded-[12px] object-cover"
                 />
                 <p className="text-[#414042] text-[24px] leading-[24px] ">
                   {feature.title}

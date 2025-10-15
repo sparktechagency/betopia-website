@@ -75,7 +75,7 @@ const ServicesMain = () => {
         ) : null}
       </div>
       <TrustedBy />
-      <FAQ />
+      <FAQ  />
       <div className="mt-20">
         <LetsWorkTogether />
       </div>

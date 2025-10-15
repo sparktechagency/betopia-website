@@ -15,7 +15,7 @@ export interface MegaSectionItem {
 }
 
 export interface megaSections {
-  title: string; 
+  title: string;
   subtitle: string;
   icons: React.ReactNode;
   items: MegaSectionItem[];
@@ -98,6 +98,19 @@ export interface productsType {
     subTitle?: string;
     list?: string[];
     description: string;
+  }[];
+  advanceFeatures?: {
+    icon: string;
+    title: string;
+    bgColor: string;
+    description: string;
+  }[];
+
+  partnershipFramework?: {
+    icon: string;
+    title: string;
+    list: string[];
+    bgColor: string;
   }[];
 }
 

@@ -11,8 +11,10 @@ import WhyChooseUs from "./WhyChooseUs";
 import FAQ from "./FAQ";
 import Image from "next/image";
 import AdvanceFeatures from "./AdvanceFeatures";
+import PartnershipFramework from "./PartnershipFramework";
+import ProductPreview from "./ProductPreview";
 
-const Data: Record<string, typeof HRM | typeof POS | typeof ERP> = {
+const Data: Record<string, typeof HRM | typeof POS | typeof ERP | typeof PartnerProgram> = {
   HRM: HRM,
   POS: POS,
   ERP: ERP,
@@ -24,6 +26,7 @@ const ProductsMain = () => {
   const product = params.get("product");
   // console.log(product);
   const productData = Data[product ?? "HRM"];
+  console.log(productData);
 
   return (
     <div className="">
@@ -31,11 +34,24 @@ const ProductsMain = () => {
       <ProductInfo info={productData.info} />
 
       <ProductFeatures features={productData.features} product={product} />
-      {product === "HRM" && <AdvanceFeatures />}
+      {product === "HRM" && (
+        <AdvanceFeatures advanceFeature={(productData as any).advanceFeatures} />
+      )}
       <WhyChooseUs
         whyChooseUs={productData.whyChooseUs}
         product={product}
       />
+      {product === "partnerProgram" && (
+        <PartnershipFramework partnershipFramework={(productData as any).partnershipFramework} />
+      )}  
+
+      {product === "partnerProgram" && (
+        <ProductPreview  />
+      )} 
+
+      {product === "partnerProgram" && (
+        <WhyChooseUs whyChooseUs={(productData as any).ourExpectation}   product={product} ourExpectation={true} />
+      )}
       <TrustedBy />
 
       <div className=" py-10">

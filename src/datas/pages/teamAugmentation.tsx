@@ -7,63 +7,88 @@ export const talentCategoriesData = [
         categoryTitle: "Developers",
         categorySubtitle: " Full-Stack, Backend, Frontend, Mobile (iOS, Android, Flutter)",
         categoryBgImg: "/augmentation/talentCategory1.png",
-        details: {
-            jobTitle: "Software Development & Engineering",
+        details: [{
+            jobTitle: "Software Development & Engineering", 
+            jobImg: "/augmentation/talentCategory.png",
             priceRange: "$20,000 – $70,000 ",
             keyRoles: [
                 "Full-Stack", "ERP/CRM Specialists", "Scrum Masters", "Integration Engineers", " ERP/CRM Specialists",
                 "Tech Leads", "Backend ", "Frontend ", "Mobile (iOS, Android, Flutter)",],
             keySkills: [
-                "JavaScript", "Python", "Java", "PHP", "Node.js", "React", "Flutter", "Platforms", "API integrations"],
+                "Java", "Python", "Java", "Node.js", "React", "Flutter", "ERP", "Platforms", "API integrations"],
             enterprises: ["Web & mobile platforms", "SaaS", "ERP/CRM", "Enterprise Apps"],
-        }
+        }]
     },
     {
         categoryTitle: "Engineers",
         categorySubtitle: "DevOps, Cybersecurity, Data & AI Specialists",
         categoryBgImg: "/augmentation/talentCategory2.png",
-        details: {
-            jobTitle: "DevOps Engineering & Cloud Management",
-            priceRange: "$20,000 – $70,000 ",
+        details: [
+            {
+            jobTitle: "Cloud, DevOps & Platform Engineering", 
+            jobImg: "/cloudService/cloudInfrastructure1.png",
+            priceRange: "$30,000 – $90,000 ",
             keyRoles: [
-                "Full-Stack", "ERP/CRM Specialists", "Scrum Masters", "Integration Engineers", " ERP/CRM Specialists",
-                "Tech Leads", "Backend ", "Frontend ", "Mobile (iOS, Android, Flutter)",],
+                "Cloud Engineers (AWS, Azure, GCP)", "DevOps & Platform Engineers", "SRE/DBRE", "FinOps", "DevSecOps"],
             keySkills: [
-                "JavaScript", "Python", "Java", "PHP", "Node.js", "React", "Flutter", "Platforms", "API integrations"],
-            enterprises: ["Web & mobile platforms", "SaaS", "ERP/CRM", "Enterprise Apps"],
-        }
+                "Kubernetes", "Terraform", "CI/CD", "Monitoring & Observability", "Cost-optimization", "Policy/Security"],
+            enterprises: ["Cloud migration", "Reliability", "Platform automation", "Secure infra"],
+        } ,
+            {
+            jobTitle: "Security, Risk & Compliance", 
+            jobImg: "/cloudService/cloudInfrastructure2.png",
+            priceRange: "$30,000 – $90,000 ",
+            keyRoles: [
+                "Cybersecurity Engineers", "IAM Specialists", " DevSecOps Specialists", "Privacy & AI Ethics Specialists", "GRC Analysts",],
+            keySkills: [
+                " Security tools", "Compliance standards (SOC2, ISO, GDPR)", "Auditing", "Policy Code"],
+            enterprises: ["Security posture", "Audit readiness", "Data privacy", "Regulatory risk"],
+        } ,
+            {
+            jobTitle: "Data, AI & Analytics", 
+            jobImg: "/cloudService/cloudInfrastructure3.png",
+            priceRange: "$35,000 – $100,000+",
+            keyRoles: [
+                "Data Engineers", "Data Scientists", "ML / MLOps / LLMOps Engineers", "Data Platform & Governance Specialists", "Analytics Engineers",],
+            keySkills: [
+                "Data Engineers","R" , "Spark", "MLflow", "TensorFlow" , "Data governance", "BI tools (Tableau, Power BI, Looker)",],
+            enterprises: ["AI/ML deployment", "Predictive analytics", "BI", "Data governance & pipelines"],
+        } ,
+    
+    ]
     },
 
     {
         categoryTitle: "Design & Product",
         categorySubtitle: " UI/UX Designers, Product Managers, QA Testers",
         categoryBgImg: "/augmentation/talentCategory3.png",
-        details: {
-            jobTitle: "Product Management & Design",
-            priceRange: "$20,000 – $70,000 ",
+        details: [{
+            jobTitle: "Product, Design & Quality", 
+            jobImg: "/cloudService/cloudInfrastructure6.png",
+            priceRange: "$25,000 – $80,000",
             keyRoles: [
-                "Full-Stack", "ERP/CRM Specialists", "Scrum Masters", "Integration Engineers", " ERP/CRM Specialists",
-                "Tech Leads", "Backend ", "Frontend ", "Mobile (iOS, Android, Flutter)",],
+                "Product Managers", "Product Ops Managers", "UI/UX Designers", "UX Researchers", "TPM",
+                "Business Analysts", "QA / Automation / Performance / Security Testing",],
             keySkills: [
-                "JavaScript", "Python", "Java", "PHP", "Node.js", "React", "Flutter", "Platforms", "API integrations"],
-            enterprises: ["Web & mobile platforms", "SaaS", "ERP/CRM", "Enterprise Apps"],
-        }
+                "Figma", "Design Thinking", "Agile", "Product Strategy", "Testing frameworks", "Automation tools"],
+            enterprises: ["Product strategy", "Quality assurance", "UX", "Program management "],
+        }]
     },
 
     {
         categoryTitle: "Project Delivery",
         categorySubtitle: "Scrum Masters, Technical Leads, Solution Architects",
         categoryBgImg: "/augmentation/talentCategory4.png",
-        details: {
-            jobTitle: "Scrum Masters & Agile Coaches",
-            priceRange: "$20,000 – $70,000 ",
+        details: [{
+            jobTitle: "Customer & Business Enablement", 
+            jobImg: "/cloudService/cloudInfrastructure5.png",
+            priceRange: "$25,000 – $70,000",
             keyRoles: [
-                "Full-Stack", "ERP/CRM Specialists", "Scrum Masters", "Integration Engineers", " ERP/CRM Specialists",
-                "Tech Leads", "Backend ", "Frontend ", "Mobile (iOS, Android, Flutter)",],
+                "Solutions Engineers (Pre-Sales Architects)", "Technical Account Managers", "Customer Success Engineers", "Scrum Masters", "Change & Release Managers",],
             keySkills: [
-                "JavaScript", "Python", "Java", "PHP", "Node.js", "React", "Flutter", "Platforms", "API integrations"],
-            enterprises: ["Web & mobile platforms", "SaaS", "ERP/CRM", "Enterprise Apps"],
-        }
+                "Pre-sales demos", "SLA management", "Customer engagement", "change management"],
+            enterprises: ["Pre-sales technical support", "Adoption", "SLAs", "Client retention"],
+        }]
     }
 ]
 

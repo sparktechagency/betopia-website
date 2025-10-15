@@ -1281,6 +1281,48 @@ const SecureBusinessData = {
   ],
 };
 
+
+// ********** FAQ ************** 
+
+const serviceFAQ = [
+  {
+    key: "1",
+    question: "What industries or business sizes do you serve?",
+    answer:
+      "We support businesses ranging from mid-sized enterprises to large corporations across industries such as finance, healthcare, manufacturing, retail, education, and government. Our solutions are scalable and tailored to your specific needs.",
+  },
+  {
+    key: "2",
+    question: "How long does implementation typically take?",
+    answer:
+      "Implementation time depends on the project’s scope and complexity. Most deployments are completed within a few weeks to a few months, following structured phases of assessment, configuration, testing, and training.",
+  },
+  {
+    key: "3",
+    question: " Is your solution compatible with existing systems and infrastructure?",
+    answer:
+      "Yes. Our solutions are designed for seamless integration with your existing IT environment, including legacy systems, cloud platforms, and third-party tools — ensuring minimal disruption and maximum interoperability.",
+  },
+  {
+    key: "4",
+    question: "What levels of support and maintenance do you provide?",
+    answer:
+      "We offer comprehensive support plans, including 24/7 monitoring, proactive maintenance, regular updates, and dedicated technical assistance. Our team ensures optimal performance, security, and reliability throughout the product lifecycle.",
+  },
+  {
+    key: "5",
+    question: " Is your solution compatible with existing systems and infrastructure?",
+    answer:
+      "Yes, our solution is designed with flexibility in mind. It integrates seamlessly with a wide range of existing systems, including legacy applications, cloud platforms, and third-party tools, minimizing disruption to your current operations. We also provide guidance and support during the integration process to ensure smooth deployment and maximum compatibility.",
+  },
+  {
+    key: "6",
+    question: "What levels of support and maintenance do you provide?",
+    answer:
+      "We offer comprehensive support and maintenance options to meet varying needs: Standard Support, Premium Support, Maintenance Services.",
+  }, 
+]
+
 export {
   EnterpriseInfrastructureSolutionsData,
   EnterpriseNetworkingSolutionsData,
@@ -1292,5 +1334,6 @@ export {
   AISolutionsData,
   EndpointManagementData,
   IdentityManagementData,
-  SecureBusinessData,
+  SecureBusinessData, 
+  serviceFAQ
 };
