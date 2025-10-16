@@ -488,4 +488,43 @@ export const PartnerProgram = {
 
     }
 }
+ 
 
+export const productsFAQ = [
+  {
+    key: "1",
+    question: "What is the HRM system and how does it help my organization?",
+    answer:
+      "Our HRM system is an all-in-one platform that automates attendance, leave, payroll, and reporting. It helps reduce manual work, ensures accuracy, and gives real-time visibility into your workforce.",
+  },
+  {
+    key: "2",
+    question: "Can it integrate with biometric devices for attendance?",
+    answer:
+      "Yes, the system supports integration with a wide range of biometric devices, allowing seamless and automated attendance tracking.",
+  },
+  {
+    key: "3",
+    question: "Is my company’s data secure?",
+    answer:
+      "Absolutely. We use advanced encryption, secure cloud storage, and strict access controls to ensure your data is fully protected and compliant with industry standards.",
+  },
+  {
+    key: "4",
+    question: " Can I customize the system for my organization’s structure?",
+    answer:
+      "Yes, the system is fully configurable to match your company’s hierarchy, roles, and workflows, ensuring it fits your unique organizational needs.",
+  },
+  {
+    key: "5",
+    question: "Do you offer support or training?",
+    answer:
+      "Yes, we provide comprehensive support, including 24/7 helpdesk access, detailed user manuals, and training sessions for your HR and management teams.",
+  },
+  {
+    key: "6",
+    question: "Is the HRM system cloud-based?",
+    answer:
+      "Yes, our HRM system is cloud-based, enabling secure access from anywhere, real-time updates, and easy scalability as your organization grows.",
+  }, 
+]

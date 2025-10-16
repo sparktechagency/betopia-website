@@ -51,4 +51,38 @@ export const HowToJoinData= [
         description: <div>After filling all the information on the form, click “<span className='font-medium'>Submit</span>” button.</div>,
         img: "/application/step3.png"
     }
+] 
+
+export const partnerFAQ = [
+  {
+    key: "1",
+    question: "What makes partnering with Betopia truly different?",
+    answer:
+      "We support businesses ranging from mid-sized enterprises to large corporations across industries such as finance, healthcare, manufacturing, retail, education, and government. Our solutions are scalable and tailored to your specific needs.",
+  },
+  {
+    key: "2",
+    question: "Is the Betopia Partner Program right for my business?",
+    answer:
+      "Implementation time depends on the project’s scope and complexity. Most deployments are completed within a few weeks to a few months, following structured phases of assessment, configuration, testing, and training.",
+  },
+  {
+    key: "3",
+    question: "How will my business benefit from joining?",
+    answer:
+      "Yes. Our solutions are designed for seamless integration with your existing IT environment, including legacy systems, cloud platforms, and third-party tools — ensuring minimal disruption and maximum interoperability.",
+  },
+  {
+    key: "4",
+    question: "Which solutions can I deliver with Betopia’s support?",
+    answer:
+      "We offer comprehensive support plans, including 24/7 monitoring, proactive maintenance, regular updates, and dedicated technical assistance. Our team ensures optimal performance, security, and reliability throughout the product lifecycle.",
+  },
+  {
+    key: "5",
+    question: "What kind of support can I expect?",
+    answer:
+      "Yes, our solution is designed with flexibility in mind. It integrates seamlessly with a wide range of existing systems, including legacy applications, cloud platforms, and third-party tools, minimizing disruption to your current operations. We also provide guidance and support during the integration process to ensure smooth deployment and maximum compatibility.",
+  },
+
 ]

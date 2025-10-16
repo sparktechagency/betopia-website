@@ -1,34 +1,45 @@
-
 import { HighlightsData } from '@/datas/pages/blog'
 import { MoveRight } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const MoreHighlights = () => {
     return (
-        <div> 
-            <div> 
-                 <h2 className='text-[#666666] text-[28px] font-light leading-[100%] pb-4 text-center'>More <span className='text-primary'>Highlights</span> </h2> 
+        <div>
+            <div>
+                <h2 className='text-[#666666] text-[28px] font-light leading-[100%] pb-4 text-center'>
+                    More <span className='text-primary'>Highlights</span>
+                </h2>
             </div>
-            <div className='grid grid-cols-1 gap-6'>
-                {
-                    HighlightsData.map((data, index) => (
-                        <div key={index} className='bg-[#ECE9E9] rounded-[20px] p-[30px]'>
-                            <div className="h-[48px] overflow-hidden flex-center w-[48px] mb-[15px] rounded-[8px] drop-shadow-2xl">
-                                <Image style={{ borderRadius: "8px" }} src={data.img} alt="Dubai" width={60} height={60} />
-                            </div>
-                            <p className='text-[#000000] text-[25px] leading-[130%]'>{data.title}</p>
-                            <p className='pb-8 text-[#000000] text-[25px] leading-[130%]'>{data.subTitle}</p>
 
-                            <p className='text-[#000000] text-[20px] leading-[130%]'>{data.content}</p>
-                            <Link href={`/blog-details?blog=${data.linkName}`} className='flex items-center justify-end gap-2 mt-3'>
-                                <p className='text-[#858585]'>Learn more</p>
+            <div className='grid grid-cols-1 gap-6'>
+                {HighlightsData.map((data, index) => (
+                    <div
+                        key={index}
+                        className='relative rounded-[20px] overflow-hidden p-[30px] bg-cover bg-center h-[300px]'
+                        style={{ backgroundImage: `url(${data.img})` }}
+                    >
+                        {/* Overlay */}
+                        <div className='absolute inset-0 bg-black/70'></div>
+
+                        {/* Content */} 
+                        <div className='absolute bottom-3 pe-3 '> 
+                        <div className=' z-10'>
+                            <p className='text-white text-[25px] pb-2'>{data.title}</p>
+
+                            <p className='text-gray-300 text-lg '>{data.content}</p>
+
+                            <Link
+                                href={`/blog-details?blog=${data.linkName}`}
+                                className='flex items-center justify-start gap-2 mt-3 hover:underline hover:underline-offset-2 cursor-pointer'
+                            >
+                                <p className='text-[#F0F0F0]'>Learn more</p>
                                 <MoveRight size={15} color='#F69348' />
                             </Link>
                         </div>
-                    ))
-                }
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     )
