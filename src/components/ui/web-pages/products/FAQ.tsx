@@ -1,11 +1,14 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import ComponentTitle from "@/components/shared/ComponentTitle";
-import { faqs } from "@/datas/pages/FAQData";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-type ContentRef = HTMLDivElement | null;
-const FAQ: React.FC = () => {
+type ContentRef = HTMLDivElement | null; 
+
+interface FAQProps {
+  faqData: { key: string; question: string; answer: string }[];
+}
+const FAQ = ({faqData}:FAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const contentRefs = useRef<ContentRef[]>([]);
 
@@ -39,9 +42,9 @@ const FAQ: React.FC = () => {
 
       <div className=" grid grid-cols-1 gap-4 px-4">
         <>
-          {faqs && faqs.length > 0 && (
+          {faqData && faqData.length > 0 && (
             <>
-              {faqs.map(
+              {faqData.map(
                 (faq: { question: string; answer: string }, index: number) => (
                   <div
                     key={index}
