@@ -3,6 +3,7 @@ import AboutBanner from "./AboutBanner";
 import Owner from "./Owner";
 import Map from "./Map";
 import OurStory from "./OurStory";
+import WhatWeDo from "./WhatWeDo";
 
 const AboutMain: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const AboutMain: React.FC = () => {
       <AboutBanner />
       <OurStory />
       <Owner />
+      <WhatWeDo/>
       <Map />
     </div>
   );
