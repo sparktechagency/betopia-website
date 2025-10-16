@@ -55,8 +55,8 @@ export const officeData = [
     imgHeight: 140,
     title: "Corporate Office",
     city: "Dhaka",
-    address: "Daisy Garden, House 14, Block A, Banasree",
-    phone: "+8801321231828",
+    address: "Daisy Garde, House 14, Block A, Banasree",
+    phone: "+8801716566979",
   },
   {
     imgUrl: "/philipines.png",
@@ -64,8 +64,8 @@ export const officeData = [
     imgHeight: 90,
     title: "Philippines Office",
     city: "Philippines",
-    address: "Daisy Garden, House 14, Block A, Banasree",
-    phone: "+8801321231828",
+    address: "Manila, Philippines",
+    phone: "+8801321231828 ",
   },
   {
     imgUrl: "/usa.png",
@@ -73,8 +73,8 @@ export const officeData = [
     imgHeight: 50,
     title: "USA Office",
     city: "USA",
-    address: "Daisy Garden, House 14, Block A, Banasree",
-    phone: "+8801321231828",
+    address: "30 N Gould St Ste R, Sheridan, WY 82801",
+    phone: "+19179149545 ",
   },
   {
     imgUrl: "/dhaka1.png",

@@ -16,6 +16,7 @@ import {
   EnterpriseNetworkingSolutionsData,
   IdentityManagementData,
   SecureBusinessData,
+  serviceFAQ,
 } from "@/datas/pages/services";
 import HighEffective from "./HighEffective";
 import TrustedBy from "../home/TrustedBy";
@@ -75,7 +76,7 @@ const ServicesMain = () => {
         ) : null}
       </div>
       <TrustedBy />
-      <FAQ  />
+      <FAQ faqData={serviceFAQ} />
       <div className="mt-20">
         <LetsWorkTogether />
       </div>

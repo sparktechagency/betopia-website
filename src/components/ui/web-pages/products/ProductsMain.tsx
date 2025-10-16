@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React from "react";
-import { ERP, HRM, PartnerProgram, POS } from "@/datas/pages/newProducts";
+import { ERP, HRM, PartnerProgram, POS, productsFAQ } from "@/datas/pages/newProducts";
 import { useSearchParams } from "next/navigation";
 import ProductDetailsBanner from "./ProductDetailsBanner";
 import ProductInfo from "./ProductInfo";
@@ -55,7 +55,7 @@ const ProductsMain = () => {
       <TrustedBy />
 
       <div className=" py-10">
-        <FAQ />
+        <FAQ  faqData={productsFAQ}/>
       </div>
 
       <div className="container bg-[#F79549] lg:rounded-[25px] p-10 flex flex-col md:flex-row items-center gap-5 justify-between mt-6  mb-[80px] ">

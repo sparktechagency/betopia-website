@@ -1,21 +1,21 @@
 export const HighlightsData = [
   {
-    title: "Enhancing",
-    subTitle: "Collaboration",
+    title: "Enhancing Collaboration",
+    subTitle: "",
     img: "/highlights/step1.png",
     content: "Bdcalling IT Ltd — a concern of Betopia Group — participated in the seminar “Enhance Collaboration Between Institute and Industry” to strengthen academia-industry ties. ",
     linkName: "enhancing-collaboration"
   },
   {
-    title: "Joint",
-    subTitle: "Workshop",
+    title: "Joint Workshop",
+    subTitle: "",
     img: "/highlights/step2.png",
     content: " Betopia Group & CUET organized “Career Pathways in Web and Software Development” and hosted the farewell of the 2019 batch",
     linkName: "joint-workshop"
   },
   {
-    title: "Sales ",
-    subTitle: "Training",
+    title: "Sales Training",
+    subTitle: "",
     img: "/highlights/step3.png",
     content: "Betopia Group organized a Next Level Sales Training program aimed at boosting the skills and capabilities of the sales team.",
     linkName: "sales-training"
