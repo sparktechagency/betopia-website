@@ -106,4 +106,8 @@ p {
 
 #banner {
   margin-bottom: 80px;
-}
+} 
+
+.partner-input .ant-form .ant-form-item {
+    margin-bottom: 10px !important;
+  }

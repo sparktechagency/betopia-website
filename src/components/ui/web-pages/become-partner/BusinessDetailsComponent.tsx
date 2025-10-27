@@ -1,13 +1,12 @@
 "use client";
 import { Form, Grid, Input, Select } from "antd";
-import React, { useState } from "react";
+import React from "react";
 import countryData from "world-countries";
 
 const { Option } = Select;
 
-const BusinessDetailsComponent = () => {
+const BusinessDetailsComponent = ({countryCode , setCountryCode}:{countryCode:string , setCountryCode:(countryCode:string)=>void}) => {
   const { lg } = Grid.useBreakpoint();
-  const [countryCode, setCountryCode] = useState("+880");
 
   // Format country data for dropdown
   const options = countryData
@@ -20,8 +19,9 @@ const BusinessDetailsComponent = () => {
 
   return (
     <div className="w-full    ">
-      <Form layout="vertical" className="w-full ">
-        <Form.Item
+ 
+        <Form.Item 
+        name={"name"}
           label={
             <p className="text-[#404D61] text-lg font-medium ">
               Full Name of the Organization
@@ -31,7 +31,8 @@ const BusinessDetailsComponent = () => {
           <Input style={{ height: lg ? 56 : 40, borderRadius: "10px" }} />
         </Form.Item>
 
-        <Form.Item
+        <Form.Item 
+        name={"email"}
           label={
             <p className="text-[#404D61] text-lg font-medium ">
               Email Address of the organization
@@ -42,7 +43,8 @@ const BusinessDetailsComponent = () => {
         </Form.Item>
 
         <Form.Item
-          className="custom-input"
+          className="custom-input" 
+          name={"whatsapp"}
           label={
             <p className="text-[#404D61] text-lg font-medium">
               {" "}
@@ -50,7 +52,8 @@ const BusinessDetailsComponent = () => {
             </p>
           }
         >
-          <Input
+          <Input 
+          type="number"
             addonBefore={
               <Select
                 value={countryCode}
@@ -74,7 +77,7 @@ const BusinessDetailsComponent = () => {
             className="min-h-[40px]"
           />
         </Form.Item>
-      </Form>
+   
     </div>
   );
 };

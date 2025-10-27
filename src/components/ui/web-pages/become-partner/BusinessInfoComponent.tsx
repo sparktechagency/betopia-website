@@ -10,12 +10,11 @@ const BusinessInfoComponent = () => {
   const { lg } = Grid.useBreakpoint();
   return (
     <div className="w-full">
-      <Form className="" layout="vertical">
         <Form.Item
+          name={"buisness_type"}
           label={
             <p className=" text-lg text-[#404D61] font-medium">
-              {" "}
-              Business Type{" "}
+              Business Type
             </p>
           }
         >
@@ -31,7 +30,8 @@ const BusinessInfoComponent = () => {
           </Select>
         </Form.Item>
 
-        <Form.Item
+        <Form.Item 
+        name={"intersted_area"}
           label={
             <p className=" text-lg text-[#404D61] font-medium">
               {" "}
@@ -51,7 +51,8 @@ const BusinessInfoComponent = () => {
           </Select>
         </Form.Item>
 
-        <Form.Item
+        <Form.Item 
+        name={"buisness_website"}
           label={
             <p className=" text-lg text-[#404D61] font-medium">
               {" "}
@@ -70,7 +71,6 @@ const BusinessInfoComponent = () => {
             ))}
           </Select>
         </Form.Item>
-      </Form>
     </div>
   );
 };

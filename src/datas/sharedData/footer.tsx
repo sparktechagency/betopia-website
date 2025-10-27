@@ -1,17 +1,10 @@
 import { SocialLink } from "@/types"
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuLandmark } from "react-icons/lu";
-
 
 export const socialLinks: SocialLink[] = [
   { icon: <FaFacebookF color="#fff" size={20} />, url: "https://www.facebook.com/BetopiaLimited", bgColor: "#424242" },
-  // { icon: <FaInstagram size={20} />, url: "https://instagram.com", bgColor: "#424242" },
-  // { icon: <FaGithub size={20} />, url: "https://github.com", bgColor: "#424242" },
   { icon: <FaLinkedinIn size={20} />, url: "https://www.linkedin.com/company/betopia-limited", bgColor: "#424242" },
-  // { icon: <GrReddit size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
-  // { icon: <FaXTwitter size={20} />, url: "https://linkedin.com", bgColor: "#424242" },
 ];
-
 
 export const services = [
   "Enterprise Cloud Management",
@@ -23,6 +16,7 @@ export const services = [
   "Enterprise Cyber Resilience & Governance",
   "Cyber Risk Management",
 ];
+
 export const anotherServices = [
   "AI Consulting & Implementation",
   "Enterprise Generative AI Solutions",
