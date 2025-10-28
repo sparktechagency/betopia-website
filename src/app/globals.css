@@ -93,7 +93,7 @@ p {
 
 .custom-input .ant-input,
 .custom-input .ant-select-selector {
-  height: 40px !important;
+  height: 48px !important;
   border-radius: 0px 10px 10px 0px !important;
   display: flex;
   align-items: center;
@@ -106,4 +106,8 @@ p {
 
 #banner {
   margin-bottom: 80px;
-}
+} 
+
+.partner-input .ant-form .ant-form-item {
+    margin-bottom: 10px !important;
+  }

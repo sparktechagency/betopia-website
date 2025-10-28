@@ -45,9 +45,9 @@ const HowToJoin: React.FC = () => {
               <h2 className="text-[20px] md:text-[21px] font-bold mb-4">
                 {data.name}
               </h2>
-              <p className="text-[16px] md:text-[18px] text-[#737373] leading-[160%] flex-grow">
+              <h2 className="text-[16px] md:text-[18px] text-[#737373] leading-[160%] flex-grow">
                 {data.description}
-              </p>
+              </h2>
             </div>
           </div>
         ))}

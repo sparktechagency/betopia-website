@@ -1,13 +1,21 @@
 "use client";
 
-import type React from "react";
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
+import Image from "next/image";
 import { Upload } from "lucide-react";
 
-const SubmitDocumentComponent = () => {
-  const [file, setFile] = useState<File | null>(null);
+interface SubmitDocumentComponentProps {
+  value?: File | null;
+  onChange?: (file: File | null) => void;
+}
+
+const SubmitDocumentComponent: React.FC<SubmitDocumentComponentProps> = ({
+  value,
+  onChange,
+}) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isConfirmed, setIsConfirmed] = useState(false);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -23,18 +31,23 @@ const SubmitDocumentComponent = () => {
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
-
     const droppedFile = e.dataTransfer.files[0];
     if (droppedFile && validateFile(droppedFile)) {
-      setFile(droppedFile);
+      handleFileSelectInternal(droppedFile);
     }
   };
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0];
     if (selectedFile && validateFile(selectedFile)) {
-      setFile(selectedFile);
+      handleFileSelectInternal(selectedFile);
     }
+  };
+
+  const handleFileSelectInternal = (file: File) => {
+    if (onChange) onChange(file);
+    const url = URL.createObjectURL(file);
+    setPreviewUrl(url);
   };
 
   const validateFile = (file: File) => {
@@ -48,7 +61,7 @@ const SubmitDocumentComponent = () => {
     const maxSize = 3 * 1024 * 1024; // 3MB
 
     if (!validTypes.includes(file.type)) {
-      alert("Please upload a valid file type (JPG, PNG, PDF, DOC)");
+      alert("Please upload a valid file type (JPG, PNG, PDF, DOC, DOCX)");
       return false;
     }
 
@@ -77,6 +90,7 @@ const SubmitDocumentComponent = () => {
         </p>
       </div>
 
+      {/* Drop Area */}
       <div
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
@@ -88,9 +102,9 @@ const SubmitDocumentComponent = () => {
         <input
           ref={fileInputRef}
           type="file"
-          accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
+          accept=".pdf"
           onChange={handleFileSelect}
-          className="hidden "
+          className="hidden"
         />
 
         <div className="flex flex-col items-center justify-center text-center space-y-4">
@@ -98,14 +112,33 @@ const SubmitDocumentComponent = () => {
             <Upload className="w-6 h-6 md:w-8 md:h-8 text-orange-500" />
           </div>
 
-          {file ? (
+          {value ? (
             <div className="space-y-2">
               <p className="text-sm md:text-base font-medium text-[#4A4A4A]">
-                {file.name}
+                {value.name}
               </p>
               <p className="text-xs text-muted-foreground">
-                {(file.size / 1024).toFixed(2)} KB
+                {(value.size / 1024).toFixed(2)} KB
               </p>
+              {previewUrl &&
+                (value.type.startsWith("image/") ? (
+                  <Image
+                    src={previewUrl!}
+                    alt="Preview"
+                    width={300}
+                    height={160}
+                    className="max-h-40 mx-auto rounded-md object-contain"
+                  />
+                ) : (
+                  <a
+                    href={previewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-orange-500 underline"
+                  >
+                    Preview File
+                  </a>
+                ))}
               <button
                 onClick={handleBrowseClick}
                 className="text-xs md:text-sm text-orange-500 hover:text-orange-600 underline"
@@ -135,7 +168,7 @@ const SubmitDocumentComponent = () => {
 
         <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4">
           <p className="text-[10px] md:text-xs text-muted-foreground">
-            Supported Format: JPG, PNG, PDF, DOC
+            Supported Format:PDF
           </p>
         </div>
 
@@ -146,7 +179,7 @@ const SubmitDocumentComponent = () => {
         </div>
       </div>
 
-      <div className="flex items-start gap-2 p-3 md:p-4 bg-orange-50/50 rounded-lg">
+      <div className="flex items-start lg:items-center gap-2 p-3 md:p-4 bg-orange-50/50 rounded-lg">
         <input
           type="checkbox"
           id="confirm-checkbox"
@@ -156,10 +189,9 @@ const SubmitDocumentComponent = () => {
         />
         <label
           htmlFor="confirm-checkbox"
-          className="text-xs md:text-sm text-[#4A4A4A] cursor-pointer"
+          className="text-xs md:text-sm font-medium text-[#4A4A4A] cursor-pointer"
         >
-          I confirmed that I uploaded a valid government-issued photo ID. This
-          ID includes my picture, signature, name, date of birth, and address.
+          I confirm that I uploaded a valid government-issued photo ID.
         </label>
       </div>
     </div>
