@@ -21,13 +21,13 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
     return (
       <Dropdown
         key={page.name}
-        overlay={
+        popupRender={() => (
           <DropdownMenu
             items={page.dropdownItems || []}
             variant={isServices ? "services" : "default"}
             megaSections={isServices ? page.megaSections || [] : undefined}
           />
-        }
+            )}
         trigger={["hover"]}
         placement="bottom" arrow
         overlayStyle={{ marginTop: "22px" }} 

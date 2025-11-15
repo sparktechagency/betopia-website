@@ -34,7 +34,7 @@ const Services: React.FC = () => {
                   }}
                 />
                 <div>
-                  <h1 className="text-[24px] leading-[32px] text-[#414042] font-light">
+                  <h1 className="text-[24px] leading-8 text-[#414042] font-light">
                     {item.title}
                   </h1>
                   <p className="text-[#41404299]/70  leading-[22px]">
@@ -44,16 +44,14 @@ const Services: React.FC = () => {
                   <div className="grid grid-cols-1 gap-4 mt-10">
                     {item?.service?.map((service, index) => (
                       <Link
-                        href={`/services?service=${service}`}
+                       href={`${service.link}`}
                         key={index}
                         className="flex items-center justify-between gap-4"
                       >
                         <p>{service.title}</p>
-                        <Link href={`${service.link}`}>
-                          <div className="w-[48px] bg-[#F79549] h-[48px] rounded-full flex items-center justify-center">
+                          <div className="w-12 bg-[#F79549] h-12 rounded-full flex items-center justify-center">
                             <ChevronRight size={24} color="white" />
                           </div>
-                        </Link>
                       </Link>
                     ))}
                   </div>
