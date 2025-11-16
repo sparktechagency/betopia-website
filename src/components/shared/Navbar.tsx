@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
       `}
     >
       <div
-        className={`relative top-0 container h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 lg:h-[80px]  transition-colors duration-300`}
+        className={`relative top-0 container h-[62px] flex justify-between items-center text-[#FDFDFD] z-50 lg:h-20  transition-colors duration-300`}
       >
         <Link href="/home" className="flex items-center">
           <Image
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
             alt="Logo"
             height={55}
             width={140}
-            className="h-[40px] w-full lg:h-[50px] lg:w-[140px] mt-1"
+            className="h-10 w-full lg:h-[50px] lg:w-[140px] mt-1"
           />
         </Link>
 

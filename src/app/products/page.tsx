@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 const ProductsPage = () => {
   return (
     <div>
-      <Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <ProductsMain />
       </Suspense>
     </div>

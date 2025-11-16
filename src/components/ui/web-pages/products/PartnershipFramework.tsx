@@ -1,19 +1,30 @@
+import { p } from 'motion/react-client';
 import Image from 'next/image';
 import React from 'react';
 
 interface partnershipFrameworkType {
     icon: string;
     title: string;
-    list: string[];
+    list?: string[];
     bgColor: string;
+    des?: string;
 }
 
-const PartnershipFramework = ({ partnershipFramework }: { partnershipFramework: partnershipFrameworkType[] }) => {
+const PartnershipFramework = ({ partnershipFramework, product}: { partnershipFramework: partnershipFrameworkType[] , product: string | null}) => {
     return (
-        <section className=" px-4 container mx-auto text-center lg:pb-20 pb-10">
+        <section className=" px-4 container mx-auto text-center lg:pt-20 pt-10">
             {/* Section Title */}
             <h2 className="text-3xl md:text-4xl font-semibold mb-12">
-                Partnership <span className="text-primary">Framework</span>
+                 {product === "votingSystem" ? (
+            <>
+              Use <span className="text-primary">Cases</span>
+
+            </>
+          )  : (
+            <>
+               Partnership <span className="text-primary">Framework</span>
+            </>
+          )}
             </h2>
 
 
@@ -30,9 +41,9 @@ const PartnershipFramework = ({ partnershipFramework }: { partnershipFramework: 
                             height={56}
                             src={feature.icon}
                             alt="arrow"
-                            className="rounded-[12px]"
+                            className="rounded-xl"
                         />
-                        <p className="text-2xl font-semibold  text-primary">{feature.title}</p>
+                        <h2 className="text-2xl font-semibold  text-primary">{feature.title}</h2>
                     </div>
                         {feature?.list && (
                             <ul className="list-disc pl-5 grid grid-cols-1 gap-2 text-[#757575]">
@@ -43,6 +54,12 @@ const PartnershipFramework = ({ partnershipFramework }: { partnershipFramework: 
                                 ))}
                             </ul>
                         )}
+                       {feature.des && (
+    <p className="text-[#757575] text-[18px] leading-relaxed mt-2">
+        {feature.des}
+    </p>
+)}
+
                     </div>
                 ))}
             </div>

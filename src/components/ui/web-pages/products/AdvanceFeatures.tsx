@@ -33,7 +33,7 @@ const AdvanceFeatures = ({ advanceFeature }: { advanceFeature: advanceFeatureTyp
               height={56}
               src={feature.icon}
               alt="arrow"
-              className="rounded-[12px]"
+              className="rounded-xl"
             />
             <h3 className="text-lg font-semibold my-2">{feature.title}</h3>
             <p className="text-gray-600 text-sm leading-relaxed">

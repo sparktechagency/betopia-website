@@ -489,6 +489,159 @@ export const PartnerProgram = {
     }
 }
  
+export const VotingSystem = {
+    header: {
+        heading: "Betopia",
+        subHeading: "Voting & Election Management System",
+        description: "From member registration to real-time voting updates  manage your entire election process with ease.",
+        imgUrl: "/productDetails/voting-system.png"
+    },
+    info: {
+        title: <p>Simplify Your Elections with Betopia  </p>,
+        subTitle: "Voting System",
+        description: "Betopia Voting is a next-generation digital election platform designed for organizations, institutions, and communities to conduct secure, paperless, and transparent elections ensuring trust and efficiency at every step.",
+        imgUrl: "/productDetails/voting-info.png"
+    },
+    features: [
+        {
+            icon: "/productDetails/voting-features/feature-1.png",
+            title: <p>Smart Registration & <br /> Verification</p>,
+            list: [
+                "Automated ID verification & voter onboarding system.",
+            ],
+        },
+        {
+            icon: "/productDetails/voting-features/feature-2.png",
+            title: <p>Role Based Dashboards</p>,
+            list: [
+                "Four panels: Election Commission, Polling Agent, Voter & Super Admin.",
+            ],
+        },
+        {
+            icon: "/productDetails/voting-features/feature-3.png",
+            title: <p>Secure and Transparent Voting</p>,
+            list: [
+                "End-to-end encryption ensures complete data integrity.",
+            ],
+        },
+        {
+            icon: "/productDetails/voting-features/feature-4.png",
+            title: <p>Integrated Payment & <br/> Membership</p>,
+            list: [
+                "Simplify membership renewals & election fees."
+            ],
+        },
+        {
+            icon: "/productDetails/voting-features/feature-5.png",
+            title: <p>Live Results & Reporting</p>,
+            list: [
+                "Real-time visualization for election performance & vote count.",
+            ],
+        },
+        {
+            icon: "/productDetails/voting-features/feature-5.png",
+            title: <p>Branding & Customization</p>,
+            list: [
+                "Customize logo, colors, and themes for your organization.",
+            ],
+        },
+
+    ],
+    partnershipFramework: [
+        {
+            icon: "/productDetails/voting-use/use-1.png",
+            title:<p>Government & <br/> Local Elections</p>,
+            des: "Enable government agencies and local authorities to automate citizen communication, manage vendor interactions, and streamline procurement discussions with AI-powered efficiency.",
+            bgColor: "bg-[#FFF4E6]",
+        },
+        {
+            icon: "/productDetails/voting-use/use-2.png",
+            title: <p>Corporate Boards</p>,
+             des: "Empower board members and executive teams with real-time insights, automated deal tracking, and intelligent communication tools to enhance decision-making and stakeholder management.",
+            bgColor: "bg-[#E6F4FF99]",
+        },
+        {
+            icon: "/productDetails/voting-use/use-3.png",
+            title: <p>Universities & Alumni <br/> Associations</p>,
+           des: "Use Agentic AI to automate admissions outreach, alumni engagement, and funding communications — building lasting relationships through personalized, data-driven messaging.",
+            bgColor: "bg-[#F7EBFF]",
+        },
+          {
+            icon: "/productDetails/voting-use/use-4.png",
+            title: <p>NGOs & Global Communities </p>,
+           des: "Simplify donor communication, partner coordination, and funding negotiations with multilingual AI engagement that runs 24/7 enabling more impact with fewer resources.",
+            bgColor: "bg-[#E6FFFE]",
+        },
+          {
+            icon: "/productDetails/voting-use/use-5.png",
+            title: <p>Clubs & Professional Bodies</p>,
+           des: "Manage memberships, renewals, sponsorship pitches, and event coordination automatically. Agentic AI ensures timely, consistent communication with every member or partner.",
+            bgColor: "bg-[#FFE6E699]",
+        },
+          {
+            icon: "/productDetails/voting-use/use-6.png",
+            title: <p>Internal Polls & Referendums</p>,
+           des: "Use AI to facilitate internal voting, surveys, or departmental feedback with smart reminders, automated summaries, and transparent communication channels.",
+            bgColor: "bg-[#F8FFEB]",
+        },
+    ],
+    whyChooseUs: {
+        description: "Smart, scalable, and secure  everything modern elections demand.",
+        imgUrl: "/productDetails/voting-why/choose-img.png",
+        features: [
+            {
+                icon: "/productDetails/voting-why/choose-1.png",
+                title: "ISO-aligned & GDPR-ready architecture",
+                description: "Built with global compliance standards to ensure data protection and privacy."
+            },
+            {
+                icon: "/productDetails/voting-why/choose-2.png",
+                title: "24/7 Technical Support",
+                description: "Our dedicated team ensures smooth operations with proactive monitoring and quick response times."
+            },
+            {
+                icon: "/productDetails/voting-why/choose-3.png",
+                title: "White-label Options Available",
+                description: "Customize the platform with your own branding to maintain consistency and credibility."
+            },
+            {
+                icon: "/productDetails/voting-why/choose-4.png",
+                title: "Scalable Deployment for Global Elections",
+                description: "Easily adapt to organizations of any size  from local communities to international associations."
+            },
+
+        ]
+
+    },
+    // ourExpectation: {
+    //     description: "We seek long-term, value-driven partnerships. Clients using Betopia Partner Profile can expect",
+    //     imgUrl: "/productDetails/our-expectation.png",
+    //     features: [
+    //         {
+    //             icon: "/productDetails/erp-why/partner.png",
+    //             title: "Transparent communication",
+    //             description: "We maintain clear, honest, and open interactions at every stage of the partnership."
+    //         },
+    //         {
+    //             icon: "/productDetails/erp-why/integrated.png",
+    //             title: "Timely Onboarding Support",
+    //             description: "Our team ensures a smooth and efficient onboarding experience, so clients get started without delays."
+    //         },
+    //         {
+    //             icon: "/productDetails/erp-why/real.png",
+    //             title: "Compliance with Partnership Guidelines",
+    //             description: "We strictly follow all rules and standards to maintain trust and accountability."
+    //         },
+    //         {
+    //             icon: "/productDetails/erp-why/scalable.png",
+    //             title: "Mutual Goal Alignment",
+    //             description: "We work together with clients to achieve shared objectives and drive sustainable growth. "
+    //         },
+
+    //     ]
+
+    // }
+}
 
 export const productsFAQ = [
   {
