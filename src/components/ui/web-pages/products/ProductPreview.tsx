@@ -17,10 +17,10 @@ const ProductPreview = () => {
     return (
         <div className=' bg-[#F693480F] py-20'>
             <div className=' container '>
-                <h1 className="text-[#414042] section-title md:leading-[40px] text-center">
+                <h1 className="text-[#414042] section-title md:leading-10 text-center">
                     Product <span className="text-[#FF9233]">Preview</span>
                 </h1>
-                <p className="text-[#757575]  section-subtitle leading-[24px] text-center pb-10">
+                <p className="text-[#757575]  section-subtitle leading-6 text-center pb-10">
                     A unified workspace to onboard, train, and empower your partners for faster growth.
                 </p>
 

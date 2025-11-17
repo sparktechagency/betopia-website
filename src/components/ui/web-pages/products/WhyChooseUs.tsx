@@ -34,29 +34,34 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
       <div className="mb-[50px]">
         {
           product === "partnerProgram" && whyChooseUs && !ourExpectation ? (
-            <div className="flex flex-col section-title  text-center gap-0.5 pb-2">
+            <div className="flex flex-col section-title  text-center gap-0.5 pb-6">
               <p className="text-black">Why you choose</p>
               <p className="text-primary">Betopia partner Program ?</p>
             </div>
           ) :
             product === "partnerProgram" && ourExpectation ? (
-              <p className="section-title text-black text-center mb-2">
+              <p className="section-title text-black text-center pb-6">
                Our Expectation from <span className="text-primary">Clients</span>
               </p>
             ):
             product === "votingSystem" ? (
-              <p className="section-title text-black text-center mb-2">
+              <p className="section-title text-black text-center pb-6">
                Why Choose <span className="text-primary">Betopia? </span>
               </p>
             ) :
+            product === "agenticAI" ? (
+              <p className="section-title text-black text-center pb-6">
+               Why Choose <span className="text-primary">Agentic AI?  </span>
+              </p>
+            ) :
               (
-                <p className="section-title text-black text-center mb-2">
+                <p className="section-title text-black text-center pb-6">
                   Why you <span className="text-primary">choose us ?</span>
                 </p>
 
               )
         }
-        <p className="text-center section-subtitle text-lg!">{description}</p>
+        <p className="text-center text-[#757575] text-lg">{description}</p>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-20">
@@ -81,7 +86,7 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
             </div>
           ))}
         </div>
-        <div className=" lg:h-[700px] h-[400px] rounded-2xl shadow-2xl w-full lg:w-[50%] relative">
+        <div className=" lg:h-[700px] h-[400px] rounded-2xl shadow-2xl w-full lg:w-[60%] relative">
           <Image
             fill
             objectFit="cover"

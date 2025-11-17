@@ -5,10 +5,16 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 type ContentRef = HTMLDivElement | null; 
 
-interface FAQProps {
-  faqData: { key: string; question: string; answer: string }[];
+interface FAQType {
+  key: string;
+  question: string;
+  answer: string;
 }
-const FAQ = ({faqData}:FAQProps) => {
+
+interface FAQProps {
+  faqData?: FAQType[];
+}
+const FAQ: React.FC<FAQProps> = ({ faqData = [] }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const contentRefs = useRef<ContentRef[]>([]);
 

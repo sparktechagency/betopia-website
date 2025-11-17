@@ -28,7 +28,7 @@ const ProductInfo: React.FC<IProductInfoProps> = ({ info }) => {
         </div>
         <p className=" section-subtitle leading-[35px]">{description}</p>
         <OutlineButton className=" py-4! px-7! mt-6!">
-          Pre-Book Now
+          Book Now
         </OutlineButton>
       </div>
       <div className="w-full h-full">

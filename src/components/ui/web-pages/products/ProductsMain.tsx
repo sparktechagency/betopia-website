@@ -2,11 +2,11 @@
 "use client";
 import React from "react";
 import {
+  AgenticAI,
   ERP,
   HRM,
   PartnerProgram,
   POS,
-  productsFAQ,
   VotingSystem,
 } from "@/datas/pages/newProducts";
 import { useSearchParams } from "next/navigation";
@@ -28,12 +28,16 @@ const Data: Record<
   | typeof ERP
   | typeof PartnerProgram
   | typeof VotingSystem
+  | typeof AgenticAI
+
 > = {
   HRM: HRM,
   POS: POS,
   ERP: ERP,
   partnerProgram: PartnerProgram,
   votingSystem: VotingSystem,
+  agenticAI: AgenticAI,
+
 };
 
 const ProductsMain = () => {
@@ -54,7 +58,7 @@ const ProductsMain = () => {
           advanceFeature={(productData as any).advanceFeatures}
         />
       )}
-      {(product === "partnerProgram" || product === "votingSystem") && (
+      {(product === "partnerProgram" || product === "votingSystem" ||  product === "agenticAI") && (
         <PartnershipFramework
           partnershipFramework={(productData as any).partnershipFramework}
           product={product}
@@ -75,7 +79,7 @@ const ProductsMain = () => {
       <TrustedBy />
 
       <div className=" py-10">
-        <FAQ faqData={productsFAQ} />
+        <FAQ faqData={productData.productsFAQ} />
       </div>
 
       <div className="container bg-[#F79549] lg:rounded-[25px] p-10 flex flex-col md:flex-row items-center gap-5 justify-between mt-6  mb-20 ">

@@ -48,8 +48,10 @@ const ProductFeatures: React.FC<IProductFeaturesProps> = ({
 
         <div
           className={`grid grid-cols-1 md:grid-cols-2 ${
-            product === "partnerProgram" || "votingSystem"
+            product === "partnerProgram" || product === "votingSystem"
               ? "lg:grid-cols-3"
+              : product === "agenticAI"
+              ? "lg:grid-cols-2"
               : "lg:grid-cols-4"
           }  gap-5 mt-10`}
         >
