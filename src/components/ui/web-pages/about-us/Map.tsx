@@ -62,17 +62,7 @@ const Map: React.FC = () => {
     style={{ width: "100%", height: "100%" }}
   >
 
-          <ZoomableGroup
-            center={position.center}
-            zoom={position.zoom}
-            minZoom={1}
-            maxZoom={10}
-            translateExtent={[
-              [0, 0],
-              [1000, 650],
-            ]}
-          
-          >
+       
             {/* WORLD SHAPES */}
             <Geographies geography="/features.json">
               {({ geographies }) =>
@@ -111,7 +101,7 @@ const Map: React.FC = () => {
                     <circle
                       cx="12"
                       cy="10"
-                      r={active ? 5 : 3}
+                      r={active ? 7 : 1}
                       fill={active ? "#f99b4e" : "#FF5722"}
                       stroke="#fff"
                       strokeWidth="2"
@@ -131,7 +121,7 @@ const Map: React.FC = () => {
                     style={{
                       fontFamily: "system-ui",
                       fill: "white",
-                      fontSize: active ? "14px" : "11px",
+                      fontSize: active ? "14px" : "8px",
                       fontWeight: active ? "bold" : "normal",
                     }}
                   >
@@ -140,7 +130,6 @@ const Map: React.FC = () => {
                 </Marker>
               );
             })}
-          </ZoomableGroup>
         </ComposableMap>
 
         {/* CARD SECTION */}
