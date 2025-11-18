@@ -1,5 +1,4 @@
 import OutlineButton from "@/components/shared/OutlineButton";
-import { div } from "motion/react-client";
 import Image from "next/image";
 import React from "react";
 
@@ -21,7 +20,7 @@ const ProductInfo: React.FC<IProductInfoProps> = ({ info }) => {
           <div className="section-title lg:leading-[50px]">{title}</div>
           {
             subTitle && <div>
-              <p className="section-title  text-primary pb-0.5 ">{subTitle}</p>
+              <h2 className="section-title  text-primary pb-0.5 ">{subTitle}</h2>
               <p className="w-[300px] bg-primary h-0.5" /> 
             </div>
           }

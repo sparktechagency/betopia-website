@@ -225,6 +225,11 @@ export const HRM = {
         "Yes, our HRM system is cloud-based, enabling secure access from anywhere, real-time updates, and easy scalability as your organization grows.",
     },
   ],
+  bookingTitle: (
+    <p>
+      Looking For all in one <br /> HRM Solution ?
+    </p>
+  ),
 };
 
 export const POS = {
@@ -396,6 +401,11 @@ export const POS = {
         "The system features offline mode, allowing you to continue sales and record transactions even without internet. Once connectivity is restored, all data syncs automatically.",
     },
   ],
+  bookingTitle: (
+    <p>
+      Looking For Hybrid <br /> POS System?
+    </p>
+  ),
 };
 
 export const ERP = {
@@ -534,6 +544,12 @@ export const ERP = {
         "Yes, we offer comprehensive onboarding, user training, and ongoing support to help your team maximize the ERP system’s benefits.",
     },
   ],
+  bookingTitle: (
+    <p>
+      Looking For a complete <br />
+      ERP Solution?
+    </p>
+  ),
 };
 
 export const PartnerProgram = {
@@ -749,8 +765,13 @@ export const PartnerProgram = {
       answer:
         "Yes, we provide dedicated support and training resources for both administrators and partners to ensure smooth adoption and optimal usage.",
     },
-    
   ],
+  bookingTitle: (
+    <p>
+      Looking For a smart,
+      <br /> scalable Partner <br /> Management Solution?
+    </p>
+  ),
 };
 
 export const VotingSystem = {
@@ -781,7 +802,8 @@ export const VotingSystem = {
     {
       icon: "/productDetails/voting-features/feature-2.png",
       title: <p>Role Based Dashboards</p>,
-      description:"Four panels: Election Commission, Polling Agent, Voter & Super Admin.",
+      description:
+        "Four panels: Election Commission, Polling Agent, Voter & Super Admin.",
     },
     {
       icon: "/productDetails/voting-features/feature-3.png",
@@ -800,7 +822,8 @@ export const VotingSystem = {
     {
       icon: "/productDetails/voting-features/feature-5.png",
       title: <p>Live Results & Reporting</p>,
-      description: "Real-time visualization for election performance & vote count.",
+      description:
+        "Real-time visualization for election performance & vote count.",
     },
     {
       icon: "/productDetails/voting-features/feature-5.png",
@@ -917,6 +940,12 @@ export const VotingSystem = {
         "Yes. It includes four role-based dashboards like Super Admin, Election Commission, Polling Agent, Voter. Each role receives a customized experience.",
     },
   ],
+  bookingTitle: (
+    <p>
+      Looking For a smart,
+      <br /> scalable Partner <br /> Management Solution?
+    </p>
+  ),
 };
 
 export const AgenticAI = {
@@ -937,35 +966,35 @@ export const AgenticAI = {
   features: [
     {
       icon: "/productDetails/agentic-features/feature-1.png",
-      title: (
-        <p>Smart Lead Intelligence</p>
-      ),
-      description: "Understands business data, identifies qualified leads, and engages them through personalized communication powered by contextual AI.",
+      title: <p>Smart Lead Intelligence</p>,
+      description:
+        "Understands business data, identifies qualified leads, and engages them through personalized communication powered by contextual AI.",
     },
     {
       icon: "/productDetails/agentic-features/feature-2.png",
       title: <p>Autonomous Communication Engine</p>,
-      description:"Conducts real-time conversations with prospects via email or chat  pitching, following up, and handling objections just like a trained salesperson.",
+      description:
+        "Conducts real-time conversations with prospects via email or chat  pitching, following up, and handling objections just like a trained salesperson.",
     },
     {
       icon: "/productDetails/agentic-features/feature-3.png",
       title: <p>AI-driven Negotiation & Bargaining</p>,
-      description: "Analyzes buyer intent, negotiates pricing dynamically, and finalizes deals while aligning with your business rules.",
+      description:
+        "Analyzes buyer intent, negotiates pricing dynamically, and finalizes deals while aligning with your business rules.",
     },
     {
       icon: "/productDetails/agentic-features/feature-4.png",
-      title: (
-        <p>Integrated Sales Automation</p>
-      ),
-      description: "Connects directly with your CRM, ERP, and marketing tools to update leads, track performance, and ensure zero manual effort.",
-    },   
+      title: <p>Integrated Sales Automation</p>,
+      description:
+        "Connects directly with your CRM, ERP, and marketing tools to update leads, track performance, and ensure zero manual effort.",
+    },
   ],
   partnershipFramework: [
     {
       icon: "/productDetails/agentic-use/use-1.png",
       title: (
         <p>
-         Lead Generation & <br /> Qualification
+          Lead Generation & <br /> Qualification
         </p>
       ),
       des: "Agentic AI identifies, contacts, and qualifies leads through automated yet personalized outreach.",
@@ -989,7 +1018,11 @@ export const AgenticAI = {
     },
     {
       icon: "/productDetails/agentic-use/use-4.png",
-      title: <p>Customer Retention & <br/> Re-engagement </p>,
+      title: (
+        <p>
+          Customer Retention & <br /> Re-engagement{" "}
+        </p>
+      ),
       des: "Reconnects with inactive customers, sends follow-ups, and promotes new offers with zero manual effort.",
       bgColor: "bg-[#E6FFFE]",
     },
@@ -1056,6 +1089,50 @@ export const AgenticAI = {
       question: "Can it qualify leads?",
       answer:
         "Absolutely. Agentic AI performs smart lead intelligence by analyzing incoming inquiries, detecting buyer interest, and prioritizing high-quality leads.",
-    },   
+    },
+  ],
+  bookingTitle: (
+    <p>
+      Looking For a smart,
+      <br /> scalable Partner <br /> Management Solution?
+    </p>
+  ),
+};
+
+export const whyChooseUsForMainPage = {
+  description:
+    "Experience seamless automation, intelligent integration, and enterprise-grade performance all within the Betopia ecosystem.",
+  imgUrl: "/productDetails//product-why/choose-img.jpg",
+  features: [
+    {
+      icon: "/productDetails/product-why/choose-1.png",
+      title: "AI-Powered Automation",
+      description:
+        "Automate complex workflows with intelligent AI systems that think and act for you. Increase efficiency, reduce manual effort, and focus on what truly matters — growth",
+    },
+    {
+      icon: "/productDetails/product-why/choose-2.png",
+      title: "Cloud Integration",
+      description:
+        "Access your tools and data anytime, anywhere, with enterprise-level cloud security. Betopia ensures smooth performance and real-time collaboration across all devices.",
+    },
+    {
+      icon: "/productDetails/product-why/choose-3.png",
+      title: "Seamless Connectivity",
+      description:
+        "Every Betopia product is built to work together effortlessly. Enjoy unified data flow and consistent user experience across your entire ecosystem.",
+    },
+    {
+      icon: "/productDetails/product-why/choose-4.png",
+      title: "Data-Driven Insights",
+      description:
+        "Turn raw data into actionable intelligence with advanced analytics dashboards. Track performance, forecast trends, and make smarter, faster business decisions.",
+    },
+    {
+      icon: "/productDetails/product-why/choose-5.png",
+      title: "Enterprise Security",
+      description:
+        "Your data is protected with advanced encryption and compliance-ready safeguards.Betopia prioritizes privacy, ensuring reliability and trust at every digital touchpoint.",
+    },
   ],
 };

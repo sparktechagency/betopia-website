@@ -19,13 +19,13 @@ export const pages: NavPage[] = [
           "Betopia's HRM solution transforms human resource operations into a seamless, efficient process for modern businesses. It handles recruitment, onboarding, performance tracking, and payroll with intuitive automation. ",
         link: "/products?product=HRM",
       },
-      {
-        key: "POS",
-        label: "Point of Sale Machine (POS)",
-        description:
-          "Betopia's POS system delivers fast, reliable point-of-sale operations tailored for retail and hospitality environments. It supports seamless inventory syncing, payment processing, and customer loyalty programs in one unified platform.",
-        link: "/products?product=POS",
-      },
+      // {
+      //   key: "POS",
+      //   label: "Point of Sale Machine (POS)",
+      //   description:
+      //     "Betopia's POS system delivers fast, reliable point-of-sale operations tailored for retail and hospitality environments. It supports seamless inventory syncing, payment processing, and customer loyalty programs in one unified platform.",
+      //   link: "/products?product=POS",
+      // },
       {
         key: "ERP",
         label: "Betopia ERP",

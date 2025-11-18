@@ -21,7 +21,7 @@ const ProductsDetails = () => {
         <div className=' container'>
             <ProductsTitle productData={productData} />
 
-            <div className=' flex gap-[56px] w-full mb-20'>
+            <div className=' flex gap-14 w-full mb-20'>
                 <div className=' w-1/4 '>
                     <ProductSteps product={product} />
                 </div>

@@ -39,7 +39,9 @@ const ProductFeatures: React.FC<IProductFeaturesProps> = ({
           )}
         </h1>
         <p className="text-[#757575]  section-subtitle leading-6 text-center">
-          {product === "votingSystem"
+          {product === "partnerProgram"
+            ? "All-in-One Partner Ecosystem Built for Modern Businesses"
+            : product === "votingSystem"
             ? "Discover how Betopia’s advanced digital voting system simplifies election management through automation, transparency, and user-centric design."
             : product === "agenticAI"
             ? "Discover how Agentic AI empowers your business through data-driven automation, human-like communication, and seamless integration."

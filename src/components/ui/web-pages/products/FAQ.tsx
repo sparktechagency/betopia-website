@@ -43,7 +43,7 @@ const FAQ: React.FC<FAQProps> = ({ faqData = [] }) => {
           <span className=" text-[#000000]"> Frequently Asked </span>{" "}
           <span className="text-primary">Question</span>{" "}
         </ComponentTitle>
-        <p className="w-[360px] h-0.5 bg-[#F7954983]  " />
+        <div className="w-[360px] h-0.5 bg-[#F7954983]  " />
       </div>
 
       <div className=" grid grid-cols-1 gap-4 px-4">
@@ -78,7 +78,7 @@ const FAQ: React.FC<FAQProps> = ({ faqData = [] }) => {
                             : " bg-transparent h-14"
                         }`}
                       >
-                        <p
+                        <h2
                           className={`lg:text-[18px] text-sm leading-6 font-medium   ${
                             openIndex === index
                               ? " text-white  "
@@ -86,8 +86,8 @@ const FAQ: React.FC<FAQProps> = ({ faqData = [] }) => {
                           }`}
                         >
                           {faq?.question}
-                        </p>
-                        <p
+                        </h2>
+                        <div
                           className={` rounded-full h-10 w-10 flex-center transition-all  ${
                             openIndex === index
                               ? " bg-transparent border border-white"
@@ -100,7 +100,7 @@ const FAQ: React.FC<FAQProps> = ({ faqData = [] }) => {
                               openIndex === index ? "rotate-90 " : " rotate-0"
                             }`}
                           />
-                        </p>
+                        </div>
                       </div>
                       <div className="lg:text-[16px] text-sm leading-6 font-normal text-[#5C5C5C] my-5 px-5 pb-3">
                         {faq?.answer}
