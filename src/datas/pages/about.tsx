@@ -37,3 +37,44 @@ export const aboutBannerData = {
     buttonName: "Schedule Appointment",
     buttonLink: "/contact"
 }
+
+export const officeCards = [
+  {
+    title: "Philippines",
+    img: "/about/map.png",
+    description:
+      "Our Manila office leads regional operations, technology, and client support — fostering innovation in a modern, collaborative workspace.",
+    officeLabel: "Philippines Office",
+    address: "Manila, Philippines",
+    location: { lat: 14.5995, lng: 120.9842 },
+  },
+  {
+    title: "USA",
+    img: "/about/map.png",
+    description:
+      "Our USA office enhances our presence in North America, delivering reliable AI, cloud, and cybersecurity solutions to our clients.",
+    officeLabel: "USA Office",
+    address: "30 N Gould St Ste R, Sheridan, WY 82801",
+    location: { lat: 44.7972, lng: -106.9562 },
+  },
+  {
+    title: "Dhaka",
+    img: "/about/map.png",
+    description:
+      "Our corporate office oversees operations, strategy, and regional management. The Betopia Branch Office manages local operations and provides client support across Bangladesh.",
+    officeLabel: "",
+    
+    addresses: [
+      {
+        label: "Corporate Office",
+        value: "Daisy Garden, House 14, Block A, Banasree, Dhaka",
+      },
+      {
+        label: "Branch Office",
+        value:
+          "C/A, AK Khandaker Road, Kaderia Tower J-28/8-B, Mohakhali, Dhaka 1213",
+      },
+    ],
+     location: { lat: 23.8103, lng: 90.4125 }, 
+  },
+];
