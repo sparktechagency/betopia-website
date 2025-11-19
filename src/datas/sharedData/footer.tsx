@@ -55,7 +55,7 @@ export const officeData = [
     imgHeight: 140,
     title: "Corporate Office",
     city: "Dhaka",
-    address: "Daisy Garde, House 14, Block A, Banasree",
+    address: "Daisy Garden, House 14, Block A, Banasree",
     phone: "+8801716566979",
   },
   {
@@ -65,7 +65,7 @@ export const officeData = [
     title: "Philippines Office",
     city: "Philippines",
     address: "Manila, Philippines",
-    phone: "+8801321231828 ",
+    phone: "betopialimited@gmail.com",
   },
   {
     imgUrl: "/usa.png",
