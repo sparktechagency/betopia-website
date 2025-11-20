@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import CustomDropdown from './CustomDropdown';
+import React, { useState } from "react";
+import CustomDropdown from "./CustomDropdown";
 
 const Location = ({ register, errors }: any) => {
   const [country, setCountry] = useState("");
@@ -29,13 +29,11 @@ const Location = ({ register, errors }: any) => {
           Enter address details for better management.
         </p>
 
-   
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-
           {/* country */}
           <CustomDropdown
             label="Country"
-            items={["UAE", "USA", "UK"]}
+            items={["Bangladesh", "USA", "Philippines"]}
             selected={country}
             setSelected={setCountry}
             register={register}
@@ -46,9 +44,15 @@ const Location = ({ register, errors }: any) => {
           {/* state */}
           <CustomDropdown
             label="State"
-            items={country === "UAE" ? ["Dubai", "Abu Dhabi"] 
-                 : country === "USA" ? ["California", "New York"]
-                 : ["London", "Manchester"]}
+            items={
+              country === "Bangladesh"
+                ? ["Dhaka", "Chattogram", "Sylhet"]
+                : country === "USA"
+                ? ["California", "New York", "Texas"]
+                : country === "Philippines"
+                ? ["Luzon", "Visayas", "Mindanao"]
+                : []
+            }
             selected={state}
             setSelected={setState}
             register={register}
@@ -59,7 +63,27 @@ const Location = ({ register, errors }: any) => {
           {/* city */}
           <CustomDropdown
             label="City"
-            items={["Downtown", "Marina", "Business Bay"]}
+            items={
+              state === "Dhaka"
+                ? ["Dhanmondi", "Gulshan", "Uttara"]
+                : state === "Chattogram"
+                ? ["Pahartali", "Panchlaish"]
+                : state === "Sylhet"
+                ? ["Zindabazar", "Ambarkhana"]
+                : state === "California"
+                ? ["Los Angeles", "San Francisco"]
+                : state === "New York"
+                ? ["New York City", "Buffalo"]
+                : state === "Texas"
+                ? ["Houston", "Dallas"]
+                : state === "Luzon"
+                ? ["Manila", "Quezon City"]
+                : state === "Visayas"
+                ? ["Cebu City", "Iloilo City"]
+                : state === "Mindanao"
+                ? ["Davao City", "Cagayan de Oro"]
+                : []
+            }
             selected={city}
             setSelected={setCity}
             register={register}
@@ -67,9 +91,10 @@ const Location = ({ register, errors }: any) => {
             errors={errors}
           />
 
-     
           <div>
-            <label className="block text-sm md:text-lg text-[#404D61] mb-4">ZIP Code</label>
+            <label className="block text-sm md:text-lg text-[#404D61] mb-4">
+              ZIP Code
+            </label>
             <input
               type="text"
               placeholder="Enter zip code"
@@ -79,14 +104,14 @@ const Location = ({ register, errors }: any) => {
               }`}
             />
             {errors.zipCode && (
-              <p className="text-red-500 text-xs mt-1">{errors.zipCode.message}</p>
+              <p className="text-red-500 text-xs mt-1">
+                {errors.zipCode.message}
+              </p>
             )}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-
-        
           <div>
             <label className="block text-sm md:text-lg text-[#404D61] mb-4">
               Area <span className="text-gray-400">(optional)</span>
@@ -99,7 +124,6 @@ const Location = ({ register, errors }: any) => {
             />
           </div>
 
-        
           <div>
             <label className="block text-sm md:text-lg text-[#404D61] mb-4">
               Community/Building
@@ -113,13 +137,16 @@ const Location = ({ register, errors }: any) => {
               }`}
             />
             {errors.building && (
-              <p className="text-red-500 text-xs mt-1">{errors.building.message}</p>
+              <p className="text-red-500 text-xs mt-1">
+                {errors.building.message}
+              </p>
             )}
           </div>
 
-         
           <div>
-            <label className="block text-sm md:text-lg text-[#404D61] mb-4">Street</label>
+            <label className="block text-sm md:text-lg text-[#404D61] mb-4">
+              Street
+            </label>
             <input
               type="text"
               placeholder="Enter street/road name"
@@ -129,13 +156,16 @@ const Location = ({ register, errors }: any) => {
               }`}
             />
             {errors.street && (
-              <p className="text-red-500 text-xs mt-1">{errors.street.message}</p>
+              <p className="text-red-500 text-xs mt-1">
+                {errors.street.message}
+              </p>
             )}
           </div>
 
-       
           <div>
-            <label className="block text-sm md:text-lg text-[#404D61] mb-4">Block No.</label>
+            <label className="block text-sm md:text-lg text-[#404D61] mb-4">
+              Block No.
+            </label>
             <input
               type="text"
               placeholder="Enter block name"
@@ -145,14 +175,15 @@ const Location = ({ register, errors }: any) => {
               }`}
             />
             {errors.blockNo && (
-              <p className="text-red-500 text-xs mt-1">{errors.blockNo.message}</p>
+              <p className="text-red-500 text-xs mt-1">
+                {errors.blockNo.message}
+              </p>
             )}
           </div>
-
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Location
+export default Location;

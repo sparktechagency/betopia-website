@@ -50,12 +50,12 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
         <button
           type="button"
           onClick={() => setOpen(!open)}
-          className={`w-full ${width} flex items-center justify-between px-4 py-3 border rounded-lg bg-white text-[#404D61] 
+          className={`w-full ${width} flex items-center justify-between px-4 py-3 border rounded-lg bg-white text-[#757D8A] 
               ${errors?.[registerName] ? "border-red-400" : "border-[#E1E3E6]"}`}
         >
-          <span>{selected || `Select ${label}`}</span>
+          <span className="text-[#757D8A]">{selected || `Select ${label}`}</span>
           <ChevronDown
-            className={`w-4 h-4 text-[#2D3748] transition-transform ${
+            className={`w-4 h-4 text-[#757D8A] transition-transform ${
               open ? "rotate-180" : ""
             }`}
           />
@@ -74,7 +74,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
                   setSelected(item);
                   setOpen(false);
                 }}
-                className="w-full text-left px-4 py-2.5 hover:bg-gray-50 text-sm text-[#2D3748]"
+                className="w-full text-left px-4 py-2.5 hover:bg-gray-50 text-sm text-[#757D8A]"
               >
                 {item}
               </button>

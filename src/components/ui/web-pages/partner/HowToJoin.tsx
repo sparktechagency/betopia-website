@@ -13,10 +13,10 @@ const HowToJoin: React.FC = () => {
         How to <span className="text-primary">join</span>{" "}
       </ComponentTitle>
       <div className=" w-full flex-center flex-col gap-7">
-        <p className="text-center section-subtitle ">
+        <h2 className="text-center section-subtitle ">
           Learn about the straightforward steps to become a partner and start
           the collaboration process.
-        </p>
+        </h2>
         <Link href={"/become-partner"}>
           <OutlineButton className=" px-6 py-4 !text-[#616161] !text-lg ">
             {" "}
@@ -45,9 +45,9 @@ const HowToJoin: React.FC = () => {
               <h2 className="text-[20px] md:text-[21px] font-bold mb-4">
                 {data.name}
               </h2>
-              <p className="text-[16px] md:text-[18px] text-[#737373] leading-[160%] flex-grow">
+              <div className="text-[16px] md:text-[18px] text-[#737373] leading-[160%] flex-grow">
                 {data.description}
-              </p>
+              </div>
             </div>
           </div>
         ))}

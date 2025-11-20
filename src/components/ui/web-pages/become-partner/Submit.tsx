@@ -1,11 +1,12 @@
-import { CheckSquare, Square, Upload } from "lucide-react";
+import { CheckSquare, Square } from "lucide-react";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Controller } from "react-hook-form";
 
 const Submit = ({ errors, watch, control, handleSubmit }: any) => {
   const [dragActive, setDragActive] = useState(false);
   const uploadedDocument = watch("document");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const onSubmit = (data: FormData) => {
     console.log("Form submitted:", data);
@@ -21,6 +22,12 @@ const Submit = ({ errors, watch, control, handleSubmit }: any) => {
       setDragActive(false);
     }
   };
+  const handleDivClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
   return (
     <div className="pt-14">
       <div className="w-[306px] rounded-4xl flex items-center gap-2 p-2 mb-9 bg-linear-to-r from-[#E0E0E0] to-[#F6F6F6]">
@@ -68,8 +75,11 @@ const Submit = ({ errors, watch, control, handleSubmit }: any) => {
                   }
                 }}
               >
-                <div className="flex flex-col items-center">
-                    <Image src="/download.png" alt="" width={60} height={60} />
+                <div
+                  className="flex flex-col items-center"
+                  onClick={handleDivClick}
+                >
+                  <Image src="/download.png" alt="" width={60} height={60} />
                   <p className="text-[#414042] text-[20px] font-semibold mb-2 pt-4">
                     Drag and Drop your{" "}
                   </p>
@@ -84,12 +94,22 @@ const Submit = ({ errors, watch, control, handleSubmit }: any) => {
                     or{" "}
                     <label className="text-[#F6934899] font-semibold cursor-pointer hover:underline">
                       browse file
-                      <input
+                      {/* <input
                         type="file"
                         className="hidden"
                         accept=".jpg,.jpeg,.png,.pdf,.doc"
                         {...field}
                         onChange={(e) => onChange(e.target.files)}
+                      /> */}
+                      <input
+                        type="file"
+                        className="hidden"
+                        accept=".jpg,.jpeg,.png,.pdf,.doc"
+                        onChange={(e) => onChange(e.target.files)}
+                        ref={(el) => {
+                          fileInputRef.current = el;
+                          field.ref(el);
+                        }}
                       />
                     </label>{" "}
                     on your computer
