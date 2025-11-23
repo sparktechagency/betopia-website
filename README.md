@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Betopia Limited
 
-## Getting Started
+**Betopia Limited** is a global technology company delivering scalable digital solutions across **Cloud, Cybersecurity, AI, Data Engineering, and Enterprise SaaS**.  
+Founded in 2014, we serve clients in **47+ countries**, empowering businesses through automation, security, and innovation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 What We Build
+- **Staff Pulse (HRM)** – Attendance, payroll, compliance  
+- **POS System** – Sales, inventory & reporting  
+- **Betopia ERP** – Workflow, procurement, sales  
+- **Cash Advance System** – Salary advance & payroll integration  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ What We Offer
+- **Cloud Modernization & DevOps**  
+- **Cybersecurity & Compliance Solutions**  
+- **AI, Data Engineering & Automation**  
+- **Team Augmentation & Dedicated Talent**  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌍 Global Impact
+- **40,000+ Clients**  
+- **3,000+ Professionals**  
+- **Thousands of successful deployments**  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Mission
+To simplify enterprise operations by delivering secure, innovative, and scalable digital solutions that create measurable business value.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📘 Project Overview
+This repository contains the **official website of Betopia Limited**, showcasing our services, solutions, culture, leadership, and global presence.  
+The goal is to provide businesses with a seamless way to explore our offerings and connect for digital transformation.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📞 Contact
+🌐 Website: https://betopialimited.com  
+✉️ Email: info@betopialimited.com  
+
+---
