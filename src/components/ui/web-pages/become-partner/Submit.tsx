@@ -54,7 +54,7 @@ const Submit = ({ errors, watch, control, handleSubmit }: any) => {
             name="document"
             control={control}
             rules={{ required: "Document upload is required" }}
-            render={({ field: { onChange, value, ...field } }) => (
+            render={({ field: { onChange, ...field } }) => (
               <div
                 className={`border-2 bg-[#95CDB81F] border-dashed rounded-xl py-[51px] text-center transition-colors ${
                   dragActive

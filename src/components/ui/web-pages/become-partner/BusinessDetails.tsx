@@ -3,6 +3,7 @@
 import { ChevronDown } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
 import CustomDropdown from './CustomDropdown';
+import Image from 'next/image';
 
 interface Country {
   name: string;
@@ -133,7 +134,7 @@ const BusinessDetails = ({ register, errors }: any) => {
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex items-center gap-2 px-3 h-12 border border-[#E1E3E6] rounded-lg bg-white hover:border-gray-300"
                 >
-                  <img src={selectedCountry.image} className="w-6 h-6 rounded" />
+                  <Image src={selectedCountry.image} alt='' width={24} height={24} className="w-6 h-6 rounded" />
                   <span className="text-sm text-[#404D61]">{selectedCountry.code}</span>
                   <ChevronDown className={`w-4 h-4 text-gray-400 ${isOpen ? "rotate-180" : ""}`} />
                 </button>
@@ -147,7 +148,7 @@ const BusinessDetails = ({ register, errors }: any) => {
                         onClick={() => handleCountrySelect(country)}
                         className="w-full flex items-center gap-3 px-3 py-2.5 hover:bg-gray-50 text-left"
                       >
-                        <img src={country.image} className="w-6 h-6 rounded" />
+                        <Image src={country.image} alt='' width={24} height={24} className="w-6 h-6 rounded" />
                         <div className="flex-1 flex justify-between">
                           <span className="text-sm text-[#2D3748]">{country.name}</span>
                           <span className="text-sm text-gray-500">{country.code}</span>

@@ -9,7 +9,7 @@ import MobileMenu from "../ui/shared-features/navbar/mobile-menu/MobileMenu";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
-  const [hoveredDropdown, setHoveredDropdown] = useState<string | null>(null);
+  const [, setHoveredDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
