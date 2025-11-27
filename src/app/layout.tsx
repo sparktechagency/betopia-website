@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Betopia Limited",
@@ -27,8 +28,8 @@ export default function RootLayout({
           <Navbar />
           <AntdRegistry>{children}</AntdRegistry>
         </div>
-
-        <Footer />
+        <Footer /> 
+         <Toaster />
       </body>
     </html>
   );

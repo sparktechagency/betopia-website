@@ -16,7 +16,7 @@ const Banner = () => {
           playsInline
         >
           <source
-            src="https://res.cloudinary.com/dd0giqouc/video/upload/v1756794983/Home_Page_Video_cd66tv.mp4"
+            src="https://res.cloudinary.com/ds1njqypu/video/upload/v1763546479/Home_Page_Video_eculyv.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
