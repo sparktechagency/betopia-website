@@ -57,70 +57,44 @@ const BusinessDetailsComponent = ({
       >
         <Input style={{ height: lg ? 48 : 40, borderRadius: "10px" }} />
       </Form.Item>
-
-      <Form.Item
-        className="custom-input w-full"
-        name={"whatsapp"}
-        label={
-          <p className="text-[#404D61] text-[16px] font-medium">
-            Enter your What’s app
-          </p>
-        }
-        rules={[
-          { required: true, message: "Please enter your WhatsApp number" },
-          {
-            min: 6,
-            message: "WhatsApp number must be at least 6 digits long",
-          },
-        ]}
+<Form.Item
+  className="custom-input w-full"
+  name={"whatsapp"}
+  label={
+    <p className="text-[#404D61] text-[16px] font-medium">
+      Enter your What’s app
+    </p>
+  }
+  rules={[
+    { required: true, message: "Please enter your WhatsApp number" },
+    { min: 6, message: "WhatsApp number must be at least 6 digits long" },
+  ]}
+>
+  <Input
+    type="number"
+    placeholder="(555) 000-0000"
+    addonBefore={
+      <Select
+        value={countryCode}
+        onChange={(value) => setCountryCode(value)}
+        className="min-w-[120px] min-h-[40px] cursor-pointer"
+        style={{
+          backgroundColor: "white",
+          borderRadius: "10px 0px 0px 10px",
+          height: lg ? 48 : 40,
+        }}
+        showSearch
       >
-        <Input
-          type="number"
-          addonBefore={
-            <Select
-              value={countryCode}
-              onChange={(value) => setCountryCode(value)}
-              className="min-w-[120px] min-h-[40px] cursor-pointer"
-              style={{
-                backgroundColor: "white",
-                borderRadius: "10px 0px 0px 10px",
-                height: lg ? 48 : 40,
-              }}
-              showSearch
-            >
-              {options.map((c) => (
-                <Option key={c.code} value={`${c.code}`}>
-                  {c.flag} {c.code}
-                </Option>
-              ))}
-            </Select>
-          }
-        >
-          <Input
-            addonBefore={
-              <Select
-                value={countryCode}
-                onChange={(value) => setCountryCode(value)}
-                className="min-w-[120px] min-h-10 cursor-pointer"
-                style={{
-                  backgroundColor: "white",
-                  borderRadius: "10px 0px 0px 10px",
-                }}
-                showSearch
-              >
-                {options.map((c) => (
-                  <Option key={c.code} value={`${c.code}`}>
-                    {c.flag} {c.code}
-                  </Option>
-                ))}
-              </Select>
-            }
-            placeholder="(555) 000-0000"
-            style={{ height: lg ? 56 : 40, borderRadius: "0px" }}
-            className="min-h-10"
-          />
-        </Form.Item>
-      </Form>
+        {options.map((c) => (
+          <Option key={c.code} value={c.code}>
+            {c.flag} {c.code}
+          </Option>
+        ))}
+      </Select>
+    }
+    style={{ height: lg ? 48 : 40, borderRadius: "10px" }}
+  />
+</Form.Item>
     </div>
   );
 };

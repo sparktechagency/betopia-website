@@ -1,5 +1,4 @@
 import React from "react";
-import PartnerSteps from "./PartnerSteps";
 import PartnerRegisterForm from "./PartnerRegisterForm";
 
 const BecomePartnerSteps = () => {

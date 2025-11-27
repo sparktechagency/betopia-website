@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Menu } from "antd";
 import { DropdownItem, megaSections } from "@/types";
 import { LuChevronRight } from "react-icons/lu";
-import { div } from "motion/react-client";
+
 
 interface DropdownMenuProps {
   items: DropdownItem[];

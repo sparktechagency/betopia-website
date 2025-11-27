@@ -11,7 +11,6 @@ export default function ContactCard({
   title,
   titleHighlight,
   content,
-  bgColor,
 }: ContactCardProps) {
   return (
     <div className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 overflow-hidden group hover:shadow-md transition-shadow">
