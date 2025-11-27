@@ -1,7 +1,7 @@
 name: Betopia Production Website CI/CD
 on:
   push:
-    branches: ["staging"]
+    branches: ["main"]
 jobs:
   run:
     runs-on: ubuntu-latest
