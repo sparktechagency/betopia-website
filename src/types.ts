@@ -196,3 +196,11 @@ export interface PortfolioData {
 export interface portfolioDetailsType {
   portfolioDetails: PortfolioData;
 }
+export interface BusinessFormValues {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  businessType: string;
+  interestedArea: string;
+  businessDomain: string;
+}

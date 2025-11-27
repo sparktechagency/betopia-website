@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
 import CustomDropdown from './CustomDropdown';
 import Image from 'next/image';
+import { FieldErrors, UseFormRegister } from 'react-hook-form';
 
 interface Country {
   name: string;
@@ -39,8 +40,32 @@ const countries: Country[] = [
   }
 ];
 
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  businessType: string;
+  interestedArea: string;
+  businessDomain: string;
+  country: string;
+  state: string;
+  city: string;
+  zipCode: string;
+  area: string;
+  building: string;
+  street: string;
+  blockNo: string;
+  documentConfirmed: boolean;
+  document: FileList | null;
+}
 
-const BusinessDetails = ({ register, errors }: any) => {
+const BusinessDetails = ({
+  register,
+  errors,
+}: {
+  register: UseFormRegister<FormData>;
+  errors: FieldErrors<FormData>;
+}) => {
 
   const [selectedCountry, setSelectedCountry] = useState<Country>(countries[0]);
   const [isOpen, setIsOpen] = useState(false);

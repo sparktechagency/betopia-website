@@ -10,7 +10,6 @@ const BecomePartnerSteps = () => {
         </p>
 
         <div>
-          {/* <PartnerSteps /> */}
           <PartnerRegisterForm/>
         </div>
       </div>

@@ -10,6 +10,23 @@ import {
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { officeCards } from "@/datas/pages/about";
+interface OfficeAddress {
+  label: string;
+  value: string;
+}
+
+interface OfficeCard {
+  title: string;
+  img: string;
+  description: string;
+  officeLabel?: string;
+  address?: string;
+  addresses?: OfficeAddress[];
+  location: {
+    lat: number;
+    lng: number;
+  };
+}
 
 
 const Map: React.FC = () => {
@@ -22,7 +39,7 @@ const Map: React.FC = () => {
   };
 
   // When clicking marker
-  const handleMarkerClick = (card: any, i: number) => {
+  const handleMarkerClick = (card: OfficeCard, i: number) => {
     setIndex(i);
   };
 
@@ -131,7 +148,7 @@ const Map: React.FC = () => {
             <div className="mt-4 lg:mt-9">
               {card.addresses ? (
                 <div className="flex flex-col md:flex-row justify-between gap-4">
-                  {card.addresses.map((a: any, i: number) => (
+                  {card.addresses.map((a: OfficeAddress, i: number) => (
                     <div key={i} className="space-y-2 md:w-1/2">
                       <h2 className="text-[#f99b4e]">{a.label}</h2>
                       <p className="text-[#F8F8F8]">{a.value}</p>
