@@ -78,3 +78,25 @@ export const officeCards = [
      location: { lat: 23.8103, lng: 90.4125 }, 
   },
 ];
+export const whatWeDo = [
+    {
+        image: "/about/cloud.png",
+        title: "Cloud Solutions",
+        description: "Our cloud solutions offer scalable platforms that are customized to meet your unique business needs. We ensure top-tier security, full compliance with industry standards, and optimized efficiency to help your business grow and thrive in a digital-first world."
+    },
+    {
+        image: "/about/ai.png",
+        title: "AI & Data Solutions",
+        description: "Our AI and data solutions empower your business to make smarter decisions, automate workflows, and turn data into valuable insights. By leveraging AI, we help you unlock efficiency and drive innovation across your operations."
+    },
+    {
+        image: "/about/cybersecurity.png",
+        title: "Cybersecurity",
+        description: "Our cybersecurity solutions safeguard your business from evolving digital threats. With advanced strategies and cutting-edge tools, we ensure your data, systems, and operations remain secure and resilient against attacks."
+    },
+    {
+        image: "/about/endpoint.png",
+        title: "Endpoint, Identity & Productivity Solutions",
+        description: "Our endpoint, identity, and productivity solutions provide secure and seamless management for both enterprise and mobile applications. We create tools that scale with your business, enhancing productivity and safeguarding your digital environment."
+    },
+]
