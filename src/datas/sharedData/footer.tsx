@@ -56,7 +56,7 @@ export const officeData = [
     title: "Corporate Office",
     city: "Dhaka",
     address: "Daisy Garden, House 14, Block A, Banasree",
-    phone: "+8801716566979",
+    phone: "+8801321231828",
   },
   {
     imgUrl: "/philipines.png",
@@ -64,8 +64,8 @@ export const officeData = [
     imgHeight: 90,
     title: "Philippines Office",
     city: "Philippines",
-    address: "Manila, Philippines",
-    phone: "betopialimited@gmail.com",
+    address: "Angeles, Philippines",
+    phone: "+1 (312) 877-3570 (WA)",
   },
   {
     imgUrl: "/usa.png",
@@ -73,8 +73,8 @@ export const officeData = [
     imgHeight: 50,
     title: "USA Office",
     city: "USA",
-    address: "30 N Gould St Ste R, Sheridan, WY 82801",
-    phone: "+19179149545 ",
+    address: "3651 Peachtree Pkwy STE. E #116, Suwanee, GA 30024, United States of America",
+    phone: "+1 (404) 936-3567",
   },
   {
     imgUrl: "/dhaka1.png",
@@ -83,6 +83,6 @@ export const officeData = [
     title: "Branch Office",
     city: "Dhaka",
     address: "C/A, Ak Khandaker Road Kaderia Tower J-28/8-B, Mohakhali, Dhaka 1213",
-    phone: "+8801321231828",
+    phone: "+8801332840871",
   },
 ];
