@@ -11,7 +11,7 @@ const ProductStepDetails = ({ productData }: productType) => {
                 className="relative group cursor-pointer rounded-2xl overflow-hidden flex-1 mb-10"
             >
                 {/* Background overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-[#6666661A]/10 to-[#000000E5]/90"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-[#6666661A]/10 to-[#000000E5]/90"></div>
                 <Image
                     src={productData?.solutionInnovative?.imgUrl}
                     alt={productData?.solutionInnovative?.title}
@@ -29,12 +29,12 @@ const ProductStepDetails = ({ productData }: productType) => {
 
                 {/* Background decoration */}
                 <div
-                    className={`absolute inset-0 bg-gradient-to-b from-[#666666]/50 to-[#000000]/80`}
+                    className={`absolute inset-0 bg-linear-to-b from-[#666666]/50 to-[#000000]/80`}
                 ></div>
             </div>
 
             <div className='flex items-start gap-4.5 ps-5'>
-                <p className=' w-3 h-[80px] bg-primary'> </p>
+                <p className=' w-3 h-20 bg-primary'> </p>
                 <div className=' flex flex-col gap-5'>
                     <p className='text-2xl text-[#666666]'> {productData?.solutionInnovative?.description}</p>
                     <Link href={"/partner"} >

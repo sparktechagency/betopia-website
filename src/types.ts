@@ -112,6 +112,7 @@ export interface productsType {
     list: string[];
     bgColor: string;
   }[];
+  bookingTitle?: React.ReactNode;
 }
 
 export interface TransformingType {

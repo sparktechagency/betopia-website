@@ -38,14 +38,14 @@ const ProductDetailsBanner: React.FC<IProductDetailsBannerProps> = ({
           <div className="text-[#818181] text-[34px] lg:text-5xl 2xl:text-[64px] font-medium mb-4">
             {heading}{" "}
           </div>
-          <p className=" text-[#F79549] text-[20px] lg:text-4xl 2xl:text-[57px] font-semibold lg:w-[60%] md:w-[70%] w-full text-center pb-9   ">
+          <p className=" text-[#F79549] text-[20px] lg:text-4xl 2xl:text-[57px] font-semibold lg:w-[80%] md:w-[70%] w-full text-center pb-9   ">
             {subHeading}{" "}
           </p>
-          <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  lg:w-[45%] md:w-[70%] tracking-wide ">
+          <p className=" text-sm md:text-lg font-normal text-[#9B9B9B]  lg:w-[60%] md:w-[70%] tracking-wide ">
             {description}
           </p>
           <Link href="/contact" className=" pt-[77px]">
-            <OutlineButton className="cursor-pointer !py-4 !px-7">
+            <OutlineButton className="cursor-pointer py-4! px-7!">
               Need That Product ?
             </OutlineButton>
           </Link>

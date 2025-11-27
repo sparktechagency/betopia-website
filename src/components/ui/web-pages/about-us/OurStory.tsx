@@ -4,7 +4,7 @@ import React from "react";
 const OurStory = () => {
   return (
     <div className="container relative text-white pb-32 md:pb-10 lg:pb-24  ">
-      <ComponentTitle className=" !text-start pb-6 ">
+      <ComponentTitle className=" text-start! pb-6 ">
         {" "}
         <span className=" text-[#000000]"> Our </span>{" "}
         <span className="text-primary">Story</span>{" "}
@@ -45,7 +45,7 @@ const OurStory = () => {
             tomorrow while solving today’s problems.
           </span>
 
-          <p>
+          <div>
             Today, Betopia is recognized as:
             <ul className="grid grid-cols-1 gap-2 list-disc pl-4">
               <li>40,000+ clients served</li>
@@ -56,7 +56,7 @@ const OurStory = () => {
               </li>
               <li>47+ countries in operations</li>
             </ul>
-          </p>
+          </div>
 
           <span>
             From 30,000+ clients across Europe to 600+ in the USA and 400+ in

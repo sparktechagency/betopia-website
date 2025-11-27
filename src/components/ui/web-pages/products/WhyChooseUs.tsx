@@ -29,61 +29,71 @@ const WhyChooseUs: React.FC<IWhyChooseUsProps> = ({
   const { description, imgUrl, features } = whyChooseUs
 
   return (
-    <div className="container my-[80px]">
+    <div className="container my-20">
 
       <div className="mb-[50px]">
         {
           product === "partnerProgram" && whyChooseUs && !ourExpectation ? (
-            <div className="flex flex-col section-title  text-center gap-0.5 pb-2">
+            <div className="flex flex-col section-title  text-center gap-0.5 pb-6">
               <p className="text-black">Why you choose</p>
               <p className="text-primary">Betopia partner Program ?</p>
             </div>
           ) :
             product === "partnerProgram" && ourExpectation ? (
-              <p className="section-title text-black text-center mb-2">
+              <p className="section-title text-black text-center pb-6">
                Our Expectation from <span className="text-primary">Clients</span>
+              </p>
+            ):
+            product === "votingSystem" ? (
+              <p className="section-title text-black text-center pb-6">
+               Why Choose <span className="text-primary">Betopia? </span>
+              </p>
+            ) :
+            product === "agenticAI" ? (
+              <p className="section-title text-black text-center pb-6">
+               Why Choose <span className="text-primary">Agentic AI?  </span>
               </p>
             ) :
               (
-                <p className="section-title text-black text-center mb-2">
+                <p className="section-title text-black text-center pb-6">
                   Why you <span className="text-primary">choose us ?</span>
                 </p>
 
               )
         }
-        <p className="text-center section-subtitle !text-lg">{description}</p>
+        <p className="text-center text-[#757575] text-lg">{description}</p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-16">
+      <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           {features.map((feature, index) => (
             <div key={index}>
-              <div className="flex items-center gap-3 !mb-2">
+              <div className="flex items-center gap-3 mb-2!">
                 <Image
                   width={56}
                   height={56}
                   src={feature.icon}
                   alt="arrow"
-                  className="rounded-[12px] object-cover"
+                  className="rounded-xl object-cover"
                 />
-                <p className="text-[#414042] text-[24px] leading-[24px] ">
+                <p className="text-[#414042] text-[24px] leading-6 ">
                   {feature.title}
                 </p>
               </div>
-              <p className="text-[#6B7280] text-[18px] leading-[24px]">
+              <p className="text-[#6B7280] text-[18px] leading-6">
                 {feature.description}
               </p>
             </div>
           ))}
         </div>
-        <div className=" h-[500px] rounded-2xl shadow-2xl w-full relative">
+        <div className=" lg:h-[700px] h-[400px] rounded-2xl shadow-2xl w-full lg:w-[60%] relative">
           <Image
             fill
             objectFit="cover"
             objectPosition="center"
             src={imgUrl}
             alt="arrow"
-            className="rounded-[12px] object-cover h-full w-full"
+            className="rounded-xl object-cover h-full w-full"
             unoptimized
           />
         </div>

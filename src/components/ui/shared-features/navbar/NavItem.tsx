@@ -21,20 +21,20 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
     return (
       <Dropdown
         key={page.name}
-        overlay={
+        popupRender={() => (
           <DropdownMenu
             items={page.dropdownItems || []}
             variant={isServices ? "services" : "default"}
             megaSections={isServices ? page.megaSections || [] : undefined}
           />
-        }
+            )}
         trigger={["hover"]}
         placement="bottom" arrow
         overlayStyle={{ marginTop: "22px" }} 
       >
         <Link
           href={page.link}
-          className={`text-white hover:border-b hover:border-[#F69348] transition-colors duration-200 text-lg leading-[24px] cursor-pointer ${
+          className={`text-white hover:border-b hover:border-[#F69348] transition-colors duration-200 text-lg leading-6 cursor-pointer ${
             activePage === page.link && "border-b border-[#F69348]"
           }`}
           onMouseEnter={() => setHoveredDropdown(page.name)}
@@ -50,7 +50,7 @@ const NavItem: React.FC<NavItemProps> = ({ page, setHoveredDropdown }) => {
     <Link
       href={page.link}
       key={page.name}
-      className={`text-white hover:border-b hover:border-[#F69348]  transition-colors duration-200 text-lg leading-[24px]  cursor-pointer ${
+      className={`text-white hover:border-b hover:border-[#F69348]  transition-colors duration-200 text-lg leading-6  cursor-pointer ${
         activePage === page.link && "border-b border-[#F69348]"
       }`}
     >

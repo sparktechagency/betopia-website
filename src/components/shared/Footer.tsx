@@ -4,11 +4,7 @@ import Image from "next/image";
 import FooterDetials from "../ui/shared-features/footer/FooterDetials";
 import Link from "next/link";
 import { officeData, socialLinks } from "@/datas/sharedData/footer";
-import { PiBuildingOfficeThin } from "react-icons/pi";
-import { Download, Landmark } from "lucide-react";
-import { LuLandmark } from "react-icons/lu";
-
-
+import { Download } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
@@ -27,30 +23,39 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="  bg-[#040404] p-6 pt-8 -mt-6 rounded-xl  z-10 ">
-          <div className=" grid grid-cols-1 lg:grid-cols-4 rounded-[8px] gap-5  z-10  ">
+          <div className=" grid grid-cols-1 lg:grid-cols-4 rounded-lg gap-5  z-10  ">
             {officeData.map((office, index) => (
               <div
                 key={index}
-                className={`relative col-span-1 overflow-hidden bg-[#7f7e7e]/10 rounded-xl border border-transparent hover:border-[#f6934880] transition-colors duration-300 p-4 !pb-0 ${index === 1 ? "flex flex-col" : ""}`}
+                className={`relative col-span-1 overflow-hidden bg-[#7f7e7e]/10 rounded-xl border border-transparent hover:border-[#f6934880] transition-colors duration-300 p-4 pb-0! ${
+                  index === 1 ? "flex flex-col" : ""
+                }`}
               >
                 <div className=" flex items-center justify-between ">
                   <div>
-
                     <div className="mb-3">
-                      <p className="text-primary uppercase text-xs">{office.title}</p>
+                      <p className="text-primary uppercase text-xs">
+                        {office.title}
+                      </p>
                     </div>
 
                     <ul className="grid text-[18px]  grid-cols-1 gap-2.5 text-white list-none ">
-                      <li className="font-medium text-[16px] ">{office.city}</li>
-                      <li className=" font-normal text-sm text-[#a1a1a6] ">{office.address}</li>
+                      <li className="font-medium text-[16px] ">
+                        {office.city}
+                      </li>
+                      <li className=" font-normal text-sm text-[#a1a1a6] ">
+                        {office.address}
+                      </li>
 
                       <li>
-                        <a href={`tel:${office.phone}`} className=" cursor-pointer">
-                          <li className=" font-normal text-sm text-[#ffffffe6]">{office.phone}</li>
+                        <a
+                          href={`tel:${office.phone}`}
+                          className=" font-normal text-sm text-[#ffffffe6] cursor-pointer"
+                        >
+                          {office.phone}
                         </a>
                       </li>
                     </ul>
-
                   </div>
 
                   <div className="absolute -bottom-2 -right-2">
@@ -62,17 +67,12 @@ const Footer: React.FC = () => {
                       className="object-contain opacity-90"
                     />
                     {/* { office.icon}  */}
-
                   </div>
                 </div>
-
-
               </div>
             ))}
           </div>
-
         </div>
-
 
         {/* Social Links */}
         <div className=" md:flex-center py-7 ">
@@ -80,7 +80,8 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-4 bg-black p-6 text-white">
               {/* Download Button */}
               <a
-                href="https://drive.google.com/file/d/1rg_CRbQDkNwv0j2QWlA16vD2tMaxJNYu/view?usp=sharing"
+                // href="https://drive.google.com/uc?export=download&id=1sfUpvEbF9Yu2ArIOh0bcI4klhbUX0-83"
+                href="https://drive.google.com/uc?export=download&id=1_6u16y_UDUnKwY357MJLv0Vg2UTRO-er"
                 download
                 className="bg-[#FFF200] w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-105"
               >
@@ -89,7 +90,9 @@ const Footer: React.FC = () => {
 
               {/* Text Section */}
               <div className="flex flex-col gap-y-1 leading-tight">
-                <p className="text-[16px] lg:text-2xl font-light">Company Deck</p>
+                <p className="text-[16px] lg:text-2xl font-light">
+                  Company Deck
+                </p>
                 <p className="text-sm text-[#7d7d82] font-normal">PDF, 17 MB</p>
               </div>
             </div>

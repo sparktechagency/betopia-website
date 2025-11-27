@@ -38,25 +38,43 @@ export const aboutBannerData = {
     buttonLink: "/contact"
 }
 
-export const whatWeDo = [
-    {
-        image: "/about/cloud.png",
-        title: "Cloud Solutions",
-        description: "Our cloud solutions offer scalable platforms that are customized to meet your unique business needs. We ensure top-tier security, full compliance with industry standards, and optimized efficiency to help your business grow and thrive in a digital-first world."
-    },
-    {
-        image: "/about/ai.png",
-        title: "AI & Data Solutions",
-        description: "Our AI and data solutions empower your business to make smarter decisions, automate workflows, and turn data into valuable insights. By leveraging AI, we help you unlock efficiency and drive innovation across your operations."
-    },
-    {
-        image: "/about/cybersecurity.png",
-        title: "Cybersecurity",
-        description: "Our cybersecurity solutions safeguard your business from evolving digital threats. With advanced strategies and cutting-edge tools, we ensure your data, systems, and operations remain secure and resilient against attacks."
-    },
-    {
-        image: "/about/endpoint.png",
-        title: "Endpoint, Identity & Productivity Solutions",
-        description: "Our endpoint, identity, and productivity solutions provide secure and seamless management for both enterprise and mobile applications. We create tools that scale with your business, enhancing productivity and safeguarding your digital environment."
-    },
-]
+export const officeCards = [
+  {
+    title: "Philippines",
+    img: "/about/map.png",
+    description:
+      "Our Manila office leads regional operations, technology, and client support — fostering innovation in a modern, collaborative workspace.",
+    officeLabel: "Philippines Office",
+    address: "Manila, Philippines",
+    location: { lat: 14.5995, lng: 120.9842 },
+  },
+  {
+    title: "USA",
+    img: "/about/map.png",
+    description:
+      "Our USA office enhances our presence in North America, delivering reliable AI, cloud, and cybersecurity solutions to our clients.",
+    officeLabel: "USA Office",
+    address: "30 N Gould St Ste R, Sheridan, WY 82801",
+    location: { lat: 44.7972, lng: -106.9562 },
+  },
+  {
+    title: "Dhaka",
+    img: "/about/map.png",
+    description:
+      "Our corporate office oversees operations, strategy, and regional management. The Betopia Branch Office manages local operations and provides client support across Bangladesh.",
+    officeLabel: "",
+    
+    addresses: [
+      {
+        label: "Corporate Office",
+        value: "Daisy Garden, House 14, Block A, Banasree, Dhaka",
+      },
+      {
+        label: "Branch Office",
+        value:
+          "C/A, AK Khandaker Road, Kaderia Tower J-28/8-B, Mohakhali, Dhaka 1213",
+      },
+    ],
+     location: { lat: 23.8103, lng: 90.4125 }, 
+  },
+];

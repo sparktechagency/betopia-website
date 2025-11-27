@@ -95,10 +95,32 @@ const BusinessDetailsComponent = ({
               ))}
             </Select>
           }
-          placeholder="(555) 000-0000"
-          style={{ height: lg ? 48 : 40, borderRadius: "0px" }}
-        />
-      </Form.Item>
+        >
+          <Input
+            addonBefore={
+              <Select
+                value={countryCode}
+                onChange={(value) => setCountryCode(value)}
+                className="min-w-[120px] min-h-10 cursor-pointer"
+                style={{
+                  backgroundColor: "white",
+                  borderRadius: "10px 0px 0px 10px",
+                }}
+                showSearch
+              >
+                {options.map((c) => (
+                  <Option key={c.code} value={`${c.code}`}>
+                    {c.flag} {c.code}
+                  </Option>
+                ))}
+              </Select>
+            }
+            placeholder="(555) 000-0000"
+            style={{ height: lg ? 56 : 40, borderRadius: "0px" }}
+            className="min-h-10"
+          />
+        </Form.Item>
+      </Form>
     </div>
   );
 };

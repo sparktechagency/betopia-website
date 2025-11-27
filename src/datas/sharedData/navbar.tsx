@@ -19,13 +19,13 @@ export const pages: NavPage[] = [
           "Betopia's HRM solution transforms human resource operations into a seamless, efficient process for modern businesses. It handles recruitment, onboarding, performance tracking, and payroll with intuitive automation. ",
         link: "/products?product=HRM",
       },
-      {
-        key: "POS",
-        label: "Point of Sale Machine (POS)",
-        description:
-          "Betopia's POS system delivers fast, reliable point-of-sale operations tailored for retail and hospitality environments. It supports seamless inventory syncing, payment processing, and customer loyalty programs in one unified platform.",
-        link: "/products?product=POS",
-      },
+      // {
+      //   key: "POS",
+      //   label: "Point of Sale Machine (POS)",
+      //   description:
+      //     "Betopia's POS system delivers fast, reliable point-of-sale operations tailored for retail and hospitality environments. It supports seamless inventory syncing, payment processing, and customer loyalty programs in one unified platform.",
+      //   link: "/products?product=POS",
+      // },
       {
         key: "ERP",
         label: "Betopia ERP",
@@ -39,6 +39,20 @@ export const pages: NavPage[] = [
         description:
           "In our B2B Partner Program, anyone can become a partner. Additionally, partners have the option to purchase our Partner Management Portal, which is an essential tool for efficiently managing all partners from a single platform. It allows you to oversee communications, performance, and collaboration seamlessly in one place.",
         link: "/products?product=partnerProgram",
+      },
+       {
+        key: "Betopia Voting & Election Management System",
+        label: "Betopia Voting & Election Management System",
+        description:
+          "Betopia’s advanced voting solution brings secure, transparent, and fully digital election management to organizations of all sizes. It streamlines voter registration, candidate profiling, ballot creation, and encrypted vote casting with real-time monitoring. The system ensures accuracy, fairness, and tamper-proof results powered by robust security and automation.",
+        link: "/products?product=votingSystem",
+      },
+       {
+        key: "Agentic AI Platform",
+        label: "Agentic AI Platform",
+        description:
+          "Betopia’s Agentic AI transforms traditional workflows into intelligent, automated processes. It empowers businesses with AI-driven assistants that handle tasks like customer interaction, data processing, decision making, and predictive insights. The platform enhances productivity, reduces manual effort, and enables smarter, faster business operations across all departments.",
+        link: "/products?product=agenticAI",
       },
     ],
   },
