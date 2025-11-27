@@ -80,7 +80,8 @@ const Footer: React.FC = () => {
             <div className="flex items-center gap-4 bg-black p-6 text-white">
               {/* Download Button */}
               <a
-                href="https://drive.google.com/uc?export=download&id=1sfUpvEbF9Yu2ArIOh0bcI4klhbUX0-83"
+                // href="https://drive.google.com/uc?export=download&id=1sfUpvEbF9Yu2ArIOh0bcI4klhbUX0-83"
+                href="https://drive.google.com/uc?export=download&id=1_6u16y_UDUnKwY357MJLv0Vg2UTRO-er"
                 download
                 className="bg-[#FFF200] w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-105"
               >
