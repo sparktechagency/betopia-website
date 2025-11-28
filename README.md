@@ -11,7 +11,6 @@ Founded in 2014, we serve clients in **47+ countries**, empowering businesses th
 - **Betopia ERP** – Workflow, procurement, sales  
 - **Cash Advance System** – Salary advance & payroll integration  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.....
 
 ## 🛠️ What We Offer
 - **Cloud Modernization & DevOps**  
