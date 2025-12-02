@@ -630,6 +630,13 @@ const CloudInfrastructureData = {
         "Platform for deploying, scaling, securing, and monitoring containers (Docker/OCI) across cloud or hybrid. Organizes images, orchestrates deployments, manages versions, and supports recovery from failures. Enables efficient, portable microservices architectures.",
       imgUrl: "/cloudService/cloudInfrastructure8.png",
     },
+     {
+      title: "Cloud",
+      subtitle: "Management Services",
+      description:
+        "We provide AWS-based consulting and implementation services focused on cloud migration, DevOps automation, and managed infrastructure. We handle the heavy lifting of monitoring, scaling, and managing your cloud, so you can focus on business.",
+      imgUrl: "/cloudService/cloudInfrastructure9.jpg",
+    },
   ],
 };
 
