@@ -2,8 +2,33 @@
 
 import React, { useState } from "react";
 import CustomDropdown from "./CustomDropdown";
+import { FieldErrors, UseFormRegister } from "react-hook-form";
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  businessType: string;
+  interestedArea: string;
+  businessDomain: string;
+  country: string;
+  state: string;
+  city: string;
+  zipCode: string;
+  area: string;
+  building: string;
+  street: string;
+  blockNo: string;
+  documentConfirmed: boolean;
+  document: FileList | null;
+}
 
-const Location = ({ register, errors }: any) => {
+const Location = ({
+  register,
+  errors,
+}: {
+  register: UseFormRegister<FormData>;
+  errors: FieldErrors<FormData>;
+}) => {
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
   const [city, setCity] = useState("");

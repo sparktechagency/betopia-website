@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import ComponentTitle from "@/components/shared/ComponentTitle";
 import Image from "next/image";
 import React from "react";
 

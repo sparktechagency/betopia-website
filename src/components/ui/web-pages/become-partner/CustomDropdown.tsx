@@ -2,18 +2,36 @@
 
 import { ChevronDown } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { FieldErrors, UseFormRegister } from "react-hook-form";
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  businessType: string;
+  interestedArea: string;
+  businessDomain: string;
+  country: string;
+  state: string;
+  city: string;
+  zipCode: string;
+  area: string;
+  building: string;
+  street: string;
+  blockNo: string;
+  documentConfirmed: boolean;
+  document: FileList | null;
+}
 
 interface CustomDropdownProps {
   label: string;
   items: string[];
   selected: string;
   setSelected: (value: string) => void;
-  registerName: string;
-  register: any;
-  errors: any;
+  registerName: keyof FormData; // ensures only valid field names
+  register: UseFormRegister<FormData>;
+  errors: FieldErrors<FormData>;
   width?: string;
 }
-
 const CustomDropdown: React.FC<CustomDropdownProps> = ({
   label,
   items,

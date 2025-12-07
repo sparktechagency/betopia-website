@@ -1,9 +1,37 @@
 import { CheckSquare, Square } from "lucide-react";
 import Image from "next/image";
 import React, { useRef, useState } from "react";
-import { Controller } from "react-hook-form";
+import { Control, Controller, FieldErrors, UseFormHandleSubmit, UseFormWatch } from "react-hook-form";
+interface FormData {
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  businessType: string;
+  interestedArea: string;
+  businessDomain: string;
+  country: string;
+  state: string;
+  city: string;
+  zipCode: string;
+  area: string;
+  building: string;
+  street: string;
+  blockNo: string;
+  documentConfirmed: boolean;
+  document: FileList | null;
+}
 
-const Submit = ({ errors, watch, control, handleSubmit }: any) => {
+const Submit = ({
+  errors,
+  watch,
+  control,
+  handleSubmit,
+}: {
+  errors: FieldErrors<FormData>;
+  watch: UseFormWatch<FormData>;
+  control: Control<FormData>;
+  handleSubmit: UseFormHandleSubmit<FormData>;
+}) => {
   const [dragActive, setDragActive] = useState(false);
   const uploadedDocument = watch("document");
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -54,7 +82,7 @@ const Submit = ({ errors, watch, control, handleSubmit }: any) => {
             name="document"
             control={control}
             rules={{ required: "Document upload is required" }}
-            render={({ field: { onChange, value, ...field } }) => (
+            render={({ field: { onChange, ...field } }) => (
               <div
                 className={`border-2 bg-[#95CDB81F] border-dashed rounded-xl py-[51px] text-center transition-colors ${
                   dragActive
