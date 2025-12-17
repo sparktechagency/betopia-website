@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev'],
+  allowedDevOrigins: ["local-origin.dev", "*.local-origin.dev"],
+
   images: {
-    domains: ["flagcdn.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flagcdn.com",
+      },
+    ],
   },
 };
 
